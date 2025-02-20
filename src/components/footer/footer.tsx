@@ -51,7 +51,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.pages}>
-          <h5>Pages:</h5>
+          <h5>Browse:</h5>
           <ul>
             <li>
               <Link href="/services">Services</Link>

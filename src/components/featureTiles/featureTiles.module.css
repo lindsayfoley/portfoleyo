@@ -1,0 +1,49 @@
+  .container {
+    color: #373636;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .serviceWrapper {
+      margin: 50px auto 0 auto;
+      display: flex;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .service {
+      margin: 0 20px;
+    }
+
+
+    h4 {
+      font-size: 15px;
+    }
+
+    h4:before {
+      content: '';
+      display: block;
+      margin: -10px auto 10px auto;
+      width: 1px;
+      height: 40px;
+      background: black;
+    }
+
+    span, h4, a {
+      font-family: "Work Sans", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    h4, a {
+      text-transform: uppercase;
+    }
+
+    a {
+      font-size: 13px;
+    }
+  }

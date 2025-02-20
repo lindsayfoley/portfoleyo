@@ -1,5 +1,6 @@
 .main {
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto 80px auto;
   text-align: center;
 
   h2 {
@@ -10,8 +11,7 @@
   p {
     font-size: 14px;  
     margin: 10px 0;
-  }
-  
+  }  
 }
 
 
