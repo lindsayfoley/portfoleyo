@@ -68,11 +68,11 @@
     }
 
     hr {
-        max-width: 90%;
+        max-width: 80%;
         height: 1px;
         border: 0;
         border-top: 1px solid #343232;
-        margin: 40px auto 16px 0;
+        margin: 40px auto 16px auto;
     }
 
     small {

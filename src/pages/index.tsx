@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@portfoleyo/styles/Home.module.css";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
+import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
 
 export default function Home() {
   return (
@@ -20,6 +21,21 @@ export default function Home() {
           Crafting seamless, high-performing websites for independent brands and
           entrepreneurs.
         </p>
+        <HighlightBanner
+          imageSrc="https://place-hold.it/300x285/#fffff"
+          alt=""
+          intro="Welcome to"
+          title="Portfoleyo"
+          description="My new development consultancy specialising in high-performance,
+          scalable digital solutions. With expertise in React, TypeScript and
+          modern frameworks, I help brands bring their ideas to life—whether
+          it’s building from scratch, optimising existing platforms, or
+          enhancing e-commerce experiences. With a focus on speed,
+          accessibility, and seamless user interactions, I deliver bespoke
+          solutions tailored to your needs."
+          cta="About"
+          link="/About"
+        />
         <FeatureTiles
           title="Featured Services"
           subtitle="How can I help you?"
@@ -50,6 +66,7 @@ export default function Home() {
             },
           ]}
         />
+        <hr className={styles.divider} />
       </main>
     </>
   );

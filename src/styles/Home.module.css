@@ -1,5 +1,4 @@
 .main {
-  max-width: 800px;
   margin: 0 auto 80px auto;
   text-align: center;
 
@@ -12,6 +11,14 @@
     font-size: 14px;  
     margin: 10px 0;
   }  
+
+  hr {
+    max-width: 80%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e2dede;
+    margin: 16px auto 16px auto;
+  }
 }
 
 

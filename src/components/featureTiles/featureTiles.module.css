@@ -1,8 +1,10 @@
   .container {
-    color: #373636;
+    max-width: 900px;
+    margin: 70px auto 80px auto;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: #373636;
 
     .serviceWrapper {
       margin: 50px auto 0 auto;
@@ -15,7 +17,7 @@
     }
 
     .service {
-      margin: 0 20px;
+      margin: 0 40px;
     }
 
 
