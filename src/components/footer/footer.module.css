@@ -8,7 +8,7 @@
     font-size: 14px;
 
     .columnContainer {
-        max-width: 950px;
+        max-width: 1040px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;

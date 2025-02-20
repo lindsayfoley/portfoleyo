@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto: me@lindsayfoley.co.uk" target="_blank">
+              <a href="mailto:hello@theportfoleyo.com" target="_blank">
                 <FontAwesomeIcon icon={faSquareEnvelope} size="2x" />
               </a>
             </li>
