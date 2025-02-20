@@ -1,0 +1,11 @@
+.container {
+    padding-top: 30px;
+    text-align: center;
+
+    h1 {
+        font-family: "Sacramento", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+    }
+}

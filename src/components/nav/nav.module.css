@@ -1,0 +1,28 @@
+.container {
+    height: 50px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    box-shadow: 0 1px #f4f3f1;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.pages {
+    width: 60%;
+    text-transform: uppercase;
+}
+
+.icons {
+    width: 40%;
+}
