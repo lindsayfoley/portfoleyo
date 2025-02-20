@@ -42,7 +42,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h5>About:</h5>
+          <h5>About</h5>
           <p>
             Portfoleyo provides bespoke development services with React,
             TypeScript, and modern frameworks—helping brands build fast,
@@ -51,7 +51,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.pages}>
-          <h5>Browse:</h5>
+          <h5>Browse</h5>
           <ul>
             <li>
               <Link href="/services">Services</Link>

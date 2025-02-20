@@ -1,8 +1,6 @@
 import Head from "next/head";
-import styles from "@portfoleyo/styles/Home.module.css";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
-import AnchorButton from "@portfoleyo/components/anchorButton/anchorButton";
 import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
 
@@ -18,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <HighlightBanner
           imageSrc="https://place-hold.it/400x295/#fffff"
           alt=""
@@ -29,8 +27,8 @@ export default function Home() {
           link="/About"
         />
         <FeatureTiles
-          title="Featured Services"
-          subtitle="How can I help you?"
+          title="Featured services"
+          subtitle="How I Can Support You"
           services={[
             {
               imageSrc: "https://place-hold.it/300x200/#fffff",
@@ -59,14 +57,14 @@ export default function Home() {
           ]}
         />
         <Banner
-          title="Let’s Talk About Your Project"
-          subtitle="Work with me"
+          title="Let’s talk about your project"
+          subtitle="Work With Me"
           isTitleFirst={false}
           href="/contact"
           cta="Contact"
         />
         <Showcase
-          title="View Recent Work"
+          title="View my recent work"
           subtitle="My Portfolio"
           images={[
             { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
