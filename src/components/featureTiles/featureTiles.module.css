@@ -1,6 +1,6 @@
   .container {
     max-width: 1040px;
-    margin: 70px auto 80px auto;
+    margin: 70px auto;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -11,11 +11,6 @@
       display: flex;
       gap: 70px;
       justify-content: center;
-    }
-
-    h2 {
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
     }
 
     .service {
@@ -44,7 +39,7 @@
       line-height: 24px;
     }
 
-    span, h4, a {
+    h4, a {
       font-family: "Work Sans", serif;
       font-optical-sizing: auto;
       font-style: normal;

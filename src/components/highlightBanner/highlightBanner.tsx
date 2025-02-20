@@ -1,3 +1,4 @@
+import AnchorButton from "../anchorButton/anchorButton";
 import styles from "./highlightBanner.module.css";
 
 interface HighlightBannerProps {
@@ -37,7 +38,7 @@ const HighlightBanner = ({
           {intro && <span>{intro}</span>}
           <h2>{title}</h2>
           <p>{description}</p>
-          {cta && <a href={link}>{cta}</a>}
+          {link && cta && <AnchorButton href={link} cta={cta} />}
         </div>
       </div>
     </div>

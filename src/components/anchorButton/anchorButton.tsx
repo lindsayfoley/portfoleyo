@@ -1,6 +1,6 @@
 import styles from "./anchorButton.module.css";
 
-interface AnchorButtonProps {
+export interface AnchorButtonProps {
   href: string;
   cta: string;
 }

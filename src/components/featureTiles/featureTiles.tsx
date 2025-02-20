@@ -1,3 +1,4 @@
+import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./featureTiles.module.css";
 
 interface FeatureTilesProps {
@@ -21,8 +22,7 @@ const FeatureTiles = ({
 }: FeatureTilesProps) => {
   return (
     <section className={styles.container}>
-      <h2>{title}</h2>
-      <span>{subtitle}</span>
+      <SectionTitle title={title} subtitle={subtitle} />
       <div className={styles.serviceWrapper}>
         {services.map(({ imageSrc, alt, title, description, href }) => (
           <div className={styles.service} key={title}>
