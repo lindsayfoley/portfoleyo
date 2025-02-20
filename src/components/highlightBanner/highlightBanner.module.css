@@ -21,14 +21,14 @@
         font-size: 14px;
       }
 
-      h2, p {
+      h1, h2, p {
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-style: normal;
       }
 
 
-      h2 {
+      h1, h2 {
         font-size: 40px;
         margin: 0;
       }

@@ -10,6 +10,7 @@ interface HighlightBannerProps {
   cta?: string;
   link?: string;
   shouldReverseColumns?: boolean;
+  isH1Element?: boolean;
 }
 
 const HighlightBanner = ({
@@ -21,6 +22,7 @@ const HighlightBanner = ({
   cta,
   link,
   shouldReverseColumns = false,
+  isH1Element = false,
 }: HighlightBannerProps) => {
   return (
     <div className={styles.container}>
@@ -36,7 +38,7 @@ const HighlightBanner = ({
           }`}
         >
           {intro && <span>{intro}</span>}
-          <h2>{title}</h2>
+          {isH1Element ? <h1>{title}</h1> : <h2>{title}</h2>}
           <p>{description}</p>
           {link && cta && <AnchorButton href={link} cta={cta} />}
         </div>

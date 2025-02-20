@@ -24,11 +24,12 @@ export default function Home() {
           title="The Portfoleyo"
           description="My new development consultancy, specialising in high-performance, scalable digital solutions. With expertise in React, TypeScript, and modern frameworks, I help brands turn their ideas into reality — whether it’s building something from the ground up, optimising an existing platform, or enhancing an e-commerce experience. Focused on speed, accessibility, and seamless user interactions, I deliver bespoke solutions tailored to your business needs!"
           cta="About"
-          link="/About"
+          link="/about"
+          isH1Element
         />
         <FeatureTiles
           title="Featured services"
-          subtitle="How I Can Support You"
+          subtitle="How I Can Help"
           services={[
             {
               imageSrc: "https://place-hold.it/300x200/#fffff",
