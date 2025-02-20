@@ -17,17 +17,22 @@ const Footer = () => {
           </p>
           <ul className={styles.icons}>
             <li>
-              <a href="https://github.com/lindsayfoley" target="_blank">
+              <a
+                title="View my Github"
+                href="https://github.com/lindsayfoley"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </li>
             <li>
-              <a href="mailto:hello@theportfoleyo.com" target="_blank">
+              <a title="Send me an email" href="mailto:hello@theportfoleyo.com">
                 <FontAwesomeIcon icon={faSquareEnvelope} size="2x" />
               </a>
             </li>
             <li>
               <a
+                title="View my LinkedIn profile"
                 href="https://www.linkedin.com/in/lindsay-foley-9a193534/"
                 target="_blank"
               >
@@ -35,7 +40,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a
+                title="View my personal portfolio site"
+                href="https://lindsayfoley.co.uk/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faBriefcase} size="2x" />
               </a>
             </li>
