@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@portfoleyo/styles/Home.module.css";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
+import AnchorButton from "@portfoleyo/components/anchorButton/anchorButton";
 
 export default function Home() {
   return (
@@ -16,23 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h2>Elevate Your Brand with Bespoke Web Development</h2>
-        <p>
-          Crafting seamless, high-performing websites for independent brands and
-          entrepreneurs.
-        </p>
         <HighlightBanner
-          imageSrc="https://place-hold.it/300x285/#fffff"
+          imageSrc="https://place-hold.it/400x285/#fffff"
           alt=""
           intro="Welcome to"
           title="Portfoleyo"
-          description="My new development consultancy specialising in high-performance,
-          scalable digital solutions. With expertise in React, TypeScript and
-          modern frameworks, I help brands bring their ideas to life—whether
-          it’s building from scratch, optimising existing platforms, or
-          enhancing e-commerce experiences. With a focus on speed,
-          accessibility, and seamless user interactions, I deliver bespoke
-          solutions tailored to your needs."
+          description="My new development consultancy, specialising in high-performance, scalable digital solutions. With expertise in React, TypeScript, and modern frameworks, I help brands turn their ideas into reality — whether it’s building something from the ground up, optimising an existing platform, or enhancing an e-commerce experience. Focused on speed, accessibility, and seamless user interactions, I deliver bespoke solutions tailored to your business needs!"
           cta="About"
           link="/About"
         />
@@ -41,7 +31,7 @@ export default function Home() {
           subtitle="How can I help you?"
           services={[
             {
-              imageSrc: "https://place-hold.it/233x155/#fffff",
+              imageSrc: "https://place-hold.it/300x200/#fffff",
               alt: "",
               title: "Custom Website Development",
               description:
@@ -49,7 +39,7 @@ export default function Home() {
               href: "/services",
             },
             {
-              imageSrc: "https://place-hold.it/233x155/#fffff",
+              imageSrc: "https://place-hold.it/300x200/#fffff",
               alt: "",
               title: "Performance & SEO Optimisation",
               description:
@@ -57,7 +47,7 @@ export default function Home() {
               href: "/services",
             },
             {
-              imageSrc: "https://place-hold.it/233x155/#fffff",
+              imageSrc: "https://place-hold.it/300x200/#fffff",
               alt: "",
               title: "E-Commerce & Shopify Solutions",
               description:
@@ -66,7 +56,23 @@ export default function Home() {
             },
           ]}
         />
-        <hr className={styles.divider} />
+        <div className={styles.contact}>
+          <span>Work with me</span>
+          <h3>Let’s Talk About Your Next Project</h3>
+          <AnchorButton href="/portfolio" cta="Contact" />
+        </div>
+        <div className={styles.recent}>
+          <span>My Portfolio</span>
+          <h3>View Recent Work</h3>
+          <div className={styles.images}>
+            <img src="https://place-hold.it/300x300/#fffff" alt="" />
+            <img src="https://place-hold.it/300x350/#fffff" alt="" />
+            <img src="https://place-hold.it/300x300/#fffff" alt="" />
+          </div>
+          <a className={styles.anchorButton} href="/portfolio">
+            View more
+          </a>
+        </div>
       </main>
     </>
   );

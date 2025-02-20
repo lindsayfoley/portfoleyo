@@ -1,5 +1,5 @@
 .main {
-  margin: 0 auto 80px auto;
+  margin: 0 auto;
   text-align: center;
 
   h2 {
@@ -12,12 +12,59 @@
     margin: 10px 0;
   }  
 
-  hr {
-    max-width: 80%;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #e2dede;
-    margin: 16px auto 16px auto;
+  .recent {
+    padding: 70px 0;
+    background: #ffffff;
+    color: #373636;
+
+    span {
+      text-transform: uppercase;
+      font-family: "Work Sans", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 20px;
+    }
+
+    .images {
+      margin: 30px;
+
+      img {
+        margin: 0 30px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .contact {
+    background: #faf1ea;
+    padding: 60px 0;
+
+    span {
+      text-transform: uppercase;
+      font-family: "Work Sans", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-bottom: 50px;
+    }
   }
 }
 

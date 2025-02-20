@@ -27,9 +27,11 @@ const FeatureTiles = ({
         {services.map(({ imageSrc, alt, title, description, href }) => (
           <div className={styles.service} key={title}>
             <img src={imageSrc} alt={alt} />
-            <h4>{title}</h4>
-            <p>{description}</p>
-            <a href={href}>{cta}</a>
+            <div className={styles.copy}>
+              <h4>{title}</h4>
+              <p>{description}</p>
+              <a href={href}>{cta}</a>
+            </div>
           </div>
         ))}
       </div>

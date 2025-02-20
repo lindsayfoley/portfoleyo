@@ -1,11 +1,10 @@
 .container {
-    margin-top: 70px;
     padding: 70px 0;
     background: #faf1ec;
 
     .wrapper {
       margin: 0 auto;    
-      max-width: 900px;
+      max-width: 1040px;
       display: flex;
     }
 
@@ -13,7 +12,7 @@
       text-align: left;
       color: #504742;
 
-      span, button {
+      span, a {
         text-transform: uppercase;
         font-family: "Work Sans", serif;
         font-optical-sizing: auto;
