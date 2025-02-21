@@ -1,5 +1,6 @@
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
+import Image from "next/image";
 
 import styles from "./showcase.module.css";
 
@@ -29,7 +30,7 @@ const Showcase = ({
       />
       <div className={styles.images}>
         {images.map(({ imageSrc, alt }) => (
-          <img key={imageSrc} src={imageSrc} alt={alt} />
+          <Image key={imageSrc} src={imageSrc} alt={alt} />
         ))}
       </div>
       <AnchorButton href={href} cta={cta} />
