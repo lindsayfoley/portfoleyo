@@ -1,5 +1,4 @@
 import AnchorButton from "../anchorButton/anchorButton";
-import Image from "next/image";
 import styles from "./highlightBanner.module.css";
 
 interface HighlightBannerProps {
@@ -31,7 +30,7 @@ const HighlightBanner = ({
         <div
           className={shouldReverseColumns ? styles.secondary : styles.primary}
         >
-          <Image src={imageSrc} alt={alt} />
+          <img src={imageSrc} alt={alt} />
         </div>
         <div
           className={`${styles.copy} ${
