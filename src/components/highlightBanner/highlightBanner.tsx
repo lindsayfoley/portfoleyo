@@ -37,8 +37,12 @@ const HighlightBanner = ({
             shouldReverseColumns ? styles.primary : styles.secondary
           }`}
         >
-          {intro && <span>{intro}</span>}
-          {isH1Element ? <h1>{title}</h1> : <h2>{title}</h2>}
+          {intro && <span className={styles.subtitle}>{intro}</span>}
+          {isH1Element ? (
+            <h1 className={styles.title}>{title}</h1>
+          ) : (
+            <h2 className={styles.title}>{title}</h2>
+          )}
           {Array.isArray(description) ? (
             description.map((sentence) => (
               <p key={sentence} className={styles.paragraph}>

@@ -17,9 +17,9 @@ const SectionTitle = ({
         isTitleFirst ? styles.titleTop : styles.titleBottom
       }`}
     >
-      {isTitleFirst && <h2>{title}</h2>}
-      {subtitle && <span>{subtitle}</span>}
-      {!isTitleFirst && <h2>{title}</h2>}
+      {isTitleFirst && <h2 className={styles.title}>{title}</h2>}
+      {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
+      {!isTitleFirst && <h2 className={styles.title}>{title}</h2>}
     </div>
   );
 };

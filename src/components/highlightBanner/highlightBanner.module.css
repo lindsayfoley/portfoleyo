@@ -15,7 +15,7 @@
         padding-top: 10px;
       }
 
-      span, a {
+      .subtitle {
         text-transform: uppercase;
         font-family: "Work Sans", serif;
         font-optical-sizing: auto;
@@ -24,29 +24,18 @@
         font-size: 14px;
       }
 
-      h1, h2, p {
+      .title {
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-style: normal;
-      }
-
-
-      h1, h2 {
         font-size: 40px;
         margin: 0;
       }
 
-      p {
+      .paragraph {
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 20px;
-      }
-
-      a {
-        background: #b1734a;
-        color: #ffffff;
-        padding: 10px 20px;
-        border: 0;
       }
     }
 

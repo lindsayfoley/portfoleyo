@@ -6,7 +6,7 @@
     .images {
       margin: 30px;
 
-      img {
+      .image {
         margin: 0 30px;
         vertical-align: middle;
       }

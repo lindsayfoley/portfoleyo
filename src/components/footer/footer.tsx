@@ -12,7 +12,7 @@ const Footer = () => (
     <div className={styles.columnContainer}>
       <div className={styles.links}>
         <p className={styles.summary}>Building scalable digital experiences</p>
-        <ul className={styles.icons}>
+        <ul className={`${styles.icons} ${styles.list}`}>
           <li>
             <a
               title="View my Github"
@@ -48,7 +48,7 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h5>About</h5>
+        <h5 className={styles.title}>About</h5>
         <p>
           Portfoleyo provides bespoke development services with React,
           TypeScript, and modern frameworks—helping brands build fast, scalable
@@ -57,8 +57,8 @@ const Footer = () => (
         </p>
       </div>
       <div className={styles.pages}>
-        <h5>Browse</h5>
-        <ul>
+        <h5 className={styles.title}>Browse</h5>
+        <ul className={styles.list}>
           <li>
             <Link href="/services">Services</Link>
           </li>
@@ -74,8 +74,8 @@ const Footer = () => (
         </ul>
       </div>
     </div>
-    <hr />
-    <small>
+    <hr className={styles.divider} />
+    <small className={styles.copyright}>
       © {new Date().getFullYear()} Portfoleyo Ltd. All Rights Reserved.
     </small>
   </footer>

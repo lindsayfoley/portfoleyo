@@ -1,5 +1,5 @@
 .container {
-    h2 {
+    .title {
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -9,7 +9,7 @@
         font-size: 18px;
     }
 
-    span {
+    .subtitle {
         display: block;
         font-family: "Work Sans", serif;
         font-optical-sizing: auto;
@@ -21,11 +21,11 @@
 }
 
 .titleBottom {
-    h2 {
+    .title {
         margin: 5px 0 30px 0;
     }
 
-    span {
+    .subtitle {
         margin-bottom: 10px;
     }
 }

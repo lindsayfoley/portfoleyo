@@ -30,7 +30,9 @@ const FeatureTiles = ({
             <div className={styles.copy}>
               <h4 className={styles.title}>{title}</h4>
               <p>{description}</p>
-              <a href={href}>{cta}</a>
+              <a className={styles.link} href={href}>
+                {cta}
+              </a>
             </div>
           </div>
         ))}

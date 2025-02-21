@@ -29,7 +29,12 @@ const Showcase = ({
       />
       <div className={styles.images}>
         {images.map(({ imageSrc, alt }) => (
-          <img key={imageSrc} src={imageSrc} alt={alt} />
+          <img
+            className={styles.image}
+            key={imageSrc}
+            src={imageSrc}
+            alt={alt}
+          />
         ))}
       </div>
       <AnchorButton href={href} cta={cta} />
