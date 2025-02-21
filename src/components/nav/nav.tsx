@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <nav className={styles.container}>
       <div className={`${styles.pages} ${styles.links}`}>
-        <ul>
+        <ul className={styles.linksList}>
           <li className={styles.homeLink}>
             <Link href="/">Home</Link>
           </li>
@@ -21,13 +21,13 @@ const Nav = () => {
           <li>
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li className={styles.last}>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
       <div className={`${styles.icons} ${styles.links}`}>
-        <ul>
+        <ul className={styles.linksList}>
           <li>
             <a
               title="View my LinkedIn profile"

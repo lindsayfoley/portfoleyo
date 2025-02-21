@@ -18,13 +18,13 @@
     justify-content: flex-start;
     padding: 0 15px;
 
-    ul {
+    .linksList {
         display: flex;
         justify-content: center;
         list-style-type: none;
         gap: 28px;
 
-        li:last-of-type {
+        .last {
             padding-right: 15px;
         }
     }
@@ -54,10 +54,10 @@
         display: block;
         padding: 0;
 
-        ul {
+        .linksList {
             gap: 40px;
 
-            li:last-of-type {
+            .last {
                 padding: 0;
             } 
         }
