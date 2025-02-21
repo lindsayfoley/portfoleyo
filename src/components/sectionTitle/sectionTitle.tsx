@@ -4,22 +4,30 @@ export interface SectionTitleProps {
   title: string;
   subtitle?: string;
   isTitleFirst?: boolean;
+  isH1Element?: boolean;
 }
 
 const SectionTitle = ({
   title,
   subtitle,
   isTitleFirst = true,
+  isH1Element = false,
 }: SectionTitleProps) => {
+  const HeadingElement = isH1Element ? "h1" : "h2";
+
   return (
     <div
       className={`${styles.container} ${
         isTitleFirst ? styles.titleTop : styles.titleBottom
       }`}
     >
-      {isTitleFirst && <h2 className={styles.title}>{title}</h2>}
+      {isTitleFirst && (
+        <HeadingElement className={styles.title}>{title}</HeadingElement>
+      )}
       {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
-      {!isTitleFirst && <h2 className={styles.title}>{title}</h2>}
+      {!isTitleFirst && (
+        <HeadingElement className={styles.title}>{title}</HeadingElement>
+      )}
     </div>
   );
 };
