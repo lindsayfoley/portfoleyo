@@ -3,77 +3,46 @@ import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
 import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
+import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfoleyo | Expert Web Development & React Specialist</title>
-        <meta
-          name="description"
-          content="Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results"
-        />
+        <title>{HOMEPAGE_CONTENT.meta.title}</title>
+        <meta name="description" content={HOMEPAGE_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <HighlightBanner
-          imageSrc="https://place-hold.it/400x295/#fffff"
-          alt=""
-          intro="Welcome to"
-          title="The Portfoleyo"
-          description="My new development consultancy, specialising in high-performance, scalable digital solutions. With expertise in React, TypeScript, and modern frameworks, I help brands turn their ideas into reality — whether it’s building something from the ground up, optimising an existing platform, or enhancing an e-commerce experience. Focused on speed, accessibility, and seamless user interactions, I deliver bespoke solutions tailored to your business needs!"
-          cta="About"
-          link="/about"
-          isH1Element
+          imageSrc={HOMEPAGE_CONTENT.highlightBanner.image.src}
+          alt={HOMEPAGE_CONTENT.highlightBanner.image.alt}
+          intro={HOMEPAGE_CONTENT.highlightBanner.intro}
+          title={HOMEPAGE_CONTENT.highlightBanner.title}
+          description={HOMEPAGE_CONTENT.highlightBanner.description}
+          cta={HOMEPAGE_CONTENT.highlightBanner.link.cta}
+          link={HOMEPAGE_CONTENT.highlightBanner.link.href}
+          isH1Element={HOMEPAGE_CONTENT.highlightBanner.isH1Element}
         />
         <FeatureTiles
-          title="Featured services"
-          subtitle="How I Can Help"
-          services={[
-            {
-              imageSrc: "https://place-hold.it/300x200/#fffff",
-              alt: "",
-              title: "Custom Development",
-              description:
-                "Have ambitious plans for a site or app and need someone to bring it to life? I can turn ideas into performant, scalable, and user-friendly digital solutions",
-              href: "/services",
-            },
-            {
-              imageSrc: "https://place-hold.it/300x200/#fffff",
-              alt: "",
-              title: "Performance & SEO Optimisation",
-              description:
-                "A great site needs more than just good looks - it has to be fast, accessible, and SEO-optimised to reach more customers and drive maximum conversions",
-              href: "/services",
-            },
-            {
-              imageSrc: "https://place-hold.it/300x200/#fffff",
-              alt: "",
-              title: "E-Commerce & Shopify Solutions",
-              description:
-                "I can help optimise your e-commerce platform, improving UX, streamlining management, and delivering a fast, conversion-focused storefront",
-              href: "/services",
-            },
-          ]}
+          title={HOMEPAGE_CONTENT.featureTiles.title}
+          subtitle={HOMEPAGE_CONTENT.featureTiles.subtitle}
+          services={HOMEPAGE_CONTENT.featureTiles.services}
         />
         <Banner
-          title="Let’s talk about your project"
-          subtitle="Work With Me"
-          isTitleFirst={false}
-          href="/contact"
-          cta="Contact"
+          title={HOMEPAGE_CONTENT.banner.title}
+          subtitle={HOMEPAGE_CONTENT.banner.subtitle}
+          isTitleFirst={HOMEPAGE_CONTENT.banner.isTitleFirst}
+          href={HOMEPAGE_CONTENT.banner.link.href}
+          cta={HOMEPAGE_CONTENT.banner.link.cta}
         />
         <Showcase
-          title="View my recent work"
-          subtitle="My Portfolio"
-          images={[
-            { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
-            { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
-            { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
-          ]}
-          cta="View more"
-          href="/portfolio"
+          title={HOMEPAGE_CONTENT.showcase.title}
+          subtitle={HOMEPAGE_CONTENT.showcase.subtitle}
+          images={HOMEPAGE_CONTENT.showcase.images}
+          cta={HOMEPAGE_CONTENT.showcase.link.cta}
+          href={HOMEPAGE_CONTENT.showcase.link.href}
         />
       </main>
     </>
