@@ -11,7 +11,7 @@
       text-align: left;
       color: #504742;
 
-      p:first-of-type {
+      .paragraph:first-of-type {
         padding-top: 10px;
       }
 

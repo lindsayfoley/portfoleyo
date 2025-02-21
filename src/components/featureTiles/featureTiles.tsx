@@ -28,7 +28,7 @@ const FeatureTiles = ({
           <div className={styles.service} key={title}>
             <img src={imageSrc} alt={alt} />
             <div className={styles.copy}>
-              <h4>{title}</h4>
+              <h4 className={styles.title}>{title}</h4>
               <p>{description}</p>
               <a href={href}>{cta}</a>
             </div>

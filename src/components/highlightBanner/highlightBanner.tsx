@@ -40,7 +40,11 @@ const HighlightBanner = ({
           {intro && <span>{intro}</span>}
           {isH1Element ? <h1>{title}</h1> : <h2>{title}</h2>}
           {Array.isArray(description) ? (
-            description.map((sentence) => <p key={sentence}>{sentence}</p>)
+            description.map((sentence) => (
+              <p key={sentence} className={styles.paragraph}>
+                {sentence}
+              </p>
+            ))
           ) : (
             <p>{description}</p>
           )}

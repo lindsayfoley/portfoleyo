@@ -21,11 +21,11 @@
       padding: 0 10px;
     }
 
-    h4 {
+    .title {
       font-size: 15px;
     }
 
-    h4:before {
+    .title:before {
       content: '';
       display: block;
       margin: -10px auto 10px auto;
@@ -39,14 +39,14 @@
       line-height: 24px;
     }
 
-    h4, a {
+    .title, a {
       font-family: "Work Sans", serif;
       font-optical-sizing: auto;
       font-style: normal;
       font-weight: normal;
     }
 
-    h4, a {
+    .title, a {
       text-transform: uppercase;
     }
 
