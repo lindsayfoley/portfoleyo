@@ -47,7 +47,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div>
+      <div className={styles.mobileHidden}>
         <h5 className={styles.title}>About</h5>
         <p>
           Portfoleyo provides bespoke development services with React,
@@ -56,7 +56,7 @@ const Footer = () => (
           accessibility, efficiency, and sustainable growth.
         </p>
       </div>
-      <div className={styles.pages}>
+      <div className={`${styles.pages} ${styles.mobileHidden}`}>
         <h5 className={styles.title}>Browse</h5>
         <ul className={styles.list}>
           <li>

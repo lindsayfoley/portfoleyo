@@ -1,5 +1,5 @@
 .container {
-    padding-top: 70px;
+    padding-top: 30px;
     background: #000000;
     color: #afadad;
     font-family: "Playfair Display", serif;
@@ -9,8 +9,8 @@
 
     .columnContainer {
         max-width: 1040px;
+        padding: 0 20px;
         margin: 0 auto;
-        display: flex;
         gap: 120px;
         justify-content: space-between;
     }
@@ -18,10 +18,15 @@
     .links {
         min-width: 230px;
     }
+
+    .mobileHidden {
+        display: none;
+    }
     
     .summary {
+        text-align: center;
         color: #ffffff;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 34px;
         font-family: "Playfair Display", serif;
         font-weight: 400;
@@ -45,7 +50,8 @@
 
     .icons {
         display: flex;
-        margin-top: 32px;
+        justify-content: center;
+        margin-top: 15px;
         gap: 20px;
     }
 
@@ -64,15 +70,47 @@
         height: 1px;
         border: 0;
         border-top: 1px solid #343232;
-        margin: 40px auto 16px auto;
+        margin: 30px auto 15px auto;
     }
 
     .copyright {
         font-family: "Work Sans", serif;
         text-transform: uppercase;
-        padding: 50px 0 20px 0;
+        padding: 20px 0 20px 0;
         font-size: 12px;
         text-align: center;
         display: block;
+    }
+}
+
+@media (min-width: 700px) {
+    .container {
+        padding-top: 70px;
+    }
+
+    .summary {
+        font-size: 25px;
+    }
+
+    .icons {
+        margin-top: 32px;
+    }
+
+    .columnContainer {
+        display: flex;
+        padding: 0;
+    }
+
+    .mobileHidden {
+        display: block;
+    }
+
+
+    .divider {
+        margin: 40px auto 16px auto;
+    }
+
+    .copyright {
+        padding: 50px 0 20px 0;
     }
 }
