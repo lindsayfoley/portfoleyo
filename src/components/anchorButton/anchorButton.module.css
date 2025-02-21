@@ -1,4 +1,5 @@
 .container {
+    display: inline-block;
     text-transform: uppercase;
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;

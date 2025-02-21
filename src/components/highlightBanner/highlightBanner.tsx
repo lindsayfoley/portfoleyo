@@ -30,7 +30,7 @@ const HighlightBanner = ({
         <div
           className={shouldReverseColumns ? styles.secondary : styles.primary}
         >
-          <img src={imageSrc} alt={alt} />
+          <img className={styles.image} src={imageSrc} alt={alt} />
         </div>
         <div
           className={`${styles.copy} ${
