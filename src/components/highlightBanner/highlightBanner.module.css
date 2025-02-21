@@ -4,13 +4,16 @@
 
     .wrapper {
       margin: 0 auto;    
-      max-width: 1040px;
       display: flex;
     }
 
     .copy {
       text-align: left;
       color: #504742;
+
+      p:first-of-type {
+        padding-top: 10px;
+      }
 
       span, a {
         text-transform: uppercase;
@@ -48,11 +51,21 @@
     }
 
     .primary {
+        width: 50%;
         order: 1;
         margin-right: 60px;
     }
 
     .secondary {
+        width: 50%;
         order: 2;
+    }
+
+    .primary.copy {
+      margin-left: 60px;
+    }
+
+    .secondary.copy {
+      margin-right: 60px;
     }
   }

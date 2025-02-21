@@ -6,7 +6,7 @@ interface HighlightBannerProps {
   alt: string;
   intro?: string;
   title: string;
-  description: string;
+  description: string | string[];
   cta?: string;
   link?: string;
   shouldReverseColumns?: boolean;
@@ -39,7 +39,12 @@ const HighlightBanner = ({
         >
           {intro && <span>{intro}</span>}
           {isH1Element ? <h1>{title}</h1> : <h2>{title}</h2>}
-          <p>{description}</p>
+          {Array.isArray(description) ? (
+            description.map((sentence) => <p key={sentence}>{sentence}</p>)
+          ) : (
+            <p>{description}</p>
+          )}
+
           {link && cta && <AnchorButton href={link} cta={cta} />}
         </div>
       </div>

@@ -6,13 +6,15 @@ export const HOMEPAGE_CONTENT = {
   },
   highlightBanner: {
     image: {
-      src: "https://place-hold.it/400x295/#fffff",
+      src: "https://place-hold.it/700x450/#fffff",
       alt: "",
     },
     intro: "Welcome to",
     title: "The Portfoleyo",
-    description:
-      "My new development consultancy, specialising in high-performance, scalable digital solutions. With expertise in React, TypeScript, and modern frameworks, I help brands turn their ideas into reality — whether it’s building something from the ground up, optimising an existing platform, or enhancing an e-commerce experience. Focused on speed, accessibility, and seamless user interactions, I deliver bespoke solutions tailored to your business needs!",
+    description: [
+      "I’m Lindsay, a senior developer with over a decade of experience helping brands build fast, scalable, and high-performing websites. At Portfoleyo, I provide bespoke web development services designed to give businesses the flexibility and expertise they need—without the overheads of a large agency. Whether you need a new site or app, improvements to your existing platform, or ongoing technical support, I’ll work with you to create a solution that fits your goals.",
+      "I take a hands-on, collaborative approach, treating every project as if it were my own. From technical problem-solving to enhancing user experience and site performance, I go beyond just writing code—I ensure your site is built to last, optimised for speed, accessibility, and growth. If you’re looking for a reliable, experienced developer who genuinely cares about your business, let’s chat!",
+    ],
     link: {
       href: "/about",
       cta: "About",
