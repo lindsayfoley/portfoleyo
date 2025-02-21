@@ -12,7 +12,7 @@ export const HOMEPAGE_CONTENT = {
     intro: "Welcome to",
     title: "The Portfoleyo",
     description: [
-      "I’m Lindsay, a senior developer with over a decade of experience helping brands build fast, scalable, and high-performing websites. At Portfoleyo, I provide bespoke web development services designed to give businesses the flexibility and expertise they need—without the overheads of a large agency. Whether you need a new site or app, improvements to your existing platform, or ongoing technical support, I’ll work with you to create a solution that fits your goals.",
+      "I’m Lindsay, a senior developer with over a decade of experience helping brands build fast, scalable, and high-performing sites. At Portfoleyo, I provide bespoke web development services designed to give businesses the flexibility and expertise they need, without the overheads of a agency! Whether you need a new site or app, improvements to an existing platform, or ongoing tech support, I’ll work with you to create a solution that fits your goals.",
       "I take a hands-on, collaborative approach, treating every project as if it were my own. From technical problem-solving to enhancing user experience and site performance, I go beyond just writing code—I ensure your site is built to last, optimised for speed, accessibility, and growth. If you’re looking for a reliable, experienced developer who genuinely cares about your business, let’s chat!",
     ],
     link: {
