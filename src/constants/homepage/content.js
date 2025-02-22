@@ -6,7 +6,7 @@ export const HOMEPAGE_CONTENT = {
   },
   highlightBanner: {
     image: {
-      src: "https://place-hold.it/700x450/#fffff",
+      src: "/laptop-open-site.jpg",
       alt: "",
     },
     intro: "Welcome to",
@@ -26,7 +26,7 @@ export const HOMEPAGE_CONTENT = {
     subtitle: "How I Can Help",
     services: [
       {
-        imageSrc: "/custom-development.jpg",
+        imageSrc: "/laptop-closed-flat.jpg",
         alt: "",
         title: "Custom Development",
         description:
@@ -42,7 +42,7 @@ export const HOMEPAGE_CONTENT = {
         href: "/services",
       },
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
+        imageSrc: "/keyboard-flat-white.jpg",
         alt: "",
         title: "E-Commerce & Shopify Solutions",
         description:
