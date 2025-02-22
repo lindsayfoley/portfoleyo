@@ -26,7 +26,7 @@ export const HOMEPAGE_CONTENT = {
     subtitle: "How I Can Help",
     services: [
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
+        imageSrc: "/custom-development.jpg",
         alt: "",
         title: "Custom Development",
         description:
