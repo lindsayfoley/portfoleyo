@@ -9,13 +9,13 @@
       scroll-snap-type: x mandatory;
       margin: 30px auto 0 auto;
       display: flex;
-      justify-content: flex-start;
     }
 
     .service {
       scroll-snap-align: center;
       margin: 0;
       padding: 0 8%;
+      min-width: 100vw;
     }
 
     .image {
@@ -27,7 +27,7 @@
     }
 
     .title {
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 5px;
     }
 
@@ -51,8 +51,15 @@
       text-transform: uppercase;
     }
 
+    .description {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
     .link {
-      font-size: 13px;
+      display: block;
+      font-size: 14px;
+      margin-top: 10px;
     }
   }
 
@@ -70,5 +77,13 @@
       .service {
         padding: 0;
       }  
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .container {
+      .service {
+        min-width: 33%;
+      }
     }
   }
