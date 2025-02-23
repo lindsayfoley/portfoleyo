@@ -7,7 +7,7 @@
     .serviceWrapper {
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
-      margin: 30px 8% 0 auto;
+      margin: 30px auto 0 auto;
       display: flex;
       -ms-overflow-style: none; 
       scrollbar-width: none;
@@ -19,9 +19,12 @@
 
     .service {
       scroll-snap-align: center;
-      margin: 0;
-      padding: 0 8%;
+      margin-right: 8%;
       width: 85vw;
+    }
+
+    .service:first-of-type {
+      margin-left: 8%;
     }
 
     .image {
@@ -30,7 +33,6 @@
 
     .copy {
       min-width: 300px;
-      padding: 0 10px;
     }
 
     .title {
@@ -82,12 +84,16 @@
       }
   
       .service {
-        padding: 0;
+        margin: 0;
       }  
+
+      .service:first-of-type {
+        margin-left: 0;
+      }
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1110px) {
   .container {
     .service {
       min-width: 33%;
