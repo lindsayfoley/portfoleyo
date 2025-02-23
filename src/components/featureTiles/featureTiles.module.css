@@ -20,7 +20,6 @@
     .service {
       scroll-snap-align: center;
       margin-right: 8%;
-      width: 85vw;
     }
 
     .service:first-of-type {
