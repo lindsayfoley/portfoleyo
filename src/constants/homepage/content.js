@@ -26,7 +26,7 @@ export const HOMEPAGE_CONTENT = {
     subtitle: "How I Can Help",
     services: [
       {
-        imageSrc: "/laptop-closed-flat.jpg",
+        imageSrc: "/code.jpg",
         alt: "",
         title: "Custom Development",
         description:
@@ -34,7 +34,7 @@ export const HOMEPAGE_CONTENT = {
         href: "/services",
       },
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
+        imageSrc: "/keyboard-flat-white.jpg",
         alt: "",
         title: "Performance & SEO Optimisation",
         description:
@@ -42,7 +42,7 @@ export const HOMEPAGE_CONTENT = {
         href: "/services",
       },
       {
-        imageSrc: "/keyboard-flat-white.jpg",
+        imageSrc: "/shopify-dev.jpg",
         alt: "",
         title: "E-Commerce & Shopify Solutions",
         description:
@@ -64,9 +64,9 @@ export const HOMEPAGE_CONTENT = {
     title: "View my recent work",
     subtitle: "My Portfolio",
     images: [
-      { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
-      { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
-      { imageSrc: "https://place-hold.it/300x300/#fffff", alt: "" },
+      { imageSrc: "/lesterrechocolate-recent-work.jpg", alt: "" },
+      { imageSrc: "/the-fabled-thread-recent-work.jpg", alt: "" },
+      { imageSrc: "/the-mews-recent-work.jpg", alt: "" },
     ],
     link: {
       cta: "View more",

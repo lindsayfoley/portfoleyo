@@ -28,9 +28,11 @@ const Showcase = ({
         isTitleFirst={isTitleFirst}
       />
       <div className={styles.images}>
-        {images.map(({ imageSrc, alt }) => (
+        {images.map(({ imageSrc, alt }, index) => (
           <img
-            className={styles.image}
+            className={`${styles.image} ${
+              index === Math.floor(images.length / 2) ? styles.middle : ""
+            }`}
             key={imageSrc}
             src={imageSrc}
             alt={alt}

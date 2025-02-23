@@ -2,11 +2,17 @@
     padding: 30px 0;
     background: #ffffff;
     color: #373636;
+  }
 
-    .image {
-      margin: 15px;
-      vertical-align: middle;
-    }
+  .images {
+    margin-bottom: 30px;
+  }
+
+  .image {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    vertical-align: middle;
   }
 
   @media (min-width: 1200px) {
@@ -15,10 +21,11 @@
     }
 
     .images {
-      margin: 30px;
+      margin: 30px auto;
+    }
 
-      .image {
-        margin: 0 30px;
-      }
+    .middle {
+      max-width: 430px;
+      width: 100%;
     }
   }
