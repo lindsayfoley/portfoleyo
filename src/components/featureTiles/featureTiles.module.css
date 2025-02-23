@@ -7,7 +7,7 @@
     .serviceWrapper {
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
-      margin: 30px auto 0 auto;
+      margin: 30px 100px 0 auto;
       display: flex;
       -ms-overflow-style: none; 
       scrollbar-width: none;
@@ -24,10 +24,6 @@
 
     .service:first-of-type {
       margin-left: 8%;
-    }
-
-    .service:last-of-type {
-      margin-right: 200px;
     }
 
     .image {
@@ -92,10 +88,6 @@
 
       .service:first-of-type {
         margin-left: 0;
-      }
-
-      .service:last-of-type {
-        margin-right: 0;
       }
   }
 }
