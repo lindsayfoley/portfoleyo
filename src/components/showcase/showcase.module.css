@@ -5,7 +5,7 @@
 }
 
 .images {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .link {
@@ -25,6 +25,10 @@
   .link {
     display: inline-block;
   }
+
+  .images {
+    margin-bottom: 30px;
+  }
   
   .image {
     max-width: 380px;
@@ -38,7 +42,7 @@
     padding: 70px 0;
   }
 
-  .images {
+ .images {    
     display: flex;
     justify-content: center;
     align-items: center;
