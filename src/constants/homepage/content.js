@@ -64,9 +64,24 @@ export const HOMEPAGE_CONTENT = {
     title: "View my recent work",
     subtitle: "My Portfolio",
     images: [
-      { imageSrc: "/lesterrechocolate-recent-work.jpg", alt: "" },
-      { imageSrc: "/the-fabled-thread-recent-work.jpg", alt: "" },
-      { imageSrc: "/the-mews-recent-work.jpg", alt: "" },
+      {
+        imageSrc: "/lesterrechocolate-recent-work.jpg",
+        alt: "",
+        href: "/portfolio",
+      },
+      {
+        imageSrc: "/the-fabled-thread-recent-work.jpg",
+        alt: "",
+        deviceConstraint: "desktop",
+        href: "/portfolio",
+      },
+      {
+        imageSrc: "/the-fabled-thread-recent-work-mobile.jpg",
+        alt: "",
+        deviceConstraint: "mobile",
+        href: "/portfolio",
+      },
+      { imageSrc: "/the-mews-recent-work.jpg", alt: "", href: "/portfolio" },
     ],
     link: {
       cta: "View more",
