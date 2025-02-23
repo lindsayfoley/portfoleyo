@@ -20,11 +20,14 @@
     .service {
       scroll-snap-align: center;
       margin-right: 8%;
-      scroll-padding-right: 8%;
     }
 
     .service:first-of-type {
       margin-left: 8%;
+    }
+
+    .service:last-of-type {
+      margin-right: 200px;
     }
 
     .image {
@@ -89,6 +92,10 @@
 
       .service:first-of-type {
         margin-left: 0;
+      }
+
+      .service:last-of-type {
+        margin-right: 0;
       }
   }
 }
