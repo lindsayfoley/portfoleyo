@@ -15,7 +15,7 @@ interface ShowcaseProps extends TitleAndButtonProps {
   images: {
     imageSrc: string;
     alt: string;
-    deviceConstraint: DeviceKeys;
+    deviceConstraint?: DeviceKeys;
     href: string;
   }[];
 }
@@ -29,9 +29,9 @@ const Showcase = ({
   cta,
 }: ShowcaseProps) => {
   const mobileOnlyImage = (deviceKey?: DeviceKeys) =>
-    deviceKey === device.mobile;
+    deviceKey && deviceKey === device.mobile;
   const desktopOnlyImage = (deviceKey?: DeviceKeys) =>
-    deviceKey === device.desktop;
+    deviceKey && deviceKey === device.desktop;
 
   return (
     <div className={styles.container}>
