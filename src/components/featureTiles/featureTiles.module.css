@@ -7,7 +7,8 @@
     .serviceWrapper {
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
-      margin: 30px 100px 0 auto;
+      margin: 30px auto 0 auto;
+      padding-right: 100px;
       display: flex;
       -ms-overflow-style: none; 
       scrollbar-width: none;
