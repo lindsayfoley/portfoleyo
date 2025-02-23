@@ -9,6 +9,12 @@
       scroll-snap-type: x mandatory;
       margin: 30px auto 0 auto;
       display: flex;
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+    }
+
+    .serviceWrapper::-webkit-scrollbar {
+      display: none;
     }
 
     .service {

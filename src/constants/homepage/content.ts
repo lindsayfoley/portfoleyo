@@ -1,3 +1,5 @@
+import { device } from "@portfoleyo/components/showcase/showcase";
+
 export const HOMEPAGE_CONTENT = {
   meta: {
     title: "Portfoleyo | Expert Web Development & React Specialist",
@@ -72,13 +74,13 @@ export const HOMEPAGE_CONTENT = {
       {
         imageSrc: "/the-fabled-thread-recent-work.jpg",
         alt: "",
-        deviceConstraint: "desktop",
+        deviceConstraint: device.desktop,
         href: "/portfolio",
       },
       {
         imageSrc: "/the-fabled-thread-recent-work-mobile.jpg",
         alt: "",
-        deviceConstraint: "mobile",
+        deviceConstraint: device.mobile,
         href: "/portfolio",
       },
       { imageSrc: "/the-mews-recent-work.jpg", alt: "", href: "/portfolio" },
