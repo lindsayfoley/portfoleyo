@@ -19,7 +19,7 @@ const LINKS = {
   },
   servicesLink: {
     cta: "Services",
-    href: "work#services",
+    href: "work",
   },
   portfolioLink: {
     cta: "Portfolio",
