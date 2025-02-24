@@ -17,16 +17,16 @@
     display: flex;
     justify-content: flex-start;
     margin: 0 15px;
+}
 
-    .linksList {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        gap: 28px;
+.linksList {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 28px;
 
-        .last {
-            padding-right: 15px;
-        }
+    .last {
+        padding-right: 15px;
     }
 }
 
@@ -49,23 +49,26 @@
     .links {
         display: block;
         padding: 0;
-
-        .linksList {
-            gap: 40px;
-
-            .last {
-                padding: 0;
-            } 
-        }
     }
-    
-    .icons {
-        width: 40%;
+
+    .linksList {
+        width: 50%;
+        justify-content: flex-start;
+        gap: 40px;
+
+        .last {
+            padding: 0;
+        } 
     }
 }
 
 @media (min-width: 1000px) {
-    .pages {
-        width: 60%;
+    .links {
+        width: 50%;
+        justify-items: center;
+    }
+
+    .linksList {
+        justify-content: center;
     }
 }
