@@ -44,6 +44,7 @@ const Showcase = ({
         {images.map(({ imageSrc, alt, deviceConstraint, href }) => (
           <a className={styles.link} key={imageSrc} href={href}>
             <img
+              loading="lazy"
               className={`${styles.image} ${
                 mobileOnlyImage(deviceConstraint) ? styles.mobileOnly : ""
               } ${
