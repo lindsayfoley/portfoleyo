@@ -60,16 +60,16 @@ const Footer = () => (
         <h5 className={styles.title}>Browse</h5>
         <ul className={styles.list}>
           <li>
-            <Link href="/services">Services</Link>
+            <Link href="/work#services">Services</Link>
           </li>
           <li>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/work#portfolio">Portfolio</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/about#contact">Contact</Link>
           </li>
         </ul>
       </div>

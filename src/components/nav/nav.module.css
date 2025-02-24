@@ -16,7 +16,7 @@
     scroll-snap-align: center;
     display: flex;
     justify-content: flex-start;
-    padding: 0 15px;
+    margin: 0 15px;
 
     .linksList {
         display: flex;
@@ -28,10 +28,6 @@
             padding-right: 15px;
         }
     }
-}
-
-.homeLink {
-    display: none;
 }
 
 .pages {
@@ -61,10 +57,6 @@
                 padding: 0;
             } 
         }
-    }
-
-    .homeLink {
-        display: block;
     }
     
     .icons {

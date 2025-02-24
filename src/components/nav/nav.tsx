@@ -9,20 +9,17 @@ const Nav = () => {
     <nav className={styles.container}>
       <div className={`${styles.pages} ${styles.links}`}>
         <ul className={styles.linksList}>
-          <li className={styles.homeLink}>
+          <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
+            <Link href="/work#services">Services</Link>
           </li>
           <li>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/work#portfolio">Portfolio</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
-          </li>
-          <li className={styles.last}>
-            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
