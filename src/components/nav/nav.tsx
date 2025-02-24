@@ -1,53 +1,30 @@
 import Link from "next/link";
 import styles from "./nav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { NAV_CONTENT } from "../../constants/nav/nav";
 
 const Nav = () => {
   return (
     <nav className={styles.container}>
       <div className={`${styles.pages} ${styles.links}`}>
         <ul className={styles.linksList}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/work#services">Services</Link>
-          </li>
-          <li>
-            <Link href="/work#portfolio">Portfolio</Link>
-          </li>
+          {NAV_CONTENT.links.map(({ href, cta }) => (
+            <li key={cta}>
+              <Link href={href}>{cta}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className={`${styles.icons} ${styles.links}`}>
         <ul className={styles.linksList}>
-          <li>
-            <a
-              title="View my LinkedIn profile"
-              href="https://www.linkedin.com/in/lindsay-foley-9a193534/"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </a>
-          </li>
-          <li>
-            <a
-              title="View my Github"
-              href="https://github.com/lindsayfoley"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-          </li>
-          <li>
-            <a title="Send me an email" href="mailto:hello@theportfoleyo.com">
-              <FontAwesomeIcon icon={faSquareEnvelope} size="lg" />
-            </a>
-          </li>
+          {NAV_CONTENT.icons.map(({ title, href, target, icon }) => (
+            <li key={title}>
+              <a title={title} href={href} target={target}>
+                <FontAwesomeIcon icon={icon as IconDefinition} size="lg" />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
