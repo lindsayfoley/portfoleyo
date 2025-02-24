@@ -26,12 +26,7 @@ const FeatureTiles = ({
       <div className={styles.serviceWrapper}>
         {services.map(({ imageSrc, alt, title, description, href }) => (
           <div className={styles.service} key={title}>
-            <img
-              loading="lazy"
-              className={styles.image}
-              src={imageSrc}
-              alt={alt}
-            />
+            <img className={styles.image} src={imageSrc} alt={alt} />
             <div className={styles.copy}>
               <h4 className={styles.title}>{title}</h4>
               <p className={styles.description}>{description}</p>
