@@ -4,28 +4,46 @@ import {
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 
+const LINKS = {
+  homeLink: {
+    cta: "Home",
+    href: "/",
+  },
+  aboutLink: {
+    cta: "About",
+    href: "about",
+  },
+  workLink: {
+    cta: "Work",
+    href: "work",
+  },
+  servicesLink: {
+    cta: "Services",
+    href: "work#services",
+  },
+  portfolioLink: {
+    cta: "Portfolio",
+    href: "work#portfolio",
+  },
+  contactLink: {
+    cta: "Contact",
+    href: "about#contact",
+  },
+};
+
 export const NAV_CONTENT = {
-  links: [
-    {
-      cta: "Home",
-      href: "/",
-    },
-    {
-      cta: "About",
-      href: "/about",
-    },
-    {
-      cta: "Services",
-      href: "/work",
-    },
-    {
-      cta: "Portfolio",
-      href: "/work#portfolio",
-    },
-    {
-      cta: "Contact",
-      href: "/about#contact",
-    },
+  headerNavContent: [
+    LINKS.homeLink,
+    LINKS.aboutLink,
+    LINKS.workLink,
+    LINKS.contactLink,
+  ],
+  footerNavContent: [
+    LINKS.homeLink,
+    LINKS.aboutLink,
+    LINKS.servicesLink,
+    LINKS.portfolioLink,
+    LINKS.contactLink,
   ],
   icons: [
     {

@@ -27,7 +27,7 @@ const Footer = () => (
       <div className={`${styles.pages} ${styles.mobileHidden}`}>
         <h5 className={styles.title}>{FOOTER_CONTENT.browse.title}</h5>
         <ul className={styles.list}>
-          {NAV_CONTENT.links.map(({ href, cta }) => (
+          {NAV_CONTENT.footerNavContent.map(({ href, cta }) => (
             <li key={cta}>
               <Link href={href}>{cta}</Link>
             </li>

@@ -9,7 +9,7 @@ const Nav = () => {
     <nav className={styles.container}>
       <div className={`${styles.pages} ${styles.links}`}>
         <ul className={styles.linksList}>
-          {NAV_CONTENT.links.map(({ href, cta }) => (
+          {NAV_CONTENT.headerNavContent.map(({ href, cta }) => (
             <li key={cta}>
               <Link href={href}>{cta}</Link>
             </li>
