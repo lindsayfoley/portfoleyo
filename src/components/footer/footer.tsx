@@ -50,23 +50,27 @@ const Footer = () => (
       <div className={styles.mobileHidden}>
         <h5 className={styles.title}>About</h5>
         <p>
-          Portfoleyo provides bespoke development services with React,
-          TypeScript, and modern frameworks—helping brands build fast, scalable
-          digital products that are tailored to their unique needs, prioritising
-          accessibility, efficiency, and sustainable growth.
+          At Portfoleyo, I help brands bring their ideas to life with modern,
+          accessible, and high-performance web development. Whether it’s
+          improving an existing site or building something new from scratch, I
+          focus on clean, efficient code and thoughtful design—ensuring
+          everything runs smoothly and feels great to use.
         </p>
       </div>
       <div className={`${styles.pages} ${styles.mobileHidden}`}>
         <h5 className={styles.title}>Browse</h5>
         <ul className={styles.list}>
           <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
             <Link href="/work#services">Services</Link>
           </li>
           <li>
             <Link href="/work#portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="/about#contact">Contact</Link>
