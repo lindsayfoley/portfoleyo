@@ -11,11 +11,11 @@ export const WORK_CONTENT = {
   },
   twoColumn: {
     image: {
-      src: "https://place-hold.it/400x240/#fffff",
+      src: "https://place-hold.it/400x300/#fffff",
       alt: "",
     },
     paragraphs: [
-      "Helping brands grow online is what I’m passionate about—whether it’s creating something brand new or improving what's already there.",
+      "I partner with businesses of all sizes to create digital solutions that genuinely deliver results. My work spans from creating entirely new websites (like this one!) and applications to optimising existing platforms for better user experience.",
       "Below you'll find details about the services I offer and examples of recent projects I've worked on. If you see something you like or have any questions at all, please feel free to get in touch—I’d love to hear from you!",
     ],
   },

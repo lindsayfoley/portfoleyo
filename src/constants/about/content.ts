@@ -15,8 +15,8 @@ export const ABOUT_CONTENT = {
       alt: "",
     },
     paragraphs: [
-      "My passion lies in helping brands succeed online—whether it's launching something completely new or enhancing what's already in place. I offer personalised, approachable, and flexible development support, designed specifically around the needs of each business.",
-      "Over the past decade, I've had the pleasure of working with renowned brands such as Selfridges, Disney, Charlotte Tilbury, and BT. I specialise in building sites that perform beautifully, prioritising clean, maintainable code and accessible, user-friendly designs. If you'd like to discuss your project or learn more about how we could work together, please get in touch.",
+      "My journey in web development began in 2011, driven by a genuine passion for helping businesses thrive online. At The Portfoleyo, my mission is to offer approachable, tailored development support that aligns with each client's unique needs. I love collaborating closely with businesses, understanding their goals, and providing thoughtful solutions to enhance their online presence.",
+      "I've been fortunate to collaborate with respected brands like Selfridges, Disney, Charlotte Tilbury, and BT, refining and building platforms that are intuitive, accessible, and highly performant. If you'd like to learn more about my approach or discuss how we could work together, please reach out—I'd love to connect!",
     ],
   },
 };
