@@ -53,7 +53,11 @@ const HighlightBanner = ({
             <p>{description}</p>
           )}
 
-          {link && cta && <AnchorButton href={link} cta={cta} />}
+          {link && cta && (
+            <span className={styles.button}>
+              <AnchorButton href={link} cta={cta} />
+            </span>
+          )}
         </div>
       </div>
     </div>
