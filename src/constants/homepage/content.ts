@@ -32,7 +32,7 @@ export const HOMEPAGE_CONTENT = {
         alt: "",
         title: "Custom Development",
         description:
-          "Have ambitious plans for a site or app and need someone to bring it to life? I can turn ideas into performant, scalable, and user-friendly digital solutions",
+          "Have ambitious plans for a site or app and need someone to bring it to life? I help turn ideas into performant, scalable and user-friendly solutions",
         href: "/services",
       },
       {
