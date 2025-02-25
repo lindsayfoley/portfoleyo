@@ -68,10 +68,15 @@
 @media (min-width: 1000px) {
     .links {
         width: 50%;
-        margin: 0;
     }
 
     .links:last-of-type {
         justify-items: end;
+    }
+}
+
+@media (min-width: 1200px) {
+    .links {
+        margin: 0;
     }
 }
