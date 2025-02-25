@@ -2,7 +2,7 @@ import { device } from "@portfoleyo/components/showcase/showcase";
 
 export const HOMEPAGE_CONTENT = {
   meta: {
-    title: "Portfoleyo | Expert Web Development & React Specialist",
+    title: "The Portfoleyo | Expert Web Development & React Specialist",
     description:
       "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
   },

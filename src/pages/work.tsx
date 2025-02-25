@@ -20,7 +20,7 @@ export default function Work() {
           />
         </div>
 
-        {/* <h1>About Portfoleyo</h1>
+        {/*
         <p>
           I’m Lindsay, a senior developer with over 13 years of experience
           building and optimising websites for growing brands. I’ve worked with
