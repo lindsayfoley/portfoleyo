@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { WORK_CONTENT } from "../constants/work/content";
 import SectionTitle from "@portfoleyo/components/sectionTitle/sectionTitle";
-import styles from "../styles/about.module.css";
+import styles from "../styles/work.module.css";
 
 export default function Work() {
   return (

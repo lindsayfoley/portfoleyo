@@ -13,11 +13,13 @@ export default function About() {
       </Head>
       <main>
         <div className={styles.intro}>
-          <SectionTitle
-            title={ABOUT_CONTENT.sectionTitle.title}
-            subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
-            isH1Element={ABOUT_CONTENT.sectionTitle.isH1Element}
-          />
+          <div>
+            <SectionTitle
+              title={ABOUT_CONTENT.sectionTitle.title}
+              subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
+              isH1Element={ABOUT_CONTENT.sectionTitle.isH1Element}
+            />
+          </div>
         </div>
 
         {/* 
