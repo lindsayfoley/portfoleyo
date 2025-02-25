@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ABOUT_CONTENT } from "../constants/about/content";
 import SectionTitle from "@portfoleyo/components/sectionTitle/sectionTitle";
 import styles from "../styles/about.module.css";
+import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
 
 export default function About() {
   return (
@@ -13,29 +14,7 @@ export default function About() {
       </Head>
       <main>
         <div className={styles.intro}>
-          <div className={styles.container}>
-            <div className={styles.copy}>
-              <SectionTitle
-                title={ABOUT_CONTENT.sectionTitle.title}
-                subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
-                isH1Element={ABOUT_CONTENT.sectionTitle.isH1Element}
-              />
-              <div className={styles.paragraphSection}>
-                {ABOUT_CONTENT.twoColumn.paragraphs.map((paragraph) => (
-                  <p className={styles.paragraph} key={paragraph}>
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className={styles.imageContainer}>
-              <img
-                className={styles.primaryImage}
-                src={ABOUT_CONTENT.twoColumn.image.src}
-                alt={ABOUT_CONTENT.twoColumn.image.alt}
-              />
-            </div>
-          </div>
+          <TwoColumnLayout />
         </div>
 
         {/* 
