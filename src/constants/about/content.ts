@@ -1,8 +1,8 @@
 export const ABOUT_CONTENT = {
   meta: {
-    title: "About Portfoleyo | Web Development & Digital Solutions",
+    title: "About & Contact | Portfoleyo Development & Digital Solutions",
     description:
-      "Discover Portfoleyo's expertise in web development, SEO, and scalable digital solutions. Over a decade of experience helping brands build high performing sites",
+      "About my expertise in web development and how I help brands build high-performing sites. Get in touch to discuss your project and see how we can work together",
   },
   sectionTitle: {
     title: "About Portfoleyo",
