@@ -1,90 +1,89 @@
 .container {
     background: #faf1ec;
+}
 
-    .wrapper {
-      margin: 0 auto;    
-    }
+.wrapper {
+  margin: 0 auto;    
+}
 
-    .copy {
-      padding: 30px 20px;
-      text-align: left;
-      color: #504742;
+.copy {
+  padding: 30px 20px;
+  text-align: left;
+  color: #504742;
 
-      .paragraph:first-of-type {
-        padding-top: 10px;
-      }
-
-      .subtitle {
-        text-transform: uppercase;
-        font-family: "Work Sans", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-      }
-
-      .title {
-        font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-size: 40px;
-        margin: 0;
-      }
-
-      .paragraph {
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 20px;
-      }
-    }
-
-    .primary {
-        order: 1;
-    }
-
-    .secondary {
-        order: 2;
-    }
-
-    .image {
-      max-width: 100%;
-    }
+  .paragraph:first-of-type {
+    padding-top: 10px;
   }
 
-  @media (min-width: 700px) {
-    .container {
-      padding: 30px 0;
-    }
+  .subtitle {
+    text-transform: uppercase;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
   }
 
-  @media (min-width: 1000px) {
-    .container {
-      padding: 70px 0;
-
-      .wrapper {
-        display: flex;
-      }
-  
-      .copy {
-        padding: 0;
-      }
-  
-      .primary {
-        width: 50%;
-        padding-top: 0;
-        margin-right: 60px;
-      }
-  
-      .secondary {
-        width: 50%;
-      }
-  
-      .primary.copy {
-        margin-left: 60px;
-      }
-  
-      .secondary.copy {
-        margin-right: 60px;
-      }
-    }
+  .title {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0;
   }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+.primary {
+    order: 1;
+}
+
+.secondary {
+    order: 2;
+}
+
+.image {
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .container {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding: 70px 0;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .copy {
+    padding: 0;
+  }
+
+  .primary,  .secondary {
+    width: 50%;
+  }
+
+  .primary {
+    padding-top: 0;
+    margin-right: 60px;
+  }
+
+  .primary.copy {
+    margin-left: 60px;
+  }
+
+  .secondary.copy {
+    margin-right: 60px;
+  }
+}

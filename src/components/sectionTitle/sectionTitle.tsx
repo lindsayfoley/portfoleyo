@@ -18,7 +18,7 @@ const SectionTitle = ({
   return (
     <div
       className={`${styles.container} ${
-        isTitleFirst ? styles.titleTop : styles.titleBottom
+        !isTitleFirst ? styles.titleBottom : ""
       }`}
     >
       {isTitleFirst && (

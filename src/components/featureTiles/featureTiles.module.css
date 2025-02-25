@@ -1,103 +1,108 @@
   .container {
-    max-width: 1040px;
+    max-width: 1225px;
     margin: 40px auto;
     font-style: normal;
     color: #373636;
+}
 
-    .serviceWrapper {
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      margin: 30px auto 0 auto;
-      padding-right: 8%;
-      display: flex;
-      -ms-overflow-style: none; 
-      scrollbar-width: none;
-    }
 
-    .serviceWrapper::-webkit-scrollbar {
-      display: none;
-    }
+.serviceWrapper {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin: 30px auto 0 auto;
+  padding-right: 8%;
+  display: flex;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
 
-    .service {
-      scroll-snap-align: center;
-      margin-right: 8%;
-    }
+.serviceWrapper::-webkit-scrollbar {
+  display: none;
+}
 
-    .service:first-of-type {
-      margin-left: 8%;
-    }
+.service {
+  scroll-snap-align: center;
+  margin-right: 8%;
+}
 
-    .image {
-      max-width: 300px;
-    }
+.service:first-of-type {
+  margin-left: 8%;
+}
 
-    .copy {
-      min-width: 300px;
-    }
+.image {
+  max-width: 300px;
+}
 
-    .title {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
+.copy {
+  min-width: 300px;
+}
 
-    .title:before {
-      content: '';
-      display: block;
-      margin: -10px auto 10px auto;
-      width: 1px;
-      height: 40px;
-      background: #d0c6c0;
-    }
+.title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
 
-    .title, .link {
-      font-family: "Work Sans", serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      font-weight: normal;
-    }
+.title:before {
+  content: '';
+  display: block;
+  margin: -10px auto 10px auto;
+  width: 1px;
+  height: 40px;
+  background: #d0c6c0;
+}
 
-    .title, .link {
-      text-transform: uppercase;
-    }
+.title, .link {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+}
 
-    .description {
-      max-width: 400px;
-      margin: 0 auto;
-    }
+.title, .link {
+  text-transform: uppercase;
+}
 
-    .link {
-      display: block;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-  }
+.description {
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  @media (min-width: 1050px) {
-    .container {
-      margin: 70px auto;
+.link {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
 
-      .serviceWrapper {
-        gap: 70px;
-        overflow-x: visible;
-        margin: 30px 20px 0 20px;
-        justify-content: center;
-        padding-right: 0;
-      }
-  
-      .service {
-        margin: 0;
-      }  
 
-      .service:first-of-type {
-        margin-left: 0;
-      }
+@media (min-width: 700px) {
+  .service:first-of-type {
+    margin-left: 3%;
   }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 950px) {
+  .service:first-of-type {
+    margin-left: 2%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .serviceWrapper {
+    padding-right: 0;
+  }
+
+  .service:first-of-type, .service {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1050px) {
   .container {
-    .service {
-      min-width: 33%;
-    }
+    margin: 70px auto;
+  }
+
+  .serviceWrapper {
+    gap: 70px;
   }
 }
