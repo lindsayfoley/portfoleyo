@@ -1,15 +1,19 @@
 .container {
-    display: flex;
-    overflow-x: scroll;
-    height: 50px;
     background: #ffffff;
-    align-items: center;
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     box-shadow: 0 1px #f4f3f1;
+}
+
+.contentWrapper {
+    max-width: 1100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .links {
@@ -64,10 +68,9 @@
 @media (min-width: 1000px) {
     .links {
         width: 50%;
-        justify-items: center;
     }
 
-    .linksList {
-        justify-content: center;
+    .links:last-of-type {
+        justify-items: end;
     }
 }
