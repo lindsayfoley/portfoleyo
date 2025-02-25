@@ -1,30 +1,52 @@
-import { ABOUT_CONTENT } from "@portfoleyo/constants/about/content";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./twoColumnLayout.module.css";
 
-const TwoColumnLayout = () => {
+interface TwoColumnLayoutProps {
+  title: string;
+  subtitle?: string;
+  isH1Element?: boolean;
+  paragraphs: string[];
+  image: {
+    src: string;
+    alt: string;
+  };
+  shouldReverseColumns?: boolean;
+}
+
+const TwoColumnLayout = ({
+  title,
+  subtitle,
+  isH1Element,
+  paragraphs,
+  image,
+  shouldReverseColumns = false,
+}: TwoColumnLayoutProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.copy}>
+      <div
+        className={`${styles.copy} ${
+          shouldReverseColumns ? styles.secondary : ""
+        }`}
+      >
         <SectionTitle
-          title={ABOUT_CONTENT.sectionTitle.title}
-          subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
-          isH1Element={ABOUT_CONTENT.sectionTitle.isH1Element}
+          title={title}
+          subtitle={subtitle}
+          isH1Element={isH1Element}
         />
         <div className={styles.paragraphSection}>
-          {ABOUT_CONTENT.twoColumn.paragraphs.map((paragraph) => (
+          {paragraphs.map((paragraph) => (
             <p className={styles.paragraph} key={paragraph}>
               {paragraph}
             </p>
           ))}
         </div>
       </div>
-      <div className={styles.imageContainer}>
-        <img
-          className={styles.image}
-          src={ABOUT_CONTENT.twoColumn.image.src}
-          alt={ABOUT_CONTENT.twoColumn.image.alt}
-        />
+      <div
+        className={`${styles.imageContainer} ${
+          !shouldReverseColumns ? styles.secondary : ""
+        }`}
+      >
+        <img className={styles.image} src={image.src} alt={image.alt} />
       </div>
     </div>
   );
