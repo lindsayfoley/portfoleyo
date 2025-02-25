@@ -15,8 +15,8 @@ export const ABOUT_CONTENT = {
       alt: "",
     },
     paragraphs: [
-      "Hi, I’m Lindsay Foley, founder of The Portfoleyo. As the sole force behind the business, I help small and medium-sized brands strengthen their online presence—without the overhead of an agency. My goal is to offer expert development support that’s flexible, approachable, and tailored to each business’s unique needs.",
-      "With over a decade of experience in web development, I’ve worked with brands like Selfridges, Disney Charlotte Tilbury, and BT, refining sites for performance, accessibility, and scalability. From optimising existing platforms to building custom solutions, I focus on writing clean, efficient code that delivers seamless user experiences and long-term growth.",
+      "My passion lies in helping brands succeed online—whether it's launching something completely new or enhancing what's already in place. I offer personalised, approachable, and flexible development support, designed specifically around the needs of each business.",
+      "Over the past decade, I've had the pleasure of working with renowned brands such as Selfridges, Disney, Charlotte Tilbury, and BT. I specialise in building sites that perform beautifully, prioritising clean, maintainable code and accessible, user-friendly designs. If you'd like to discuss your project or learn more about how we could work together, please get in touch.",
     ],
   },
 };

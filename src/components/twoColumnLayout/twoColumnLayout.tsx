@@ -11,6 +11,7 @@ interface TwoColumnLayoutProps {
     alt: string;
   };
   shouldReverseColumns?: boolean;
+  useSalmonBackground?: boolean;
 }
 
 const TwoColumnLayout = ({
@@ -20,35 +21,40 @@ const TwoColumnLayout = ({
   paragraphs,
   image,
   shouldReverseColumns = false,
+  useSalmonBackground = false,
 }: TwoColumnLayoutProps) => {
   return (
-    <div className={styles.container}>
-      <div
-        className={`${styles.copy} ${
-          shouldReverseColumns ? styles.secondary : ""
-        }`}
-      >
-        <SectionTitle
-          title={title}
-          subtitle={subtitle}
-          isH1Element={isH1Element}
-        />
-        <div className={styles.paragraphSection}>
-          {paragraphs.map((paragraph) => (
-            <p className={styles.paragraph} key={paragraph}>
-              {paragraph}
-            </p>
-          ))}
+    <section
+      className={`${useSalmonBackground ? styles.salmonBackground : ""}`}
+    >
+      <div className={styles.container}>
+        <div
+          className={`${styles.copy} ${
+            shouldReverseColumns ? styles.secondary : ""
+          }`}
+        >
+          <SectionTitle
+            title={title}
+            subtitle={subtitle}
+            isH1Element={isH1Element}
+          />
+          <div className={styles.paragraphSection}>
+            {paragraphs.map((paragraph) => (
+              <p className={styles.paragraph} key={paragraph}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div
+          className={`${styles.imageContainer} ${
+            !shouldReverseColumns ? styles.secondary : ""
+          }`}
+        >
+          <img className={styles.image} src={image.src} alt={image.alt} />
         </div>
       </div>
-      <div
-        className={`${styles.imageContainer} ${
-          !shouldReverseColumns ? styles.secondary : ""
-        }`}
-      >
-        <img className={styles.image} src={image.src} alt={image.alt} />
-      </div>
-    </div>
+    </section>
   );
 };
 

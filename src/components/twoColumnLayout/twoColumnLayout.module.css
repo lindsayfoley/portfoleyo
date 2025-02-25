@@ -5,6 +5,10 @@
     padding: 30px 20px;
 }
 
+.salmonBackground {
+    background: #faf1ec;
+}
+
 .secondary {
     order: 2;
     margin-top: 20px;

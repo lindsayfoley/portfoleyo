@@ -19,7 +19,6 @@ export default function About() {
             isH1Element={ABOUT_CONTENT.sectionTitle.isH1Element}
             paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
             image={ABOUT_CONTENT.twoColumn.image}
-            shouldReverseColumns
           />
         </div>
 
