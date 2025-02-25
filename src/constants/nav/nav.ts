@@ -39,7 +39,6 @@ export const NAV_CONTENT = {
     LINKS.contactLink,
   ],
   footerNavContent: [
-    LINKS.homeLink,
     LINKS.aboutLink,
     LINKS.servicesLink,
     LINKS.portfolioLink,
