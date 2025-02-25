@@ -15,8 +15,7 @@
 .links {
     scroll-snap-align: center;
     display: flex;
-    justify-content: flex-start;
-    margin: 0 15px;
+    justify-content: center;
 }
 
 .linksList {
@@ -40,8 +39,8 @@
 }
 
 @media (min-width: 375px) {
-    .links {
-        justify-content: center
+    .linksList  {
+        gap: 50px;
     }
 }
 
@@ -49,12 +48,12 @@
     .links {
         display: block;
         padding: 0;
+        margin: 0 15px;
     }
 
     .linksList {
         width: 50%;
         justify-content: flex-start;
-        gap: 40px;
 
         .last {
             padding: 0;
