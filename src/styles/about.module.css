@@ -1,3 +1,44 @@
 .intro {
     padding: 70px 0;
 }
+
+/* 2 col */
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.copy {
+    width: 55%;
+    text-align: left;
+}
+
+.paragraphSection:before {
+    content: '';
+    width: 155px;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid black;
+}
+
+.paragraphSection {
+    padding-top: 10px;
+}
+
+.paragraph:first-of-type {
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.imageContainer {
+    width: 45%;
+    justify-content: center;
+}
