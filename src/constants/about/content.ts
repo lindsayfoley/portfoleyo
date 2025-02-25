@@ -6,7 +6,7 @@ export const ABOUT_CONTENT = {
   },
   sectionTitle: {
     title: "About The Portfoleyo",
-    subtitle: "A decade of digital expertise",
+    subtitle: "My background & ways to connect",
     isH1Element: true,
   },
 };

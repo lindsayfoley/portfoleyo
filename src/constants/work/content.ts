@@ -5,8 +5,8 @@ export const WORK_CONTENT = {
       "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my work + services",
   },
   sectionTitle: {
-    title: "The Portfoleyo Projects",
-    subtitle: "Web solutions that deliver",
+    title: "Projects at The Portfoleyo",
+    subtitle: "Development services & past projects",
     isH1Element: true,
   },
 };
