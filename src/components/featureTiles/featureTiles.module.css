@@ -1,14 +1,25 @@
 .container {
+  position: relative;
   padding: 40px 0 10px 0;
   max-width: 1225px;
   font-style: normal;
   color: var(--darkest-grey);
 }
 
+.serviceWrapper:before {
+  content: '→';
+  position: absolute;
+  top: 50px;
+  right: 15%;
+  font-size: 30px;
+  color: var(--dark-grey);
+  opacity: 0.75;
+}
+
 .serviceWrapper {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  margin: 30px auto 0 auto;
+  margin: 30px auto;
   padding-right: 8%;
   display: flex;
   -ms-overflow-style: none; 
@@ -89,6 +100,10 @@
 
 
 @media (min-width: 1024px) {
+  .serviceWrapper:before {
+    display: none;
+  }
+  
   .serviceWrapper {
     padding-right: 0;
   }
