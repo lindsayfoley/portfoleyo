@@ -46,14 +46,14 @@ export const ABOUT_CONTENT = {
         Icon: Development,
         title: "Disney’s Mobile Holiday Platform",
         description:
-          "Co-led development of a fully mobile-responsive site for Disney’s UK holiday platform, ensuring a seamless user experience across all devices",
+          "Co-led the development of a fully mobile-responsive site for all Disney’s UK holiday platforms, ensuring a seamless user experience across all devices",
       },
       {
         Icon: Growth,
         alt: "",
         title: "Scaling The Portfoleyo",
         description:
-          "Built The Portfoleyo into a trusted development partner, offering flexible, high-performing solutions that enable businesses to scale with confidence",
+          "Building The Portfoleyo into a trusted development partner, offering flexible, high-performing solutions that enable businesses to scale with confidence",
       },
     ],
   },
