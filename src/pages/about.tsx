@@ -22,12 +22,26 @@ export default function About() {
             isH1Element={ABOUT_CONTENT.banner.isH1Element}
             description={ABOUT_CONTENT.banner.description}
           />
+
           <TwoColumnLayout
             title={ABOUT_CONTENT.sectionTitle.title}
             paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
             image={ABOUT_CONTENT.twoColumn.image}
             theme={ABOUT_CONTENT.twoColumn.theme}
-          />
+          >
+            <p>
+              If you’re curious about the technical side of what I do, you can
+              check out my{" "}
+              <a
+                className={styles.link}
+                href="https://lindsayfoley.co.uk/about"
+                target="_blank"
+              >
+                personal portfolio
+              </a>{" "}
+              for a more in-depth breakdown of my skills, tools, and expertise.
+            </p>
+          </TwoColumnLayout>
         </div>
         <FeatureTiles
           title={ABOUT_CONTENT.featureTiles.title}

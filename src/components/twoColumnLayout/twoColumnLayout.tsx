@@ -1,5 +1,6 @@
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
+import { ReactNode } from "react";
 import styles from "./twoColumnLayout.module.css";
 
 interface TwoColumnLayoutProps {
@@ -13,6 +14,7 @@ interface TwoColumnLayoutProps {
   };
   shouldReverseColumns?: boolean;
   theme?: Theme;
+  children?: ReactNode;
 }
 
 const TwoColumnLayout = ({
@@ -23,6 +25,7 @@ const TwoColumnLayout = ({
   image,
   shouldReverseColumns = false,
   theme = colourTheme.default,
+  children,
 }: TwoColumnLayoutProps) => {
   return (
     <section className={`${theme ? `${theme}Theme` : ""}`}>
@@ -43,6 +46,7 @@ const TwoColumnLayout = ({
                 {paragraph}
               </p>
             ))}
+            {children && children}
           </div>
         </div>
         <div

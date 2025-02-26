@@ -25,7 +25,6 @@ export const ABOUT_CONTENT = {
     paragraphs: [
       "Hi, I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey in web development began in 2011, when I was working at Anya Hindmarch as a Web Assistant. One day, our email developer disappeared, and suddenly, it was on me to figure things out. With no experience, I Frankensteined together an HTML email—somehow making it work! That experience made me realise how much I enjoyed problem-solving with code, and from there, I became obsessed with learning how to do things the right way. That curiosity turned into a passion, and I’ve been building ever since.",
       "Before moving into contracting, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT, contributing to everything from frontend development and UX improvements to large-scale platform enhancements and design system architecture.",
-      "If you’re curious about the technical side of what I do, you can check out my personal portfolio for a more in-depth breakdown of my skills, tools, and expertise.",
     ],
     theme: colourTheme.highlight,
   },
