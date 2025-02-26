@@ -1,3 +1,6 @@
+import { Award } from "@portfoleyo/assets/svgs/award";
+import { Development } from "@portfoleyo/assets/svgs/development";
+import { Growth } from "@portfoleyo/assets/svgs/growth";
 import { colourTheme } from "@portfoleyo/shared/common";
 
 export const ABOUT_CONTENT = {
@@ -34,27 +37,33 @@ export const ABOUT_CONTENT = {
     useHighlightTheme: true,
     services: [
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
-        alt: "",
+        Icon: Award,
         title: "Engineering Award at BT",
         description:
           "Recognised for my contributions as Principal Developer at BT, enhancing user experience through the development of new platform functionality",
       },
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
-        alt: "",
+        Icon: Development,
         title: "Disney’s Mobile Holiday Platform",
         description:
           "Co-led development of a fully mobile-responsive site for Disney’s UK holiday platform, ensuring a seamless user experience across all devices",
       },
       {
-        imageSrc: "https://place-hold.it/300x200/#fffff",
+        Icon: Growth,
         alt: "",
         title: "Scaling The Portfoleyo",
         description:
           "Built The Portfoleyo into a trusted development partner, offering flexible, high-performing solutions that enable businesses to scale with confidence",
       },
     ],
-    theme: colourTheme.muted,
+  },
+  contact: {
+    banner: {
+      title: "Get in Touch",
+      subtitle: "Ways to connect",
+      description:
+        "If everything you’ve seen here sounds helpful, I’d love to hear from you! Whether you have a project in mind, need development support, or just want to chat about how I can help, feel free to reach out.",
+      theme: colourTheme.muted,
+    },
   },
 };

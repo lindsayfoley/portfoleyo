@@ -31,24 +31,30 @@ export const HOMEPAGE_CONTENT = {
     cta: "Learn more",
     services: [
       {
-        imageSrc: "/code.jpg",
-        alt: "",
+        image: {
+          src: "/code.jpg",
+          alt: "",
+        },
         title: "Custom Development",
         description:
           "Have ambitious plans for a site or app and need someone to bring it to life? I help turn ideas into performant, scalable and user-friendly solutions",
         href: "/services",
       },
       {
-        imageSrc: "/keyboard-flat-white.jpg",
-        alt: "",
+        image: {
+          src: "/keyboard-flat-white.jpg",
+          alt: "",
+        },
         title: "Performance & SEO Optimisation",
         description:
           "A great site needs more than just good looks - it has to be fast, accessible, and SEO-optimised to reach more customers and drive maximum conversions",
         href: "/services",
       },
       {
-        imageSrc: "/shopify-dev.jpg",
-        alt: "",
+        image: {
+          src: "/shopify-dev.jpg",
+          alt: "",
+        },
         title: "E-Commerce & Shopify Solutions",
         description:
           "I can help optimise your e-commerce platform, improving UX, streamlining management, and delivering a fast, conversion-focused storefront",
