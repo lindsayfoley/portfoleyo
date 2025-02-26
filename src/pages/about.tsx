@@ -3,12 +3,14 @@ import { ABOUT_CONTENT } from "../constants/about/content";
 import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
 import Banner from "@portfoleyo/components/banner/banner";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
-import styles from "../styles/about.module.css";
 import {
   EMAIL_ADDRESS,
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
-} from "@portfoleyo/constants/work/shared";
+} from "@portfoleyo/constants/shared";
+import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
+import Nav from "@portfoleyo/components/nav/nav";
+import styles from "../styles/about.module.css";
 
 export default function About() {
   return (
@@ -18,6 +20,7 @@ export default function About() {
         <meta name="description" content={ABOUT_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Nav links={NAV_CONTENT.aboutHeaderNavContent} />
       <main>
         <div className={styles.intro}>
           <Banner
@@ -52,37 +55,44 @@ export default function About() {
           subtitle={ABOUT_CONTENT.featureTiles.subtitle}
           services={ABOUT_CONTENT.featureTiles.services}
         />
-        <Banner
-          title={ABOUT_CONTENT.contact.banner.title}
-          subtitle={ABOUT_CONTENT.contact.banner.subtitle}
-          description={ABOUT_CONTENT.contact.banner.description}
-          theme={ABOUT_CONTENT.contact.banner.theme}
-        >
-          <ul className={styles.contactList}>
-            <li>
-              Send me an{" "}
-              <a className={styles.link} href={EMAIL_ADDRESS}>
-                email
-              </a>
-            </li>
-            <li>
-              Connect on{" "}
-              <a
-                className={styles.link}
-                href={LINKEDIN_PROFILE}
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              View skills{" "}
-              <a className={styles.link} href={PORTFOLIO_SITE} target="_blank">
-                portfolio
-              </a>
-            </li>
-          </ul>
-        </Banner>
+        <div id="contact">
+          {" "}
+          <Banner
+            title={ABOUT_CONTENT.contact.banner.title}
+            subtitle={ABOUT_CONTENT.contact.banner.subtitle}
+            description={ABOUT_CONTENT.contact.banner.description}
+            theme={ABOUT_CONTENT.contact.banner.theme}
+          >
+            <ul className={styles.contactList}>
+              <li>
+                Send me an{" "}
+                <a className={styles.link} href={EMAIL_ADDRESS}>
+                  email
+                </a>
+              </li>
+              <li>
+                Connect on{" "}
+                <a
+                  className={styles.link}
+                  href={LINKEDIN_PROFILE}
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                View skills{" "}
+                <a
+                  className={styles.link}
+                  href={PORTFOLIO_SITE}
+                  target="_blank"
+                >
+                  portfolio
+                </a>
+              </li>
+            </ul>
+          </Banner>
+        </div>
       </main>
     </>
   );

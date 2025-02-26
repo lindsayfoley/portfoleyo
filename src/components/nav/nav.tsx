@@ -4,13 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { NAV_CONTENT } from "../../constants/nav/nav";
 
-const Nav = () => {
+interface NavProps {
+  links: {
+    href: string;
+    cta: string;
+  }[];
+}
+
+const Nav = ({ links }: NavProps) => {
   return (
     <nav className={styles.container}>
       <div className={styles.contentWrapper}>
         <div className={`${styles.pages} ${styles.links}`}>
           <ul className={styles.linksList}>
-            {NAV_CONTENT.headerNavContent.map(({ href, cta }) => (
+            {links.map(({ href, cta }) => (
               <li key={cta}>
                 <Link href={href}>{cta}</Link>
               </li>

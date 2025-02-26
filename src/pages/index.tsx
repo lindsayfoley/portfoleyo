@@ -4,6 +4,8 @@ import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBan
 import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
+import Nav from "@portfoleyo/components/nav/nav";
+import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
         <meta name="description" content={HOMEPAGE_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Nav links={NAV_CONTENT.homeHeaderNavContent} />
       <main>
         <HighlightBanner
           imageSrc={HOMEPAGE_CONTENT.highlightBanner.image.src}

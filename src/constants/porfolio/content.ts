@@ -1,4 +1,4 @@
-export const WORK_CONTENT = {
+export const PORTFOLIO_CONTENT = {
   meta: {
     title: "Work at The Portfoleyo | Web Development & Portfolio",
     description:

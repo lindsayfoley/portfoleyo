@@ -1,14 +1,14 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faSquareEnvelope,
-  faBriefcase,
+  faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   EMAIL_ADDRESS,
   GITHUB_PROFILE,
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
-} from "../work/shared";
+} from "../shared";
 
 const LINKS = {
   homeLink: {
@@ -19,17 +19,13 @@ const LINKS = {
     cta: "About",
     href: "about",
   },
-  workLink: {
-    cta: "Work",
-    href: "work",
-  },
   servicesLink: {
     cta: "Services",
-    href: "work",
+    href: "services",
   },
   portfolioLink: {
     cta: "Portfolio",
-    href: "work#portfolio",
+    href: "portfolio",
   },
   contactLink: {
     cta: "Contact",
@@ -38,10 +34,28 @@ const LINKS = {
 };
 
 export const NAV_CONTENT = {
-  headerNavContent: [
+  homeHeaderNavContent: [
+    LINKS.aboutLink,
+    LINKS.servicesLink,
+    LINKS.portfolioLink,
+    LINKS.contactLink,
+  ],
+  aboutHeaderNavContent: [
+    LINKS.homeLink,
+    LINKS.servicesLink,
+    LINKS.portfolioLink,
+    LINKS.contactLink,
+  ],
+  servicesHeaderNavContent: [
     LINKS.homeLink,
     LINKS.aboutLink,
-    LINKS.workLink,
+    LINKS.portfolioLink,
+    LINKS.contactLink,
+  ],
+  portfolioHeaderNavContent: [
+    LINKS.homeLink,
+    LINKS.aboutLink,
+    LINKS.servicesLink,
     LINKS.contactLink,
   ],
   footerNavContent: [
@@ -73,7 +87,7 @@ export const NAV_CONTENT = {
       title: "View my personal portfolio site",
       href: PORTFOLIO_SITE,
       target: "_blank",
-      icon: faBriefcase,
+      icon: faLaptopCode,
     },
   ],
 };
