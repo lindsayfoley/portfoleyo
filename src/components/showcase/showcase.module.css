@@ -1,7 +1,7 @@
 .container {
     padding: 30px 0;
     background: var(--muted-background);
-    color: var(--darkest-grey);
+  color: var(--darkest-grey);
   }
 
 .images {
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 30px auto 10px;
   }
 
   .image {

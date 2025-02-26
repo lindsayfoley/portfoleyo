@@ -1,8 +1,6 @@
 .container {
     .title {
         font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
         text-transform: uppercase;
         letter-spacing: 1.25px;
         margin-bottom: 10px;
@@ -23,7 +21,7 @@
 
 .titleBottom {
     .title {
-        margin: 5px 0 30px 0;
+        margin: 5px 0 10px 0;
     }
 
     .subtitle {

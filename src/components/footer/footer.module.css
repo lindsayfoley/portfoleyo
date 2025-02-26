@@ -3,8 +3,6 @@
     background: var(--dark-background);
     color: var(--light-grey);
     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 14px;
 }
 
@@ -30,8 +28,6 @@
     font-size: 20px;
     line-height: 34px;
     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .title {

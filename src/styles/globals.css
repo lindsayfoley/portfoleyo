@@ -26,8 +26,11 @@ body {
 
 body {
   color: var(--default-text);
-  background: var(--default-background);
+  background: var(--muted-background);
   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 40px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
