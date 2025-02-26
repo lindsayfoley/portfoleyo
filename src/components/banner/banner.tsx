@@ -4,7 +4,7 @@ import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import styles from "./banner.module.css";
 
 interface BannerProps {
-  description?: string;
+  description?: string | string[];
   theme?: Theme;
 }
 
@@ -30,7 +30,16 @@ const Banner = ({
         isTitleFirst={isTitleFirst}
         isH1Element={isH1Element}
       />
-      {description && <p className={styles.description}>{description}</p>}
+      {description &&
+        (Array.isArray(description) ? (
+          description.map((desc, index) => (
+            <p key={index} className={styles.description}>
+              {desc}
+            </p>
+          ))
+        ) : (
+          <p className={styles.description}>{description}</p>
+        ))}
       {href && cta && <AnchorButton href={href} cta={cta} />}
     </div>
   );

@@ -13,7 +13,7 @@ export const ABOUT_CONTENT = {
     title: "About The Portfoleyo",
     subtitle: "Background & ways to connect",
     description:
-      "At The Portfoleyo, my goal is to provide tailored, approachable, and cost-effective development services for small and medium-sized businesses, cutting through the noise that often comes with larger agencies! As your single point of contact, I make the process more efficient and transparent by removing unnecessary layers, giving clear cost estimates, and ensuring a shorter feedback loop.",
+      "At The Portfoleyo, my goal is to provide tailored, approachable and cost-effective development services for small/medium sized businesses, cutting through the noise that often comes with larger agencies! As your single point of contact, I make the process more efficient and transparent by removing unnecessary layers, giving clear cost estimates and ensuring a shorter feedback loop.",
     isTitleFirst: true,
     isH1Element: true,
   },
@@ -32,28 +32,27 @@ export const ABOUT_CONTENT = {
     theme: colourTheme.highlight,
   },
   featureTiles: {
-    title: "Key Achievements",
-    subtitle: "What I’m most proud of",
+    title: "Career Achievements",
+    subtitle: "Milestones that shaped my journey",
     useHighlightTheme: true,
     services: [
       {
-        Icon: Award,
-        title: "Engineering Award at BT",
+        Icon: Development,
+        title: "2016: Making Disney Mobile Ready",
         description:
-          "Recognised for my contributions as Principal Developer at BT, enhancing user experience through the development of new platform functionality",
+          "I co-led the development of a fully mobile-responsive site for all of Disney’s UK holiday platforms, ensuring a seamless user experience across all devices",
       },
       {
-        Icon: Development,
-        title: "Disney’s Mobile Holiday Platform",
+        Icon: Award,
+        title: "2021: Engineering Award at BT",
         description:
-          "Co-led the development of a fully mobile-responsive site for all Disney’s UK holiday platforms, ensuring a seamless user experience across all devices",
+          "Recognised for my contributions as Principal Developer at BT by enhancing user experience through the creation of new platform functionality",
       },
       {
         Icon: Growth,
-        alt: "",
-        title: "Scaling The Portfoleyo",
+        title: "2023: Launching The Portfoleyo",
         description:
-          "Building The Portfoleyo into a trusted development partner, offering flexible, high-performing solutions that enable businesses to scale with confidence",
+          "Transitioned from full-time roles to launch The Portfoleyo—an independent development studio offering flexible, expert-led solutions",
       },
     ],
   },
@@ -61,8 +60,10 @@ export const ABOUT_CONTENT = {
     banner: {
       title: "Get in Touch",
       subtitle: "Ways to connect",
-      description:
-        "If everything you’ve seen here sounds helpful, I’d love to hear from you! Whether you have a project in mind, need development support, or just want to chat about how I can help, feel free to reach out.",
+      description: [
+        "If everything you’ve seen here sounds helpful, I’d love to hear from you!",
+        "Whether you have a project in mind, need development support, or just want to chat about how I can help, feel free to reach out.",
+      ],
       theme: colourTheme.muted,
     },
   },

@@ -3,6 +3,12 @@ import {
   faSquareEnvelope,
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  EMAIL_ADDRESS,
+  GITHUB_PROFILE,
+  LINKEDIN_PROFILE,
+  PORTFOLIO_SITE,
+} from "../work/shared";
 
 const LINKS = {
   homeLink: {
@@ -47,25 +53,25 @@ export const NAV_CONTENT = {
   icons: [
     {
       title: "View my LinkedIn profile",
-      href: "https://www.linkedin.com/in/lindsay-foley-9a193534/",
+      href: LINKEDIN_PROFILE,
       target: "_blank",
       icon: faLinkedin,
     },
     {
       title: "View my Github",
-      href: "https://github.com/lindsayfoley",
+      href: GITHUB_PROFILE,
       target: "_blank",
       icon: faGithub,
     },
     {
       title: "Send me an email",
-      href: "mailto:hello@theportfoleyo.com",
+      href: EMAIL_ADDRESS,
       target: "",
       icon: faSquareEnvelope,
     },
     {
       title: "View my personal portfolio site",
-      href: "https://lindsayfoley.co.uk/",
+      href: PORTFOLIO_SITE,
       target: "_blank",
       icon: faBriefcase,
     },
