@@ -4,6 +4,11 @@ import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLay
 import Banner from "@portfoleyo/components/banner/banner";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import styles from "../styles/about.module.css";
+import {
+  EMAIL_ADDRESS,
+  LINKEDIN_PROFILE,
+  PORTFOLIO_SITE,
+} from "@portfoleyo/constants/work/shared";
 
 export default function About() {
   return (
@@ -52,7 +57,32 @@ export default function About() {
           subtitle={ABOUT_CONTENT.contact.banner.subtitle}
           description={ABOUT_CONTENT.contact.banner.description}
           theme={ABOUT_CONTENT.contact.banner.theme}
-        />
+        >
+          <ul className={styles.contactList}>
+            <li>
+              Send me an{" "}
+              <a className={styles.link} href={EMAIL_ADDRESS}>
+                email
+              </a>
+            </li>
+            <li>
+              Connect on{" "}
+              <a
+                className={styles.link}
+                href={LINKEDIN_PROFILE}
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              View skills{" "}
+              <a className={styles.link} href={PORTFOLIO_SITE} target="_blank">
+                portfolio
+              </a>
+            </li>
+          </ul>
+        </Banner>
       </main>
     </>
   );

@@ -2,10 +2,12 @@ import { Theme, colourTheme } from "@portfoleyo/shared/common";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import styles from "./banner.module.css";
+import { ReactNode } from "react";
 
 interface BannerProps {
   description?: string | string[];
   theme?: Theme;
+  children?: ReactNode;
 }
 
 type AllBannerProps = BannerProps &
@@ -21,6 +23,7 @@ const Banner = ({
   isH1Element,
   isTitleFirst,
   theme = colourTheme.default,
+  children,
 }: AllBannerProps) => {
   return (
     <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
@@ -41,6 +44,7 @@ const Banner = ({
           <p className={styles.description}>{description}</p>
         ))}
       {href && cta && <AnchorButton href={href} cta={cta} />}
+      {children && children}
     </div>
   );
 };
