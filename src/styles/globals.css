@@ -1,6 +1,16 @@
 :root {
-  --background: #f8f7f3;
-  --foreground: #171717;
+  --default-background: #f8f7f3;
+  --muted-background: #ffffff;
+  --highlight-background: #faf1ec;
+  --dark-background: #000000;
+  --button-background: #b1734a;
+  --default-text: #171717;
+  --pale-grey: #f4f3f1;
+  --light-grey: #afadad;
+  --medium-grey: #d0c6c0;
+  --mid-grey: #504742;
+  --dark-grey: #171717;
+  --darkest-grey: #171717;
 }
 
 html,
@@ -15,9 +25,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--default-text);
+  background: var(--default-background);
+  font-family: "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +44,6 @@ main {
 }
 
 p {
-  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;

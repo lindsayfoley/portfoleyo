@@ -28,6 +28,7 @@ export default function Home() {
           title={HOMEPAGE_CONTENT.featureTiles.title}
           subtitle={HOMEPAGE_CONTENT.featureTiles.subtitle}
           services={HOMEPAGE_CONTENT.featureTiles.services}
+          cta={HOMEPAGE_CONTENT.featureTiles.cta}
         />
         <Banner
           title={HOMEPAGE_CONTENT.banner.title}

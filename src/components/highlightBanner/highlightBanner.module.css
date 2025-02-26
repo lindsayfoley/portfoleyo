@@ -1,5 +1,5 @@
 .container {
-    background: #faf1ec;
+    background: var(--highlight-background);
 }
 
 .wrapper {
@@ -9,7 +9,7 @@
 .copy {
   padding: 30px 20px;
   text-align: left;
-  color: #504742;
+  color: var(--mid-grey);
 
   .paragraph:first-of-type {
     padding-top: 10px;

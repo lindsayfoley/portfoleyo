@@ -26,6 +26,7 @@ export const HOMEPAGE_CONTENT = {
   featureTiles: {
     title: "Featured services",
     subtitle: "How I Can Help",
+    cta: "Learn more",
     services: [
       {
         imageSrc: "/code.jpg",

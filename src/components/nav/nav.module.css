@@ -1,11 +1,11 @@
 .container {
-    background: #ffffff;
+    background: var(--muted-background);
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    box-shadow: 0 1px #f4f3f1;
+    box-shadow: 0 1px var(--pale-grey);
 }
 
 .contentWrapper {

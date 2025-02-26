@@ -1,3 +1,4 @@
+import { Theme } from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./twoColumnLayout.module.css";
 
@@ -11,7 +12,7 @@ interface TwoColumnLayoutProps {
     alt: string;
   };
   shouldReverseColumns?: boolean;
-  useSalmonBackground?: boolean;
+  theme?: Theme;
 }
 
 const TwoColumnLayout = ({
@@ -21,12 +22,11 @@ const TwoColumnLayout = ({
   paragraphs,
   image,
   shouldReverseColumns = false,
-  useSalmonBackground = false,
+  theme,
 }: TwoColumnLayoutProps) => {
+  console.log("theme=", theme);
   return (
-    <section
-      className={`${useSalmonBackground ? styles.salmonBackground : ""}`}
-    >
+    <section className={`${theme ? styles[theme] : ""}`}>
       <div className={styles.container}>
         <div
           className={`${styles.copy} ${

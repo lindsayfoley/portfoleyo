@@ -1,8 +1,8 @@
 .container {
     padding: 30px 0;
-    background: #ffffff;
-    color: #373636;
-}
+    background: var(--muted-background);
+    color: var(--darkest-grey);
+  }
 
 .images {
   margin-bottom: 60px;

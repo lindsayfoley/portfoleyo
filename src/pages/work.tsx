@@ -20,7 +20,7 @@ export default function Work() {
             paragraphs={WORK_CONTENT.twoColumn.paragraphs}
             image={WORK_CONTENT.twoColumn.image}
             shouldReverseColumns
-            useSalmonBackground
+            useHighlightTheme
           />
         </div>
       </main>
