@@ -1,7 +1,7 @@
-export const theme = {
+export const colourTheme = {
   default: "default",
   highlight: "highlight",
   muted: "muted",
 } as const;
 
-export type Theme = (typeof theme)[keyof typeof theme];
+export type Theme = (typeof colourTheme)[keyof typeof colourTheme];

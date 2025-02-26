@@ -23,6 +23,7 @@ export default function Home() {
           cta={HOMEPAGE_CONTENT.highlightBanner.link.cta}
           link={HOMEPAGE_CONTENT.highlightBanner.link.href}
           isH1Element={HOMEPAGE_CONTENT.highlightBanner.isH1Element}
+          theme={HOMEPAGE_CONTENT.banner.theme}
         />
         <FeatureTiles
           title={HOMEPAGE_CONTENT.featureTiles.title}
@@ -36,6 +37,7 @@ export default function Home() {
           isTitleFirst={HOMEPAGE_CONTENT.banner.isTitleFirst}
           href={HOMEPAGE_CONTENT.banner.link.href}
           cta={HOMEPAGE_CONTENT.banner.link.cta}
+          theme={HOMEPAGE_CONTENT.banner.theme}
         />
         <Showcase
           title={HOMEPAGE_CONTENT.showcase.title}

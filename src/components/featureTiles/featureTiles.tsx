@@ -1,3 +1,4 @@
+import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./featureTiles.module.css";
 
@@ -12,7 +13,7 @@ interface FeatureTilesProps {
     href?: string;
   }[];
   cta?: string;
-  useHighlightTheme?: boolean;
+  theme?: Theme;
 }
 
 const FeatureTiles = ({
@@ -20,10 +21,10 @@ const FeatureTiles = ({
   subtitle,
   services,
   cta,
-  useHighlightTheme,
+  theme = colourTheme.default,
 }: FeatureTilesProps) => {
   return (
-    <section className={useHighlightTheme ? styles.highlightTheme : ""}>
+    <section className={theme ? `${theme}Theme` : ""}>
       <div className={styles.container}>
         <SectionTitle title={title} subtitle={subtitle} />
         <div className={styles.serviceWrapper}>

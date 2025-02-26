@@ -1,4 +1,4 @@
-import { theme } from "../../shared/common";
+import { colourTheme } from "@portfoleyo/shared/common";
 
 export const ABOUT_CONTENT = {
   meta: {
@@ -27,7 +27,7 @@ export const ABOUT_CONTENT = {
       "Before moving into contracting, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT, contributing to everything from frontend development and UX improvements to large-scale platform enhancements and design system architecture.",
       "If you’re curious about the technical side of what I do, you can check out my personal portfolio for a more in-depth breakdown of my skills, tools, and expertise.",
     ],
-    theme: theme.muted,
+    theme: colourTheme.highlight,
   },
   featureTiles: {
     title: "Key Achievements",
@@ -56,5 +56,6 @@ export const ABOUT_CONTENT = {
           "Built The Portfoleyo into a trusted development partner, offering flexible, high-performing solutions that enable businesses to scale with confidence",
       },
     ],
+    theme: colourTheme.muted,
   },
 };

@@ -1,9 +1,16 @@
+import { Theme, colourTheme } from "@portfoleyo/shared/common";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import styles from "./banner.module.css";
 
-type BannerProps = SectionTitleProps &
-  Partial<AnchorButtonProps> & { description?: string };
+interface BannerProps {
+  description?: string;
+  theme?: Theme;
+}
+
+type AllBannerProps = SectionTitleProps &
+  Partial<AnchorButtonProps> &
+  BannerProps;
 
 const Banner = ({
   title,
@@ -13,9 +20,10 @@ const Banner = ({
   cta,
   isH1Element,
   isTitleFirst,
-}: BannerProps) => {
+  theme = colourTheme.default,
+}: AllBannerProps) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
       <SectionTitle
         title={title}
         subtitle={subtitle}

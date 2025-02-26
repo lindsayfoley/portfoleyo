@@ -1,3 +1,4 @@
+import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import AnchorButton from "../anchorButton/anchorButton";
 import styles from "./highlightBanner.module.css";
 
@@ -11,6 +12,7 @@ interface HighlightBannerProps {
   link?: string;
   shouldReverseColumns?: boolean;
   isH1Element?: boolean;
+  theme?: Theme;
 }
 
 const HighlightBanner = ({
@@ -23,9 +25,10 @@ const HighlightBanner = ({
   link,
   shouldReverseColumns = false,
   isH1Element = false,
+  theme = colourTheme.default,
 }: HighlightBannerProps) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
       <div className={styles.wrapper}>
         <div
           className={shouldReverseColumns ? styles.secondary : styles.primary}

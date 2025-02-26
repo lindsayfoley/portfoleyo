@@ -54,3 +54,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+.defaultTheme {
+  background: var(--default-background);
+}
+
+.mutedTheme {
+  background: var(--muted-background);
+}
+
+.highlightTheme {
+  background: var(--highlight-background);
+}

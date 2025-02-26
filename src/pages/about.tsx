@@ -21,6 +21,7 @@ export default function About() {
             isTitleFirst={ABOUT_CONTENT.banner.isTitleFirst}
             isH1Element={ABOUT_CONTENT.banner.isH1Element}
             description={ABOUT_CONTENT.banner.description}
+            theme={ABOUT_CONTENT.banner.theme}
           />
           <TwoColumnLayout
             title={ABOUT_CONTENT.sectionTitle.title}
@@ -33,7 +34,7 @@ export default function About() {
           title={ABOUT_CONTENT.featureTiles.title}
           subtitle={ABOUT_CONTENT.featureTiles.subtitle}
           services={ABOUT_CONTENT.featureTiles.services}
-          useHighlightTheme
+          theme={ABOUT_CONTENT.featureTiles.theme}
         />
       </main>
     </>

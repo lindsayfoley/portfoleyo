@@ -1,4 +1,4 @@
-import { Theme } from "@portfoleyo/shared/common";
+import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./twoColumnLayout.module.css";
 
@@ -22,11 +22,10 @@ const TwoColumnLayout = ({
   paragraphs,
   image,
   shouldReverseColumns = false,
-  theme,
+  theme = colourTheme.default,
 }: TwoColumnLayoutProps) => {
-  console.log("theme=", theme);
   return (
-    <section className={`${theme ? styles[theme] : ""}`}>
+    <section className={`${theme ? `${theme}Theme` : ""}`}>
       <div className={styles.container}>
         <div
           className={`${styles.copy} ${

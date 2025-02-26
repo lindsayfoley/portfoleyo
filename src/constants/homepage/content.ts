@@ -1,4 +1,5 @@
 import { device } from "@portfoleyo/components/showcase/showcase";
+import { colourTheme } from "@portfoleyo/shared/common";
 
 export const HOMEPAGE_CONTENT = {
   meta: {
@@ -22,6 +23,7 @@ export const HOMEPAGE_CONTENT = {
       cta: "About",
     },
     isH1Element: true,
+    theme: colourTheme.highlight,
   },
   featureTiles: {
     title: "Featured services",
@@ -62,6 +64,7 @@ export const HOMEPAGE_CONTENT = {
       href: "/contact",
       cta: "Contact",
     },
+    theme: colourTheme.highlight,
   },
   showcase: {
     title: "View my recent work",
