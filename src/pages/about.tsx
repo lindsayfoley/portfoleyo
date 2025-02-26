@@ -21,7 +21,6 @@ export default function About() {
             isTitleFirst={ABOUT_CONTENT.banner.isTitleFirst}
             isH1Element={ABOUT_CONTENT.banner.isH1Element}
             description={ABOUT_CONTENT.banner.description}
-            theme={ABOUT_CONTENT.banner.theme}
           />
           <TwoColumnLayout
             title={ABOUT_CONTENT.sectionTitle.title}

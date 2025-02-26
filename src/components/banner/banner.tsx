@@ -8,9 +8,9 @@ interface BannerProps {
   theme?: Theme;
 }
 
-type AllBannerProps = SectionTitleProps &
-  Partial<AnchorButtonProps> &
-  BannerProps;
+type AllBannerProps = BannerProps &
+  SectionTitleProps &
+  Partial<AnchorButtonProps>;
 
 const Banner = ({
   title,
