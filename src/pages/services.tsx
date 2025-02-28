@@ -17,6 +17,7 @@ export default function Services() {
         <div className={styles.intro}>
           <TwoColumnLayout
             title={SERVICES_CONTENT.sectionTitle.title}
+            subtitle={SERVICES_CONTENT.sectionTitle.subtitle}
             isH1Element={SERVICES_CONTENT.sectionTitle.isH1Element}
             paragraphs={SERVICES_CONTENT.twoColumn.paragraphs}
             image={SERVICES_CONTENT.twoColumn.image}

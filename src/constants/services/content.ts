@@ -21,7 +21,7 @@ export const SERVICES_CONTENT = {
     },
     paragraphs: [
       "I take a direct, transparent, and efficient approach to web development — cutting out the complexity you often get with large teams. With 14 years of experience, including Senior and Principal Developer roles at major brands, I offer expert-level development with a personal, hands-on approach tailored to each business.",
-      "Working directly together means faster results—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, changes can go live sooner, giving you greater flexibility to adapt and evolve your site as needed.",
+      "Working directly means faster results—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, changes can go live sooner, giving you greater flexibility to adapt and evolve your site as needed.",
     ],
   },
   featureTiles: {
