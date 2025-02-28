@@ -3,7 +3,9 @@ import { SERVICES_CONTENT } from "../constants/services/content";
 import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
 import Nav from "@portfoleyo/components/nav/nav";
 import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
+import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import styles from "../styles/services.module.css";
+import AnchorButton from "@portfoleyo/components/anchorButton/anchorButton";
 
 export default function Services() {
   return (
@@ -18,12 +20,50 @@ export default function Services() {
         <div className={styles.intro}>
           <TwoColumnLayout
             title={SERVICES_CONTENT.sectionTitle.title}
-            subtitle={SERVICES_CONTENT.sectionTitle.subtitle}
             isH1Element={SERVICES_CONTENT.sectionTitle.isH1Element}
             paragraphs={SERVICES_CONTENT.twoColumn.paragraphs}
             image={SERVICES_CONTENT.twoColumn.image}
             shouldReverseColumns
           />
+          <FeatureTiles
+            services={SERVICES_CONTENT.featureTiles.services}
+            isDependantSection
+          />
+          <TwoColumnLayout
+            title={SERVICES_CONTENT.gettingStarted.twoColumn.title}
+            paragraphs={SERVICES_CONTENT.gettingStarted.twoColumn.paragraphs}
+            image={SERVICES_CONTENT.gettingStarted.twoColumn.image}
+            theme={SERVICES_CONTENT.gettingStarted.twoColumn.theme}
+          >
+            <h3 className={styles.heading}>Full Site Audit</h3>
+            <p className={styles.paragraph}>
+              I take a deep dive into your site, assessing:
+            </p>
+            <ul className={styles.list}>
+              <li>
+                Accessibility: ensuring your site is user-friendly for everyone
+              </li>
+              <li>
+                Performance: identifying ways to improve speed and efficiency
+              </li>
+              <li>
+                SEO: reviewing metadata, page structure, and on-page elements
+              </li>
+              <li>
+                Code Health: checking for errors, markup structure + technical
+                integrity
+              </li>
+              <li>
+                End-to-End UX: making sure everything flows smoothly for your
+                users
+              </li>
+            </ul>
+            <h3 className={styles.heading}>Development & Site Improvements</h3>
+            <p>
+              Already know what you need? I can jump right in and get to work!
+            </p>
+            <AnchorButton href="/about#contact" cta="Contact me" />
+          </TwoColumnLayout>
         </div>
       </main>
     </>

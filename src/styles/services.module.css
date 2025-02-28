@@ -1,2 +1,22 @@
-.intro {
+.heading, .paragraph {
+    text-align: left;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.heading {
+    font-family: "Work Sans", serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.list {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 5px 0 20px 20px;
 }

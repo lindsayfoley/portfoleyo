@@ -46,6 +46,10 @@
         padding: 60px 0;
     }
 
+    .secondary {
+        margin-top: 0;
+    }
+
     .imageContainer {
         padding-right: 60px;
     }
