@@ -1,19 +1,9 @@
 .container {
-  position: relative;
+  margin: 0 auto;
   padding: 40px 0 10px 0;
   max-width: 1225px;
   font-style: normal;
   color: var(--darkest-grey);
-}
-
-.serviceWrapper:before {
-  content: '→';
-  position: absolute;
-  top: 50px;
-  right: 5%;
-  font-size: 30px;
-  color: var(--dark-grey);
-  opacity: 0.75;
 }
 
 .serviceWrapper {
@@ -61,14 +51,14 @@
   background: var(--medium-grey);
 }
 
-.title, .link {
+.title, .cta {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
 }
 
-.title, .link {
+.title, .cta {
   text-transform: uppercase;
 }
 
@@ -79,47 +69,46 @@
   margin: 0 auto;
 }
 
-.link {
+.cta {
   display: block;
   font-size: 14px;
   margin-top: 10px;
 }
 
 
-@media (min-width: 700px) {
-  .service:first-of-type {
-    margin-left: 3%;
-  }
-}
-
-@media (min-width: 950px) {
-  .service:first-of-type {
-    margin-left: 2%;
-  }
-}
-
-
-@media (min-width: 1024px) {
-  .serviceWrapper:before {
-    display: none;
-  }
-  
+@media (min-width: 550px) {
   .serviceWrapper {
+    flex-wrap: wrap;
     padding-right: 0;
+    justify-content: center;
   }
 
-  .service:first-of-type, .service {
+  .service, .service:first-of-type {
     margin: 0;
   }
+
+  .service:not(:first-of-type) {
+    padding-top: 40px;
+  }
 }
 
-@media (min-width: 1050px) {
-  .container {
-    padding: 70px 0;
-    margin: 0 auto;
+@media (min-width: 800px) {
+  .service:not(:last-of-type) {
+    padding-top: 0;
   }
 
+  .copy {
+   width: 90%;
+   margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
   .serviceWrapper {
-    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .service:last-of-type {
+    padding-top: 0;
   }
 }
