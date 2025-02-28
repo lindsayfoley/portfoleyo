@@ -22,25 +22,24 @@ export default function About() {
       </Head>
       <Nav links={NAV_CONTENT.aboutHeaderNavContent} />
       <main>
-        <div className={styles.intro}>
-          <Banner
-            title={ABOUT_CONTENT.banner.title}
-            subtitle={ABOUT_CONTENT.banner.subtitle}
-            isTitleFirst={ABOUT_CONTENT.banner.isTitleFirst}
-            isH1Element={ABOUT_CONTENT.banner.isH1Element}
-            description={ABOUT_CONTENT.banner.description}
-          />
-          <TwoColumnLayout
-            title={ABOUT_CONTENT.sectionTitle.title}
-            paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
-            image={ABOUT_CONTENT.twoColumn.image}
-            theme={ABOUT_CONTENT.twoColumn.theme}
-          />
-        </div>
+        <Banner
+          title={ABOUT_CONTENT.banner.title}
+          subtitle={ABOUT_CONTENT.banner.subtitle}
+          isTitleFirst={ABOUT_CONTENT.banner.isTitleFirst}
+          isH1Element={ABOUT_CONTENT.banner.isH1Element}
+          description={ABOUT_CONTENT.banner.description}
+        />
+        <TwoColumnLayout
+          title={ABOUT_CONTENT.sectionTitle.title}
+          paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
+          image={ABOUT_CONTENT.twoColumn.image}
+          theme={ABOUT_CONTENT.twoColumn.theme}
+        />
         <FeatureTiles
           services={ABOUT_CONTENT.featureTiles.services}
-          theme={ABOUT_CONTENT.twoColumn.theme}
+          theme={ABOUT_CONTENT.featureTiles.theme}
           hasTimeline
+          isDependantSection
         />
         <div id="contact">
           <Banner

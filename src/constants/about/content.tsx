@@ -32,7 +32,6 @@ export const ABOUT_CONTENT = {
     theme: colourTheme.highlight,
   },
   featureTiles: {
-    useHighlightTheme: true,
     theme: colourTheme.highlight,
     services: [
       {
