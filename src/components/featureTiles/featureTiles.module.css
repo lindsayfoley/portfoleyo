@@ -1,9 +1,19 @@
 .container {
+  position: relative;
   margin: 0 auto;
   padding: 40px 0 10px 0;
   max-width: 1225px;
   font-style: normal;
   color: var(--darkest-grey);
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 138px;
+  left: 0;
+  right: 0;
+  border: 1px dotted #d5d1d1;
 }
 
 .serviceWrapper {
@@ -27,6 +37,16 @@
 
 .service:first-of-type {
   margin-left: 8%;
+}
+
+.label {
+  text-transform: capitalize;
+  display: block;
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .image {
@@ -77,6 +97,10 @@
 
 
 @media (min-width: 550px) {
+  .timeline:before {
+    display: none;
+  }
+
   .serviceWrapper {
     flex-wrap: wrap;
     padding-right: 0;
@@ -104,6 +128,19 @@
 }
 
 @media (min-width: 1000px) {
+  .noPadding {
+    padding-top: 0;
+
+    .serviceWrapper {
+      margin: 0 auto 60px;
+    }
+  }
+
+  .timeline:before {
+    display: block;
+    margin: 0 20px;
+  }
+
   .serviceWrapper {
     flex-wrap: nowrap;
   }

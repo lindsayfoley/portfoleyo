@@ -35,28 +35,14 @@ export default function About() {
             paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
             image={ABOUT_CONTENT.twoColumn.image}
             theme={ABOUT_CONTENT.twoColumn.theme}
-          >
-            <p>
-              If you’re curious about the technical side of what I do, you can
-              check out my{" "}
-              <a
-                className={styles.link}
-                href="https://lindsayfoley.co.uk/about"
-                target="_blank"
-              >
-                personal portfolio
-              </a>{" "}
-              for a more in-depth breakdown of my skills, tools, and expertise.
-            </p>
-          </TwoColumnLayout>
+          />
         </div>
         <FeatureTiles
-          title={ABOUT_CONTENT.featureTiles.title}
-          subtitle={ABOUT_CONTENT.featureTiles.subtitle}
           services={ABOUT_CONTENT.featureTiles.services}
+          theme={ABOUT_CONTENT.twoColumn.theme}
+          hasTimeline
         />
         <div id="contact">
-          {" "}
           <Banner
             title={ABOUT_CONTENT.contact.banner.title}
             subtitle={ABOUT_CONTENT.contact.banner.subtitle}
@@ -64,30 +50,20 @@ export default function About() {
             theme={ABOUT_CONTENT.contact.banner.theme}
           >
             <ul className={styles.contactList}>
-              <li>
-                Send me an{" "}
-                <a className={styles.link} href={EMAIL_ADDRESS}>
-                  email
+              <li className={styles.listItem}>
+                <h5 className={styles.heading}>Email</h5>
+                <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+              </li>
+              <li className={styles.listItem}>
+                <h5 className={styles.heading}>LinkedIn</h5>
+                <a href={LINKEDIN_PROFILE} target="_blank">
+                  View my experience
                 </a>
               </li>
-              <li>
-                Connect on{" "}
-                <a
-                  className={styles.link}
-                  href={LINKEDIN_PROFILE}
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                View skills{" "}
-                <a
-                  className={styles.link}
-                  href={PORTFOLIO_SITE}
-                  target="_blank"
-                >
-                  portfolio
+              <li className={styles.listItem}>
+                <h5 className={styles.heading}>Portfolio</h5>
+                <a href={PORTFOLIO_SITE} target="_blank">
+                  www.lindsayfoley.co.uk
                 </a>
               </li>
             </ul>

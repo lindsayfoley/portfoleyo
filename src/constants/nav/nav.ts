@@ -79,7 +79,7 @@ export const NAV_CONTENT = {
     },
     {
       title: "Send me an email",
-      href: EMAIL_ADDRESS,
+      href: `mailto:${EMAIL_ADDRESS}`,
       target: "",
       icon: faSquareEnvelope,
     },

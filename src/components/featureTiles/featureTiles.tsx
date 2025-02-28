@@ -4,9 +4,10 @@ import styles from "./featureTiles.module.css";
 import { ElementType } from "react";
 
 interface FeatureTilesProps {
-  title: string;
+  title?: string;
   subtitle?: string;
   services: {
+    label?: string;
     image?: {
       src: string;
       alt: string;
@@ -18,6 +19,7 @@ interface FeatureTilesProps {
   }[];
   cta?: string;
   theme?: Theme;
+  hasTimeline?: boolean;
 }
 
 const getIconFillValueFromTheme = (theme: Theme) => {
@@ -38,12 +40,14 @@ const FeatureTiles = ({
   services,
   cta,
   theme = colourTheme.default,
+  hasTimeline = false,
 }: FeatureTilesProps) => {
   const tilesMarkup = services.map(
-    ({ image, Icon, title, description, href }) => {
+    ({ label, image, Icon, title, description, href }) => {
       return href ? (
         <article className={styles.service} key={title}>
           <a href={href}>
+            {label && <h5 className={styles.label}>{label}</h5>}
             {image && (
               <img className={styles.image} src={image.src} alt={image.alt} />
             )}
@@ -59,6 +63,7 @@ const FeatureTiles = ({
         </article>
       ) : (
         <article className={styles.service} key={title}>
+          {label && <h5 className={styles.label}>{label}</h5>}
           {image && (
             <img className={styles.image} src={image.src} alt={image.alt} />
           )}
@@ -77,9 +82,17 @@ const FeatureTiles = ({
 
   return (
     <section className={theme ? `${theme}Theme` : ""}>
-      <div className={styles.container}>
-        <SectionTitle title={title} subtitle={subtitle} />
-        <div className={styles.serviceWrapper}>{tilesMarkup}</div>
+      <div
+        className={`${styles.container} ${hasTimeline ? styles.noPadding : ""}`}
+      >
+        {title && <SectionTitle title={title} subtitle={subtitle} />}
+        <div
+          className={`${styles.serviceWrapper} ${
+            hasTimeline ? styles.timeline : ""
+          }`}
+        >
+          {tilesMarkup}
+        </div>
       </div>
     </section>
   );

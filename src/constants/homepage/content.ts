@@ -15,12 +15,12 @@ export const HOMEPAGE_CONTENT = {
     intro: "Welcome to",
     title: "The Portfoleyo",
     description: [
-      "I’m Lindsay, a senior developer with over a decade of experience helping brands build fast, scalable, and high-performing sites. At The Portfoleyo, I provide bespoke web development services designed to give businesses the flexibility and expertise they need, without the overheads of a agency! Whether you need a new site or app, improvements to an existing platform, or ongoing tech support, I’ll work with you to create a solution that fits your goals.",
-      "I take a hands-on, collaborative approach, treating every project as if it were my own. From technical problem-solving to enhancing user experience and site performance, I go beyond just writing code—I ensure your site is built to last, optimised for speed, accessibility, and growth. If you’re looking for a reliable, experienced developer who genuinely cares about your business, let’s chat!",
+      "I provide bespoke web development services, helping brands build fast, scalable, and high-performing sites without the complexity of an agency. Whether you need a new site, improvements to an existing platform, or ongoing tech support, I’ll craft a solution tailored to your goals.",
+      "With over a decade of experience, I take a hands-on, collaborative approach, treating every project as if it were my own. Beyond writing code, I focus on optimising speed, accessibility, and user experience to ensure long-term success. If you're looking for a reliable developer who genuinely cares about your business, let’s chat!",
     ],
     link: {
       href: "/about",
-      cta: "About",
+      cta: "My Story & Experience",
     },
     isH1Element: true,
     theme: colourTheme.highlight,
@@ -37,7 +37,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "Custom Development",
         description:
-          "Have ambitious plans for a site or app and need someone to bring it to life? I help turn ideas into performant, scalable and user-friendly solutions",
+          "Have a vision for a site or app but need the right technical expertise? I can turn complex ideas into seamless, performant digital experiences",
         href: "/services",
       },
       {
@@ -47,7 +47,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "Performance & SEO Optimisation",
         description:
-          "A great site needs more than just good looks - it has to be fast, accessible, and SEO-optimised to reach more customers and drive maximum conversions",
+          "A great site needs more than just good looks - it has to be fast, inclusive, and SEO-optimised to reach more customers and drive maximum conversions",
         href: "/services",
       },
       {
@@ -57,7 +57,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "E-Commerce & Shopify Solutions",
         description:
-          "I can help optimise your e-commerce platform, improving UX, streamlining management, and delivering a fast, conversion-focused storefront",
+          "I can fine-tune e-commerce platforms for speed, usability, and efficiency—improving UX, simplifying operations, and driving more sales",
         href: "/services",
       },
     ],
