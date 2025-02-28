@@ -34,28 +34,10 @@ const LINKS = {
 };
 
 export const NAV_CONTENT = {
-  homeHeaderNavContent: [
+  headerNavContent: [
     LINKS.aboutLink,
     LINKS.servicesLink,
     LINKS.portfolioLink,
-    LINKS.contactLink,
-  ],
-  aboutHeaderNavContent: [
-    LINKS.homeLink,
-    LINKS.servicesLink,
-    LINKS.portfolioLink,
-    LINKS.contactLink,
-  ],
-  servicesHeaderNavContent: [
-    LINKS.homeLink,
-    LINKS.aboutLink,
-    LINKS.portfolioLink,
-    LINKS.contactLink,
-  ],
-  portfolioHeaderNavContent: [
-    LINKS.homeLink,
-    LINKS.aboutLink,
-    LINKS.servicesLink,
     LINKS.contactLink,
   ],
   footerNavContent: [

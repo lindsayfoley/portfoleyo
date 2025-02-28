@@ -8,8 +8,6 @@ import {
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
 } from "@portfoleyo/constants/shared";
-import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
-import Nav from "@portfoleyo/components/nav/nav";
 import styles from "../styles/about.module.css";
 
 export default function About() {
@@ -20,7 +18,6 @@ export default function About() {
         <meta name="description" content={ABOUT_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Nav links={NAV_CONTENT.aboutHeaderNavContent} />
       <main>
         <Banner
           title={ABOUT_CONTENT.banner.title}

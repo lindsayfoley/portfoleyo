@@ -1,11 +1,9 @@
 import Head from "next/head";
 import { SERVICES_CONTENT } from "../constants/services/content";
 import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
-import Nav from "@portfoleyo/components/nav/nav";
-import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
-import styles from "../styles/services.module.css";
 import AnchorButton from "@portfoleyo/components/anchorButton/anchorButton";
+import styles from "../styles/services.module.css";
 
 export default function Services() {
   return (
@@ -15,7 +13,6 @@ export default function Services() {
         <meta name="description" content={SERVICES_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Nav links={NAV_CONTENT.servicesHeaderNavContent} />
       <main>
         <div className={styles.intro}>
           <TwoColumnLayout
