@@ -2,6 +2,7 @@ import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 
 import styles from "./showcase.module.css";
+import { colourTheme, Theme } from "@portfoleyo/shared/common";
 
 export const device = {
   mobile: "mobile",
@@ -18,6 +19,7 @@ interface ShowcaseProps extends TitleAndButtonProps {
     deviceConstraint?: DeviceKeys;
     href: string;
   }[];
+  theme?: Theme;
 }
 
 const Showcase = ({
@@ -27,6 +29,7 @@ const Showcase = ({
   images,
   href,
   cta,
+  theme = colourTheme.default,
 }: ShowcaseProps) => {
   const mobileOnlyImage = (deviceKey?: DeviceKeys) =>
     deviceKey && deviceKey === device.mobile;
@@ -34,7 +37,7 @@ const Showcase = ({
     deviceKey && deviceKey === device.desktop;
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
       <SectionTitle
         title={title}
         subtitle={subtitle}
