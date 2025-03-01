@@ -12,10 +12,10 @@ export const PORTFOLIO_CONTENT = {
     isH1Element: true,
   },
   banner: {
-    title: "About The Portfoleyo",
-    subtitle: "Background & ways to connect",
+    title: "Recent Work",
+    subtitle: "Real-world solutions",
     description:
-      "I partner with businesses of all sizes to create digital solutions that genuinely deliver results. My work spans from creating entirely new websites (like this one!) and apps, to optimising existing platforms for better user experience. Below you'll find examples of recent projects I've worked on.",
+      "From building new websites to enhancing existing platforms, I focus on creating smooth, scalable, and user-friendly digital experiences. Here’s a look at some of the projects I’ve worked on.",
     isTitleFirst: true,
     isH1Element: true,
     theme: colourTheme.highlight,

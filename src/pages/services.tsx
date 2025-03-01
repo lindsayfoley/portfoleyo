@@ -29,36 +29,35 @@ export default function Services() {
           />
           <TwoColumnLayout
             title={SERVICES_CONTENT.gettingStarted.twoColumn.title}
+            subtitle={SERVICES_CONTENT.gettingStarted.twoColumn.subtitle}
             paragraphs={SERVICES_CONTENT.gettingStarted.twoColumn.paragraphs}
             image={SERVICES_CONTENT.gettingStarted.twoColumn.image}
             theme={SERVICES_CONTENT.gettingStarted.twoColumn.theme}
           >
             <h3 className={styles.heading}>Full Site Audit</h3>
             <p className={styles.paragraph}>
-              I take a deep dive into your site, assessing:
+              A deep dive into your site, assessing:
             </p>
             <ul className={styles.list}>
               <li>
-                Accessibility: ensuring your site is user-friendly for everyone
+                Accessibility: ensuring an inclusive, user-friendly experience
               </li>
               <li>
-                Performance: identifying ways to improve speed and efficiency
+                Performance: identifying ways to boost speed and efficiency
               </li>
               <li>
-                SEO: reviewing metadata, page structure, and on-page elements
+                SEO: reviewing metadata, page structure, and key optimisations
               </li>
               <li>
-                Code Health: checking for errors, markup structure + technical
-                integrity
+                Code Health: checking for errors, markup structure, and
+                technical integrity
               </li>
-              <li>
-                End-to-End UX: making sure everything flows smoothly for your
-                users
-              </li>
+              <li>UX flow: nsuring a seamless experience for your users</li>
             </ul>
             <h3 className={styles.heading}>Development & Site Improvements</h3>
             <p>
-              Already know what you need? I can jump right in and get to work!
+              Already know what you need? I'll jump straight in and start making
+              improvements.
             </p>
             <AnchorButton href="/about#contact" cta="Contact me" />
           </TwoColumnLayout>
