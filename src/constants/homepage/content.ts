@@ -37,7 +37,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "Custom Development",
         description:
-          "Have a vision for a site or mobile app but need the right technical expertise? I can turn complex ideas into seamless, well-crafted builds",
+          "Have a vision for a site or app but need the right technical expertise or guidance? I can turn complex ideas into seamless, well-crafted builds",
         href: "/services",
       },
       {

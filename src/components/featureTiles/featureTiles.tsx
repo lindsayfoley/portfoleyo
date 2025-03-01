@@ -87,16 +87,10 @@ const FeatureTiles = ({
       <div
         className={`${styles.container} ${
           isDependantSection ? styles.noTopPadding : ""
-        }`}
+        } ${hasTimeline ? styles.timeline : ""}`}
       >
         {title && <SectionTitle title={title} subtitle={subtitle} />}
-        <div
-          className={`${styles.serviceWrapper} ${
-            hasTimeline ? styles.timeline : ""
-          }`}
-        >
-          {tilesMarkup}
-        </div>
+        <div className={styles.serviceWrapper}>{tilesMarkup}</div>
       </div>
     </section>
   );

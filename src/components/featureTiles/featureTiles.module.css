@@ -4,6 +4,20 @@
   max-width: 1225px;
   font-style: normal;
   color: var(--darkest-grey);
+  position: relative;
+}
+
+.timeline {
+  margin: 0 auto;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 138px;
+  left: 0;
+  right: 0;
+  border: 1px dotted #d5d1d1;
 }
 
 .noTopPadding {
@@ -23,19 +37,6 @@
 
 .noTopPadding .serviceWrapper {
   margin: 0;
-}
-
-.timeline {
-  margin: 0;
-}
-
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 138px;
-  left: 0;
-  right: 0;
-  border: 1px dotted #d5d1d1;
 }
 
 .serviceWrapper::-webkit-scrollbar {
@@ -149,9 +150,13 @@
     }
   }
 
+  .timeline {
+    padding-bottom: 10px;
+  }
+
   .timeline:before {
     display: block;
-    margin: 0 212px;
+    margin: 0 17.5%;
   }
 
   .serviceWrapper {
