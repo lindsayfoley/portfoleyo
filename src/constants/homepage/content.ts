@@ -57,7 +57,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "E-Commerce & Shopify Solutions",
         description:
-          "I can fine-tune e-commerce platforms for speed, usability, and efficiency—improving UX, simplifying operations, and driving more sales",
+          "I enhance Shopify and e-commerce platforms by implementing new functionality, refining UX, and optimising for efficiency and growth",
         href: "/services",
       },
     ],
