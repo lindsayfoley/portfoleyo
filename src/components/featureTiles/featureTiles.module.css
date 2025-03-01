@@ -21,6 +21,10 @@
   scrollbar-width: none;
 }
 
+.noTopPadding .serviceWrapper {
+  margin: 0;
+}
+
 .timeline {
   margin: 0;
 }

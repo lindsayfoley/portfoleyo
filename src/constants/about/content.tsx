@@ -61,10 +61,8 @@ export const ABOUT_CONTENT = {
     banner: {
       title: "Get in Touch",
       subtitle: "Let’s Chat About Your Project",
-      description: [
-        "If you think my expertise could be a good fit, I’d love to hear from you!",
-        "Whether you need support, have a project in mind, or want to explore how we could work together, do reach out:",
-      ],
+      description:
+        "Whether you need development support, have a new project in mind, or just want to explore how we could work together, please feel free to reach out:",
       theme: colourTheme.muted,
     },
   },
