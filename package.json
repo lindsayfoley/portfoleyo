@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' next build --workers=2",
     "start": "next start",
     "lint": "next lint"
   },
@@ -25,5 +25,5 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "typescript": "^5"
-  }
+  } 
 }
