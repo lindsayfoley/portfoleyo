@@ -1,20 +1,28 @@
 .container {
   margin: 0 auto;
-  padding: 40px 0 10px 0;
+  padding: 40px 0;
   max-width: 1225px;
   font-style: normal;
   color: var(--darkest-grey);
+}
+
+.noTopPadding {
+  padding-top: 0;
 }
 
 .serviceWrapper {
   position: relative;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  margin: 30px auto;
+  margin: 30px auto 10px auto;
   padding-right: 8%;
   display: flex;
   -ms-overflow-style: none; 
   scrollbar-width: none;
+}
+
+.timeline {
+  margin: 0;
 }
 
 .timeline:before {
@@ -105,6 +113,7 @@
     flex-wrap: wrap;
     padding-right: 0;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .service, .service:first-of-type {
@@ -128,7 +137,7 @@
 }
 
 @media (min-width: 1000px) {
-  .noPadding {
+  .noTopPadding {
     padding-top: 0;
 
     .serviceWrapper {
@@ -138,7 +147,7 @@
 
   .timeline:before {
     display: block;
-    margin: 0 20px;
+    margin: 0 212px;
   }
 
   .serviceWrapper {
