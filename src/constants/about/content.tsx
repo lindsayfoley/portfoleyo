@@ -62,7 +62,7 @@ export const ABOUT_CONTENT = {
       title: "Get in Touch",
       subtitle: "Let’s Chat About Your Project",
       description:
-        "Whether you need development support, have a new project in mind, or just want to explore how we could work together, please feel free to reach out:",
+        "Whether you need development support, have a new project in mind, or just want to explore how we could work together, feel free to reach out:",
       theme: colourTheme.muted,
     },
   },
