@@ -1,6 +1,6 @@
-import { Award } from "@portfoleyo/assets/svgs/award";
-import { Development } from "@portfoleyo/assets/svgs/development";
-import { Growth } from "@portfoleyo/assets/svgs/growth";
+import { Connection } from "@portfoleyo/assets/svgs/connection";
+import { Fluidity } from "@portfoleyo/assets/svgs/fluidity";
+import { Progression } from "@portfoleyo/assets/svgs/progression";
 import { colourTheme } from "@portfoleyo/shared/common";
 
 export const SERVICES_CONTENT = {
@@ -27,22 +27,22 @@ export const SERVICES_CONTENT = {
   featureTiles: {
     services: [
       {
-        Icon: Development,
+        Icon: Progression,
         title: "Ad Hoc or Ongoing Tech Support",
         description:
-          "Need quick fixes, feature updates, or ongoing development? I offer flexible support—ad hoc or long-term—to fit your business needs",
+          "Need quick fixes, feature updates, or ongoing development? I offer flexible support—ad hoc or long-term—to fit  business needs",
       },
       {
-        Icon: Award,
+        Icon: Fluidity,
         title: "Structured Workflow",
         description:
-          "Projects and tasks are organised on a shared Trello board with upfront pricing, priorities, and real-time updates, keeping everything transparent ",
+          "Projects and tasks are organised on a shared board with upfront pricing, priorities, and real-time updates, keeping things transparent",
       },
       {
-        Icon: Growth,
+        Icon: Connection,
         title: "Web, App & Email Development",
         description:
-          "I build modern, scalable sites and apps, plus customisable email templates on platforms like Klaviyo, ensuring they align with your brand",
+          "I build modern, scalable sites and apps, plus customisable email templates for platforms like Klaviyo, ensuring alignment with style guides",
       },
     ],
   },
