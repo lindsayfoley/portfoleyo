@@ -15,7 +15,7 @@ export const PORTFOLIO_CONTENT = {
     title: "Recent Work",
     subtitle: "Real-world examples",
     description:
-      "From building new sites and apps to enhancing existing platforms, I focus on creating smooth, scalable, and user-friendly digital experiences. Here’s a look at some of the projects I’ve worked on.",
+      "From building new sites and apps to enhancing existing platforms, I focus on creating smooth, scalable, and user-friendly digital experiences. Here’s a look at some projects I’ve worked on.",
     isTitleFirst: true,
     isH1Element: true,
     theme: colourTheme.highlight,
