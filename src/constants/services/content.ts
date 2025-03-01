@@ -28,13 +28,13 @@ export const SERVICES_CONTENT = {
     services: [
       {
         Icon: Development,
-        title: "Tech Support: Ad Hoc/Ongoing",
+        title: "Ad Hoc or Ongoing Tech Support",
         description:
           "Need quick fixes, feature updates, or ongoing development? I offer flexible support—ad hoc or long-term—to fit your business needs",
       },
       {
         Icon: Award,
-        title: "Clear, Structured Workflow",
+        title: "Structured Workflow",
         description:
           "Projects and tasks are organised on a shared Trello board with upfront pricing, priorities, and real-time updates, keeping everything transparent ",
       },

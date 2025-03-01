@@ -56,8 +56,8 @@ export default function Services() {
             </ul>
             <h3 className={styles.heading}>Development & Site Improvements</h3>
             <p>
-              Already know what you need? I'll jump straight in and start making
-              improvements.
+              Already know what you need? I&apos;ll jump straight in and start
+              making improvements.
             </p>
             <AnchorButton href="/about#contact" cta="Contact me" />
           </TwoColumnLayout>
