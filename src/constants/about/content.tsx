@@ -27,7 +27,7 @@ export const ABOUT_CONTENT = {
     },
     paragraphs: [
       "I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey into development started in 2011 when I was unexpectedly tasked with coding my first email. With no experience, I cobbled it together—and in the process, discovered a love for problem-solving with code. That curiosity turned into a passion, and I’ve been building ever since!",
-      "Before moving into contracting, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT—contributing to everything from development and UX improvements to large-scale platform upgrades and design system architecture. Along the way, I built a track record of delivering impactful solutions—here are a few key moments from my journey:",
+      "Before moving into contracting, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT—contributing to everything from development and UX improvements to large-scale platform upgrades and design system architecture.",
     ],
     theme: colourTheme.highlight,
   },
@@ -35,16 +35,16 @@ export const ABOUT_CONTENT = {
     theme: colourTheme.highlight,
     services: [
       {
-        label: "2016",
+        label: "2011",
         Icon: Development,
-        title: "Made Disney Mobile Ready",
+        title: "First Steps into Development",
         description:
-          "I co-led the development of a fully mobile-responsive site for all of Disney’s UK holiday platforms, ensuring a seamless user experience across all devices",
+          "Started my career in e-commerce, working with website content and HTML emails — my first glimpse into the world of web development",
       },
       {
         label: "2021",
         Icon: Award,
-        title: "Received Engineering Award at BT",
+        title: "Received BT Engineering Award",
         description:
           "I was recognised for my contributions as Principal Developer, enhancing UX by leading squads to develop new platform functionality",
       },

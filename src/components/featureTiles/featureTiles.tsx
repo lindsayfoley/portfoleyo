@@ -86,7 +86,7 @@ const FeatureTiles = ({
     <section className={theme ? `${theme}Theme` : ""}>
       <div
         className={`${styles.container} ${
-          isDependantSection ? styles.noPadding : ""
+          isDependantSection ? styles.noTopPadding : ""
         }`}
       >
         {title && <SectionTitle title={title} subtitle={subtitle} />}
