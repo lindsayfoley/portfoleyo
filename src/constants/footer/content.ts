@@ -3,7 +3,7 @@ export const FOOTER_CONTENT = {
   about: {
     title: "About",
     description:
-      "At The Portfoleyo, I help brands bring their ideas to life with modern, accessible, and high-performance web development. Whether it’s improving an existing site or building something new from scratch, I focus on clean, efficient code and thoughtful design—ensuring everything runs smoothly and feels great to use.",
+      "At The Portfoleyo, I help brands bring their ideas to life with modern, accessible, and high-performance web development. Whether it’s improving an existing site or creating something new from scratch, I focus on clean, efficient code and thoughtful design—ensuring everything runs smoothly and feels great to use.",
   },
   browse: {
     title: "Browse",

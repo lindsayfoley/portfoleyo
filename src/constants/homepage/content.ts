@@ -15,8 +15,8 @@ export const HOMEPAGE_CONTENT = {
     intro: "Welcome to",
     title: "The Portfoleyo",
     description: [
-      "I provide bespoke web development services, helping brands build fast, scalable, and high-performing sites without the complexity of an agency. Whether you need a new site, improvements to an existing platform, or ongoing tech support, I’ll craft a solution tailored to your goals.",
-      "With over a decade of experience, I take a hands-on, collaborative approach, treating every project as if it were my own. Beyond writing code, I focus on optimising speed, accessibility, and user experience to ensure long-term success. If you're looking for a reliable developer who genuinely cares about your business, let’s chat!",
+      "I provide bespoke web and app development services, helping brands build fast, scalable, and high-performing sites without the complexity of an agency. Whether you need a new site, improvements to an existing platform, or ongoing tech support, I’ll craft a solution tailored to your goals.",
+      "With over a decade of experience, I take a hands-on, collaborative approach, treating every project as if it were my own. Beyond writing code, I focus on optimising speed, accessibility, and UX to ensure long-term success. If you're looking for a reliable developer who genuinely cares about your business, let’s chat!",
     ],
     link: {
       href: "/about",
@@ -37,7 +37,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "Custom Development",
         description:
-          "Have a vision for a site or app but need the right technical expertise? I can turn complex ideas into seamless, performant digital experiences",
+          "Have a vision for a site or app but need the right technical expertise? I can turn complex ideas into seamless, well-crafted builds",
         href: "/services",
       },
       {
@@ -47,7 +47,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "Performance & SEO Optimisation",
         description:
-          "A great site needs more than just good looks - it has to be fast, inclusive, and SEO-optimised to reach more customers and drive maximum conversions",
+          "A great site needs more than just good looks – it has to be responsive, inclusive, and SEO-friendly to attract more customers and drive conversions",
         href: "/services",
       },
       {
@@ -57,7 +57,7 @@ export const HOMEPAGE_CONTENT = {
         },
         title: "E-Commerce & Shopify Solutions",
         description:
-          "I enhance Shopify and e-commerce platforms by implementing new functionality, refining UX, and optimising for efficiency and growth",
+          "I enhance Shopify and e-commerce platforms by implementing new functionality, refining UX, and streamlining for efficiency and growth",
         href: "/services",
       },
     ],

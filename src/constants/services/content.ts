@@ -11,16 +11,16 @@ export const SERVICES_CONTENT = {
   },
   sectionTitle: {
     title: "Services at The Portfoleyo",
-    subtitle: "How I can help",
+    subtitle: "What I Offer",
     isH1Element: true,
   },
   twoColumn: {
     image: {
-      src: "https://place-hold.it/400x290/#fffff",
+      src: "https://place-hold.it/400x300/#fffff",
       alt: "",
     },
     paragraphs: [
-      "I take a direct, transparent approach to development—removing the complexity that often comes with large teams. With almost 15 years of experience, including Senior and Principal Developer roles at major brands, I offer expert-level development with a hands-on, tailored approach.",
+      "I keep development simple, efficient, and tailored to what your business actually needs—without the complexity of large teams. With experience as a Senior and Principal Developer for major brands, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
       "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
     ],
   },
