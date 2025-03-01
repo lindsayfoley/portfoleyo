@@ -52,7 +52,7 @@ export default function Services() {
                 Code Health: checking for errors, markup structure, and
                 technical integrity
               </li>
-              <li>UX flow: nsuring a seamless experience for your users</li>
+              <li>UX flow: ensuring a seamless experience for your users</li>
             </ul>
             <h3 className={styles.heading}>Development & Site Improvements</h3>
             <p>

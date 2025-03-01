@@ -22,7 +22,7 @@ export const ABOUT_CONTENT = {
   },
   twoColumn: {
     image: {
-      src: "https://place-hold.it/400x350/#fffff",
+      src: "https://place-hold.it/400x320/#fffff",
       alt: "",
     },
     paragraphs: [
