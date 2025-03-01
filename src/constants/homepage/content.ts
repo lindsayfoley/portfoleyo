@@ -67,7 +67,7 @@ export const HOMEPAGE_CONTENT = {
     subtitle: "Work With Me",
     isTitleFirst: false,
     link: {
-      href: "/contact",
+      href: "/about#contact",
       cta: "Contact",
     },
     theme: colourTheme.highlight,
@@ -75,6 +75,7 @@ export const HOMEPAGE_CONTENT = {
   showcase: {
     title: "View my recent work",
     subtitle: "My Portfolio",
+    theme: colourTheme.muted,
     images: [
       {
         imageSrc: "/lesterrechocolate-recent-work.jpg",

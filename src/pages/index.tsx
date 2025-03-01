@@ -38,6 +38,7 @@ export default function Home() {
           href={HOMEPAGE_CONTENT.banner.link.href}
           cta={HOMEPAGE_CONTENT.banner.link.cta}
           theme={HOMEPAGE_CONTENT.banner.theme}
+          hasBorder
         />
         <Showcase
           title={HOMEPAGE_CONTENT.showcase.title}
@@ -45,6 +46,7 @@ export default function Home() {
           images={HOMEPAGE_CONTENT.showcase.images}
           cta={HOMEPAGE_CONTENT.showcase.link.cta}
           href={HOMEPAGE_CONTENT.showcase.link.href}
+          theme={HOMEPAGE_CONTENT.showcase.theme}
         />
       </main>
     </>
