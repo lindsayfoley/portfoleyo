@@ -25,7 +25,7 @@ export const SERVICES_CONTENT = {
     ],
   },
   featureTiles: {
-    title: "Ways of working together",
+    title: "Working together",
     subtitle: "Efficient, flexible, transparent",
     theme: colourTheme.muted,
     services: [
