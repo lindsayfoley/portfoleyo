@@ -17,7 +17,7 @@
 .paragraphSection:before {
     content: '';
     width: 155px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
     border: 1px solid var(--darkest-grey);
 }
