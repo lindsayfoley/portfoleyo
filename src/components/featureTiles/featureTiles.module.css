@@ -67,6 +67,7 @@
 }
 
 .copy {
+  padding-top: 15px;
   min-width: 300px;
 }
 
@@ -75,10 +76,10 @@
   margin-bottom: 5px;
 }
 
-.title:before {
+.timeline .title:before {
   content: '';
   display: block;
-  margin: -10px auto 10px auto;
+  margin: -25px auto 10px auto;
   width: 1px;
   height: 40px;
   background: var(--medium-grey);
