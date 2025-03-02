@@ -11,20 +11,23 @@ export const SERVICES_CONTENT = {
   },
   sectionTitle: {
     title: "Services at The Portfoleyo",
-    subtitle: "What I Offer",
+    subtitle: "Why work with me",
     isH1Element: true,
   },
   twoColumn: {
     image: {
-      src: "https://place-hold.it/400x300/#fffff",
+      src: "https://place-hold.it/400x280/#fffff",
       alt: "",
     },
     paragraphs: [
-      "I keep development simple, efficient, and tailored to what your business actually needs—without the complexity of large teams. With experience as a Senior and Principal Developer for major brands, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
+      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity. With experience as a Senior and Principal Developer for major brands, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
       "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
     ],
   },
   featureTiles: {
+    title: "Ways of working together",
+    subtitle: "Efficient, flexible, transparent",
+    theme: colourTheme.muted,
     services: [
       {
         Icon: Progression,
@@ -50,13 +53,13 @@ export const SERVICES_CONTENT = {
     twoColumn: {
       theme: colourTheme.highlight,
       title: "Getting Started",
-      subtitle: "Audit, improve, or build ",
+      subtitle: "Clear Process, Transparent Pricing",
       image: {
         src: "https://place-hold.it/400x480/#fffff",
         alt: "",
       },
       paragraphs: [
-        "Whether you have specific features in mind or need a full site audit to uncover opportunities for improvement, we can start where it makes the most sense for you.",
+        "Whether you're looking for development support or need an in-depth site audit, I follow a straightforward process to ensure clarity and efficiency.",
       ],
     },
   },

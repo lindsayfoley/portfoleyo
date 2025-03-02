@@ -24,8 +24,10 @@ export default function Services() {
             shouldReverseColumns
           />
           <FeatureTiles
+            title={SERVICES_CONTENT.featureTiles.title}
+            subtitle={SERVICES_CONTENT.featureTiles.subtitle}
             services={SERVICES_CONTENT.featureTiles.services}
-            isDependantSection
+            theme={SERVICES_CONTENT.featureTiles.theme}
           />
           <TwoColumnLayout
             title={SERVICES_CONTENT.gettingStarted.twoColumn.title}
@@ -34,10 +36,27 @@ export default function Services() {
             image={SERVICES_CONTENT.gettingStarted.twoColumn.image}
             theme={SERVICES_CONTENT.gettingStarted.twoColumn.theme}
           >
-            <h3 className={styles.heading}>Full Site Audit</h3>
-            <p className={styles.paragraph}>
-              A deep dive into your site, assessing:
-            </p>
+            <dl className={styles.list}>
+              <dt>Step 1: Initial Call</dt>
+              <dd>
+                We&apos;ll discuss your needs, goals, and any specific changes
+                or features you have in mind
+              </dd>
+              <dt>Step 2: Scope & Pricing</dt>
+              <dd>
+                I&apos;ll break down the work into tasks, write up tickets
+                detailing the work involved, and provide clear pricing
+              </dd>
+              <dt>Step 3: Implementation or Full Site Audit</dt>
+              <dd>
+                If you already know what you need, I&apos;ll get straight to
+                work
+              </dd>
+              <dd>
+                If you’d like a deeper review, I can perform a site audit,
+                covering:
+              </dd>
+            </dl>
             <ul className={styles.list}>
               <li>
                 Accessibility: ensuring an inclusive, user-friendly experience
@@ -54,11 +73,7 @@ export default function Services() {
               </li>
               <li>UX flow: ensuring a seamless experience for your users</li>
             </ul>
-            <h3 className={styles.heading}>Development & Site Improvements</h3>
-            <p>
-              Already know what you need? I&apos;ll jump straight in and start
-              making improvements.
-            </p>
+            <h4 className={styles.heading}>Ready to get started?</h4>
             <AnchorButton href="/about#contact" cta="Contact me" />
           </TwoColumnLayout>
         </div>
