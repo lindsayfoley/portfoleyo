@@ -17,7 +17,7 @@
   top: 138px;
   left: 0;
   right: 0;
-  border: 1px dotted #d5d1d1;
+  border: 0.5px solid var(--medium-grey);
 }
 
 .noTopPadding {
