@@ -26,8 +26,8 @@ export const ABOUT_CONTENT = {
       alt: "",
     },
     paragraphs: [
-      "I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey into development started in 2011 when I was unexpectedly tasked with coding my first email. With no experience, I cobbled it together—and in the process, discovered a love for problem-solving with code. That curiosity turned into a passion, and I’ve been building ever since!",
-      "Before moving into contracting, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT—contributing to everything from development and UX improvements to large-scale platform upgrades and design system architecture.",
+      "I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey into development started in 2011 when I was unexpectedly tasked with coding my first HTML email! With no experience, I somehow managed to cobble it together — and in the process, discovered a love for problem-solving with code.",
+      "Before going freelance, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT—contributing to everything from development and UX, to large-scale platform upgrades and design system architecture.",
     ],
     theme: colourTheme.highlight,
   },
@@ -62,7 +62,7 @@ export const ABOUT_CONTENT = {
       title: "Get in Touch",
       subtitle: "Let’s Chat About Your Project",
       description:
-        "Whether you need development support, have a new project in mind, or just want to explore how we could work together, feel free to reach out:",
+        "If you need development support, have a new project in mind, or want to explore working together, please feel free to reach out:",
       theme: colourTheme.muted,
     },
   },

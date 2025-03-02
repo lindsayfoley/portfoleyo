@@ -8,6 +8,9 @@ import {
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
 } from "@portfoleyo/constants/shared";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelopeOpenText, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/about.module.css";
 
 export default function About() {
@@ -47,17 +50,32 @@ export default function About() {
           >
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>Email</h5>
+                <h5 className={styles.heading}>
+                  <FontAwesomeIcon
+                    className={styles.icon}
+                    icon={faEnvelopeOpenText}
+                  />
+                  Email
+                </h5>
                 <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
               </li>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>LinkedIn</h5>
+                <h5 className={styles.heading}>
+                  <FontAwesomeIcon
+                    className={styles.icon}
+                    icon={faLinkedinIn}
+                  />
+                  LinkedIn
+                </h5>
                 <a href={LINKEDIN_PROFILE} target="_blank">
                   View my experience
                 </a>
               </li>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>Portfolio</h5>
+                <h5 className={styles.heading}>
+                  <FontAwesomeIcon className={styles.icon} icon={faCode} />
+                  Portfolio
+                </h5>
                 <a href={PORTFOLIO_SITE} target="_blank">
                   www.lindsayfoley.co.uk
                 </a>

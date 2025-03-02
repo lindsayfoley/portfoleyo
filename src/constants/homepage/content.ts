@@ -28,7 +28,7 @@ export const HOMEPAGE_CONTENT = {
   featureTiles: {
     title: "Featured services",
     subtitle: "How I Can Help",
-    cta: "Learn more",
+    cta: "Learn more >",
     services: [
       {
         image: {
@@ -68,7 +68,7 @@ export const HOMEPAGE_CONTENT = {
     isTitleFirst: false,
     link: {
       href: "/about#contact",
-      cta: "Contact",
+      cta: "Contact me",
     },
     theme: colourTheme.highlight,
   },

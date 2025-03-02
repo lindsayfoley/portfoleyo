@@ -16,7 +16,12 @@
     font-weight: normal;
     font-size: 15px;
     color: var(--dark-background);
-    padding-top: 15px;
+    padding: 15px 0 10px;
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 7px;
 }
 
 @media (min-width: 650px) {
