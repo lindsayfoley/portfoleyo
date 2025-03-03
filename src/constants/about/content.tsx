@@ -60,9 +60,9 @@ export const ABOUT_CONTENT = {
   contact: {
     banner: {
       title: "Get in Touch",
-      subtitle: "Let’s Chat About Your Project",
+      subtitle: " Let’s build something great",
       description:
-        "If you need development support, have a new project in mind, or want to explore working together, please feel free to reach out:",
+        "Whether you have a project in mind or just want to explore options, feel free to reach out:",
       theme: colourTheme.muted,
     },
   },

@@ -50,34 +50,36 @@ export default function About() {
           >
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>
-                  <FontAwesomeIcon
-                    className={styles.icon}
-                    icon={faEnvelopeOpenText}
-                  />
-                  Email
-                </h5>
-                <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+                <a href={`mailto:${EMAIL_ADDRESS}`}>
+                  <h5 className={styles.heading}>
+                    <FontAwesomeIcon
+                      className={styles.icon}
+                      icon={faEnvelopeOpenText}
+                    />
+                    Email
+                  </h5>
+                  {EMAIL_ADDRESS}
+                </a>
               </li>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>
-                  <FontAwesomeIcon
-                    className={styles.icon}
-                    icon={faLinkedinIn}
-                  />
-                  LinkedIn
-                </h5>
                 <a href={LINKEDIN_PROFILE} target="_blank">
+                  <h5 className={styles.heading}>
+                    <FontAwesomeIcon
+                      className={styles.icon}
+                      icon={faLinkedinIn}
+                    />
+                    LinkedIn
+                  </h5>
                   View my experience
                 </a>
               </li>
               <li className={styles.listItem}>
-                <h5 className={styles.heading}>
-                  <FontAwesomeIcon className={styles.icon} icon={faCode} />
-                  Portfolio
-                </h5>
                 <a href={PORTFOLIO_SITE} target="_blank">
-                  www.lindsayfoley.co.uk
+                  <h5 className={styles.heading}>
+                    <FontAwesomeIcon className={styles.icon} icon={faCode} />
+                    Portfolio
+                  </h5>
+                  Review my skills
                 </a>
               </li>
             </ul>
