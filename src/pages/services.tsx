@@ -37,10 +37,10 @@ export default function Services() {
             theme={SERVICES_CONTENT.gettingStarted.twoColumn.theme}
           >
             <dl className={styles.list}>
-              <dt>Step 1: Initial Call</dt>
+              <dt>Step 1: Initial Call or Email Discussion</dt>
               <dd>
-                We&apos;ll discuss your needs, goals, and any specific changes
-                or features you have in mind
+                We&apos;ll discuss your needs, goals, and any specific
+                changes/features you&apos;d like
               </dd>
               <dt>Step 2: Scope & Pricing</dt>
               <dd>

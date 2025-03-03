@@ -5,6 +5,10 @@ import styles from "./banner.module.css";
 import { ReactNode } from "react";
 
 interface BannerProps {
+  image?: {
+    src: string;
+    alt: string;
+  };
   description?: string | string[];
   theme?: Theme;
   children?: ReactNode;
@@ -16,6 +20,7 @@ type AllBannerProps = BannerProps &
   Partial<AnchorButtonProps>;
 
 const Banner = ({
+  image,
   title,
   subtitle,
   description,
@@ -34,6 +39,9 @@ const Banner = ({
       }`}
     >
       <div className={hasBorder ? styles.frame : ""}>
+        {image && (
+          <img className={styles.image} src={image.src} alt={image.alt} />
+        )}
         <SectionTitle
           title={title}
           subtitle={subtitle}

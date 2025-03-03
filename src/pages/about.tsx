@@ -43,6 +43,7 @@ export default function About() {
         />
         <div id="contact">
           <Banner
+            image={ABOUT_CONTENT.contact.banner.image}
             title={ABOUT_CONTENT.contact.banner.title}
             subtitle={ABOUT_CONTENT.contact.banner.subtitle}
             description={ABOUT_CONTENT.contact.banner.description}
