@@ -35,10 +35,10 @@ const LINKS = {
 
 export const NAV_CONTENT = {
   headerNavContent: [
+    LINKS.homeLink,
     LINKS.aboutLink,
     LINKS.servicesLink,
     LINKS.portfolioLink,
-    LINKS.contactLink,
   ],
   footerNavContent: [
     LINKS.aboutLink,
