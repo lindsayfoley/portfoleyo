@@ -49,11 +49,11 @@ export const ABOUT_CONTENT = {
           "I was recognised for my contributions as Principal Developer, enhancing UX by leading squads to develop new platform functionality",
       },
       {
-        label: "2023",
+        label: "2025",
         Icon: Growth,
-        title: "Launched The Portfoleyo",
+        title: "Launched The Portfoleyo Site",
         description:
-          "I transitioned from full-time roles to launch The Portfoleyo, an independent development studio providing expert-led solutions",
+          "After two years of contracting, I officially launched The Portfoleyo, an independent development studio providing expert-led solutions",
       },
     ],
   },
