@@ -20,7 +20,7 @@ interface FeatureTilesProps {
   cta?: string;
   theme?: Theme;
   hasTimeline?: boolean;
-  isDependantSection?: boolean;
+  isIndependantSection?: boolean;
 }
 
 const getIconFillValueFromTheme = (theme: Theme) => {
@@ -42,7 +42,7 @@ const FeatureTiles = ({
   cta,
   theme = colourTheme.default,
   hasTimeline = false,
-  isDependantSection = false,
+  isIndependantSection = true,
 }: FeatureTilesProps) => {
   const tilesMarkup = services.map(
     ({ label, image, Icon, title, description, href }) => {
@@ -86,7 +86,7 @@ const FeatureTiles = ({
     <section className={theme ? `${theme}Theme` : ""}>
       <div
         className={`${styles.container} ${
-          isDependantSection ? styles.noTopPadding : ""
+          !isIndependantSection ? styles.noTopPadding : ""
         } ${hasTimeline ? styles.timeline : ""}`}
       >
         {title && <SectionTitle title={title} subtitle={subtitle} />}

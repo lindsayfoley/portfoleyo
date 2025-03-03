@@ -39,7 +39,7 @@ export default function About() {
           services={ABOUT_CONTENT.featureTiles.services}
           theme={ABOUT_CONTENT.featureTiles.theme}
           hasTimeline
-          isDependantSection
+          isIndependantSection={false}
         />
         <div id="contact">
           <Banner

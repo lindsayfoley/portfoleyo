@@ -15,6 +15,7 @@ interface TwoColumnLayoutProps {
   shouldReverseColumns?: boolean;
   theme?: Theme;
   children?: ReactNode;
+  isIndependantSection?: boolean;
 }
 
 const TwoColumnLayout = ({
@@ -26,10 +27,15 @@ const TwoColumnLayout = ({
   shouldReverseColumns = false,
   theme = colourTheme.default,
   children,
+  isIndependantSection = true,
 }: TwoColumnLayoutProps) => {
   return (
     <section className={`${theme ? `${theme}Theme` : ""}`}>
-      <div className={styles.container}>
+      <div
+        className={`${styles.container} ${
+          !isIndependantSection ? styles.noTopPadding : ""
+        }`}
+      >
         <div
           className={`${styles.copy} ${
             shouldReverseColumns ? styles.secondary : ""

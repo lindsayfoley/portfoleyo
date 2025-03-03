@@ -9,18 +9,44 @@ export const SERVICES_CONTENT = {
     description:
       "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my work + services",
   },
-  sectionTitle: {
-    title: "Services at The Portfoleyo",
+  banner: {
+    title: "Services Offered",
     subtitle: "Why work with me",
+    description:
+      "With experience as a Senior and Principal Developer for industry-leading companies, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
+    isTitleFirst: true,
     isH1Element: true,
   },
   twoColumn: {
+    title: "Custom Development",
     image: {
-      src: "https://place-hold.it/400x280/#fffff",
+      src: "https://place-hold.it/400x250/#fffff",
       alt: "",
     },
     paragraphs: [
-      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity. With experience as a Senior and Principal Developer for major brands, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
+      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
+      "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
+    ],
+  },
+  twoColumnSeo: {
+    title: "Performance & SEO Optimisation",
+    image: {
+      src: "https://place-hold.it/400x250/#fffff",
+      alt: "",
+    },
+    paragraphs: [
+      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
+      "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
+    ],
+  },
+  twoColumnEcom: {
+    title: "E-Commerce & Shopify Solutions",
+    image: {
+      src: "https://place-hold.it/400x250/#fffff",
+      alt: "",
+    },
+    paragraphs: [
+      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
       "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
     ],
   },

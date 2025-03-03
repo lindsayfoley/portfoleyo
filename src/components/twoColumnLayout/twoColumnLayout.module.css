@@ -5,6 +5,10 @@
     padding: 30px 20px;
 }
 
+.noTopPadding {
+    padding-top: 0;
+}
+
 .secondary {
     order: 2;
     margin-top: 20px;
@@ -39,7 +43,10 @@
         flex-direction: row;
         max-width: 1100px;
         align-items: center;
-        padding: 60px 0;
+    }
+
+    .container:not(.noTopPadding) {
+        padding-top: 60px;
     }
 
     .secondary {
