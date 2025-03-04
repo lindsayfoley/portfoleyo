@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .noTopPadding {
@@ -14,6 +14,7 @@
 }
 
 .copy {
+    margin-top: 10px;
     text-align: left;
     order: 2;
 }
@@ -35,6 +36,7 @@
 }
 
 .imageContainer {
+    margin-top: 20px;
     order: 1;
 }
 

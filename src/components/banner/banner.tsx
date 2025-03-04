@@ -13,6 +13,7 @@ interface BannerProps {
   theme?: Theme;
   children?: ReactNode;
   hasBorder?: boolean;
+  isIndependantSection?: boolean;
 }
 
 type AllBannerProps = BannerProps &
@@ -31,12 +32,13 @@ const Banner = ({
   theme = colourTheme.default,
   children,
   hasBorder = false,
+  isIndependantSection = true,
 }: AllBannerProps) => {
   return (
     <div
       className={`${styles.container} ${theme ? `${theme}Theme` : ""} ${
         hasBorder ? styles.border : ""
-      }`}
+      } ${!isIndependantSection ? styles.noPaddingBottom : ""}`}
     >
       <div className={hasBorder ? styles.frame : ""}>
         {image && (

@@ -4,11 +4,6 @@
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
-    margin: 5px 0 20px 0;
-}
-
-.orderedlist {
-    padding: 0 20px;
 }
 
 .icon {
@@ -25,4 +20,10 @@
     color: var(--dark-background);
     padding: 5px 5px 0;
     display: inline-block;
+}
+
+@media (min-width: 1000px) {
+    .list {
+        margin: 5px 0 20px 0;
+    }
 }

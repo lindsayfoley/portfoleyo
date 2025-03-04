@@ -23,6 +23,7 @@ export default function Services() {
           isTitleFirst={SERVICES_CONTENT.banner.isTitleFirst}
           isH1Element={SERVICES_CONTENT.banner.isH1Element}
           description={SERVICES_CONTENT.banner.description}
+          isIndependantSection={false}
         />
         <TwoColumnLayout
           title={SERVICES_CONTENT.twoColumn.title}
@@ -86,7 +87,7 @@ export default function Services() {
           description={SERVICES_CONTENT.gettingStarted.banner.description}
           theme={SERVICES_CONTENT.gettingStarted.banner.theme}
         >
-          <ol className={`${styles.list} ${styles.orderedlist}`}>
+          <ol className={styles.list}>
             {SERVICES_CONTENT.gettingStarted.list.map(
               ({ title, text, icon }) => (
                 <li key={text}>

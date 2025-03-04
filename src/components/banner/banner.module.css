@@ -1,5 +1,9 @@
 .container:not(.border) {
-    padding: 30px 0;
+    padding: 30px 20px;
+}
+
+.container.noPaddingBottom {
+    padding-bottom: 0;
 }
 
 .border.container {
@@ -28,7 +32,6 @@
     line-height: 26px;
     margin: 0 auto;
     max-width: 850px;
-    padding: 0 20px;
 }
 
 @media (min-width: 700px) {
