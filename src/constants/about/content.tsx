@@ -19,10 +19,11 @@ export const ABOUT_CONTENT = {
   },
   sectionTitle: {
     title: "About Me",
+    subtitle: "My Journey in Development",
   },
   twoColumn: {
     image: {
-      src: "https://place-hold.it/400x250/#fffff",
+      src: "https://place-hold.it/400x300/#fffff",
       alt: "",
     },
     paragraphs: [

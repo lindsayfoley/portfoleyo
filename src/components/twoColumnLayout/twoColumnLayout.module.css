@@ -20,7 +20,7 @@
 
 .paragraphSection:before {
     content: '';
-    width: 155px;
+    width: 190px;
     margin: 10px 0;
     display: block;
     border: 1px solid var(--darkest-grey);

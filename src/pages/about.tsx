@@ -31,6 +31,7 @@ export default function About() {
         />
         <TwoColumnLayout
           title={ABOUT_CONTENT.sectionTitle.title}
+          subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
           paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
           image={ABOUT_CONTENT.twoColumn.image}
           theme={ABOUT_CONTENT.twoColumn.theme}
