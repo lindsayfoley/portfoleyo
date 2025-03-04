@@ -3,8 +3,10 @@ import { SERVICES_CONTENT } from "../constants/services/content";
 import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import AnchorButton from "@portfoleyo/components/anchorButton/anchorButton";
-import styles from "../styles/services.module.css";
 import Banner from "@portfoleyo/components/banner/banner";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/services.module.css";
 
 export default function Services() {
   return (
@@ -24,74 +26,76 @@ export default function Services() {
         />
         <TwoColumnLayout
           title={SERVICES_CONTENT.twoColumn.title}
+          subtitle={SERVICES_CONTENT.twoColumn.subtitle}
           paragraphs={SERVICES_CONTENT.twoColumn.paragraphs}
           image={SERVICES_CONTENT.twoColumn.image}
           shouldReverseColumns
           isIndependantSection={false}
-        />
+        >
+          <ul className={styles.list}>
+            {SERVICES_CONTENT.customDevelopmentList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </TwoColumnLayout>
         <TwoColumnLayout
           title={SERVICES_CONTENT.twoColumnSeo.title}
+          subtitle={SERVICES_CONTENT.twoColumnSeo.subtitle}
           paragraphs={SERVICES_CONTENT.twoColumnSeo.paragraphs}
           image={SERVICES_CONTENT.twoColumnSeo.image}
           isIndependantSection={false}
-        />
+        >
+          <ul className={styles.list}>
+            {SERVICES_CONTENT.seoList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </TwoColumnLayout>
         <TwoColumnLayout
           title={SERVICES_CONTENT.twoColumnEcom.title}
+          subtitle={SERVICES_CONTENT.twoColumnEcom.subtitle}
           paragraphs={SERVICES_CONTENT.twoColumnEcom.paragraphs}
           image={SERVICES_CONTENT.twoColumnEcom.image}
           shouldReverseColumns
           isIndependantSection={false}
-        />
+        >
+          <ul className={styles.list}>
+            {SERVICES_CONTENT.ecomList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </TwoColumnLayout>
         <FeatureTiles
           title={SERVICES_CONTENT.featureTiles.title}
           subtitle={SERVICES_CONTENT.featureTiles.subtitle}
           services={SERVICES_CONTENT.featureTiles.services}
           theme={SERVICES_CONTENT.featureTiles.theme}
         />
-        <TwoColumnLayout
-          title={SERVICES_CONTENT.gettingStarted.twoColumn.title}
-          subtitle={SERVICES_CONTENT.gettingStarted.twoColumn.subtitle}
-          paragraphs={SERVICES_CONTENT.gettingStarted.twoColumn.paragraphs}
-          image={SERVICES_CONTENT.gettingStarted.twoColumn.image}
-          theme={SERVICES_CONTENT.gettingStarted.twoColumn.theme}
+        <Banner
+          title={SERVICES_CONTENT.gettingStarted.banner.title}
+          subtitle={SERVICES_CONTENT.gettingStarted.banner.subtitle}
+          description={SERVICES_CONTENT.gettingStarted.banner.description}
+          theme={SERVICES_CONTENT.gettingStarted.banner.theme}
         >
-          <dl className={styles.list}>
-            <dt>Step 1: Initial Call or Email Discussion</dt>
-            <dd>
-              We&apos;ll discuss your needs, goals, and any specific
-              changes/features you&apos;d like
-            </dd>
-            <dt>Step 2: Scope & Pricing</dt>
-            <dd>
-              I&apos;ll break down the work into tasks, write up tickets
-              detailing the work involved, and provide clear pricing
-            </dd>
-            <dt>Step 3: Implementation or Full Site Audit</dt>
-            <dd>
-              If you already know what you need, I&apos;ll get straight to work
-            </dd>
-            <dd>
-              If you’d like a deeper review, I can perform a site audit,
-              covering:
-            </dd>
-          </dl>
-          <ul className={styles.list}>
-            <li>
-              Accessibility: ensuring an inclusive, user-friendly experience
-            </li>
-            <li>Performance: identifying ways to boost speed and efficiency</li>
-            <li>
-              SEO: reviewing metadata, page structure, and key optimisations
-            </li>
-            <li>
-              Code Health: checking for errors, markup structure, and technical
-              integrity
-            </li>
-            <li>UX flow: ensuring a seamless experience for your users</li>
-          </ul>
-          <h4 className={styles.heading}>Ready to get started?</h4>
-          <AnchorButton href="/about#contact" cta="Contact me" />
-        </TwoColumnLayout>
+          <ol className={styles.list}>
+            {SERVICES_CONTENT.gettingStarted.list.map(({ text, icon }) => (
+              <li key={text}>
+                <FontAwesomeIcon className={styles.icon} icon={icon} />
+                {text}
+              </li>
+            ))}
+          </ol>
+          <AnchorButton href="/about#contact" cta="Let's chat" />
+        </Banner>
       </main>
     </>
   );

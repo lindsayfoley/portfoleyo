@@ -2,6 +2,11 @@ import { Connection } from "@portfoleyo/assets/svgs/connection";
 import { Fluidity } from "@portfoleyo/assets/svgs/fluidity";
 import { Progression } from "@portfoleyo/assets/svgs/progression";
 import { colourTheme } from "@portfoleyo/shared/common";
+import {
+  faComments,
+  faCreditCard,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const SERVICES_CONTENT = {
   meta: {
@@ -19,40 +24,58 @@ export const SERVICES_CONTENT = {
   },
   twoColumn: {
     title: "Custom Development",
+    subtitle: "Tailored to your business",
     image: {
-      src: "https://place-hold.it/400x250/#fffff",
+      src: "/custom-development.jpg",
       alt: "",
     },
     paragraphs: [
-      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
-      "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
+      "Not every solution works straight out of the box. I build custom sites and apps—or refine what’s already there—so they fit your needs and work exactly how you want.",
     ],
   },
+  customDevelopmentList: [
+    "Custom development: building sites and apps from scratch with modern tech",
+    "Bespoke functionality: custom features to enhance UX and streamline workflows",
+    "Bug fixes & improvements: ensuring smooth performance and clean code",
+    "Email development: creating tailored responsive, cross-client email templates",
+  ],
   twoColumnSeo: {
     title: "Performance & SEO Optimisation",
+    subtitle: "Better rankings & usability",
     image: {
-      src: "https://place-hold.it/400x250/#fffff",
+      src: "/seo-notepad.jpg",
       alt: "",
     },
     paragraphs: [
-      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
-      "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
+      "Site speed and visibility impact conversions - I focus on performance tuning and technical SEO, ensuring your site runs efficiently while reaching the right audience.",
     ],
   },
+  seoList: [
+    "Site speed: improving performance, reducing load times, enabling lazy loading",
+    "SEO review: optimising metadata, adding structured data, improving markup",
+    "Accessibility: ensuring WCAG compliance for an inclusive, user-friendly site",
+    "Site audit: assessing issues affecting discoverability, usability & responsiveness",
+  ],
   twoColumnEcom: {
     title: "E-Commerce & Shopify Solutions",
+    subtitle: "For efficiency & growth",
     image: {
-      src: "https://place-hold.it/400x250/#fffff",
+      src: "/flat-lay-desk.jpg",
       alt: "",
     },
     paragraphs: [
-      "I keep development simple, efficient, and tailored to what your business actually needs—without unnecessary complexity.",
-      "Working together means faster turnaround times—whether you’re launching new features, refining your site, or rolling out improvements. With more autonomy, updates go live sooner, giving you the flexibility to adapt and evolve as needed.",
+      "An online store should be fast, easy to navigate, and built for conversions. I optimise stores for better performance and usability on Shopify and Squarespace.",
     ],
   },
+  ecomList: [
+    "Store customisation: editing themes and sections tailored to your brand",
+    "Analytics implementation: setting up tracking for insights, and performance",
+    "Feature integration: adding custom filters, checkout upgrades, and automation",
+    "App integrations: connecting popular tools like Klaviyo and Sanity for automation",
+  ],
   featureTiles: {
-    title: "Working together",
-    subtitle: "Efficient, flexible, transparent",
+    title: "How I Work",
+    subtitle: "Efficient, flexible & transparent",
     theme: colourTheme.muted,
     services: [
       {
@@ -76,17 +99,26 @@ export const SERVICES_CONTENT = {
     ],
   },
   gettingStarted: {
-    twoColumn: {
+    banner: {
       theme: colourTheme.highlight,
       title: "Getting Started",
-      subtitle: "Clear Process, Transparent Pricing",
-      image: {
-        src: "https://place-hold.it/400x480/#fffff",
-        alt: "",
-      },
-      paragraphs: [
-        "Whether you're looking for development support or need an in-depth site audit, I follow a straightforward process to ensure clarity and efficiency.",
-      ],
+      subtitle: "Simple Process, Clear Pricing",
+      description:
+        "Whether you need development support or a site audit, I keep things straightforward:",
     },
+    list: [
+      {
+        text: "Initial chat: we’ll discuss your goals and what you need via call or email",
+        icon: faComments,
+      },
+      {
+        text: "Scope & pricing: I’ll break the work down into tasks with clear pricing",
+        icon: faCreditCard,
+      },
+      {
+        text: "Implementation: I’ll get to work and also provide a full site review",
+        icon: faRocket,
+      },
+    ],
   },
 };
