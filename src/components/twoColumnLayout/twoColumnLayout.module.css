@@ -10,7 +10,6 @@
 }
 
 .secondary {
-    order: 2;
     margin-top: 20px;
 }
 
@@ -50,6 +49,7 @@
     }
 
     .secondary {
+        order: 2;
         margin-top: 0;
     }
 

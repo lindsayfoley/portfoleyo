@@ -86,7 +86,7 @@ export default function Services() {
           description={SERVICES_CONTENT.gettingStarted.banner.description}
           theme={SERVICES_CONTENT.gettingStarted.banner.theme}
         >
-          <ol className={styles.list}>
+          <ol className={`${styles.list} ${styles.orderedlist}`}>
             {SERVICES_CONTENT.gettingStarted.list.map(
               ({ title, text, icon }) => (
                 <li key={text}>

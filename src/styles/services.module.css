@@ -7,6 +7,10 @@
     margin: 5px 0 20px 0;
 }
 
+.orderedlist {
+    padding: 0 20px;
+}
+
 .icon {
     padding-right: 7px;
 }
