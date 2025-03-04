@@ -10,7 +10,7 @@ export const HOMEPAGE_CONTENT = {
   highlightBanner: {
     image: {
       src: "/laptop-open-site.jpg",
-      alt: "",
+      alt: "A laptop open on the Come Fly With Lindsay travel blog site",
     },
     intro: "Welcome to",
     title: "The Portfoleyo",
@@ -33,7 +33,7 @@ export const HOMEPAGE_CONTENT = {
       {
         image: {
           src: "/code.jpg",
-          alt: "",
+          alt: "A close up of a laptop running Visual Studio Code",
         },
         title: "Custom Development",
         description:
@@ -43,7 +43,7 @@ export const HOMEPAGE_CONTENT = {
       {
         image: {
           src: "/keyboard-flat-white.jpg",
-          alt: "",
+          alt: "A desk scene with stationary and laptop",
         },
         title: "Performance & SEO Optimisation",
         description:
@@ -53,7 +53,7 @@ export const HOMEPAGE_CONTENT = {
       {
         image: {
           src: "/shopify-dev.jpg",
-          alt: "",
+          alt: "A Shopify theme shown in a browser",
         },
         title: "E-Commerce & Shopify Solutions",
         description:
@@ -79,22 +79,26 @@ export const HOMEPAGE_CONTENT = {
     images: [
       {
         imageSrc: "/lesterrechocolate-recent-work.jpg",
-        alt: "",
+        alt: "Recent work I've completed for L'Esterre Chocolate",
         href: "/portfolio",
       },
       {
         imageSrc: "/the-fabled-thread-recent-work.jpg",
-        alt: "",
+        alt: "Recent work I've completed for The Fabled Thread",
         deviceConstraint: device.desktop,
         href: "/portfolio",
       },
       {
         imageSrc: "/the-fabled-thread-recent-work-mobile.jpg",
-        alt: "",
+        alt: "Recent work I've completed for The Fabled Thread",
         deviceConstraint: device.mobile,
         href: "/portfolio",
       },
-      { imageSrc: "/the-mews-recent-work.jpg", alt: "", href: "/portfolio" },
+      {
+        imageSrc: "/the-mews-recent-work.jpg",
+        alt: "Recent work I've completed for The Mews",
+        href: "/portfolio",
+      },
     ],
     link: {
       cta: "View more",

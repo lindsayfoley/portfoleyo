@@ -24,7 +24,7 @@ export const ABOUT_CONTENT = {
   twoColumn: {
     image: {
       src: "https://place-hold.it/400x300/#fffff",
-      alt: "",
+      alt: "The Portfoleyo founder, Lindsay Foley",
     },
     paragraphs: [
       "I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey into development started in 2011 when I was unexpectedly tasked with coding my first HTML email! With no experience, I somehow managed to cobble it together — and in the process, discovered a love for problem-solving with code.",
@@ -62,7 +62,7 @@ export const ABOUT_CONTENT = {
     banner: {
       image: {
         src: "/contact-image-flat-lay.jpg",
-        alt: "",
+        alt: "A phone, notepad and laptop on a desk",
       },
       title: "Get in Touch",
       subtitle: " Let’s build something great",
