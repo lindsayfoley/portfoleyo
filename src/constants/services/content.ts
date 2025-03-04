@@ -80,7 +80,7 @@ export const SERVICES_CONTENT = {
     services: [
       {
         Icon: Progression,
-        title: "Ad Hoc or Ongoing Tech Support",
+        title: "Ad Hoc or Ongoing Support",
         description:
           "Need quick fixes, feature updates, or ongoing development? I offer flexible support—ad hoc or long-term—to fit  business needs",
       },
@@ -92,7 +92,7 @@ export const SERVICES_CONTENT = {
       },
       {
         Icon: Connection,
-        title: "Web, App & Email Development",
+        title: "Web, App & Email Services",
         description:
           "I build modern, scalable sites and apps, plus customisable email templates for platforms like Klaviyo, ensuring alignment with style guides",
       },
@@ -109,17 +109,17 @@ export const SERVICES_CONTENT = {
     list: [
       {
         title: "Initial chat:",
-        text: "We'll discuss your goals and what you need via call/email",
+        text: "Goals are discussed via call/email",
         icon: faComments,
       },
       {
         title: "Scope & pricing:",
-        text: "I’ll break the work down into tasks with clear pricing",
+        text: "Tasks are written and priced",
         icon: faCreditCard,
       },
       {
-        title: "Implementation:",
-        text: "I’ll get to work and also provide a full site review",
+        title: "Build:",
+        text: "Work begins, along with a full site review",
         icon: faRocket,
       },
     ],

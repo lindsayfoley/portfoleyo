@@ -35,7 +35,6 @@ export default function About() {
           paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
           image={ABOUT_CONTENT.twoColumn.image}
           theme={ABOUT_CONTENT.twoColumn.theme}
-          isIndependantSection={false}
         />
         <FeatureTiles
           services={ABOUT_CONTENT.featureTiles.services}
