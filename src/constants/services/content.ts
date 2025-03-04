@@ -108,15 +108,18 @@ export const SERVICES_CONTENT = {
     },
     list: [
       {
-        text: "Initial chat: we’ll discuss your goals and what you need via call or email",
+        title: "Initial chat:",
+        text: "We'll discuss your goals and what you need via call/email",
         icon: faComments,
       },
       {
-        text: "Scope & pricing: I’ll break the work down into tasks with clear pricing",
+        title: "Scope & pricing:",
+        text: "I’ll break the work down into tasks with clear pricing",
         icon: faCreditCard,
       },
       {
-        text: "Implementation: I’ll get to work and also provide a full site review",
+        title: "Implementation:",
+        text: "I’ll get to work and also provide a full site review",
         icon: faRocket,
       },
     ],

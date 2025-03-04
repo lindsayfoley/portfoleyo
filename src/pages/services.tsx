@@ -87,14 +87,19 @@ export default function Services() {
           theme={SERVICES_CONTENT.gettingStarted.banner.theme}
         >
           <ol className={styles.list}>
-            {SERVICES_CONTENT.gettingStarted.list.map(({ text, icon }) => (
-              <li key={text}>
-                <FontAwesomeIcon className={styles.icon} icon={icon} />
-                {text}
-              </li>
-            ))}
+            {SERVICES_CONTENT.gettingStarted.list.map(
+              ({ title, text, icon }) => (
+                <li key={text}>
+                  <h5 className={styles.heading}>
+                    <FontAwesomeIcon className={styles.icon} icon={icon} />
+                    {title}
+                  </h5>
+                  {text}
+                </li>
+              )
+            )}
           </ol>
-          <AnchorButton href="/about#contact" cta="Let's chat" />
+          <AnchorButton href="/about#contact" cta="Get in touch" />
         </Banner>
       </main>
     </>

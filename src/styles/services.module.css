@@ -10,3 +10,15 @@
 .icon {
     padding-right: 7px;
 }
+
+.heading {
+    text-transform: uppercase;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--dark-background);
+    padding: 5px 5px 0;
+    display: inline-block;
+}
