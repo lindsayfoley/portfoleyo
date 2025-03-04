@@ -18,7 +18,7 @@ export const SERVICES_CONTENT = {
     title: "Services Offered",
     subtitle: "Why work with me",
     description:
-      "With experience as a Senior and Principal Developer for industry-leading companies, I bring expert-level development with a hands-on approach, ensuring projects move smoothly and deliver real impact.",
+      "With experience as a Senior and Principal Developer for industry-leading companies, I bring expert level development with a hands on approach, ensuring projects move smoothly and deliver real impact.",
     isTitleFirst: true,
     isH1Element: true,
   },
