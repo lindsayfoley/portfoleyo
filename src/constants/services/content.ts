@@ -6,6 +6,7 @@ import {
   faComments,
   faCreditCard,
   faRocket,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const SERVICES_CONTENT = {
@@ -108,19 +109,24 @@ export const SERVICES_CONTENT = {
     },
     list: [
       {
-        title: "Initial chat:",
-        text: "Goals are discussed via call/email",
+        title: "Consultation:",
+        text: "Discuss your goals",
         icon: faComments,
       },
       {
-        title: "Scope & pricing:",
-        text: "Tasks are written and priced",
+        title: "Workflow:",
+        text: "Create tasks with pricing",
         icon: faCreditCard,
       },
       {
-        title: "Build:",
-        text: "Work begins, along with a full site review",
+        title: "Implementation:",
+        text: "Begin work on tasks",
         icon: faRocket,
+      },
+      {
+        title: "Review:",
+        text: "Conduct full site audit",
+        icon: faMagnifyingGlass,
       },
     ],
   },
