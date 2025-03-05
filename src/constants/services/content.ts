@@ -82,9 +82,9 @@ export const SERVICES_CONTENT = {
     services: [
       {
         Icon: Progression,
-        title: "Ad Hoc or Ongoing Support",
+        title: "Ad Hoc & Ongoing Support",
         description:
-          "Need quick fixes, feature updates, or ongoing development? I offer flexible support—ad hoc or long-term—to fit  business needs",
+          "Need quick fixes, feature updates, or ongoing development? I offer flexible support: ad hoc or long-term, to fit your business needs",
       },
       {
         Icon: Fluidity,
@@ -96,7 +96,7 @@ export const SERVICES_CONTENT = {
         Icon: Connection,
         title: "Web, App & Email Services",
         description:
-          "I build modern, scalable sites and apps, plus customisable email templates for platforms like Klaviyo, ensuring alignment with style guides",
+          "I build modern, scalable sites and apps, plus customisable email templates for tools like Klaviyo, ensuring alignment with style guides",
       },
     ],
   },
@@ -111,27 +111,27 @@ export const SERVICES_CONTENT = {
     list: [
       {
         title: "1. Consultation:",
-        text: "We'll discuss your goals",
+        text: "Discuss your goals",
         icon: faComments,
       },
       {
         title: "2. Workflow:",
-        text: "I'll create tasks with pricing",
+        text: "Create tasks with pricing",
         icon: faListCheck,
       },
       {
         title: "3. Implementation:",
-        text: "I begin work on tasks",
+        text: "Begin work on tasks",
         icon: faHammer,
       },
       {
         title: "4. Review:",
-        text: "I conduct an in-depth site audit",
+        text: "Conduct an in-depth site audit",
         icon: faMagnifyingGlassChart,
       },
       {
         title: "5. Next Steps:",
-        text: "You decide which tasks to do",
+        text: "Decide on audit tasks to do",
         icon: faArrowRight,
       },
     ],
