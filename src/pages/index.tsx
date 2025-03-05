@@ -14,40 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <HighlightBanner
-          imageSrc={HOMEPAGE_CONTENT.highlightBanner.image.src}
-          alt={HOMEPAGE_CONTENT.highlightBanner.image.alt}
-          intro={HOMEPAGE_CONTENT.highlightBanner.intro}
-          title={HOMEPAGE_CONTENT.highlightBanner.title}
-          description={HOMEPAGE_CONTENT.highlightBanner.description}
-          cta={HOMEPAGE_CONTENT.highlightBanner.link.cta}
-          link={HOMEPAGE_CONTENT.highlightBanner.link.href}
-          isH1Element={HOMEPAGE_CONTENT.highlightBanner.isH1Element}
-          theme={HOMEPAGE_CONTENT.banner.theme}
-        />
-        <FeatureTiles
-          title={HOMEPAGE_CONTENT.featureTiles.title}
-          subtitle={HOMEPAGE_CONTENT.featureTiles.subtitle}
-          services={HOMEPAGE_CONTENT.featureTiles.services}
-          cta={HOMEPAGE_CONTENT.featureTiles.cta}
-        />
-        <Banner
-          title={HOMEPAGE_CONTENT.banner.title}
-          subtitle={HOMEPAGE_CONTENT.banner.subtitle}
-          isTitleFirst={HOMEPAGE_CONTENT.banner.isTitleFirst}
-          href={HOMEPAGE_CONTENT.banner.link.href}
-          cta={HOMEPAGE_CONTENT.banner.link.cta}
-          theme={HOMEPAGE_CONTENT.banner.theme}
-          hasBorder
-        />
-        <Showcase
-          title={HOMEPAGE_CONTENT.showcase.title}
-          subtitle={HOMEPAGE_CONTENT.showcase.subtitle}
-          images={HOMEPAGE_CONTENT.showcase.images}
-          cta={HOMEPAGE_CONTENT.showcase.link.cta}
-          href={HOMEPAGE_CONTENT.showcase.link.href}
-          theme={HOMEPAGE_CONTENT.showcase.theme}
-        />
+        <HighlightBanner {...HOMEPAGE_CONTENT.highlightBanner} />
+        <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
+        <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
+        <Showcase {...HOMEPAGE_CONTENT.showcase} />
       </main>
     </>
   );

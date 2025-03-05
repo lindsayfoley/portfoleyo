@@ -22,34 +22,18 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <Banner
-          title={ABOUT_CONTENT.banner.title}
-          subtitle={ABOUT_CONTENT.banner.subtitle}
-          isTitleFirst={ABOUT_CONTENT.banner.isTitleFirst}
-          isH1Element={ABOUT_CONTENT.banner.isH1Element}
-          description={ABOUT_CONTENT.banner.description}
-        />
+        <Banner {...ABOUT_CONTENT.banner} />
         <TwoColumnLayout
-          title={ABOUT_CONTENT.sectionTitle.title}
-          subtitle={ABOUT_CONTENT.sectionTitle.subtitle}
-          paragraphs={ABOUT_CONTENT.twoColumn.paragraphs}
-          image={ABOUT_CONTENT.twoColumn.image}
-          theme={ABOUT_CONTENT.twoColumn.theme}
+          {...ABOUT_CONTENT.sectionTitle}
+          {...ABOUT_CONTENT.twoColumn}
         />
         <FeatureTiles
-          services={ABOUT_CONTENT.featureTiles.services}
-          theme={ABOUT_CONTENT.featureTiles.theme}
+          {...ABOUT_CONTENT.featureTiles}
           hasTimeline
           isIndependantSection={false}
         />
         <div id="contact">
-          <Banner
-            image={ABOUT_CONTENT.contact.banner.image}
-            title={ABOUT_CONTENT.contact.banner.title}
-            subtitle={ABOUT_CONTENT.contact.banner.subtitle}
-            description={ABOUT_CONTENT.contact.banner.description}
-            theme={ABOUT_CONTENT.contact.banner.theme}
-          >
+          <Banner {...ABOUT_CONTENT.contact.banner}>
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
                 <a href={`mailto:${EMAIL_ADDRESS}`}>

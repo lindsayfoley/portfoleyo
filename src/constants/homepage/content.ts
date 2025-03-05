@@ -8,20 +8,16 @@ export const HOMEPAGE_CONTENT = {
       "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
   },
   highlightBanner: {
-    image: {
-      src: "/laptop-open-site.jpg",
-      alt: "A laptop open on the Come Fly With Lindsay travel blog site",
-    },
+    imageSrc: "/laptop-open-site.jpg",
+    alt: "A laptop open on the Come Fly With Lindsay travel blog site",
     intro: "Welcome to",
     title: "The Portfoleyo",
     description: [
       "I provide bespoke web and app development services, helping brands build fast, scalable, and high-performing sites without the complexity of an agency. Whether you need a new site, improvements to an existing platform, or ongoing tech support, I’ll craft a solution tailored to your goals.",
       "With over a decade of experience, I take a hands-on, collaborative approach, treating every project as if it were my own. Beyond writing code, I focus on optimising speed, accessibility, and UX to ensure long-term success. If you're looking for a reliable developer who genuinely cares about your business, let’s chat!",
     ],
-    link: {
-      href: "/about",
-      cta: "My Story & Experience",
-    },
+    cta: "My Story & Experience",
+    link: "/about",
     isH1Element: true,
     theme: colourTheme.highlight,
   },
@@ -100,9 +96,7 @@ export const HOMEPAGE_CONTENT = {
         href: "/portfolio",
       },
     ],
-    link: {
-      cta: "View more",
-      href: "/portfolio",
-    },
+    cta: "View more",
+    href: "/portfolio",
   },
 };

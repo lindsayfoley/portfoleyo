@@ -17,19 +17,9 @@ export default function Services() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <Banner
-          title={SERVICES_CONTENT.banner.title}
-          subtitle={SERVICES_CONTENT.banner.subtitle}
-          isTitleFirst={SERVICES_CONTENT.banner.isTitleFirst}
-          isH1Element={SERVICES_CONTENT.banner.isH1Element}
-          description={SERVICES_CONTENT.banner.description}
-          isIndependantSection={false}
-        />
+        <Banner {...SERVICES_CONTENT.banner} isIndependantSection={false} />
         <TwoColumnLayout
-          title={SERVICES_CONTENT.twoColumn.title}
-          subtitle={SERVICES_CONTENT.twoColumn.subtitle}
-          paragraphs={SERVICES_CONTENT.twoColumn.paragraphs}
-          image={SERVICES_CONTENT.twoColumn.image}
+          {...SERVICES_CONTENT.twoColumn}
           shouldReverseColumns
           isIndependantSection={false}
         >
@@ -43,10 +33,7 @@ export default function Services() {
           </ul>
         </TwoColumnLayout>
         <TwoColumnLayout
-          title={SERVICES_CONTENT.twoColumnSeo.title}
-          subtitle={SERVICES_CONTENT.twoColumnSeo.subtitle}
-          paragraphs={SERVICES_CONTENT.twoColumnSeo.paragraphs}
-          image={SERVICES_CONTENT.twoColumnSeo.image}
+          {...SERVICES_CONTENT.twoColumnSeo}
           isIndependantSection={false}
         >
           <ul className="list">
@@ -59,10 +46,7 @@ export default function Services() {
           </ul>
         </TwoColumnLayout>
         <TwoColumnLayout
-          title={SERVICES_CONTENT.twoColumnEcom.title}
-          subtitle={SERVICES_CONTENT.twoColumnEcom.subtitle}
-          paragraphs={SERVICES_CONTENT.twoColumnEcom.paragraphs}
-          image={SERVICES_CONTENT.twoColumnEcom.image}
+          {...SERVICES_CONTENT.twoColumnEcom}
           shouldReverseColumns
           isIndependantSection={false}
         >
@@ -75,18 +59,8 @@ export default function Services() {
             ))}
           </ul>
         </TwoColumnLayout>
-        <FeatureTiles
-          title={SERVICES_CONTENT.featureTiles.title}
-          subtitle={SERVICES_CONTENT.featureTiles.subtitle}
-          services={SERVICES_CONTENT.featureTiles.services}
-          theme={SERVICES_CONTENT.featureTiles.theme}
-        />
-        <Banner
-          title={SERVICES_CONTENT.gettingStarted.banner.title}
-          subtitle={SERVICES_CONTENT.gettingStarted.banner.subtitle}
-          description={SERVICES_CONTENT.gettingStarted.banner.description}
-          theme={SERVICES_CONTENT.gettingStarted.banner.theme}
-        >
+        <FeatureTiles {...SERVICES_CONTENT.featureTiles} />
+        <Banner {...SERVICES_CONTENT.gettingStarted.banner}>
           <ol className={`list ${styles.orderedlist}`}>
             {SERVICES_CONTENT.gettingStarted.list.map(
               ({ title, text, icon }) => (
