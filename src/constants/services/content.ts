@@ -4,9 +4,10 @@ import { Progression } from "@portfoleyo/assets/svgs/progression";
 import { colourTheme } from "@portfoleyo/shared/common";
 import {
   faComments,
-  faCreditCard,
-  faRocket,
-  faMagnifyingGlass,
+  faArrowRight,
+  faHammer,
+  faMagnifyingGlassChart,
+  faListCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const SERVICES_CONTENT = {
@@ -109,24 +110,29 @@ export const SERVICES_CONTENT = {
     },
     list: [
       {
-        title: "Consultation:",
-        text: "Discuss your goals",
+        title: "1. Consultation:",
+        text: "We'll discuss your goals",
         icon: faComments,
       },
       {
-        title: "Workflow:",
-        text: "Create tasks with pricing",
-        icon: faCreditCard,
+        title: "2. Workflow:",
+        text: "I'll create tasks with pricing",
+        icon: faListCheck,
       },
       {
-        title: "Implementation:",
-        text: "Begin work on tasks",
-        icon: faRocket,
+        title: "3. Implementation:",
+        text: "I begin work on tasks",
+        icon: faHammer,
       },
       {
-        title: "Review:",
-        text: "Conduct full site audit",
-        icon: faMagnifyingGlass,
+        title: "4. Review:",
+        text: "I conduct an in-depth site audit",
+        icon: faMagnifyingGlassChart,
+      },
+      {
+        title: "5. Next Steps:",
+        text: "You decide which tasks to do",
+        icon: faArrowRight,
       },
     ],
   },
