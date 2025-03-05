@@ -30,14 +30,12 @@ export default function Portfolio() {
               <h5 className="heading">
                 {PORTFOLIO_CONTENT.checkmarkSectionTitle}
               </h5>
-              {PORTFOLIO_CONTENT.theFabledThread.workCompletedList.map(
-                (item) => (
-                  <li key={item}>
-                    <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
-                  </li>
-                )
-              )}
             </li>
+            {PORTFOLIO_CONTENT.theFabledThread.workCompletedList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
+              </li>
+            ))}
           </ul>
         </TwoColumnLayout>
         <TwoColumnLayout
@@ -57,12 +55,12 @@ export default function Portfolio() {
               <h5 className="heading">
                 {PORTFOLIO_CONTENT.checkmarkSectionTitle}
               </h5>
-              {PORTFOLIO_CONTENT.theMews.workCompletedList.map((item) => (
-                <li key={item}>
-                  <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
-                </li>
-              ))}
             </li>
+            {PORTFOLIO_CONTENT.theMews.workCompletedList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
+              </li>
+            ))}
           </ul>
         </TwoColumnLayout>
         <TwoColumnLayout
@@ -82,12 +80,12 @@ export default function Portfolio() {
               <h5 className="heading">
                 {PORTFOLIO_CONTENT.checkmarkSectionTitle}
               </h5>
-              {PORTFOLIO_CONTENT.lesterre.workCompletedList.map((item) => (
-                <li key={item}>
-                  <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
-                </li>
-              ))}
             </li>
+            {PORTFOLIO_CONTENT.lesterre.workCompletedList.map((item) => (
+              <li key={item}>
+                <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
+              </li>
+            ))}
           </ul>
         </TwoColumnLayout>
         <TwoColumnLayout
@@ -107,14 +105,14 @@ export default function Portfolio() {
               <h5 className="heading">
                 {PORTFOLIO_CONTENT.checkmarkSectionTitle}
               </h5>
-              {PORTFOLIO_CONTENT.charlotteTilbury.workCompletedList.map(
-                (item) => (
-                  <li key={item}>
-                    <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
-                  </li>
-                )
-              )}
             </li>
+            {PORTFOLIO_CONTENT.charlotteTilbury.workCompletedList.map(
+              (item) => (
+                <li key={item}>
+                  <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
+                </li>
+              )
+            )}
           </ul>
         </TwoColumnLayout>
       </main>
