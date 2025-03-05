@@ -69,3 +69,35 @@ a {
 .highlightTheme {
   background: var(--highlight-background);
 }
+
+.list {
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px auto auto;
+}
+
+.icon {
+  padding-right: 7px;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--dark-background);
+  padding: 5px 5px 0;
+  display: inline-block;
+}
+
+@media (min-width: 1000px) {
+  .list {
+      margin-top: 5px;
+      margin-bottom: 20px;
+  }
+}

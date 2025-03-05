@@ -33,10 +33,10 @@ export default function Services() {
           shouldReverseColumns
           isIndependantSection={false}
         >
-          <ul className={styles.list}>
+          <ul className="list">
             {SERVICES_CONTENT.customDevelopmentList.map((item) => (
               <li key={item}>
-                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                <FontAwesomeIcon className="icon" icon={faCheck} />
                 {item}
               </li>
             ))}
@@ -49,10 +49,10 @@ export default function Services() {
           image={SERVICES_CONTENT.twoColumnSeo.image}
           isIndependantSection={false}
         >
-          <ul className={styles.list}>
+          <ul className="list">
             {SERVICES_CONTENT.seoList.map((item) => (
               <li key={item}>
-                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                <FontAwesomeIcon className="icon" icon={faCheck} />
                 {item}
               </li>
             ))}
@@ -66,10 +66,10 @@ export default function Services() {
           shouldReverseColumns
           isIndependantSection={false}
         >
-          <ul className={styles.list}>
+          <ul className="list">
             {SERVICES_CONTENT.ecomList.map((item) => (
               <li key={item}>
-                <FontAwesomeIcon className={styles.icon} icon={faCheck} />
+                <FontAwesomeIcon className="icon" icon={faCheck} />
                 {item}
               </li>
             ))}
@@ -87,12 +87,12 @@ export default function Services() {
           description={SERVICES_CONTENT.gettingStarted.banner.description}
           theme={SERVICES_CONTENT.gettingStarted.banner.theme}
         >
-          <ol className={`${styles.list} ${styles.orderedlist}`}>
+          <ol className={`list ${styles.orderedlist}`}>
             {SERVICES_CONTENT.gettingStarted.list.map(
               ({ title, text, icon }) => (
                 <li key={text}>
-                  <h5 className={styles.heading}>
-                    <FontAwesomeIcon className={styles.icon} icon={icon} />
+                  <h5 className="heading">
+                    <FontAwesomeIcon className="icon" icon={icon} />
                     {title}
                   </h5>
                   {text}
