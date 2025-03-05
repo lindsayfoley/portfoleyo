@@ -31,7 +31,7 @@ export const PORTFOLIO_CONTENT = {
       titleHref: "https://thefabledthread.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "https://place-hold.it/400x300/#ffff",
+        src: "/portfolio-the-fabled-thread.png",
         alt: "",
       },
     },
