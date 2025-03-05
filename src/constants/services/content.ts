@@ -131,7 +131,7 @@ export const SERVICES_CONTENT = {
       },
       {
         title: "5. Next Steps:",
-        text: "Decide on audit tasks to do",
+        text: "Choose audit tasks to do",
         icon: faArrowRight,
       },
     ],
