@@ -23,7 +23,6 @@ export const PORTFOLIO_CONTENT = {
       "From building new sites and apps to enhancing existing platforms, I focus on creating smooth and user-friendly digital experiences. Here’s a look at some past projects I’ve worked on:",
     isTitleFirst: true,
     isH1Element: true,
-    theme: colourTheme.highlight,
   },
   checkmarkSectionTitle: "Key Updates:",
   theFabledThread: {

@@ -16,10 +16,7 @@ export default function Portfolio() {
       </Head>
       <main>
         <Banner {...PORTFOLIO_CONTENT.banner} isIndependantSection={false} />
-        <TwoColumnLayout
-          {...PORTFOLIO_CONTENT.theFabledThread.twoColumn}
-          isIndependantSection={false}
-        >
+        <TwoColumnLayout {...PORTFOLIO_CONTENT.theFabledThread.twoColumn}>
           <ul className={`list ${styles.list}`}>
             {PORTFOLIO_CONTENT.theFabledThread.list.map(({ text, icon }) => (
               <li key={text}>
