@@ -15,7 +15,7 @@ export default function Portfolio() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <Banner {...PORTFOLIO_CONTENT.banner} isIndependantSection={false} />
+        <Banner {...PORTFOLIO_CONTENT.banner} />
         <TwoColumnLayout {...PORTFOLIO_CONTENT.theFabledThread.twoColumn}>
           <ul className={`list ${styles.list}`}>
             {PORTFOLIO_CONTENT.theFabledThread.list.map(({ text, icon }) => (
