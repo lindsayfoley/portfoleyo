@@ -27,10 +27,6 @@
     border: 1px solid var(--darkest-grey);
 }
 
-.paragraph:first-of-type {
-    margin-bottom: 20px;
-}
-
 .paragraph:not(:last-of-type) {
     margin-bottom: 20px;
 }
