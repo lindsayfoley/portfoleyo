@@ -38,6 +38,7 @@
 
 .image {
     width: 100%;
+    max-width: 400px;
 }
 
 @media (min-width: 1000px) {
