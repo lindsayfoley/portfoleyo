@@ -5,15 +5,24 @@ export interface SectionTitleProps {
   subtitle?: string;
   isTitleFirst?: boolean;
   isH1Element?: boolean;
+  titleHref?: string;
 }
 
 const SectionTitle = ({
   title,
+  titleHref,
   subtitle,
   isTitleFirst = true,
   isH1Element = false,
 }: SectionTitleProps) => {
   const HeadingElement = isH1Element ? "h1" : "h2";
+  const titleContent = titleHref ? (
+    <a href={titleHref} target="_blank">
+      {title}
+    </a>
+  ) : (
+    title
+  );
 
   return (
     <div
@@ -22,11 +31,11 @@ const SectionTitle = ({
       }`}
     >
       {isTitleFirst && (
-        <HeadingElement className={styles.title}>{title}</HeadingElement>
+        <HeadingElement className={styles.title}>{titleContent}</HeadingElement>
       )}
       {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
       {!isTitleFirst && (
-        <HeadingElement className={styles.title}>{title}</HeadingElement>
+        <HeadingElement className={styles.title}>{titleContent}</HeadingElement>
       )}
     </div>
   );

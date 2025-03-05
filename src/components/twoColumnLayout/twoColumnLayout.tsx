@@ -5,9 +5,10 @@ import styles from "./twoColumnLayout.module.css";
 
 interface TwoColumnLayoutProps {
   title: string;
+  titleHref?: string;
   subtitle?: string;
   isH1Element?: boolean;
-  paragraphs: string[];
+  paragraphs?: string[];
   image: {
     src: string;
     alt: string;
@@ -20,6 +21,7 @@ interface TwoColumnLayoutProps {
 
 const TwoColumnLayout = ({
   title,
+  titleHref,
   subtitle,
   isH1Element,
   paragraphs,
@@ -43,11 +45,12 @@ const TwoColumnLayout = ({
         >
           <SectionTitle
             title={title}
+            titleHref={titleHref}
             subtitle={subtitle}
             isH1Element={isH1Element}
           />
           <div className={styles.paragraphSection}>
-            {paragraphs.map((paragraph) => (
+            {paragraphs?.map((paragraph) => (
               <p className={styles.paragraph} key={paragraph}>
                 {paragraph}
               </p>
