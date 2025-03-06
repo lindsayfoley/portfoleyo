@@ -3,7 +3,7 @@ import { colourTheme } from "@portfoleyo/shared/common";
 
 export const HOMEPAGE_CONTENT = {
   meta: {
-    title: "The Portfoleyo | Expert Web Development & React Specialist",
+    title: "Expert Development | The Portfoleyo Development & Solutions",
     description:
       "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
   },

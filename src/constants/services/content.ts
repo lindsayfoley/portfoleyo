@@ -12,9 +12,9 @@ import {
 
 export const SERVICES_CONTENT = {
   meta: {
-    title: "Work at The Portfoleyo | Web Development & Portfolio",
+    title: "Services Offered | The Portfoleyo Development & Solutions",
     description:
-      "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my work + services",
+      "Expert web and Shopify development tailored to your business. From custom builds to performance optimisation, SEO, and e-commerce solutions—get support now",
   },
   banner: {
     title: "Services Offered",
@@ -43,7 +43,7 @@ export const SERVICES_CONTENT = {
   ],
   twoColumnSeo: {
     title: "Performance & SEO Optimisation",
-    subtitle: "Better rankings & usability",
+    subtitle: "Better rankings and usability",
     image: {
       src: "/seo-notepad.jpg",
       alt: "A notepad with a page about SEO",
@@ -60,7 +60,7 @@ export const SERVICES_CONTENT = {
   ],
   twoColumnEcom: {
     title: "E-Commerce & Shopify Solutions",
-    subtitle: "For efficiency & growth",
+    subtitle: "For efficiency and growth",
     image: {
       src: "/flat-lay-desk.jpg",
       alt: "A scene from a tidy desk setup",
