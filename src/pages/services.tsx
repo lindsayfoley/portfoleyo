@@ -8,6 +8,12 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/services.module.css";
 
+const services = [
+  SERVICES_CONTENT.twoColumnDevelopment,
+  SERVICES_CONTENT.twoColumnSeo,
+  SERVICES_CONTENT.twoColumnEcom,
+];
+
 export default function Services() {
   return (
     <>
@@ -18,47 +24,25 @@ export default function Services() {
       </Head>
       <main>
         <Banner {...SERVICES_CONTENT.banner} isIndependantSection={false} />
-        <TwoColumnLayout
-          {...SERVICES_CONTENT.twoColumn}
-          shouldReverseColumns
-          isIndependantSection={false}
-        >
-          <ul className="list">
-            {SERVICES_CONTENT.customDevelopmentList.map((item) => (
-              <li key={item}>
-                <FontAwesomeIcon className="icon" icon={faCheck} />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </TwoColumnLayout>
-        <TwoColumnLayout
-          {...SERVICES_CONTENT.twoColumnSeo}
-          isIndependantSection={false}
-        >
-          <ul className="list">
-            {SERVICES_CONTENT.seoList.map((item) => (
-              <li key={item}>
-                <FontAwesomeIcon className="icon" icon={faCheck} />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </TwoColumnLayout>
-        <TwoColumnLayout
-          {...SERVICES_CONTENT.twoColumnEcom}
-          shouldReverseColumns
-          isIndependantSection={false}
-        >
-          <ul className="list">
-            {SERVICES_CONTENT.ecomList.map((item) => (
-              <li key={item}>
-                <FontAwesomeIcon className="icon" icon={faCheck} />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </TwoColumnLayout>
+        {services.map((service, index) => (
+          <TwoColumnLayout
+            key={service.title}
+            {...service}
+            shouldReverseColumns={
+              index !== Math.round((services.length - 1) / 2)
+            }
+            isIndependantSection={false}
+          >
+            <ul className="list">
+              {SERVICES_CONTENT.customDevelopmentList.map((item) => (
+                <li key={item}>
+                  <FontAwesomeIcon className="icon" icon={faCheck} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </TwoColumnLayout>
+        ))}
         <FeatureTiles {...SERVICES_CONTENT.featureTiles} />
         <Banner {...SERVICES_CONTENT.gettingStarted.banner}>
           <div className={styles.listContainer}>
