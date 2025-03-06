@@ -143,6 +143,10 @@
 }
 
 @media (min-width: 1000px) {
+  .container {
+    padding: 60px 0 50px;
+  }
+
   .noTopPadding {
     padding-top: 0;
 
