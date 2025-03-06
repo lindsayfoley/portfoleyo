@@ -21,7 +21,7 @@
 
 .paragraphSection:before {
     content: '';
-    width: 190px;
+    width: 200px;
     margin: 10px 0;
     display: block;
     border: 1px solid var(--darkest-grey);
