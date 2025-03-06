@@ -57,7 +57,7 @@ const FeatureTiles = ({
               <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
             )}
             <div className={styles.copy}>
-              <h4 className={styles.title}>{title}</h4>
+              <h3 className={styles.title}>{title}</h3>
               <p className={styles.description}>{description}</p>
               {cta && <h5 className={styles.cta}>{cta}</h5>}
             </div>
@@ -73,7 +73,7 @@ const FeatureTiles = ({
             <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
           )}
           <div className={styles.copy}>
-            <h4 className={styles.title}>{title}</h4>
+            <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>
             {cta && <h5 className={styles.cta}>{cta}</h5>}
           </div>

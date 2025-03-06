@@ -29,9 +29,9 @@ export default function Portfolio() {
               <ul className={`list ${styles.list}`}>
                 <li>{company.description}</li>
                 <li>
-                  <h5 className={`heading ${styles.listHeading}`}>
+                  <h3 className={`heading ${styles.listHeading}`}>
                     {PORTFOLIO_CONTENT.checkmarkSectionTitle}
-                  </h5>
+                  </h3>
                 </li>
                 {company.workCompletedList.map((item) => (
                   <li key={item}>
