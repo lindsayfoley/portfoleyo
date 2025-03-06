@@ -1,15 +1,10 @@
 import { colourTheme } from "@portfoleyo/shared/common";
-import {
-  faHammer,
-  faCalendarAlt,
-  faBriefcase,
-} from "@fortawesome/free-solid-svg-icons";
 
 export const PORTFOLIO_CONTENT = {
   meta: {
-    title: "Work at The Portfoleyo | Web Development & Portfolio",
+    title: "My Work at The Portfoleyo | Web Development & Portfolio",
     description:
-      "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my work + services",
+      "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my completed work",
   },
   sectionTitle: {
     title: "Projects at The Portfoleyo",
@@ -28,118 +23,74 @@ export const PORTFOLIO_CONTENT = {
   theFabledThread: {
     twoColumn: {
       title: "The Fabled Thread",
-      titleHref: "https://thefabledthread.com/",
+      href: "https://thefabledthread.com/",
       theme: colourTheme.highlight,
       image: {
         src: "/portfolio-the-fabled-thread.png",
-        alt: "",
+        alt: "The homepage of The Fabled Thread site",
       },
     },
-    list: [
-      {
-        text: "From August 2024 - present",
-        icon: faCalendarAlt,
-      },
-      {
-        text: "Remix, React, TypeScript, Shopify (Hydrogen), Sanity CMS",
-        icon: faHammer,
-      },
-      {
-        text: "I support The Fabled Thread on an ad-hoc basis, overseeing full-stack development across their Remix codebase, Shopify Oxygen, and Sanity CMS.",
-        icon: faBriefcase,
-      },
-    ],
+    description:
+      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Oxygen site and Sanity CMS. Through ongoing full-stack development, I help maintain a scalable and high-performing platform.",
     workCompletedList: [
       "Performance: optimised image loading by refining Sanity parameters & assets",
       "SEO: added hreflang tags to boost international visibility & rankings",
+      "Analytics: added Meta Pixel to improve visitor tracking and measure conversions",
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
   theMews: {
     twoColumn: {
       title: "The Mews Fabrics & Furnishings",
-      titleHref: "https://themewsfurnishings.com/",
+      href: "https://themewsfurnishings.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "https://place-hold.it/400x300/#ffff",
-        alt: "",
+        src: "/portfolio-the-mews.png",
+        alt: "The homepage of The Mews Fabrics & Furnishings site",
       },
     },
-    list: [
-      {
-        text: "January 2025",
-        icon: faCalendarAlt,
-      },
-      {
-        text: "Shopify site",
-        icon: faHammer,
-      },
-      {
-        text: "I support The Mews Fabrics & Furnishings on an ad-hoc basis, handling site optimisations, resolving technical issues, and refining functionality.",
-        icon: faBriefcase,
-      },
-    ],
+    description:
+      "I support The Mews Fabrics & Furnishings, a luxury fabric and homeware brand, by ensuring their Shopify store runs efficiently. Through ad-hoc development, I optimise performance, troubleshoot issues, and enhance functionality.",
     workCompletedList: [
       "SEO: audited and optimised meta titles and descriptions across the site",
-      "User Experience: fixed email signup discount code and integrated Klaviyo",
+      "User experience: fixed email signup discount code and corrected Klaviyo setup",
+      "Health check: audited site speed, content structure, and accessibility",
     ],
   },
   lesterre: {
     twoColumn: {
       title: "L’Esterre Chocolate",
-      titleHref: "https://lesterrechocolate.com/",
+      href: "https://lesterrechocolate.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "https://place-hold.it/400x300/#ffff",
-        alt: "",
+        src: "/portfolio-lesterre.png",
+        alt: "The homepage of L’Esterre Chocolates site",
       },
     },
-    list: [
-      {
-        text: "February 2025",
-        icon: faCalendarAlt,
-      },
-      {
-        text: "Shopify site",
-        icon: faHammer,
-      },
-      {
-        text: "I worked with L’Esterre Chocolate to enhance their homepage and boost credibility by implementing a press showcase carousel, alongside conducting a detailed site audit to identify improvements in performance, SEO, and UX.",
-        icon: faBriefcase,
-      },
-    ],
+    description:
+      "I supported L’Esterre Chocolate, an artisan chocolatier, in strengthening their online presence by adding a press showcase carousel to highlight media coverage. I also conducted a deep-dive site audit to improve functionality and user experience.",
     workCompletedList: [
-      "Press Features: added “As Seen In” carousel to homepage, highlighting coverage",
+      "Press features: added “As Seen In” carousel to homepage, highlighting coverage",
+      "Audit: conducted analysis to address technical, visibility, and usability gaps",
     ],
   },
   charlotteTilbury: {
     twoColumn: {
       title: "Charlotte Tilbury",
-      titleHref: "https://www.charlottetilbury.com/",
+      href: "https://www.charlottetilbury.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "https://place-hold.it/400x300/#ffff",
-        alt: "",
+        src: "/portfolio-charlotte-tilbury.png",
+        alt: "The homepage of the Charlotte Tilbury site",
       },
     },
-    list: [
-      {
-        text: "May 2023 - December 2024",
-        icon: faCalendarAlt,
-      },
-      {
-        text: "React, TypeScript, Next.js, Storybook, Contentful",
-        icon: faHammer,
-      },
-      {
-        text: "I optimised Charlotte Tilbury’s SEO, improved platform performance, and played a key role in shaping a new Design System to ensure sitewide consistency.",
-        icon: faBriefcase,
-      },
-    ],
+    description:
+      "I had the pleasure of working with this renowned beauty brand, contributing across multiple squads to enhance SEO, optimise performance, and develop a scalable Design System that ensures consistency across their digital platform.",
     workCompletedList: [
-      "Design System: developed reusable components to standardise UI sitewide",
-      "SEO: implemented schema markup for products, reviews, and blog posts",
-      "Performance: upgraded Storybook to improve maintainability and security",
+      "Design system: developed reusable components for a brand new design system",
+      "Live chat: reintegrated Zendesk, upgrading APIs to add live chat sitewide",
+      "SEO: implemented advanced schema for products, reviews, blog posts and more",
+      "Performance: fixed Storybook issues and upgraded it to improve maintainability",
     ],
   },
 };

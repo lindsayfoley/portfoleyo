@@ -5,7 +5,7 @@ import styles from "./twoColumnLayout.module.css";
 
 interface TwoColumnLayoutProps {
   title: string;
-  titleHref?: string;
+  href?: string;
   subtitle?: string;
   isH1Element?: boolean;
   paragraphs?: string[];
@@ -21,7 +21,7 @@ interface TwoColumnLayoutProps {
 
 const TwoColumnLayout = ({
   title,
-  titleHref,
+  href,
   subtitle,
   isH1Element,
   paragraphs,
@@ -45,7 +45,7 @@ const TwoColumnLayout = ({
         >
           <SectionTitle
             title={title}
-            titleHref={titleHref}
+            titleHref={href}
             subtitle={subtitle}
             isH1Element={isH1Element}
           />
@@ -63,7 +63,13 @@ const TwoColumnLayout = ({
             !shouldReverseColumns ? styles.secondary : ""
           }`}
         >
-          <img className={styles.image} src={image.src} alt={image.alt} />
+          {href ? (
+            <a href={href} target="_blank">
+              <img className={styles.image} src={image.src} alt={image.alt} />
+            </a>
+          ) : (
+            <img className={styles.image} src={image.src} alt={image.alt} />
+          )}
         </div>
       </div>
     </section>
