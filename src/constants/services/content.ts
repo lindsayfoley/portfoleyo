@@ -110,27 +110,27 @@ export const SERVICES_CONTENT = {
     },
     list: [
       {
-        title: "1. Consultation:",
+        title: "1. Consultation",
         text: "Discuss your goals",
         icon: faComments,
       },
       {
-        title: "2. Workflow:",
+        title: "2. Workflow",
         text: "Create tasks with pricing",
         icon: faListCheck,
       },
       {
-        title: "3. Implementation:",
+        title: "3. Implementation",
         text: "Begin work on tasks",
         icon: faHammer,
       },
       {
-        title: "4. Review:",
+        title: "4. Review",
         text: "Conduct an in-depth site audit",
         icon: faMagnifyingGlassChart,
       },
       {
-        title: "5. Next Steps:",
+        title: "5. Next Steps",
         text: "Choose audit tasks to do",
         icon: faArrowRight,
       },

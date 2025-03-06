@@ -1,4 +1,19 @@
+.listContainer {
+    display: flex;
+    margin: 0 auto;
+}
+
 .orderedlist {
     margin: 0 auto;
     text-align: center;
 }
+
+.header {
+    text-decoration: underline;
+}
+
+.listItem {
+    margin-bottom: 5px;
+    text-align: left;
+}
+

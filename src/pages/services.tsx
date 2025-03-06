@@ -61,19 +61,21 @@ export default function Services() {
         </TwoColumnLayout>
         <FeatureTiles {...SERVICES_CONTENT.featureTiles} />
         <Banner {...SERVICES_CONTENT.gettingStarted.banner}>
-          <ol className={`list ${styles.orderedlist}`}>
-            {SERVICES_CONTENT.gettingStarted.list.map(
-              ({ title, text, icon }) => (
-                <li key={text}>
-                  <h5 className="heading">
-                    <FontAwesomeIcon className="icon" icon={icon} />
-                    {title}
-                  </h5>
-                  {text}
-                </li>
-              )
-            )}
-          </ol>
+          <div className={styles.listContainer}>
+            <ol className={`list ${styles.orderedlist}`}>
+              {SERVICES_CONTENT.gettingStarted.list.map(
+                ({ title, text, icon }) => (
+                  <li key={text} className={styles.listItem}>
+                    <h5 className={`heading ${styles.header}`}>
+                      <FontAwesomeIcon className="icon" icon={icon} />
+                      {title}
+                    </h5>
+                    {text}
+                  </li>
+                )
+              )}
+            </ol>
+          </div>
           <AnchorButton href="/about#contact" cta="Contact Me" />
         </Banner>
       </main>
