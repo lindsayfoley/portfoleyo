@@ -3,7 +3,7 @@ import Banner from "@portfoleyo/components/banner/banner";
 import { PORTFOLIO_CONTENT } from "@portfoleyo/constants/porfolio/content";
 import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/portfolio.module.css";
 
 const companies = [
@@ -35,7 +35,8 @@ export default function Portfolio() {
                 </li>
                 {company.workCompletedList.map((item) => (
                   <li key={item}>
-                    <FontAwesomeIcon className="icon" icon={faCheck} /> {item}
+                    <FontAwesomeIcon className="icon" icon={faListCheck} />
+                    {item}
                   </li>
                 ))}
               </ul>
