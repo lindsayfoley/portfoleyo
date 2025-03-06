@@ -62,10 +62,8 @@ export const HOMEPAGE_CONTENT = {
     title: "Let’s talk about your project",
     subtitle: "Work With Me",
     isTitleFirst: false,
-    link: {
-      href: "/about#contact",
-      cta: "Contact me",
-    },
+    href: "/about#contact",
+    cta: "Contact me",
     theme: colourTheme.highlight,
   },
   showcase: {
