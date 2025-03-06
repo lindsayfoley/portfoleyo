@@ -24,7 +24,7 @@ export const SERVICES_CONTENT = {
     isTitleFirst: true,
     isH1Element: true,
   },
-  twoColumn: {
+  twoColumnDevelopment: {
     title: "Custom Development",
     subtitle: "Tailored to your business",
     image: {

@@ -12,5 +12,11 @@
     height: 1px;
     border: 0;
     border-top: 1px solid #e3d2c8;
-    margin: 30px auto 15px auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        padding-bottom: 0;
+    }
 }
