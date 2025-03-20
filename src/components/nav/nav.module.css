@@ -64,7 +64,7 @@
 @media (min-width: 1000px) {
     .contentWrapper {
         flex-wrap: nowrap;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .links {
