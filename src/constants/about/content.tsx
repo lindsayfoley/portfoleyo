@@ -10,7 +10,7 @@ export const ABOUT_CONTENT = {
       "About my expertise in web development and how I help brands build high-performing sites. Get in touch to discuss your project and see how we can work together",
   },
   banner: {
-    title: "About The Portfoleyo",
+    title: "About My Company",
     subtitle: "Background & ways to connect",
     description:
       "I provide tailored, cost-effective development services—without the complexity of large agencies. As your single point of contact, I streamline the process with clear pricing, efficient collaboration, and fewer barriers.",
