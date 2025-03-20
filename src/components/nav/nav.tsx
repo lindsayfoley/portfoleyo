@@ -24,6 +24,13 @@ const Nav = ({ links }: NavProps) => {
             ))}
           </ul>
         </div>
+        <Link href="/" className={styles.logoWrapper}>
+          <img
+            className={styles.logo}
+            src="/logo.png"
+            alt="The Portfoleyo logo"
+          />
+        </Link>
         <div className={`${styles.icons} ${styles.links}`}>
           <ul className={styles.linksList}>
             {NAV_CONTENT.icons.map(({ title, href, target, icon }) => (

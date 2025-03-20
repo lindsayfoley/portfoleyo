@@ -11,10 +11,6 @@ import {
 } from "../shared";
 
 const LINKS = {
-  homeLink: {
-    cta: "Home",
-    href: "/",
-  },
   aboutLink: {
     cta: "About",
     href: "about",
@@ -34,13 +30,7 @@ const LINKS = {
 };
 
 export const NAV_CONTENT = {
-  headerNavContent: [
-    LINKS.homeLink,
-    LINKS.aboutLink,
-    LINKS.servicesLink,
-    LINKS.portfolioLink,
-  ],
-  footerNavContent: [
+  links: [
     LINKS.aboutLink,
     LINKS.servicesLink,
     LINKS.portfolioLink,
