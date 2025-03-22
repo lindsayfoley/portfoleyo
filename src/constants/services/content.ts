@@ -45,7 +45,7 @@ export const SERVICES_CONTENT = {
     title: "Performance & SEO Optimisation",
     subtitle: "Better rankings and usability",
     image: {
-      src: "/seo-notepad.jpg",
+      src: "/seo-notepad.png",
       alt: "A notepad with a page about SEO",
     },
     paragraphs: [
