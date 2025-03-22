@@ -33,10 +33,49 @@ export const PORTFOLIO_CONTENT = {
     description:
       "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Oxygen site and Sanity CMS. Through ongoing full-stack development, I help maintain a scalable and high-performing platform.",
     workCompletedList: [
+      "Engagement: Enabled blog comments to foster community and discussion",
       "Performance: optimised image loading by refining Sanity parameters & assets",
       "SEO: added hreflang tags to boost international visibility & rankings",
       "Analytics: added Meta Pixel to improve visitor tracking and measure conversions",
       "CMS: built Sanity models, enabling editors to update content without dev input",
+    ],
+  },
+  chloeJonason: {
+    twoColumn: {
+      title: "Chloe Jonason Interiors",
+      href: "https://www.chloejonasoninteriors.com/collections/chik-blinds/products/chik-blinds-coloured",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-chloe-jonason.png",
+        alt: "The homepage of Chloe Jonason Interiors site",
+      },
+    },
+    description:
+      "I worked with Chloe Jonason Interiors, a boutique homeware brand that wanted to automate the process of selling bespoke products. By refining the online experience, I helped streamline the shopping process for customers purchasing bespoke blinds.",
+    workCompletedList: [
+      "E-commerce: implemented online purchasing for made-to-measure blinds",
+      "Scalability: provided a guide to help the team expand bespoke product listings",
+      "Optimisation: reviewed technical setup, discoverability, and ease of use",
+    ],
+  },
+  vinito: {
+    twoColumn: {
+      title: "Vinito",
+      href: "https://www.drinkvinito.com/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-vinito.png",
+        alt: "The homepage of Vinito's site",
+      },
+    },
+    description:
+      "I worked with Vinito, a rebranded evolution of Brixton Wine Club, to create a customised product page that provides a richer and more informative shopping experience than standard Shopify templates allow.",
+    workCompletedList: [
+      "PDP: designed a custom layout to maximise the presentation of product details",
+      "Content UX: added a toggle to improve readability for detailed descriptions",
+      "New components: built a reusable grid to showcase tasting notes and highlights",
+      "Profile: integrated sliders powered by metafields to visualise key attributes",
+      "Specs: developed a comprehensive specs table for detailed product information",
     ],
   },
   theMews: {
@@ -50,7 +89,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I support The Mews Fabrics & Furnishings, a luxury fabric and homeware brand, by ensuring their Shopify store runs efficiently. Through ad-hoc development, I optimise performance, troubleshoot issues, and enhance functionality.",
+      "I supported The Mews Fabrics & Furnishings, a luxury fabric and homeware brand, by optimising their Shopify store’s performance and functionality. This included troubleshooting issues and implementing fixes to improve SEO and UX.",
     workCompletedList: [
       "SEO: audited and optimised meta titles and descriptions across the site",
       "User experience: fixed email signup discount code and corrected Klaviyo setup",
