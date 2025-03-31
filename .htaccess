@@ -1,7 +1,5 @@
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^www\.theportfolio\.com [NC]
-RewriteRule ^(.*)$ https://theportfolio.com/$1 [L,R=301]
-
+RewriteCond %{HTTP_HOST} ^www\.theportfoleyo\.com [NC,OR]
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://theportfolio.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://theportfoleyo.com/$1 [L,R=301]
