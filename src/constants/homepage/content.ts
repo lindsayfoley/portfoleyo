@@ -28,7 +28,7 @@ export const HOMEPAGE_CONTENT = {
     services: [
       {
         image: {
-          src: "/code.jpg",
+          src: "/custom-dev.jpg",
           alt: "A close up of a laptop running Visual Studio Code",
         },
         title: "Custom Development",
@@ -38,7 +38,7 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/keyboard-flat-white.jpg",
+          src: "/performance-seo-screen.jpg",
           alt: "A desk scene with stationary and laptop",
         },
         title: "Performance & SEO Optimisation",
