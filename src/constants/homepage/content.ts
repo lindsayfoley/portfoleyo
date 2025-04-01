@@ -8,7 +8,7 @@ export const HOMEPAGE_CONTENT = {
       "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
   },
   highlightBanner: {
-    imageSrc: "/laptop-open-site.jpg",
+    imageSrc: "/hp-laptop-open-site.jpg",
     alt: "A laptop open on the Come Fly With Lindsay travel blog site",
     intro: "Welcome to",
     title: "The Portfoleyo",
@@ -28,7 +28,7 @@ export const HOMEPAGE_CONTENT = {
     services: [
       {
         image: {
-          src: "/custom-dev.jpg",
+          src: "/hp-custom-dev.jpg",
           alt: "A close up of a laptop running Visual Studio Code",
         },
         title: "Custom Development",
@@ -38,7 +38,7 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/performance-seo-screen.jpg",
+          src: "/hp-performance-seo-screen.jpg",
           alt: "A desk scene with stationary and laptop",
         },
         title: "Performance & SEO Optimisation",
@@ -48,7 +48,7 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/shopify-dev.jpg",
+          src: "/hp-shopify-dev.jpg",
           alt: "A Shopify theme shown in a browser",
         },
         title: "E-Commerce & Shopify Solutions",

@@ -28,7 +28,7 @@ export const SERVICES_CONTENT = {
     title: "Custom Development",
     subtitle: "Tailored to your business",
     image: {
-      src: "/custom-development.jpg",
+      src: "/services-custom-development.jpg",
       alt: "A laptop running Visual Studio Code",
     },
     paragraphs: [
@@ -45,7 +45,7 @@ export const SERVICES_CONTENT = {
     title: "Performance & SEO Optimisation",
     subtitle: "Better rankings and usability",
     image: {
-      src: "/performance-seo.jpg",
+      src: "/services-performance-seo.jpg",
       alt: "A notepad with a page about SEO",
     },
     paragraphs: [
@@ -62,7 +62,7 @@ export const SERVICES_CONTENT = {
     title: "E-Commerce & Shopify Solutions",
     subtitle: "For efficiency and growth",
     image: {
-      src: "/flat-lay-desk.jpg",
+      src: "/services-flat-lay-desk.jpg",
       alt: "A scene from a tidy desk setup",
     },
     paragraphs: [
