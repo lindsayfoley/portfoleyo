@@ -6,6 +6,7 @@ import styles from "./twoColumnLayout.module.css";
 interface TwoColumnLayoutProps {
   title: string;
   href?: string;
+  id?: string;
   subtitle?: string;
   isH1Element?: boolean;
   paragraphs?: string[];
@@ -22,6 +23,7 @@ interface TwoColumnLayoutProps {
 const TwoColumnLayout = ({
   title,
   href,
+  id,
   subtitle,
   isH1Element,
   paragraphs,
@@ -32,7 +34,7 @@ const TwoColumnLayout = ({
   isIndependantSection = true,
 }: TwoColumnLayoutProps) => {
   return (
-    <section className={`${theme ? `${theme}Theme` : ""}`}>
+    <section className={`${theme ? `${theme}Theme` : ""}`} id={id}>
       <div
         className={`${styles.container} ${
           !isIndependantSection ? styles.noTopPadding : ""

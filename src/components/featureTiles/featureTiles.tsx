@@ -7,6 +7,7 @@ interface FeatureTilesProps {
   title?: string;
   subtitle?: string;
   services: {
+    id?: string;
     label?: string;
     image?: {
       src: string;
@@ -45,10 +46,10 @@ const FeatureTiles = ({
   isIndependantSection = true,
 }: FeatureTilesProps) => {
   const tilesMarkup = services.map(
-    ({ label, image, Icon, title, description, href }) => {
+    ({ id, label, image, Icon, title, description, href }) => {
       return href ? (
         <article className={styles.service} key={title}>
-          <a href={href}>
+          <a href={id ? `${href}#${id}` : href}>
             {label && <h5 className={styles.label}>{label}</h5>}
             {image && (
               <img className={styles.image} src={image.src} alt={image.alt} />

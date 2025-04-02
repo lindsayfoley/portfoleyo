@@ -43,7 +43,7 @@ export const SERVICES_CONTENT = {
     "Email development: creating tailored responsive, cross-client email templates",
   ],
   twoColumnSeo: {
-    id: "seo",
+    id: "optimisation",
     title: "Performance & SEO Optimisation",
     subtitle: "Better rankings and usability",
     image: {
@@ -61,7 +61,7 @@ export const SERVICES_CONTENT = {
     "Site audit: assessing issues affecting discoverability, usability & responsiveness",
   ],
   twoColumnEcom: {
-    id: "ecom",
+    id: "ecommerce",
     title: "E-Commerce & Shopify Solutions",
     subtitle: "For efficiency and growth",
     image: {

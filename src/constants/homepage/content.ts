@@ -31,6 +31,7 @@ export const HOMEPAGE_CONTENT = {
           src: "/hp-custom-dev.jpg",
           alt: "A close up of a laptop running Visual Studio Code",
         },
+        id: "development",
         title: "Custom Development",
         description:
           "Have a vision for a site or app but need the right technical expertise or guidance? I can turn complex ideas into seamless, well-crafted builds",
@@ -41,6 +42,7 @@ export const HOMEPAGE_CONTENT = {
           src: "/hp-performance-seo-screen.jpg",
           alt: "A desk scene with stationary and laptop",
         },
+        id: "optimisation",
         title: "Performance & SEO Optimisation",
         description:
           "A great site needs more than just good looks – it has to be responsive, inclusive, and SEO-friendly to attract more customers and drive conversions",
@@ -48,9 +50,10 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/hp-shopify-wireframe.jpg",
+          src: "/hp-shopify-wireframes.jpg",
           alt: "A Shopify theme shown in a browser",
         },
+        id: "ecommerce",
         title: "E-Commerce & Shopify Solutions",
         description:
           "I enhance Shopify and e-commerce platforms by implementing new functionality, refining UX, and streamlining for efficiency and growth",
