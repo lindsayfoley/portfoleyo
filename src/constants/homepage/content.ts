@@ -8,7 +8,7 @@ export const HOMEPAGE_CONTENT = {
       "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
   },
   highlightBanner: {
-    imageSrc: "/hp-imac-cfwl.jpg",
+    imageSrc: "/hp-hero-imac-cfwl.jpg",
     alt: "A laptop open on the Come Fly With Lindsay travel blog site",
     intro: "Welcome to",
     title: "The Portfoleyo",

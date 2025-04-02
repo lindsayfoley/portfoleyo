@@ -29,7 +29,7 @@ export const SERVICES_CONTENT = {
     title: "Custom Development",
     subtitle: "Tailored to your business",
     image: {
-      src: "/services-custom-development.jpg",
+      src: "/services-custom-development-code.jpg",
       alt: "A laptop running Visual Studio Code",
     },
     paragraphs: [
