@@ -25,6 +25,7 @@ export const SERVICES_CONTENT = {
     isH1Element: true,
   },
   twoColumnDevelopment: {
+    id: "development",
     title: "Custom Development",
     subtitle: "Tailored to your business",
     image: {
@@ -42,10 +43,11 @@ export const SERVICES_CONTENT = {
     "Email development: creating tailored responsive, cross-client email templates",
   ],
   twoColumnSeo: {
+    id: "seo",
     title: "Performance & SEO Optimisation",
     subtitle: "Better rankings and usability",
     image: {
-      src: "/services-performance-seo.jpg",
+      src: "/services-performance-and-seo.jpg",
       alt: "A notepad with a page about SEO",
     },
     paragraphs: [
@@ -59,10 +61,11 @@ export const SERVICES_CONTENT = {
     "Site audit: assessing issues affecting discoverability, usability & responsiveness",
   ],
   twoColumnEcom: {
+    id: "ecom",
     title: "E-Commerce & Shopify Solutions",
     subtitle: "For efficiency and growth",
     image: {
-      src: "/services-flat-lay-desk.jpg",
+      src: "/services-ecom-desk.jpg",
       alt: "A scene from a tidy desk setup",
     },
     paragraphs: [
