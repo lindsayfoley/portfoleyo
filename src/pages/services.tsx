@@ -34,7 +34,7 @@ export default function Services() {
             isIndependantSection={false}
           >
             <ul className="list">
-              {SERVICES_CONTENT.customDevelopmentList.map((item) => (
+              {service.list.map((item) => (
                 <li key={item}>
                   <FontAwesomeIcon className="icon" icon={faCheck} />
                   {item}

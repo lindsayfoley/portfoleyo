@@ -35,13 +35,13 @@ export const SERVICES_CONTENT = {
     paragraphs: [
       "Not every solution works straight out of the box. I build custom sites and apps—or refine what’s already there—so they fit your needs and work exactly how you want.",
     ],
+    list: [
+      "Custom development: building sites and apps from scratch with modern tech",
+      "Bespoke functionality: custom features to enhance UX and streamline workflows",
+      "Bug fixes & improvements: ensuring smooth performance and clean code",
+      "Email development: creating tailored responsive, cross-client email templates",
+    ],
   },
-  customDevelopmentList: [
-    "Custom development: building sites and apps from scratch with modern tech",
-    "Bespoke functionality: custom features to enhance UX and streamline workflows",
-    "Bug fixes & improvements: ensuring smooth performance and clean code",
-    "Email development: creating tailored responsive, cross-client email templates",
-  ],
   twoColumnSeo: {
     id: "optimisation",
     title: "Performance & SEO Optimisation",
@@ -53,13 +53,13 @@ export const SERVICES_CONTENT = {
     paragraphs: [
       "Site speed and visibility impact conversions - I focus on performance tuning and technical SEO, ensuring your site runs efficiently while reaching the right audience.",
     ],
+    list: [
+      "Site speed: improving performance, reducing load times, enabling lazy loading",
+      "SEO review: optimising metadata, adding structured data, improving markup",
+      "Accessibility: ensuring WCAG compliance for an inclusive, user-friendly site",
+      "Site audit: assessing issues affecting discoverability, usability & responsiveness",
+    ],
   },
-  seoList: [
-    "Site speed: improving performance, reducing load times, enabling lazy loading",
-    "SEO review: optimising metadata, adding structured data, improving markup",
-    "Accessibility: ensuring WCAG compliance for an inclusive, user-friendly site",
-    "Site audit: assessing issues affecting discoverability, usability & responsiveness",
-  ],
   twoColumnEcom: {
     id: "ecommerce",
     title: "E-Commerce & Shopify Solutions",
@@ -71,13 +71,13 @@ export const SERVICES_CONTENT = {
     paragraphs: [
       "An online store should be fast, easy to navigate, and built for conversions. I optimise stores for better performance and usability on Shopify and Squarespace.",
     ],
+    list: [
+      "Store customisation: editing themes and sections tailored to your brand",
+      "Analytics implementation: setting up tracking for insights, and performance",
+      "Feature integration: adding custom filters, checkout upgrades, and automation",
+      "App integrations: connecting popular tools like Klaviyo and Sanity for automation",
+    ],
   },
-  ecomList: [
-    "Store customisation: editing themes and sections tailored to your brand",
-    "Analytics implementation: setting up tracking for insights, and performance",
-    "Feature integration: adding custom filters, checkout upgrades, and automation",
-    "App integrations: connecting popular tools like Klaviyo and Sanity for automation",
-  ],
   featureTiles: {
     title: "How I Work",
     subtitle: "Efficient, flexible & transparent",
