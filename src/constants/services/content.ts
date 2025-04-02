@@ -47,7 +47,7 @@ export const SERVICES_CONTENT = {
     title: "Performance & SEO Optimisation",
     subtitle: "Better rankings and usability",
     image: {
-      src: "/services-performance-seo-optimisation.jpg",
+      src: "/services-performance-seo-optimise.jpg",
       alt: "A notepad with a page about SEO",
     },
     paragraphs: [
@@ -65,7 +65,7 @@ export const SERVICES_CONTENT = {
     title: "E-Commerce & Shopify Solutions",
     subtitle: "For efficiency and growth",
     image: {
-      src: "/services-ecom-desk.jpg",
+      src: "/services-ecom.jpg",
       alt: "A scene from a tidy desk setup",
     },
     paragraphs: [
