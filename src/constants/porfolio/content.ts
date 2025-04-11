@@ -40,6 +40,25 @@ export const PORTFOLIO_CONTENT = {
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
+  jpsOriginals: {
+    twoColumn: {
+      title: "JP's Originals",
+      href: "https://jpsoriginals.com/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-jps-originals.png",
+        alt: "The homepage of JP's Originals site",
+      },
+    },
+    description:
+      "I support JP’s Originals, a wellness-focused tea brand, with ongoing ad-hoc development work across areas like accessibility, SEO, UI enhancements, and technical scoping for growth opportunities.",
+    workCompletedList: [
+      "UI: improved navigation contrast and semantic HTML for better accessibility",
+      "UX: highlighted key CTAs on PDPs and checkout pages to guide user journeys",
+      "SEO: refined meta titles and descriptions to improve search visibility",
+      "Upsells: scoped ClickFunnels integration for upsells and subscriptions",
+    ],
+  },
   chloeJonason: {
     twoColumn: {
       title: "Chloe Jonason Interiors",
