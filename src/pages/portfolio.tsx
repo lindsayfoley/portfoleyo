@@ -9,6 +9,7 @@ import styles from "../styles/portfolio.module.css";
 
 const companies = [
   PORTFOLIO_CONTENT.theFabledThread,
+  PORTFOLIO_CONTENT.elyse,
   PORTFOLIO_CONTENT.jpsOriginals,
   PORTFOLIO_CONTENT.chloeJonason,
   PORTFOLIO_CONTENT.vinito,

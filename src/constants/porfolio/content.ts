@@ -31,7 +31,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Oxygen site and Sanity CMS. Through ongoing full-stack development, I help maintain a scalable and high-performing platform.",
+      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Oxygen site and Sanity CMS. Using React and TypeScript, I provide ongoing full-stack development to maintain a scalable and high-performing platform.",
     workCompletedList: [
       "Engagement: Enabled blog comments to foster community and discussion",
       "Performance: optimised image loading by refining Sanity parameters & assets",
@@ -40,6 +40,25 @@ export const PORTFOLIO_CONTENT = {
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
+  elyse: {
+    twoColumn: {
+      title: "Elyse",
+      href: "https://www.elyseandme.com",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-elyse.png",
+        alt: "The homepage of the Elyse site",
+      },
+    },
+    description:
+      "I collaborated with Elyse, a brand focused on essential oil blends and holistic wellbeing, to enhance their Squarespace homepage with content-led features designed to build trust and boost engagement.",
+    workCompletedList: [
+      "Press features: added a carousel of press logos to highlight media coverage",
+      "Engagement: integrated Instagram feed to showcase social content",
+      "Accessibility: audited site and identified improvements for inclusive design",
+    ],
+  },
+
   jpsOriginals: {
     twoColumn: {
       title: "JP's Originals",
@@ -51,7 +70,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I support JP’s Originals, a wellness-focused tea brand, with ongoing ad-hoc development work across areas like accessibility, SEO, UI enhancements, and technical scoping for growth opportunities.",
+      "I work with JP’s Originals, a wellness-focused tea brand on Shopify, providing ongoing ad-hoc development support across areas like accessibility, SEO, UI enhancements, and technical scoping for growth opportunities.",
     workCompletedList: [
       "UI: improved navigation contrast and semantic HTML for better accessibility",
       "UX: highlighted key CTAs on PDPs and checkout pages to guide user journeys",
@@ -70,7 +89,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I worked with Chloe Jonason Interiors, a boutique homeware brand that wanted to automate the process of selling bespoke products. By refining the online experience, I helped streamline the shopping process for customers purchasing bespoke blinds.",
+      "I partnered with Chloe Jonason Interiors, a boutique homeware brand that wanted to automate selling bespoke products. By refining the online experience, I helped streamline the shopping process for customers purchasing bespoke blinds.",
     workCompletedList: [
       "E-commerce: implemented online purchasing for made-to-measure blinds",
       "Scalability: provided a guide to help the team expand bespoke product listings",
@@ -126,7 +145,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I supported L’Esterre Chocolate, an artisan chocolatier, in strengthening their online presence by adding a press showcase carousel to highlight media coverage. I also conducted a deep-dive site audit to improve functionality and user experience.",
+      "I provided development support for L’Esterre Chocolate, an artisan chocolatier, in strengthening their online presence by adding a press carousel to highlight media coverage. I also conducted a deep-dive site audit to improve functionality and UX.",
     workCompletedList: [
       "Press features: added “As Seen In” carousel to homepage, highlighting coverage",
       "Audit: conducted analysis to address technical, visibility, and usability gaps",
@@ -143,7 +162,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I had the pleasure of working with this renowned beauty brand, contributing across multiple squads to enhance SEO, optimise performance, and develop a scalable Design System that ensures consistency across their digital platform.",
+      "I had the pleasure of working with this renowned beauty brand, contributing across multiple squads to enhance SEO, optimise performance, and build a robust React-based Design System that ensures consistency across their digital platform.",
     workCompletedList: [
       "Design system: developed reusable components for a brand new design system",
       "Live chat: reintegrated Zendesk, upgrading APIs to add live chat sitewide",
