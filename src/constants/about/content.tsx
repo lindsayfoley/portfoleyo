@@ -61,7 +61,7 @@ export const ABOUT_CONTENT = {
   contact: {
     banner: {
       image: {
-        src: "/contact-lets-chat-note.jpg",
+        src: "/contact-image-flat-lay.jpg",
         alt: "A phone, notepad and laptop on a desk",
       },
       title: "Get in Touch",
