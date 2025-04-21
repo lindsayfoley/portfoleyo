@@ -83,7 +83,7 @@ export const PORTFOLIO_CONTENT = {
       href: "https://www.drinkvinito.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "/portfolio-vinito.png",
+        src: "/portfolio-vinito-holding.png",
         alt: "The homepage of Vinito's site",
       },
     },
