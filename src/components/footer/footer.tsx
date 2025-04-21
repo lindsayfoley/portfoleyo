@@ -21,7 +21,9 @@ const Footer = () => (
         </ul>
       </div>
       <div className={styles.mobileHidden}>
-        <h5 className={styles.title}>{FOOTER_CONTENT.about.title}</h5>
+        <h5 className={styles.title}>
+          <Link href="/about">{FOOTER_CONTENT.about.title}</Link>
+        </h5>
         <p className={styles.description}>{FOOTER_CONTENT.about.description}</p>
       </div>
       <div className={`${styles.pages} ${styles.mobileHidden}`}>

@@ -8,5 +8,5 @@ export const FOOTER_CONTENT = {
   browse: {
     title: "Browse",
   },
-  copyright: "Portfoleyo Ltd",
+  copyright: "Portfoleyo Ltd 👩🏽‍💻",
 };
