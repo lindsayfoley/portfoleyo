@@ -23,7 +23,7 @@ export const ABOUT_CONTENT = {
   },
   twoColumn: {
     image: {
-      src: "/about-lindsay-foley.jpg",
+      src: "/about-me-lindsay-foley.jpg",
       alt: "The Portfoleyo founder, Lindsay Foley",
     },
     paragraphs: [
