@@ -9,7 +9,7 @@ export const HOMEPAGE_CONTENT = {
   },
   highlightBanner: {
     imageSrc: "/hp-hero-imac-cfwl.jpg",
-    alt: "A laptop open on the Come Fly With Lindsay travel blog site",
+    alt: "A desk scene with a iMac open on the Come Fly With Lindsay travel blog site",
     intro: "Welcome to",
     title: "The Portfoleyo",
     description: [
@@ -29,7 +29,7 @@ export const HOMEPAGE_CONTENT = {
       {
         image: {
           src: "/hp-custom-dev.jpg",
-          alt: "A close up of a laptop running Visual Studio Code",
+          alt: "Showing the different stages of Web Development from design to execution",
         },
         id: "development",
         title: "Custom Development",
@@ -39,8 +39,8 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/hp-performance-seo.jpg",
-          alt: "A desk scene with stationary and laptop",
+          src: "/hp-performance-and-seo.jpg",
+          alt: "A desk scene with laptop displaying graphs",
         },
         id: "optimisation",
         title: "Performance & SEO Optimisation",
@@ -51,7 +51,7 @@ export const HOMEPAGE_CONTENT = {
       {
         image: {
           src: "/hp-shopify-wireframes.jpg",
-          alt: "A Shopify theme shown in a browser",
+          alt: "A phone showing a Shopify theme mockup on a browser",
         },
         id: "ecommerce",
         title: "E-Commerce & Shopify Solutions",

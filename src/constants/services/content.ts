@@ -30,7 +30,7 @@ export const SERVICES_CONTENT = {
     subtitle: "Tailored to your business",
     image: {
       src: "/services-custom-development-code.jpg",
-      alt: "A laptop running Visual Studio Code",
+      alt: "An iMac running Visual Studio Code",
     },
     paragraphs: [
       "Not every solution works straight out of the box. I build custom sites and apps—or refine what’s already there—so they fit your needs and work exactly how you want.",
@@ -48,7 +48,7 @@ export const SERVICES_CONTENT = {
     subtitle: "Better rankings and usability",
     image: {
       src: "/services-performance-seo-optimise.jpg",
-      alt: "A notepad with a page about SEO",
+      alt: "A laptop with images of graphs in front of a pin board with SEO notes",
     },
     paragraphs: [
       "Site speed and visibility impact conversions - I focus on performance tuning and technical SEO, ensuring your site runs efficiently while reaching the right audience.",
@@ -66,7 +66,7 @@ export const SERVICES_CONTENT = {
     subtitle: "For efficiency and growth",
     image: {
       src: "/services-ecom.jpg",
-      alt: "A scene from a tidy desk setup",
+      alt: "A desktop scene with a phone showing a Shopify theme template wireframe",
     },
     paragraphs: [
       "An online store should be fast, easy to navigate, and built for conversions. I optimise stores for better performance and usability on Shopify and Squarespace.",
