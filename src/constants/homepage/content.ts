@@ -39,7 +39,7 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/hp-performance-and-seo.jpg",
+          src: "/hp-web-performance-seo.jpg",
           alt: "A desk scene with laptop displaying graphs",
         },
         id: "optimisation",
