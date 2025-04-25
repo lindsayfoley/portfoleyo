@@ -3,6 +3,7 @@ import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 
 import styles from "./showcase.module.css";
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
+import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 
 export const device = {
   mobile: "mobile",
@@ -36,8 +37,13 @@ const Showcase = ({
   const desktopOnlyImage = (deviceKey?: DeviceKeys) =>
     deviceKey && deviceKey === device.desktop;
 
+  const ref = useAnimationIntersectionObserver("fadeIn");
+
   return (
-    <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
+    <div
+      className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}
+      ref={ref}
+    >
       <SectionTitle
         title={title}
         subtitle={subtitle}

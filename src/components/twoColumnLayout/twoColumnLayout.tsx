@@ -2,6 +2,7 @@ import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import { ReactNode } from "react";
 import styles from "./twoColumnLayout.module.css";
+import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 
 interface TwoColumnLayoutProps {
   title: string;
@@ -18,6 +19,7 @@ interface TwoColumnLayoutProps {
   theme?: Theme;
   children?: ReactNode;
   isIndependantSection?: boolean;
+  useAnimation?: boolean;
 }
 
 const TwoColumnLayout = ({
@@ -32,9 +34,16 @@ const TwoColumnLayout = ({
   theme = colourTheme.default,
   children,
   isIndependantSection = true,
+  useAnimation = false,
 }: TwoColumnLayoutProps) => {
+  const ref = useAnimationIntersectionObserver("fadeIn");
+
   return (
-    <section className={`${theme ? `${theme}Theme` : ""}`} id={id}>
+    <section
+      className={`${theme ? `${theme}Theme` : ""}`}
+      id={id}
+      ref={useAnimation ? ref : undefined}
+    >
       <div
         className={`${styles.container} ${
           !isIndependantSection ? styles.noTopPadding : ""

@@ -24,6 +24,7 @@ export default function About() {
       <main>
         <Banner {...ABOUT_CONTENT.banner} />
         <TwoColumnLayout
+          useAnimation
           {...ABOUT_CONTENT.sectionTitle}
           {...ABOUT_CONTENT.twoColumn}
         />
@@ -33,7 +34,7 @@ export default function About() {
           isIndependantSection={false}
         />
         <div id="contact">
-          <Banner {...ABOUT_CONTENT.contact.banner}>
+          <Banner useAnimation {...ABOUT_CONTENT.contact.banner}>
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
                 <a href={`mailto:${EMAIL_ADDRESS}`}>

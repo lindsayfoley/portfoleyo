@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
 import { Theme, colourTheme } from "@portfoleyo/shared/common";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
+import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import styles from "./banner.module.css";
-import { ReactNode } from "react";
 
 interface BannerProps {
   image?: {
@@ -14,6 +15,7 @@ interface BannerProps {
   children?: ReactNode;
   hasBorder?: boolean;
   isIndependantSection?: boolean;
+  useAnimation?: boolean;
 }
 
 type AllBannerProps = BannerProps &
@@ -33,9 +35,13 @@ const Banner = ({
   children,
   hasBorder = false,
   isIndependantSection = true,
+  useAnimation = false,
 }: AllBannerProps) => {
+  const ref = useAnimationIntersectionObserver("fadeIn");
+
   return (
     <div
+      ref={useAnimation ? ref : undefined}
       className={`${styles.container} ${theme ? `${theme}Theme` : ""} ${
         hasBorder ? styles.border : ""
       } ${!isIndependantSection ? styles.noPaddingBottom : ""}`}

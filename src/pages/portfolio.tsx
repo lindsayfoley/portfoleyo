@@ -30,7 +30,11 @@ export default function Portfolio() {
         <Banner {...PORTFOLIO_CONTENT.banner} />
         {companies.map((company, index) => (
           <>
-            <TwoColumnLayout key={company.description} {...company.twoColumn}>
+            <TwoColumnLayout
+              useAnimation
+              key={company.description}
+              {...company.twoColumn}
+            >
               <ul className={`list ${styles.list}`}>
                 <li>{company.description}</li>
                 <li>
