@@ -23,9 +23,7 @@ const useAnimationIntersectionObserver = (animationClassname: string) => {
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.25,
-    });
+    const observer = new IntersectionObserver(handleIntersection);
 
     observer.observe(node);
 
