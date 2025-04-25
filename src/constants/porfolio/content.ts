@@ -40,6 +40,24 @@ export const PORTFOLIO_CONTENT = {
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
+  duvetHog: {
+    twoColumn: {
+      title: "Duvet Hog",
+      href: "https://www.duvethog.co.uk/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-duvet-hog.png",
+        alt: "The homepage of the Duvet Hog site",
+      },
+    },
+    description:
+      "I worked with Duvet Hog, a sustainable bedding brand on Shopify, to review theme upgrades, improve site functionality and prepare for the launch of new features. My work included auditing the site for design consistency, enhancing compliance on signup forms and scoping the addition of award and accreditations to build trust.",
+    workCompletedList: [
+      "Theme audit: reviewed layout, navigation and design for UI consistency",
+      "Compliance: updated email signup forms for GDPR and marketing best practices",
+      "Awards & trust: scoped integration of accreditations and award logos across site",
+    ],
+  },
   elyse: {
     twoColumn: {
       title: "Elyse",
