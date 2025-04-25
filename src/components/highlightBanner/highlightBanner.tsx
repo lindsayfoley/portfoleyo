@@ -28,7 +28,9 @@ const HighlightBanner = ({
   theme = colourTheme.default,
 }: HighlightBannerProps) => {
   return (
-    <div className={`${styles.container} ${theme ? `${theme}Theme` : ""}`}>
+    <div
+      className={`${styles.container} ${theme ? `${theme}Theme` : ""} fadeIn`}
+    >
       <div className={styles.wrapper}>
         <div
           className={shouldReverseColumns ? styles.secondary : styles.primary}
