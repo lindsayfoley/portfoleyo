@@ -1,12 +1,16 @@
 .container {
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "Work Sans", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    background: var(--button-background);
-    color: var(--muted-background);
-    padding: 10px 20px;
-  }
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  background: var(--button-background);
+  color: var(--muted-background);
+  padding: 10px 20px;
+}
+
+.container:hover {
+  background: var(--button-background-pale);
+}
