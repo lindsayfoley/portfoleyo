@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 const useAnimationIntersectionObserver = (animationClassname: string) => {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef(null);
 
   useEffect(() => {
     const node = ref.current;
@@ -12,7 +12,7 @@ const useAnimationIntersectionObserver = (animationClassname: string) => {
 
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
-        const nodeClassnames = node.classList;
+        const nodeClassnames = (node as HTMLElement).classList;
 
         if (
           entry.isIntersecting &&
@@ -23,7 +23,10 @@ const useAnimationIntersectionObserver = (animationClassname: string) => {
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection);
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.25,
+    });
+
     observer.observe(node);
 
     return () => {
