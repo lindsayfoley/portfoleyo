@@ -1,40 +1,11 @@
-import { colourTheme, Theme } from "@portfoleyo/shared/common";
+import {
+  colourTheme,
+  getIconFillValueFromTheme,
+} from "@portfoleyo/shared/common";
 import SectionTitle from "../sectionTitle/sectionTitle";
+import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import styles from "./featureTiles.module.css";
-import { ElementType } from "react";
-
-interface FeatureTilesProps {
-  title?: string;
-  subtitle?: string;
-  services: {
-    id?: string;
-    label?: string;
-    image?: {
-      src: string;
-      alt: string;
-    };
-    Icon?: ElementType;
-    title: string;
-    description: string;
-    href?: string;
-  }[];
-  cta?: string;
-  theme?: Theme;
-  hasTimeline?: boolean;
-  isIndependantSection?: boolean;
-}
-
-const getIconFillValueFromTheme = (theme: Theme) => {
-  if (theme === colourTheme.muted) {
-    return "#ffffff";
-  }
-
-  if (theme === colourTheme.highlight) {
-    return "#faf1ec";
-  }
-
-  return "#f8f7f3";
-};
+import { FeatureTilesProps } from "./types";
 
 const FeatureTiles = ({
   title,
@@ -45,6 +16,8 @@ const FeatureTiles = ({
   hasTimeline = false,
   isIndependantSection = true,
 }: FeatureTilesProps) => {
+  const ref = useAnimationIntersectionObserver("fadeIn");
+
   const tilesMarkup = services.map(
     ({ id, label, image, Icon, title, description, href }) => {
       return href ? (
@@ -84,7 +57,10 @@ const FeatureTiles = ({
   );
 
   return (
-    <section className={theme ? `${theme}Theme` : ""}>
+    <section
+      className={theme ? `${theme}Theme` : ""}
+      ref={ref && !hasTimeline ? ref : undefined}
+    >
       <div
         className={`${styles.container} ${
           !isIndependantSection ? styles.noTopPadding : ""
