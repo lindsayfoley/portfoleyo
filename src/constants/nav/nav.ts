@@ -1,4 +1,8 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faSquareInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faSquareEnvelope,
   faLaptopCode,
@@ -6,6 +10,7 @@ import {
 import {
   EMAIL_ADDRESS,
   GITHUB_PROFILE,
+  INSTAGRAM_PROFILE,
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
 } from "../shared";
@@ -44,16 +49,22 @@ export const NAV_CONTENT = {
       icon: faLinkedin,
     },
     {
-      title: "View my Github",
-      href: GITHUB_PROFILE,
+      title: "View my Instgram",
+      href: INSTAGRAM_PROFILE,
       target: "_blank",
-      icon: faGithub,
+      icon: faSquareInstagram,
     },
     {
       title: "Send me an email",
       href: `mailto:${EMAIL_ADDRESS}`,
       target: "",
       icon: faSquareEnvelope,
+    },
+    {
+      title: "View my Github",
+      href: GITHUB_PROFILE,
+      target: "_blank",
+      icon: faGithub,
     },
     {
       title: "View my personal portfolio site",
