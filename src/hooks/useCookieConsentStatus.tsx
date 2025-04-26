@@ -12,6 +12,12 @@ export const cookieYesCategoryName = {
 
 type CookieYesCategoryNames = keyof typeof cookieYesCategoryName;
 
+interface EventData {
+  detail?: {
+    accepted?: [CookieYesCategoryNames];
+  };
+}
+
 const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
   const [hasCookieConsent, setHasCookieConsent] = useState(false);
 
@@ -22,7 +28,7 @@ const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
       }
     }
 
-    const setCookieConsentStatus = (eventData) => {
+    const setCookieConsentStatus = (eventData: EventData) => {
       const data = eventData?.detail;
       if (data?.accepted?.includes(cookieValue)) {
         setHasCookieConsent(true);
@@ -31,13 +37,13 @@ const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
 
     document.addEventListener(
       COOKIE_YES_CONSENT_LISTENER,
-      setCookieConsentStatus
+      setCookieConsentStatus as EventListener
     );
 
     return () => {
       document.removeEventListener(
         COOKIE_YES_CONSENT_LISTENER,
-        setCookieConsentStatus
+        setCookieConsentStatus as EventListener
       );
     };
   }, [cookieValue]);
