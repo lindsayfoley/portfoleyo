@@ -84,9 +84,14 @@ a {
   padding-right: 7px;
 }
 
+
+.cky-consent-container, 
+.heading {
+  font-family: "Work Sans", serif;
+}
+
 .heading {
   text-transform: uppercase;
-  font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
@@ -101,4 +106,8 @@ a {
       margin-top: 5px;
       margin-bottom: 20px;
   }
+}
+
+.cky-btn-revisit-wrapper {
+  display: none;
 }
