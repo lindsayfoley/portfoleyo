@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "../styles/portfolio.module.css";
+import { DOMAIN } from "@portfoleyo/constants/shared";
 
 const companies = [
   PORTFOLIO_CONTENT.theFabledThread,
@@ -28,7 +29,7 @@ export default function Portfolio() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
-          content={PORTFOLIO_CONTENT.charlotteTilbury.twoColumn.image.src}
+          content={`${DOMAIN}${PORTFOLIO_CONTENT.charlotteTilbury.twoColumn.image.src}`}
         />
       </Head>
       <main className={`${styles.main} highlightTheme`}>

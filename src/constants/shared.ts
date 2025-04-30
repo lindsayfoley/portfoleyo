@@ -1,3 +1,4 @@
+export const DOMAIN = "https://theportfoleyo.com/";
 export const EMAIL_ADDRESS = "hello@theportfoleyo.com";
 export const PORTFOLIO_SITE = "https://lindsayfoley.co.uk/";
 export const LINKEDIN_PROFILE =

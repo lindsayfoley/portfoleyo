@@ -4,6 +4,7 @@ import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBan
 import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
+import { DOMAIN } from "@portfoleyo/constants/shared";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
-          content={HOMEPAGE_CONTENT.highlightBanner.imageSrc}
+          content={`${DOMAIN}${HOMEPAGE_CONTENT.highlightBanner.imageSrc}`}
         />
       </Head>
       <main>

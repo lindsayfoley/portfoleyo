@@ -7,6 +7,7 @@ import Banner from "@portfoleyo/components/banner/banner";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/services.module.css";
+import { DOMAIN } from "@portfoleyo/constants/shared";
 
 const services = [
   SERVICES_CONTENT.twoColumnDevelopment,
@@ -23,7 +24,7 @@ export default function Services() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
-          content={SERVICES_CONTENT.twoColumnDevelopment.image.src}
+          content={`${DOMAIN}${SERVICES_CONTENT.twoColumnDevelopment.image.src}`}
         />
       </Head>
       <main>

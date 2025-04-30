@@ -4,6 +4,7 @@ import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLay
 import Banner from "@portfoleyo/components/banner/banner";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import {
+  DOMAIN,
   EMAIL_ADDRESS,
   LINKEDIN_PROFILE,
   PORTFOLIO_SITE,
@@ -20,7 +21,10 @@ export default function About() {
         <title>{ABOUT_CONTENT.meta.title}</title>
         <meta name="description" content={ABOUT_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="og:image" content={ABOUT_CONTENT.twoColumn.image.src} />
+        <meta
+          name="og:image"
+          content={`${DOMAIN}${ABOUT_CONTENT.twoColumn.image.src}`}
+        />
       </Head>
       <main>
         <Banner {...ABOUT_CONTENT.banner} />
