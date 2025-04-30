@@ -26,6 +26,10 @@ export default function Portfolio() {
         <title>{PORTFOLIO_CONTENT.meta.title}</title>
         <meta name="description" content={PORTFOLIO_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="og:image"
+          content={PORTFOLIO_CONTENT.charlotteTilbury.twoColumn.image.src}
+        />
       </Head>
       <main className={`${styles.main} highlightTheme`}>
         <Banner {...PORTFOLIO_CONTENT.banner} />

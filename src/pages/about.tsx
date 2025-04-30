@@ -20,6 +20,7 @@ export default function About() {
         <title>{ABOUT_CONTENT.meta.title}</title>
         <meta name="description" content={ABOUT_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="og:image" content={ABOUT_CONTENT.twoColumn.image.src} />
       </Head>
       <main>
         <Banner {...ABOUT_CONTENT.banner} />

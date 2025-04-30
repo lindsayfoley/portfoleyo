@@ -21,6 +21,10 @@ export default function Services() {
         <title>{SERVICES_CONTENT.meta.title}</title>
         <meta name="description" content={SERVICES_CONTENT.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="og:image"
+          content={SERVICES_CONTENT.twoColumnDevelopment.image.src}
+        />
       </Head>
       <main>
         <Banner {...SERVICES_CONTENT.banner} isIndependantSection={false} />
