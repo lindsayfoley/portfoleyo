@@ -1,6 +1,13 @@
 import { COOKIE_YES_CONSENT_LISTENER } from "@portfoleyo/constants/shared";
 import { useEffect, useState } from "react";
 
+declare global {
+  interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    cookieyes: any;
+  }
+}
+
 export const cookieYesCategoryName = {
   analytics: "analytics",
   necessary: "necessary",
@@ -11,7 +18,6 @@ export const cookieYesCategoryName = {
 } as const;
 
 type CookieYesCategoryNames = keyof typeof cookieYesCategoryName;
-
 interface EventData {
   detail?: {
     accepted?: [CookieYesCategoryNames];
