@@ -5,6 +5,7 @@ import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
 import { DOMAIN } from "@portfoleyo/constants/shared";
+import FeaturedInstagramPosts from "@portfoleyo/components/featuredInstagramPosts/featuredInstagramPosts";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
         <Showcase {...HOMEPAGE_CONTENT.showcase} />
+        <FeaturedInstagramPosts />
       </main>
     </>
   );

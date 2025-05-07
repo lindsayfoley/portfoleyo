@@ -1,0 +1,21 @@
+.container {
+    padding: 30px 0;
+    background-color: var(--highlight-background);
+}
+
+.posts {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+@media (min-width: 1000px) {
+    .container {
+      padding: 70px 0;
+    }
+
+    .posts {
+        justify-content: center;
+    }
+}

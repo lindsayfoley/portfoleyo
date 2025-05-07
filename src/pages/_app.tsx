@@ -5,11 +5,11 @@ import { NAV_CONTENT } from "@portfoleyo/constants/nav/nav";
 import Footer from "@portfoleyo/components/footer/footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import "@portfoleyo/styles/globals.css";
-import "@portfoleyo/styles/animations.css";
 import useCookieConsentStatus, {
   cookieYesCategoryName,
 } from "@portfoleyo/hooks/useCookieConsentStatus";
+import "@portfoleyo/styles/globals.css";
+import "@portfoleyo/styles/animations.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
