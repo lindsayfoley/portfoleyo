@@ -1,6 +1,7 @@
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import AnchorButton from "../anchorButton/anchorButton";
 import styles from "./highlightBanner.module.css";
+import LazyPicture from "../lazyPicture/lazyPicture";
 
 interface HighlightBannerProps {
   imageSrc: string;
@@ -35,7 +36,10 @@ const HighlightBanner = ({
         <div
           className={shouldReverseColumns ? styles.secondary : styles.primary}
         >
-          <img className={styles.image} src={imageSrc} alt={alt} />
+          <LazyPicture
+            classname={styles.image}
+            image={{ src: imageSrc, alt }}
+          />
         </div>
         <div
           className={`${styles.copy} ${
