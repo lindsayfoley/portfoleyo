@@ -4,20 +4,15 @@ import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import styles from "./showcase.module.css";
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
-
-export const device = {
-  mobile: "mobile",
-  desktop: "desktop",
-} as const;
+import LazyPicture from "../lazyPicture/lazyPicture";
 
 type TitleAndButtonProps = SectionTitleProps & AnchorButtonProps;
-type DeviceKeys = keyof typeof device;
 
 interface ShowcaseProps extends TitleAndButtonProps {
   images: {
     imageSrc: string;
     alt: string;
-    deviceConstraint?: DeviceKeys;
+    useDesktopMediaCondition?: boolean;
     href: string;
   }[];
   theme?: Theme;
@@ -32,11 +27,6 @@ const Showcase = ({
   cta,
   theme = colourTheme.default,
 }: ShowcaseProps) => {
-  const mobileOnlyImage = (deviceKey?: DeviceKeys) =>
-    deviceKey && deviceKey === device.mobile;
-  const desktopOnlyImage = (deviceKey?: DeviceKeys) =>
-    deviceKey && deviceKey === device.desktop;
-
   const ref = useAnimationIntersectionObserver("fadeIn");
 
   return (
@@ -50,17 +40,22 @@ const Showcase = ({
         isTitleFirst={isTitleFirst}
       />
       <div className={styles.images}>
-        {images.map(({ imageSrc, alt, deviceConstraint, href }) => (
+        {images.map(({ imageSrc, alt, useDesktopMediaCondition, href }) => (
           <a className={styles.link} key={imageSrc} href={href}>
-            <img
-              loading="lazy"
-              className={`${styles.image} ${
-                mobileOnlyImage(deviceConstraint) ? styles.mobileOnly : ""
-              } ${
-                desktopOnlyImage(deviceConstraint) ? styles.desktopOnly : ""
-              }`}
-              src={imageSrc}
-              alt={alt}
+            <LazyPicture
+              classname={styles.image}
+              image={{ src: imageSrc, alt }}
+              mediaCondition={
+                useDesktopMediaCondition
+                  ? {
+                      srcSet: `${imageSrc.slice(
+                        0,
+                        imageSrc.indexOf(".")
+                      )}-wide.jpg`,
+                      media: "(min-width: 760px)",
+                    }
+                  : undefined
+              }
             />
           </a>
         ))}

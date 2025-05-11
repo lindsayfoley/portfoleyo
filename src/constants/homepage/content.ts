@@ -1,4 +1,3 @@
-import { device } from "@portfoleyo/components/showcase/showcase";
 import { colourTheme } from "@portfoleyo/shared/common";
 
 export const HOMEPAGE_CONTENT = {
@@ -82,13 +81,6 @@ export const HOMEPAGE_CONTENT = {
       {
         imageSrc: "/the-fabled-thread-recent-work.jpg",
         alt: "Recent work I've completed for The Fabled Thread",
-        deviceConstraint: device.desktop,
-        href: "/portfolio",
-      },
-      {
-        imageSrc: "/the-fabled-thread-recent-work-mobile.jpg",
-        alt: "Recent work I've completed for The Fabled Thread",
-        deviceConstraint: device.mobile,
         href: "/portfolio",
       },
       {
