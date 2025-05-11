@@ -10,6 +10,7 @@ import { DOMAIN } from "@portfoleyo/constants/shared";
 
 const companies = [
   PORTFOLIO_CONTENT.theFabledThread,
+  PORTFOLIO_CONTENT.storyStudios,
   PORTFOLIO_CONTENT.duvetHog,
   PORTFOLIO_CONTENT.elyse,
   PORTFOLIO_CONTENT.jpsOriginals,

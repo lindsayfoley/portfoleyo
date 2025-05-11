@@ -40,6 +40,25 @@ export const PORTFOLIO_CONTENT = {
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
+  storyStudios: {
+    twoColumn: {
+      title: "Story Studios",
+      href: "https://hellostorystudios.com",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-story-studios.png",
+        alt: "The homepage of the Story Studios site",
+      },
+    },
+    description:
+      "I helped Story Studios, a boutique communications consultancy, refine and extend their site build. I implemented custom styles, optimised accessibility and mobile layout, and advised on email forwarding options to support a professional launch.",
+    workCompletedList: [
+      "Styling: added and adjusted custom spacing, layout and typography",
+      "Accessibility: ensured semantic heading levels, contrast and keyboard navigation",
+      "Mobile: fine-tuned layout and imagery for smaller screens",
+      "CMS prep: structured pages with placeholders to support phased content rollout",
+    ],
+  },
   duvetHog: {
     twoColumn: {
       title: "Duvet Hog",
