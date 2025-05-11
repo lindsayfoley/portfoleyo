@@ -26,7 +26,7 @@ const LazyPicture = ({
         <source
           key={format}
           srcSet={`${imageSrcWithoutFormat}.${format}`}
-          type={format}
+          type={`image/${format}`}
         />
       ))}
       <img className={classname} src={src} alt={alt} loading="lazy" />
