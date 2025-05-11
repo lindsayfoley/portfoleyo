@@ -40,6 +40,25 @@ export const PORTFOLIO_CONTENT = {
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
+  theVaHouse: {
+    twoColumn: {
+      title: "The VA House",
+      href: "https://vahouse.co.uk/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-va-house.png",
+        alt: "The homepage of The VA House site",
+      },
+    },
+    description:
+      "I worked with The VA House, a consultancy supporting businesses with executive-level virtual assistance, to refine their WordPress site for better SEO, accessibility, and usability. I conducted a site audit and implemented fixes across visual hierarchy, metadata, navigation, and performance.",
+    workCompletedList: [
+      "Accessibility: improved contrast, added alt text and fixed heading hierarchy",
+      "SEO: reviewed and optimised meta titles and descriptions site wide",
+      "UX: fixed bugs with navigation in-page anchor behaviour",
+      "Performance: optimised large image assets across the site to reduce load times",
+    ],
+  },
   storyStudios: {
     twoColumn: {
       title: "Story Studios",

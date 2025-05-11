@@ -7,9 +7,11 @@ import { faSquareCheck } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "../styles/portfolio.module.css";
 import { DOMAIN } from "@portfoleyo/constants/shared";
+import { Fragment } from "react";
 
 const companies = [
   PORTFOLIO_CONTENT.theFabledThread,
+  // PORTFOLIO_CONTENT.theVaHouse,
   PORTFOLIO_CONTENT.storyStudios,
   PORTFOLIO_CONTENT.duvetHog,
   PORTFOLIO_CONTENT.elyse,
@@ -36,7 +38,7 @@ export default function Portfolio() {
       <main className={`${styles.main} highlightTheme`}>
         <Banner {...PORTFOLIO_CONTENT.banner} />
         {companies.map((company, index) => (
-          <>
+          <Fragment key={company.description}>
             <TwoColumnLayout
               useAnimation
               key={company.description}
@@ -60,7 +62,7 @@ export default function Portfolio() {
             {index !== companies.length - 1 && (
               <hr className={styles.divider} />
             )}
-          </>
+          </Fragment>
         ))}
       </main>
     </>
