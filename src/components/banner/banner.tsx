@@ -48,7 +48,12 @@ const Banner = ({
     >
       <div className={hasBorder ? styles.frame : ""}>
         {image && (
-          <img className={styles.image} src={image.src} alt={image.alt} />
+          <img
+            className={styles.image}
+            src={image.src}
+            alt={image.alt}
+            loading="lazy"
+          />
         )}
         <SectionTitle
           title={title}

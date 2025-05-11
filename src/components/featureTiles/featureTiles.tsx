@@ -41,7 +41,12 @@ const FeatureTiles = ({
         <article className={styles.service} key={title}>
           {label && <h5 className={styles.label}>{label}</h5>}
           {image && (
-            <img className={styles.image} src={image.src} alt={image.alt} />
+            <img
+              className={styles.image}
+              src={image.src}
+              alt={image.alt}
+              loading="lazy"
+            />
           )}
           {Icon && (
             <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
