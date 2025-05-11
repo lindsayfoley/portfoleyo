@@ -1,5 +1,5 @@
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { featuredPosts } from "./featuredPosts";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./featuredInstagramPosts.module.css";
@@ -12,9 +12,12 @@ declare global {
 }
 
 const FeaturedInstagramPosts = () => {
+  const [hasLoadedPosts, setHasLoadedPosts] = useState(false);
+
   useEffect(() => {
-    if (featuredPosts?.length !== 0 && window.instgrm) {
+    if (featuredPosts?.length > 0 && !hasLoadedPosts && window?.instgrm) {
       window.instgrm.Embeds.process();
+      setHasLoadedPosts(true);
     }
   }, []);
 
