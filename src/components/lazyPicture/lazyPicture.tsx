@@ -16,7 +16,7 @@ const LazyPicture = ({
   classname,
 }: LazyPictureProps) => {
   const { src, alt } = image;
-  const defaultNextGenImageFormat = ["avif", "webp"];
+  const defaultNextGenImageFormat = ["webp"];
   const imageSrcWithoutFormat = src.slice(0, src.indexOf("."));
 
   return (
