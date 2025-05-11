@@ -4,6 +4,7 @@ import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationInte
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import styles from "./banner.module.css";
+import LazyPicture from "../lazyPicture/lazyPicture";
 
 interface BannerProps {
   image?: {
@@ -48,11 +49,9 @@ const Banner = ({
     >
       <div className={hasBorder ? styles.frame : ""}>
         {image && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            className={styles.image}
-            src="/logo.png"
-            alt="The Portfoleyo logo"
+          <LazyPicture
+            classname={styles.image}
+            image={{ src: image.src, alt: image.alt }}
           />
         )}
         <SectionTitle

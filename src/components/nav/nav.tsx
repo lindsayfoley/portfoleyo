@@ -26,9 +26,10 @@ const Nav = ({ links }: NavProps) => {
           </ul>
         </div>
         <Link href="/" className={styles.logoWrapper}>
-          <LazyPicture
-            classname={styles.logo}
-            image={{ src: "/logo.png", alt: "The Portfoleyo logo" }}
+          <img
+            className={styles.logo}
+            src="/logo.png"
+            alt="The Portfoleyo logo"
           />
         </Link>
         <div className={`${styles.icons} ${styles.links}`}>
