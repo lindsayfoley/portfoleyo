@@ -14,7 +14,9 @@
     .container {
       padding: 70px 0;
     }
+}
 
+@media (min-width: 1300px) {
     .posts {
         justify-content: center;
     }

@@ -27,7 +27,7 @@ const FeaturedInstagramPosts = () => {
       <Script async src="//www.instagram.com/embed.js" />
       <div className={styles.container}>
         <SectionTitle
-          title="My latest updates"
+          title="Latest updates"
           subtitle="@ThePortfoleyo"
           titleHref="https://www.instagram.com/theportfoleyo/"
           isTitleFirst={false}

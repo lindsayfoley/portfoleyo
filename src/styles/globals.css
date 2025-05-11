@@ -113,8 +113,8 @@ a {
 }
 
 .instagram-media {
-  max-width: 200px!important;
-  width: 100%!important;
+  max-width: 324px;
+  max-height: 530px; /* Reel height plus below margins */
   margin-top: -55px!important;
   margin-bottom: -155px!important;
 }
