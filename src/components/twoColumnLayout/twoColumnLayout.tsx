@@ -38,6 +38,16 @@ const TwoColumnLayout = ({
 }: TwoColumnLayoutProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
+  const imageTag = (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      loading="lazy"
+      className={styles.image}
+      src={image.src}
+      alt={image.alt}
+    />
+  );
+
   return (
     <section
       className={`${theme ? `${theme}Theme` : ""}`}
@@ -76,10 +86,10 @@ const TwoColumnLayout = ({
         >
           {href ? (
             <a href={href} target="_blank">
-              <img className={styles.image} src={image.src} alt={image.alt} />
+              {imageTag}
             </a>
           ) : (
-            <img className={styles.image} src={image.src} alt={image.alt} />
+            <>{imageTag}</>
           )}
         </div>
       </div>
