@@ -1,8 +1,9 @@
-import { colourTheme, Theme } from "@portfoleyo/shared/common";
-import SectionTitle from "../sectionTitle/sectionTitle";
 import { ReactNode } from "react";
-import styles from "./twoColumnLayout.module.css";
+import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
+import SectionTitle from "../sectionTitle/sectionTitle";
+import LazyPicture from "../lazyPicture/lazyPicture";
+import styles from "./twoColumnLayout.module.css";
 
 interface TwoColumnLayoutProps {
   title: string;
@@ -39,12 +40,9 @@ const TwoColumnLayout = ({
   const ref = useAnimationIntersectionObserver("fadeIn");
 
   const imageTag = (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      loading="lazy"
-      className={styles.image}
-      src={image.src}
-      alt={image.alt}
+    <LazyPicture
+      classname={styles.image}
+      image={{ src: image.src, alt: image.alt }}
     />
   );
 

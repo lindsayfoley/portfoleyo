@@ -1,8 +1,9 @@
 import Link from "next/link";
-import styles from "./nav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { NAV_CONTENT } from "../../constants/nav/nav";
+import LazyPicture from "../lazyPicture/lazyPicture";
+import styles from "./nav.module.css";
 
 interface NavProps {
   links: {
@@ -25,10 +26,9 @@ const Nav = ({ links }: NavProps) => {
           </ul>
         </div>
         <Link href="/" className={styles.logoWrapper}>
-          <img
-            className={styles.logo}
-            src="/logo.png"
-            alt="The Portfoleyo logo"
+          <LazyPicture
+            classname={styles.logo}
+            image={{ src: "/logo.png", alt: "The Portfoleyo logo" }}
           />
         </Link>
         <div className={`${styles.icons} ${styles.links}`}>

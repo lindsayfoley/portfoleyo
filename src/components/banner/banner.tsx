@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
 import { Theme, colourTheme } from "@portfoleyo/shared/common";
+import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
-import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
+import LazyPicture from "../lazyPicture/lazyPicture";
 import styles from "./banner.module.css";
 
 interface BannerProps {
@@ -48,11 +49,9 @@ const Banner = ({
     >
       <div className={hasBorder ? styles.frame : ""}>
         {image && (
-          <img
-            className={styles.image}
-            src={image.src}
-            alt={image.alt}
-            loading="lazy"
+          <LazyPicture
+            classname={styles.image}
+            image={{ src: "/logo.png", alt: "The Portfoleyo logo" }}
           />
         )}
         <SectionTitle

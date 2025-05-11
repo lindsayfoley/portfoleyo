@@ -6,6 +6,7 @@ import SectionTitle from "../sectionTitle/sectionTitle";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import styles from "./featureTiles.module.css";
 import { FeatureTilesProps } from "./types";
+import LazyPicture from "../lazyPicture/lazyPicture";
 
 const FeatureTiles = ({
   title,
@@ -25,7 +26,10 @@ const FeatureTiles = ({
           <a href={id ? `${href}#${id}` : href}>
             {label && <h5 className={styles.label}>{label}</h5>}
             {image && (
-              <img className={styles.image} src={image.src} alt={image.alt} />
+              <LazyPicture
+                classname={styles.image}
+                image={{ src: image.src, alt: image.alt }}
+              />
             )}
             {Icon && (
               <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
@@ -41,11 +45,9 @@ const FeatureTiles = ({
         <article className={styles.service} key={title}>
           {label && <h5 className={styles.label}>{label}</h5>}
           {image && (
-            <img
-              className={styles.image}
-              src={image.src}
-              alt={image.alt}
-              loading="lazy"
+            <LazyPicture
+              classname={styles.image}
+              image={{ src: image.src, alt: image.alt }}
             />
           )}
           {Icon && (
