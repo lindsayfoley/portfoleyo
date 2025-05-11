@@ -3,7 +3,6 @@ import { Theme, colourTheme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
-import LazyPicture from "../lazyPicture/lazyPicture";
 import styles from "./banner.module.css";
 
 interface BannerProps {
@@ -49,9 +48,11 @@ const Banner = ({
     >
       <div className={hasBorder ? styles.frame : ""}>
         {image && (
-          <LazyPicture
-            classname={styles.image}
-            image={{ src: "/logo.png", alt: "The Portfoleyo logo" }}
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            className={styles.image}
+            src="/logo.png"
+            alt="The Portfoleyo logo"
           />
         )}
         <SectionTitle
