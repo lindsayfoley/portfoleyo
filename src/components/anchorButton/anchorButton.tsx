@@ -1,11 +1,11 @@
 import styles from "./anchorButton.module.css";
 
-export interface AnchorButtonProps {
+export interface LinkProps {
   href: string;
   cta: string;
 }
 
-const AnchorButton = ({ href, cta }: AnchorButtonProps) => {
+const AnchorButton = ({ href, cta }: LinkProps) => {
   return (
     <a className={styles.container} href={href}>
       {cta}

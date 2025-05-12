@@ -16,6 +16,9 @@ const services = [
 ];
 
 export default function Services() {
+  const listClassname = "list";
+  const iconClassname = "icon";
+
   return (
     <>
       <Head>
@@ -38,10 +41,10 @@ export default function Services() {
             }
             isIndependantSection={false}
           >
-            <ul className="list">
+            <ul className={listClassname}>
               {service.list.map((item) => (
                 <li key={item}>
-                  <FontAwesomeIcon className="icon" icon={faCheck} />
+                  <FontAwesomeIcon className={iconClassname} icon={faCheck} />
                   {item}
                 </li>
               ))}
@@ -51,12 +54,12 @@ export default function Services() {
         <FeatureTiles {...SERVICES_CONTENT.featureTiles} />
         <Banner {...SERVICES_CONTENT.gettingStarted.banner}>
           <div className={styles.listContainer}>
-            <ol className={`list ${styles.orderedlist}`}>
+            <ol className={`${listClassname} ${styles.orderedlist}`}>
               {SERVICES_CONTENT.gettingStarted.list.map(
                 ({ title, text, icon }) => (
                   <li key={text} className={styles.listItem}>
                     <h5 className={`heading ${styles.header}`}>
-                      <FontAwesomeIcon className="icon" icon={icon} />
+                      <FontAwesomeIcon className={iconClassname} icon={icon} />
                       {title}
                     </h5>
                     {text}

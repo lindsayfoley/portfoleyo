@@ -1,12 +1,12 @@
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
-import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
+import AnchorButton, { LinkProps } from "../anchorButton/anchorButton";
 
 import styles from "./showcase.module.css";
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import LazyPicture from "../lazyPicture/lazyPicture";
 
-type TitleAndButtonProps = SectionTitleProps & AnchorButtonProps;
+type TitleAndButtonProps = SectionTitleProps & LinkProps;
 
 interface ShowcaseProps extends TitleAndButtonProps {
   images: {

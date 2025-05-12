@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Theme, colourTheme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
-import AnchorButton, { AnchorButtonProps } from "../anchorButton/anchorButton";
+import AnchorButton, { LinkProps } from "../anchorButton/anchorButton";
 import SectionTitle, { SectionTitleProps } from "../sectionTitle/sectionTitle";
 import styles from "./banner.module.css";
 import LazyPicture from "../lazyPicture/lazyPicture";
@@ -19,9 +19,7 @@ interface BannerProps {
   useAnimation?: boolean;
 }
 
-type AllBannerProps = BannerProps &
-  SectionTitleProps &
-  Partial<AnchorButtonProps>;
+type AllBannerProps = BannerProps & SectionTitleProps & Partial<LinkProps>;
 
 const Banner = ({
   image,

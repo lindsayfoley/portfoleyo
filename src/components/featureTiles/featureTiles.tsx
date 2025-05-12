@@ -18,6 +18,7 @@ const FeatureTiles = ({
   isIndependantSection = true,
 }: FeatureTilesProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
+  const iconWidth = "100px";
 
   const tilesMarkup = services.map(
     ({ id, label, image, Icon, title, description, href }) => {
@@ -27,7 +28,7 @@ const FeatureTiles = ({
             {label && <span className={styles.label}>{label}</span>}
             {image && <LazyPicture classname={styles.image} image={image} />}
             {Icon && (
-              <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
+              <Icon fill={getIconFillValueFromTheme(theme)} width={iconWidth} />
             )}
             <div className={styles.copy}>
               <h3 className={styles.title}>{title}</h3>
@@ -46,7 +47,7 @@ const FeatureTiles = ({
             />
           )}
           {Icon && (
-            <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
+            <Icon fill={getIconFillValueFromTheme(theme)} width={iconWidth} />
           )}
           <div className={styles.copy}>
             <h3 className={styles.title}>{title}</h3>

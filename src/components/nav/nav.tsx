@@ -2,13 +2,11 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { NAV_CONTENT } from "../../constants/nav/nav";
+import { LinkProps } from "../anchorButton/anchorButton";
 import styles from "./nav.module.css";
 
 interface NavProps {
-  links: {
-    href: string;
-    cta: string;
-  }[];
+  links: LinkProps[];
 }
 
 const Nav = ({ links }: NavProps) => {
