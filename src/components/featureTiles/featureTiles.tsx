@@ -24,7 +24,7 @@ const FeatureTiles = ({
       return href ? (
         <article className={styles.service} key={title}>
           <a href={id ? `${href}#${id}` : href}>
-            {label && <h5 className={styles.label}>{label}</h5>}
+            {label && <span className={styles.label}>{label}</span>}
             {image && (
               <LazyPicture
                 classname={styles.image}
@@ -37,13 +37,13 @@ const FeatureTiles = ({
             <div className={styles.copy}>
               <h3 className={styles.title}>{title}</h3>
               <p className={styles.description}>{description}</p>
-              {cta && <h5 className={styles.cta}>{cta}</h5>}
+              {cta && <span className={styles.cta}>{cta}</span>}
             </div>
           </a>
         </article>
       ) : (
         <article className={styles.service} key={title}>
-          {label && <h5 className={styles.label}>{label}</h5>}
+          {label && <span className={styles.label}>{label}</span>}
           {image && (
             <LazyPicture
               classname={styles.image}
@@ -56,7 +56,7 @@ const FeatureTiles = ({
           <div className={styles.copy}>
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>
-            {cta && <h5 className={styles.cta}>{cta}</h5>}
+            {cta && <span className={styles.cta}>{cta}</span>}
           </div>
         </article>
       );
