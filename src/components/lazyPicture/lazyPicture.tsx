@@ -1,23 +1,24 @@
+export interface ImageProps {
+  src: string;
+  alt: string;
+  useEagerLoading?: boolean;
+}
+
 interface LazyPictureProps {
-  image: {
-    src: string;
-    alt: string;
-  };
+  image: ImageProps;
   mediaCondition?: {
     srcSet: string;
     media: string;
   };
   classname?: string;
-  useEagerLoading?: boolean;
 }
 
 const LazyPicture = ({
   image,
   mediaCondition,
   classname,
-  useEagerLoading,
 }: LazyPictureProps) => {
-  const { src, alt } = image;
+  const { src, alt, useEagerLoading } = image;
   const supportedNextGenImageFormat = ["avif", "webp"];
   const imageSrcWithoutFormat = src.slice(0, src.indexOf("."));
 

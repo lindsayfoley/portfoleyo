@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { colourTheme, Theme } from "@portfoleyo/shared/common";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
 import SectionTitle from "../sectionTitle/sectionTitle";
-import LazyPicture from "../lazyPicture/lazyPicture";
+import LazyPicture, { ImageProps } from "../lazyPicture/lazyPicture";
 import styles from "./twoColumnLayout.module.css";
 
 interface TwoColumnLayoutProps {
@@ -12,11 +12,7 @@ interface TwoColumnLayoutProps {
   subtitle?: string;
   isH1Element?: boolean;
   paragraphs?: string[];
-  image: {
-    src: string;
-    alt: string;
-    useEagerLoading?: boolean;
-  };
+  image: ImageProps;
   shouldReverseColumns?: boolean;
   theme?: Theme;
   children?: ReactNode;
@@ -40,13 +36,7 @@ const TwoColumnLayout = ({
 }: TwoColumnLayoutProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
-  const imageTag = (
-    <LazyPicture
-      classname={styles.image}
-      image={{ src: image.src, alt: image.alt }}
-      useEagerLoading={image.useEagerLoading}
-    />
-  );
+  const imageTag = <LazyPicture classname={styles.image} image={image} />;
 
   return (
     <section

@@ -1,5 +1,6 @@
 import { ElementType } from "react";
 import { Theme } from "@portfoleyo/shared/common";
+import { ImageProps } from "../lazyPicture/lazyPicture";
 
 export interface FeatureTilesProps {
   title?: string;
@@ -7,11 +8,7 @@ export interface FeatureTilesProps {
   services: {
     id?: string;
     label?: string;
-    image?: {
-      src: string;
-      alt: string;
-      useEagerLoading?: boolean;
-    };
+    image?: ImageProps;
     Icon?: ElementType;
     title: string;
     description: string;

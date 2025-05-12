@@ -2,11 +2,11 @@ import {
   colourTheme,
   getIconFillValueFromTheme,
 } from "@portfoleyo/shared/common";
-import SectionTitle from "../sectionTitle/sectionTitle";
 import useAnimationIntersectionObserver from "@portfoleyo/hooks/useAnimationIntersectionObserver";
-import styles from "./featureTiles.module.css";
-import { FeatureTilesProps } from "./types";
+import SectionTitle from "../sectionTitle/sectionTitle";
 import LazyPicture from "../lazyPicture/lazyPicture";
+import { FeatureTilesProps } from "./types";
+import styles from "./featureTiles.module.css";
 
 const FeatureTiles = ({
   title,
@@ -25,13 +25,7 @@ const FeatureTiles = ({
         <article className={styles.service} key={title}>
           <a href={id ? `${href}#${id}` : href}>
             {label && <span className={styles.label}>{label}</span>}
-            {image && (
-              <LazyPicture
-                classname={styles.image}
-                image={{ src: image.src, alt: image.alt }}
-                useEagerLoading={image.useEagerLoading}
-              />
-            )}
+            {image && <LazyPicture classname={styles.image} image={image} />}
             {Icon && (
               <Icon fill={getIconFillValueFromTheme(theme)} width="100px" />
             )}
