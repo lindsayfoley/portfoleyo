@@ -6,8 +6,15 @@ import Showcase from "@portfoleyo/components/showcase/showcase";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
 import { DOMAIN } from "@portfoleyo/constants/shared";
 import FeaturedInstagramPosts from "@portfoleyo/components/featuredInstagramPosts/featuredInstagramPosts";
+import useCookieConsentStatus, {
+  cookieYesCategoryName,
+} from "@portfoleyo/hooks/useCookieConsentStatus";
 
 export default function Home() {
+  const hasMarketingCookieConsent = useCookieConsentStatus(
+    cookieYesCategoryName.advertisement
+  );
+
   return (
     <>
       <Head>
@@ -24,7 +31,7 @@ export default function Home() {
         <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
         <Showcase {...HOMEPAGE_CONTENT.showcase} />
-        <FeaturedInstagramPosts />
+        {hasMarketingCookieConsent && <FeaturedInstagramPosts />}
       </main>
     </>
   );
