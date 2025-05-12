@@ -9,3 +9,36 @@ RewriteRule ^(.*)$ https://theportfoleyo.com/$1 [L,R=301]
   AddType image/avif .avif
 </IfModule>
 
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+
+  # Stylesheets
+  ExpiresByType text/css "access plus 1 month"
+
+  # JavaScript
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy "default-src 'self'; img-src 'self' https: data:; script-src 'self'; style-src 'self' 'unsafe-inline';"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+  Header set Cross-Origin-Opener-Policy "same-origin"
+  Header set Cross-Origin-Embedder-Policy "require-corp"
+</IfModule>
