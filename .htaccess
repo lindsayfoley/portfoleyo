@@ -34,15 +34,3 @@ RewriteRule ^(.*)$ https://theportfoleyo.com/$1 [L,R=301]
   # JavaScript
   ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
-
-<IfModule mod_headers.c>
-  Header set Content-Security-Policy "
-    default-src 'self';
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
-    script-src 'self' 'unsafe-inline' https://cdn-cookieyes.com https://www.instagram.com;
-    script-src-elem 'self' https://cdn-cookieyes.com https://www.instagram.com;
-    connect-src 'self';
-    img-src 'self' https: data:;
-  "
-</IfModule>
