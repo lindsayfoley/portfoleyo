@@ -4,7 +4,7 @@ export interface ImageProps {
   useEagerLoading?: boolean;
 }
 
-interface LazyPictureProps {
+export interface LazyPictureProps {
   image: ImageProps;
   mediaCondition?: {
     srcSet: string;

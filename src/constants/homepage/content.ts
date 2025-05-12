@@ -11,6 +11,10 @@ export const HOMEPAGE_CONTENT = {
       src: "/hp-hero-imac-cfwl.jpg",
       alt: "A desk scene with a iMac open on the Come Fly With Lindsay travel blog site",
       useEagerLoading: true,
+      mediaCondition: {
+        srcSet: "/hp-hero-imac-cfwl-wide.jpg",
+        media: "(min-width: 500px)",
+      },
     },
     intro: "Welcome to",
     title: "The Portfoleyo",
