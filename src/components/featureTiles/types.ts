@@ -10,6 +10,7 @@ export interface FeatureTilesProps {
     image?: {
       src: string;
       alt: string;
+      useEagerLoading?: boolean;
     };
     Icon?: ElementType;
     title: string;

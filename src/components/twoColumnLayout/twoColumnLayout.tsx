@@ -15,6 +15,7 @@ interface TwoColumnLayoutProps {
   image: {
     src: string;
     alt: string;
+    useEagerLoading?: boolean;
   };
   shouldReverseColumns?: boolean;
   theme?: Theme;
@@ -43,6 +44,7 @@ const TwoColumnLayout = ({
     <LazyPicture
       classname={styles.image}
       image={{ src: image.src, alt: image.alt }}
+      useEagerLoading={image.useEagerLoading}
     />
   );
 

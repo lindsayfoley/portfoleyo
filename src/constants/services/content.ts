@@ -31,6 +31,7 @@ export const SERVICES_CONTENT = {
     image: {
       src: "/services-custom-development-code.jpg",
       alt: "An iMac running Visual Studio Code",
+      useEagerLoading: true,
     },
     paragraphs: [
       "Not every solution works straight out of the box. I build custom sites and apps—or refine what’s already there—so they fit your needs and work exactly how you want.",

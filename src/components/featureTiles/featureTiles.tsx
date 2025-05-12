@@ -29,6 +29,7 @@ const FeatureTiles = ({
               <LazyPicture
                 classname={styles.image}
                 image={{ src: image.src, alt: image.alt }}
+                useEagerLoading={image.useEagerLoading}
               />
             )}
             {Icon && (

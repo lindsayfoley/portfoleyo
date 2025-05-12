@@ -32,6 +32,7 @@ export const HOMEPAGE_CONTENT = {
         image: {
           src: "/hp-custom-dev.jpg",
           alt: "Showing the different stages of Web Development from design to execution",
+          useEagerLoading: true,
         },
         id: "development",
         title: "Custom Development",
@@ -43,6 +44,7 @@ export const HOMEPAGE_CONTENT = {
         image: {
           src: "/hp-web-performance-seo.jpg",
           alt: "A desk scene with laptop displaying graphs",
+          useEagerLoading: true,
         },
         id: "optimisation",
         title: "Performance & SEO Optimisation",
@@ -54,6 +56,7 @@ export const HOMEPAGE_CONTENT = {
         image: {
           src: "/hp-shopify-wireframes.jpg",
           alt: "A phone showing a Shopify theme mockup on a browser",
+          useEagerLoading: true,
         },
         id: "ecommerce",
         title: "E-Commerce & Shopify Solutions",
