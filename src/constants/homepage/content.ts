@@ -84,17 +84,21 @@ export const HOMEPAGE_CONTENT = {
     theme: colourTheme.muted,
     images: [
       {
-        imageSrc: "/lesterrechocolate-recent-work.jpg",
+        src: "/lesterrechocolate-recent-work.jpg",
         alt: "Recent work I've completed for L'Esterre Chocolate",
         href: "/portfolio",
       },
       {
-        imageSrc: "/the-fabled-thread-recent-work.jpg",
+        src: "/the-fabled-thread-recent-work.jpg",
         alt: "Recent work I've completed for The Fabled Thread",
         href: "/portfolio",
+        mediaCondition: {
+          srcSet: "/the-fabled-thread-recent-work-wide.avif",
+          media: "(min-width: 760px)",
+        },
       },
       {
-        imageSrc: "/the-mews-recent-work.jpg",
+        src: "/the-mews-recent-work.jpg",
         alt: "Recent work I've completed for The Mews",
         href: "/portfolio",
       },
