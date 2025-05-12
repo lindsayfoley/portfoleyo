@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { COOKIE_YES_CONSENT_LISTENER } from "@portfoleyo/constants/shared";
 import { useEffect, useState } from "react";
 
 declare global {
   interface Window {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     cookieyes: any;
+    getCkyConsent: any;
   }
 }
 
@@ -18,25 +19,25 @@ export const cookieYesCategoryName = {
 } as const;
 
 type CookieYesCategoryNames = keyof typeof cookieYesCategoryName;
-interface EventData {
-  detail?: {
-    accepted?: [CookieYesCategoryNames];
-  };
-}
 
 const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
   const [hasCookieConsent, setHasCookieConsent] = useState(false);
 
   useEffect(() => {
-    if (window?.cookieyes && window.cookieyes.consent) {
-      if (window.cookieyes.consent.accepted?.includes(cookieValue)) {
+    if (window?.cookieyes) {
+      if (window.cookieyes.consent?.accepted?.includes(cookieValue)) {
         setHasCookieConsent(true);
       }
     }
 
-    const setCookieConsentStatus = (eventData: EventData) => {
-      const data = eventData?.detail;
-      if (data?.accepted?.includes(cookieValue)) {
+    const setCookieConsentStatus = () => {
+      if (!window?.cookieyes && !window?.getCkyConsent) {
+        return;
+      }
+
+      const consent = window.getCkyConsent();
+
+      if (consent.categories[cookieValue]) {
         setHasCookieConsent(true);
       }
     };
