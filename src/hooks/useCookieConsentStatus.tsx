@@ -21,17 +21,11 @@ export const cookieYesCategoryName = {
 type CookieYesCategoryNames = keyof typeof cookieYesCategoryName;
 
 const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
-  const [hasCookieConsent, setHasCookieConsent] = useState(false);
+  const [hasCookieConsent, setHasCookieConsent] = useState<boolean>();
 
   useEffect(() => {
-    if (window?.cookieyes) {
-      if (window.cookieyes.consent?.accepted?.includes(cookieValue)) {
-        setHasCookieConsent(true);
-      }
-    }
-
-    const setCookieConsentStatus = () => {
-      if (!window?.cookieyes && !window?.getCkyConsent) {
+    const checkCookieConsentStatus = () => {
+      if (!window?.getCkyConsent) {
         return;
       }
 
@@ -39,18 +33,25 @@ const useCookieConsentStatus = (cookieValue: CookieYesCategoryNames) => {
 
       if (consent.categories[cookieValue]) {
         setHasCookieConsent(true);
+      } else {
+        setHasCookieConsent(false);
       }
     };
 
+    setTimeout(() => {
+      // Added delay to ensure CookieYes functions are available
+      checkCookieConsentStatus();
+    }, 500);
+
     document.addEventListener(
       COOKIE_YES_CONSENT_LISTENER,
-      setCookieConsentStatus as EventListener
+      checkCookieConsentStatus as EventListener
     );
 
     return () => {
       document.removeEventListener(
         COOKIE_YES_CONSENT_LISTENER,
-        setCookieConsentStatus as EventListener
+        checkCookieConsentStatus as EventListener
       );
     };
   }, [cookieValue]);
