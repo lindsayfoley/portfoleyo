@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
-          content={`${DOMAIN}${HOMEPAGE_CONTENT.highlightBanner.imageSrc}`}
+          content={`${DOMAIN}${HOMEPAGE_CONTENT.highlightBanner.image.src}`}
         />
       </Head>
       <main>

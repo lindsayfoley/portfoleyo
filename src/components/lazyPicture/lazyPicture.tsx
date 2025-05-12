@@ -8,12 +8,14 @@ interface LazyPictureProps {
     media: string;
   };
   classname?: string;
+  useEagerLoading?: boolean;
 }
 
 const LazyPicture = ({
   image,
   mediaCondition,
   classname,
+  useEagerLoading,
 }: LazyPictureProps) => {
   const { src, alt } = image;
   const supportedNextGenImageFormat = ["avif", "webp"];
@@ -29,7 +31,12 @@ const LazyPicture = ({
           type={`image/${format}`}
         />
       ))}
-      <img className={classname} src={src} alt={alt} loading="lazy" />
+      <img
+        className={classname}
+        src={src}
+        alt={alt}
+        loading={useEagerLoading ? undefined : "lazy"}
+      />
     </picture>
   );
 };

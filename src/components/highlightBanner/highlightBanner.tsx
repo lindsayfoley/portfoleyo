@@ -4,8 +4,11 @@ import styles from "./highlightBanner.module.css";
 import LazyPicture from "../lazyPicture/lazyPicture";
 
 interface HighlightBannerProps {
-  imageSrc: string;
-  alt: string;
+  image: {
+    src: string;
+    alt: string;
+    useEagerLoading?: boolean;
+  };
   intro?: string;
   title: string;
   description: string | string[];
@@ -17,8 +20,7 @@ interface HighlightBannerProps {
 }
 
 const HighlightBanner = ({
-  imageSrc,
-  alt,
+  image,
   intro,
   title,
   description,
@@ -38,7 +40,8 @@ const HighlightBanner = ({
         >
           <LazyPicture
             classname={styles.image}
-            image={{ src: imageSrc, alt }}
+            image={image}
+            useEagerLoading={image.useEagerLoading}
           />
         </div>
         <div
