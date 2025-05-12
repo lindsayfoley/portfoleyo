@@ -3,3 +3,8 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^theportfoleyo\.com$ [OR]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://theportfoleyo.com/$1 [L,R=301]
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+</IfModule>
