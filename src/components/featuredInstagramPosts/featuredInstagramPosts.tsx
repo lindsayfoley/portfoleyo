@@ -1,5 +1,4 @@
-import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { featuredPosts } from "./featuredPosts";
 import SectionTitle from "../sectionTitle/sectionTitle";
 import styles from "./featuredInstagramPosts.module.css";
@@ -13,22 +12,52 @@ declare global {
 
 const FeaturedInstagramPosts = () => {
   const [hasLoadedPosts, setHasLoadedPosts] = useState(false);
+  const isMissingPostData = featuredPosts?.length === 0;
+  const ref = useRef(null);
 
   useEffect(() => {
-    if (featuredPosts?.length > 0 && !hasLoadedPosts && window?.instgrm) {
-      window.instgrm.Embeds.process();
-      setHasLoadedPosts(true);
-    }
-  }, []);
+    const node = ref.current;
 
-  if (featuredPosts?.length === 0) {
-    return;
+    if (!node || isMissingPostData || hasLoadedPosts) {
+      return;
+    }
+
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const instagramScript = document.createElement("script");
+          instagramScript.src = "https://www.instagram.com/embed.js";
+          instagramScript.async = true;
+
+          instagramScript.onload = () => {
+            if (window.instgrm?.Embeds) {
+              window.instgrm.Embeds.process();
+              setHasLoadedPosts(true);
+            }
+          };
+
+          document.querySelector("body")?.append(instagramScript);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: "1000px",
+    });
+    observer.observe(node);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [hasLoadedPosts, isMissingPostData]);
+
+  if (isMissingPostData) {
+    return null;
   }
 
   return (
     <>
-      <Script async src="//www.instagram.com/embed.js" />
-      <div className={styles.container}>
+      <div className={styles.container} ref={ref}>
         <SectionTitle
           title="Latest updates"
           subtitle="@ThePortfoleyo"
