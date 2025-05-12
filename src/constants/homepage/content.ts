@@ -12,7 +12,7 @@ export const HOMEPAGE_CONTENT = {
       alt: "A desk scene with a iMac open on the Come Fly With Lindsay travel blog site",
       useEagerLoading: true,
       mediaCondition: {
-        srcSet: "/hp-hero-imac-cfwl-wide.jpg",
+        srcSet: "/hp-hero-imac-cfwl-wide.avif",
         media: "(min-width: 500px)",
       },
     },

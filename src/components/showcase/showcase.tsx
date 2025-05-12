@@ -51,7 +51,7 @@ const Showcase = ({
                       srcSet: `${imageSrc.slice(
                         0,
                         imageSrc.indexOf(".")
-                      )}-wide.jpg`,
+                      )}-wide.avif`,
                       media: "(min-width: 760px)",
                     }
                   : undefined
