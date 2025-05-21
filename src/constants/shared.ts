@@ -6,3 +6,5 @@ export const LINKEDIN_PROFILE =
 export const GITHUB_PROFILE = "https://github.com/lindsayfoley";
 export const INSTAGRAM_PROFILE = "https://www.instagram.com/theportfoleyo";
 export const COOKIE_YES_CONSENT_LISTENER = "cookieyes_consent_update";
+export const FFR_DIRECTORY_PROFILE =
+  "https://www.femalefoundersdirectory.com/founder/lindsay-foley/r/recyNxfyrTKLcCH88";

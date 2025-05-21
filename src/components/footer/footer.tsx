@@ -1,9 +1,10 @@
 import Link from "next/link";
-import styles from "./footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { NAV_CONTENT } from "../../constants/nav/nav";
 import { FOOTER_CONTENT } from "@portfoleyo/constants/footer/content";
+import { FFR_DIRECTORY_PROFILE } from "@portfoleyo/constants/shared";
+import { NAV_CONTENT } from "../../constants/nav/nav";
+import styles from "./footer.module.css";
 
 const Footer = () => (
   <footer className={styles.container}>
@@ -38,9 +39,24 @@ const Footer = () => (
       </div>
     </div>
     <hr className={styles.divider} />
-    <small className={styles.copyright}>
-      © {new Date().getFullYear()} {FOOTER_CONTENT.copyright}
-    </small>
+    <div className={styles.columnContainer}>
+      <a
+        className={styles.ffrContainer}
+        href={FFR_DIRECTORY_PROFILE}
+        target="_blank"
+      >
+        <img
+          className={styles.ffr}
+          src="/FFR-kitemark.png"
+          alt={FOOTER_CONTENT.ffr}
+          title={FOOTER_CONTENT.ffr}
+          loading="lazy"
+        />
+      </a>
+      <small className={styles.copyright}>
+        © {new Date().getFullYear()} {FOOTER_CONTENT.copyright}
+      </small>
+    </div>
   </footer>
 );
 

@@ -84,6 +84,17 @@
     display: block;
 }
 
+.ffrContainer {
+    order: 1;
+}
+
+.ffr {
+    max-width: 80px;
+    padding-bottom: 10px;
+    margin: 20px auto 0;
+    display: block;
+}
+
 @media (min-width: 1150px) {
     .container {
         padding-top: 70px;
@@ -114,5 +125,11 @@
 
     .copyright {
         padding: 50px 0 20px 0;
+    }
+
+    .ffr {
+        padding-bottom: 20px;
+        margin: auto;
+        display: auto;
     }
 }

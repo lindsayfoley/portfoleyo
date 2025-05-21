@@ -9,4 +9,5 @@ export const FOOTER_CONTENT = {
     title: "Browse",
   },
   copyright: "Portfoleyo Ltd 👩🏽‍💻",
+  ffr: "Female Founders Rise directory member",
 };
