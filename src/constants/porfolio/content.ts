@@ -55,7 +55,7 @@ export const PORTFOLIO_CONTENT = {
     workCompletedList: [
       "Accessibility: improved contrast, added alt text and fixed heading hierarchy",
       "SEO: reviewed and optimised meta titles and descriptions site wide",
-      "UX: fixed bugs with navigation in-page anchor behaviour",
+      "UX: fixed bugs with navigation highlighting and in-page anchor behaviour",
       "Performance: optimised large image assets across the site to reduce load times",
     ],
   },

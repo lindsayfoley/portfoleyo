@@ -11,7 +11,7 @@ import { Fragment } from "react";
 
 const companies = [
   PORTFOLIO_CONTENT.theFabledThread,
-  // PORTFOLIO_CONTENT.theVaHouse,
+  PORTFOLIO_CONTENT.theVaHouse,
   PORTFOLIO_CONTENT.storyStudios,
   PORTFOLIO_CONTENT.duvetHog,
   PORTFOLIO_CONTENT.elyse,
