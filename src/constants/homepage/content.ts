@@ -98,8 +98,8 @@ export const HOMEPAGE_CONTENT = {
         },
       },
       {
-        src: "/the-mews-recent-work.jpg",
-        alt: "Recent work I've completed for The Mews",
+        src: "/dcypher-recent-work.jpg",
+        alt: "Recent work I've completed for DCYPHER",
         href: "/portfolio",
       },
     ],

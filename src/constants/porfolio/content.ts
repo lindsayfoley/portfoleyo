@@ -20,6 +20,26 @@ export const PORTFOLIO_CONTENT = {
     isH1Element: true,
   },
   checkmarkSectionTitle: "Key Updates:",
+  dcypher: {
+    twoColumn: {
+      title: "Dcypher",
+      href: "https://dcypher.com/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-dcypher.png",
+        alt: "The homepage of the DCYPHER site",
+      },
+    },
+    description:
+      "I’m currently contracting for DCYPHER, a tech-led beauty brand that uses AI to match customers to their ideal foundation shade. I work on their headless Shopify site built with Hydrogen and React, focusing on bug fixes, improving tracking accuracy and SEO, and rolling out new features across the frontend.",
+    workCompletedList: [
+      "Launches: rolled out Primer with an updated homepage, PLP and PDPs",
+      "SEO: added canonical tags and surfaced key content in the DOM for crawlers",
+      "Analytics: audited and fixed issues with Meta Pixel and client-side tracking",
+      "Bug fixes: resolved issues across navigation, carousels and PDP accordions",
+      "Refinements: improved HTML structure, performance, and accessibility",
+    ],
+  },
   theFabledThread: {
     twoColumn: {
       title: "The Fabled Thread",
@@ -38,6 +58,25 @@ export const PORTFOLIO_CONTENT = {
       "SEO: added hreflang tags to boost international visibility & rankings",
       "Analytics: added Meta Pixel to improve visitor tracking and measure conversions",
       "CMS: built Sanity models, enabling editors to update content without dev input",
+    ],
+  },
+  stringNix: {
+    twoColumn: {
+      title: "StringNix",
+      href: "https://www.stringnix.com/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-stringnix.png",
+        alt: "The homepage of the StringNix site",
+      },
+    },
+    description:
+      "I provide ongoing support to StringNix, a recently launched underwear startup focused on comfort and simplicity. My work includes performance improvements, UI fixes and supporting bundled purchases to encourage multi-item orders.",
+    workCompletedList: [
+      "Localisation: supported with currency and regional setup across global markets",
+      "Bundles: integrated, setup and styled discount bundles across all PDPs",
+      "Analytics: tested and verified GA and GSC configuration and tracking",
+      "SEO: flagged and advised on duplicate collection content across the site",
     ],
   },
   theVaHouse: {
@@ -158,7 +197,7 @@ export const PORTFOLIO_CONTENT = {
       href: "https://www.drinkvinito.com/",
       theme: colourTheme.highlight,
       image: {
-        src: "/portfolio-vinito-holding.png",
+        src: "/portfolio-vinito.png",
         alt: "The homepage of Vinito's site",
       },
     },
@@ -201,10 +240,12 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I provided development support for L’Esterre Chocolate, an artisan chocolatier, in strengthening their online presence by adding a press carousel to highlight media coverage. I also conducted a deep-dive site audit to improve functionality and UX.",
+      "I worked with L’Esterre Chocolate to enhance their online presence by refining the site’s design, layout, and messaging. My updates focused on polishing the visual identity, improving UX and adding features that elevated the brand’s premium feel.",
     workCompletedList: [
       "Press features: added “As Seen In” carousel to homepage, highlighting coverage",
-      "Audit: conducted analysis to address technical, visibility, and usability gaps",
+      "Accreditation: built rotating logo bar to highlight awards and partners",
+      "Compliance: integrated GDPR-compliant cookie consent banner",
+      "SEO: rewrote homepage metadata and optimised press and product pages",
     ],
   },
   charlotteTilbury: {

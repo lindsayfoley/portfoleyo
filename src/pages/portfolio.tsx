@@ -10,7 +10,10 @@ import { DOMAIN } from "@portfoleyo/constants/shared";
 import { Fragment } from "react";
 
 const companies = [
+  PORTFOLIO_CONTENT.dcypher,
   PORTFOLIO_CONTENT.theFabledThread,
+  PORTFOLIO_CONTENT.stringNix,
+  PORTFOLIO_CONTENT.lesterre,
   PORTFOLIO_CONTENT.theVaHouse,
   PORTFOLIO_CONTENT.storyStudios,
   PORTFOLIO_CONTENT.duvetHog,
@@ -18,7 +21,6 @@ const companies = [
   PORTFOLIO_CONTENT.jpsOriginals,
   PORTFOLIO_CONTENT.chloeJonason,
   PORTFOLIO_CONTENT.vinito,
-  PORTFOLIO_CONTENT.lesterre,
   PORTFOLIO_CONTENT.theMews,
   PORTFOLIO_CONTENT.charlotteTilbury,
 ];
