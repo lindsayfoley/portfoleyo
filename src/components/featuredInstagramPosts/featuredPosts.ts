@@ -1,5 +1,5 @@
 const featuredPostsEmbedId = {
-  storyStudios: "DJY96cjorzh",
+  canarySunsetDcypher: "DLKEPoXMmXE",
   dayInTheLife: "DJUbTadI7VF",
   whatIDidAtCT: "DI_8CwQIDqP",
   canaryLunchWalk: "DJHNA_goc4D",
@@ -7,7 +7,7 @@ const featuredPostsEmbedId = {
 };
 
 export const featuredPosts = [
-  featuredPostsEmbedId.storyStudios,
+  featuredPostsEmbedId.canarySunsetDcypher,
   featuredPostsEmbedId.dayInTheLife,
   featuredPostsEmbedId.canaryLunchWalk,
   featuredPostsEmbedId.whatIDidAtCT,
