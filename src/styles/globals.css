@@ -2,6 +2,7 @@
   --default-background: #f8f7f3;
   --muted-background: #ffffff;
   --highlight-background: #faf1ec;
+  --highlight-dark-background: #e9dfdd;
   --dark-background: #000000;
   --button-background: #a56740;
   --button-background-pale: #c67f51;
@@ -84,7 +85,7 @@ a {
   padding-right: 7px;
 }
 
-.cky-button, 
+.cky-button,
 .heading {
   font-family: "Work Sans", serif;
   text-transform: uppercase;
@@ -103,18 +104,18 @@ a {
 
 @media (min-width: 1000px) {
   .list {
-      margin-top: 5px;
-      margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
 .cky-btn-revisit-wrapper {
-  display: none!important;
+  display: none !important;
 }
 
 .instagram-media {
   max-width: 324px;
   max-height: 530px; /* Reel height plus below margins */
-  margin-top: -55px!important;
-  margin-bottom: -155px!important;
+  margin-top: -55px !important;
+  margin-bottom: -155px !important;
 }
