@@ -3,6 +3,7 @@ import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
 import Banner from "@portfoleyo/components/banner/banner";
 import Showcase from "@portfoleyo/components/showcase/showcase";
+import ClientLogos from "@portfoleyo/components/clientLogos/clientLogos";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
 import { DOMAIN } from "@portfoleyo/constants/shared";
 import FeaturedInstagramPosts from "@portfoleyo/components/featuredInstagramPosts/featuredInstagramPosts";
@@ -28,6 +29,7 @@ export default function Home() {
       </Head>
       <main>
         <HighlightBanner {...HOMEPAGE_CONTENT.highlightBanner} />
+        <ClientLogos />
         <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
         <Showcase {...HOMEPAGE_CONTENT.showcase} />
