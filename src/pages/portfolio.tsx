@@ -45,6 +45,7 @@ export default function Portfolio() {
               useAnimation
               key={company.description}
               {...company.twoColumn}
+              id={company.twoColumn.title}
             >
               <ul className={`list ${styles.list}`}>
                 <li>{company.description}</li>
