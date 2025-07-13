@@ -41,7 +41,7 @@ const TwoColumnLayout = ({
   return (
     <section
       className={`${theme ? `${theme}Theme` : ""}`}
-      id={id}
+      id={id?.replaceAll(" ", "-").toLowerCase()}
       ref={useAnimation ? ref : undefined}
     >
       <div
