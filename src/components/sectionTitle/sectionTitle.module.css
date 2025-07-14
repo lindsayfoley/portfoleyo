@@ -1,29 +1,33 @@
 .container {
-    .title {
-        font-family: "Playfair Display", serif;
-        text-transform: uppercase;
-        letter-spacing: 1.25px;
-        font-size: 18px;
-    }
+  .title {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    font-size: 18px;
+  }
 
-    .subtitle {
-        text-transform: capitalize;
-        display: block;
-        font-family: "Work Sans", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: normal;
-        margin: 10px auto;
-        font-size: 14px;
-    }
+  .subtitle {
+    text-transform: capitalize;
+    display: block;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .subtitleSecond {
+    margin-top: 10px;
+  }
 }
 
 .titleBottom {
-    .title {
-        margin: 5px 0 10px 0;
-    }
+  .title {
+    margin: 5px 0 10px 0;
+  }
 
-    .subtitle {
-        margin-bottom: 10px;
-    }
+  .subtitle {
+    margin-bottom: 10px;
+  }
 }

@@ -33,7 +33,15 @@ const SectionTitle = ({
       {isTitleFirst && (
         <HeadingElement className={styles.title}>{titleContent}</HeadingElement>
       )}
-      {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
+      {subtitle && (
+        <span
+          className={`${styles.subtitle} ${
+            isTitleFirst ? styles.subtitleSecond : ""
+          }`}
+        >
+          {subtitle}
+        </span>
+      )}
       {!isTitleFirst && (
         <HeadingElement className={styles.title}>{titleContent}</HeadingElement>
       )}
