@@ -13,7 +13,7 @@ const ClientLogos = () => {
           <Link href="/portfolio/#charlotte-tilbury">
             <img
               className={styles.ct}
-              src="/charlotte-tilbury-logo.png"
+              src="/charlotte-tilbury-logo-hi-res.png"
               alt="Charlotte Tilbury logo"
             />
           </Link>
@@ -22,7 +22,7 @@ const ClientLogos = () => {
           <Link href="/portfolio/#dcypher">
             <img
               className={styles.dcypher}
-              src="/dcypher-logo.png"
+              src="/dcypher-logo-hi-res.png"
               alt="DCYPHER logo"
             />
           </Link>
