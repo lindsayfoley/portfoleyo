@@ -33,7 +33,8 @@ export const PORTFOLIO_CONTENT = {
     description:
       "I’m currently contracting for DCYPHER, a tech-led beauty brand that uses AI to match customers to their ideal foundation shade. I work on their headless Shopify site built with Hydrogen and React, focusing on bug fixes, improving tracking accuracy and SEO, and rolling out new features across the frontend.",
     workCompletedList: [
-      "Launches: rolled out Primer with an updated homepage, PLP and PDPs",
+      "Launches: deployed new products alongside homepage, PLP & PDP updates",
+      "Cart flow: improved Add to Cart UX by creating a mini basket component",
       "SEO: added canonical tags and surfaced key content in the DOM for crawlers",
       "Analytics: audited and fixed issues with Meta Pixel and client-side tracking",
       "Bug fixes: resolved issues across navigation, carousels and PDP accordions",
@@ -57,6 +58,7 @@ export const PORTFOLIO_CONTENT = {
       "Performance: optimised image loading by refining Sanity parameters & assets",
       "SEO: added hreflang tags to boost international visibility & rankings",
       "Analytics: added Meta Pixel to improve visitor tracking and measure conversions",
+      "Pre-orders: enabled pre-order purchases through updated product logic and UI",
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
@@ -101,7 +103,7 @@ export const PORTFOLIO_CONTENT = {
   storyStudios: {
     twoColumn: {
       title: "Story Studios",
-      href: "https://hellostorystudios.com",
+      href: "https://hellostorystudios.co",
       theme: colourTheme.highlight,
       image: {
         src: "/portfolio-story-studios.png",
@@ -148,6 +150,7 @@ export const PORTFOLIO_CONTENT = {
     description:
       "I collaborated with Elyse, a brand focused on essential oil blends and holistic wellbeing, to enhance their Squarespace homepage with content-led features designed to build trust and boost engagement.",
     workCompletedList: [
+      "Launches: deployed a new product release with supporting content and assets",
       "Press features: added a carousel of press logos to highlight media coverage",
       "Engagement: integrated Instagram feed to showcase social content",
       "Accessibility: audited site and identified improvements for inclusive design",
@@ -175,7 +178,7 @@ export const PORTFOLIO_CONTENT = {
   },
   chloeJonason: {
     twoColumn: {
-      title: "Chloe Jonason Interiors",
+      title: "Chloe Jonason & Co",
       href: "https://www.chloejonasoninteriors.com/collections/chik-blinds/products/chik-blinds-coloured",
       theme: colourTheme.highlight,
       image: {
@@ -184,8 +187,9 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I partnered with Chloe Jonason Interiors, a boutique homeware brand that wanted to automate selling bespoke products. By refining the online experience, I helped streamline the shopping process for customers purchasing bespoke blinds.",
+      "I partnered with Chloe Jonason & Co, a boutique homeware brand that wanted to automate selling bespoke products. By refining the online experience, I helped streamline the shopping process for customers purchasing bespoke blinds.",
     workCompletedList: [
+      "Rebrand: executed complete update of domain, branding and connected systems",
       "E-commerce: implemented online purchasing for made-to-measure blinds",
       "Scalability: provided a guide to help the team expand bespoke product listings",
       "Optimisation: reviewed technical setup, discoverability, and ease of use",
