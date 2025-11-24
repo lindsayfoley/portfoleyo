@@ -1,135 +1,135 @@
 .container {
-    padding-top: 30px;
-    background: var(--dark-background);
-    color: var(--light-grey);
-    font-family: "Playfair Display", serif;
-    font-size: 14px;
+  padding-top: 30px;
+  background: var(--dark-background);
+  color: var(--light-grey);
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
 }
 
 .columnContainer {
-    max-width: 1100px;
-    padding: 0 20px;
-    margin: 0 auto;
-    gap: 120px;
-    justify-content: space-between;
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+  gap: 120px;
+  justify-content: space-between;
 }
 
 .links {
-    min-width: 230px;
+  min-width: 230px;
 }
 
 .mobileHidden {
-    display: none;
+  display: none;
 }
 
 .summary {
-    text-align: center;
-    color: var(--muted-background);
-    font-size: 20px;
-    line-height: 34px;
-    font-family: "Playfair Display", serif;
+  text-align: center;
+  color: var(--muted-background);
+  font-size: 20px;
+  line-height: 34px;
+  font-family: "Playfair Display", serif;
 }
 
 .title {
-    font-family: "Work Sans", serif;
-    color: var(--muted-background);
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 18px;
-    text-transform: uppercase;
+  font-family: "Work Sans", serif;
+  color: var(--muted-background);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
 }
 
 .description {
-    font-size: 15px;
-    line-height: 24px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .pages {
-    text-transform: uppercase;
-    font-family: "Work Sans", serif;
-    line-height: 23px;
+  text-transform: uppercase;
+  font-family: "Work Sans", serif;
+  line-height: 23px;
 
-    .list {
-        font-size: 14px;
-    }
+  .list {
+    font-size: 14px;
+  }
 }
 
 .divider {
-    max-width: 80%;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid var(--dark-grey);
-    margin: 30px auto 15px auto;
+  max-width: 80%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--dark-grey);
+  margin: 30px auto 15px auto;
 }
 
 .copyright {
-    font-family: "Work Sans", serif;
-    text-transform: uppercase;
-    padding: 20px 0 20px 0;
-    font-size: 10px;
-    text-align: center;
-    display: block;
+  font-family: "Work Sans", serif;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+  font-size: 10px;
+  text-align: center;
+  display: block;
 }
 
 .ffrContainer {
-    order: 1;
+  order: 1;
 }
 
 .ffr {
-    max-width: 80px;
-    padding-bottom: 10px;
-    margin: 20px auto 0;
-    display: block;
+  max-width: 80px;
+  padding-bottom: 10px;
+  margin: 20px auto 0;
+  display: block;
 }
 
 @media (min-width: 1150px) {
-    .container {
-        padding-top: 70px;
-    }
+  .container {
+    padding-top: 70px;
+  }
 
-    .summary {
-        font-size: 25px;
-        text-align: left;
-    }
+  .summary {
+    font-size: 25px;
+    text-align: left;
+  }
 
-    .icons {
-        margin-top: 32px;
-        justify-content: flex-start;
-    }
+  .icons {
+    margin-top: 32px;
+    justify-content: flex-start;
+  }
 
-    .columnContainer {
-        display: flex;
-        padding: 0;
-    }
-    
-    .mobileHidden {
-        display: block;
-    }
+  .columnContainer {
+    display: flex;
+    padding: 0;
+  }
 
-    .divider {
-        margin: 40px auto 20px auto;
-    }
+  .mobileHidden {
+    display: block;
+  }
 
-    .copyright {
-        padding: 50px 0 20px 0;
-    }
+  .divider {
+    margin: 40px auto 20px auto;
+  }
 
-    .ffr {
-        padding-bottom: 20px;
-        margin: auto;
-        display: auto;
-    }
+  .copyright {
+    padding: 30px 0 20px 0;
+  }
+
+  .ffr {
+    padding-bottom: 20px;
+    margin: auto;
+    display: auto;
+  }
 }
