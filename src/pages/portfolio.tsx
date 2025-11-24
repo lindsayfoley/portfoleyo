@@ -12,6 +12,7 @@ import { Fragment } from "react";
 const companies = [
   PORTFOLIO_CONTENT.dcypher,
   PORTFOLIO_CONTENT.theFabledThread,
+  PORTFOLIO_CONTENT.sewConfident,
   PORTFOLIO_CONTENT.chloeJonason,
   PORTFOLIO_CONTENT.stringNix,
   PORTFOLIO_CONTENT.lesterre,

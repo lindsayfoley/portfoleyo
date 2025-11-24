@@ -41,6 +41,26 @@ export const PORTFOLIO_CONTENT = {
       "Refinements: improved HTML structure, performance, and accessibility",
     ],
   },
+  sewConfident: {
+    twoColumn: {
+      title: "Sew Confident",
+      href: "https://sewconfident.com/",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-sew-confident.png",
+        alt: "The homepage of Sew Confident",
+      },
+    },
+    description:
+      "I partnered with Sew Confident to launch a dedicated Shopify store for their fabric and product sales, working alongside their existing WordPress site. The goal was to streamline the buying experience, improve operational efficiency and create a seamless connection between both platforms.",
+    workCompletedList: [
+      "Shopify: launched a dedicated store for streamlined fabric and product sales",
+      "Forms: integrated all enquiry forms so messages route into one central location",
+      "Upsells: added matching thread recommendations on fabric PDPs to boost AOV",
+      "Stock: enabled live remaining-metre stock visibility across all fabric PDPs",
+      "Content: created new pages to modernise and align core WordPress content",
+    ],
+  },
   theFabledThread: {
     twoColumn: {
       title: "The Fabled Thread",
@@ -52,7 +72,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Oxygen site and Sanity CMS. Using React and TypeScript, I provide ongoing full-stack development to maintain a scalable and high-performing platform.",
+      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Hydrogen site and Sanity CMS. Using React and TypeScript, I provide ongoing full-stack development to maintain a scalable and high-performing platform.",
     workCompletedList: [
       "Engagement: Enabled blog comments to foster community and discussion",
       "Performance: optimised image loading by refining Sanity parameters & assets",
@@ -95,7 +115,7 @@ export const PORTFOLIO_CONTENT = {
       "I worked with The VA House, a consultancy supporting businesses with executive-level virtual assistance, to refine their WordPress site for better SEO, accessibility, and usability. I conducted a site audit and implemented fixes across visual hierarchy, metadata, navigation, and performance.",
     workCompletedList: [
       "Accessibility: improved contrast, added alt text and fixed heading hierarchy",
-      "SEO: reviewed and optimised meta titles and descriptions site wide",
+      "SEO: refined site-wide meta titles, descriptions, and added organisation schema",
       "UX: fixed bugs with navigation highlighting and in-page anchor behaviour",
       "Performance: optimised large image assets across the site to reduce load times",
     ],
@@ -191,8 +211,8 @@ export const PORTFOLIO_CONTENT = {
     workCompletedList: [
       "Rebrand: executed complete update of domain, branding and connected systems",
       "E-commerce: implemented online purchasing for made-to-measure blinds",
-      "Scalability: provided a guide to help the team expand bespoke product listings",
-      "Optimisation: reviewed technical setup, discoverability, and ease of use",
+      "Reviews: integrated reviews platform across PLP and PDP templates",
+      "Pre-orders: enabled pre-order purchases through updated product logic and UI",
     ],
   },
   vinito: {
@@ -210,7 +230,7 @@ export const PORTFOLIO_CONTENT = {
     workCompletedList: [
       "PDP: designed a custom layout to maximise the presentation of product details",
       "Content UX: added a toggle to improve readability for detailed descriptions",
-      "New components: built a reusable grid to showcase tasting notes and highlights",
+      "Enhanced UI: built a reusable grid to showcase tasting notes and highlights",
       "Profile: integrated sliders powered by metafields to visualise key attributes",
       "Specs: developed a comprehensive specs table for detailed product information",
     ],
