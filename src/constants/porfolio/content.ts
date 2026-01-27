@@ -33,7 +33,7 @@ export const PORTFOLIO_CONTENT = {
     description:
       "I’m currently contracting for DCYPHER, a tech-led beauty brand that uses AI to match customers to their ideal foundation shade. I work on their headless Shopify site built with Hydrogen and React, focusing on bug fixes, improving tracking accuracy and SEO, and rolling out new features across the frontend.",
     workCompletedList: [
-      "Launches: deployed new products alongside homepage, PLP & PDP updates",
+      "AI samples: introduced lighter + darker shade samples powered by the AI scan",
       "Cart flow: improved Add to Cart UX by creating a mini basket component",
       "SEO: added canonical tags and surfaced key content in the DOM for crawlers",
       "Analytics: audited and fixed issues with Meta Pixel and client-side tracking",
