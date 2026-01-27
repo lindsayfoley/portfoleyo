@@ -48,7 +48,7 @@ export default function Portfolio() {
               {...company.twoColumn}
               id={company.twoColumn.title}
             >
-              <ul className={`list ${styles.list}`}>
+              <ul className={`list ${styles.list ? styles.list : ""}`}>
                 <li>{company.description}</li>
                 <li>
                   <h3 className={`heading ${styles.listHeading}`}>
