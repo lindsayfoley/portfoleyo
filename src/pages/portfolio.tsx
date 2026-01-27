@@ -48,8 +48,8 @@ export default function Portfolio() {
               {...company.twoColumn}
               id={company.twoColumn.title}
             >
+              <p>{company.description}</p>
               <ul className={`list ${styles.list ? styles.list : ""}`}>
-                <li>{company.description}</li>
                 <li>
                   <h3 className={`heading ${styles.listHeading}`}>
                     {PORTFOLIO_CONTENT.checkmarkSectionTitle}
