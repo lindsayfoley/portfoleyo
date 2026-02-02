@@ -119,3 +119,10 @@ a {
   margin-top: -55px !important;
   margin-bottom: -155px !important;
 }
+
+.divider {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3d2c8;
+  margin: 30px auto;
+}

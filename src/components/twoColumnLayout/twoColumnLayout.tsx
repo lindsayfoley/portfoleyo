@@ -18,6 +18,7 @@ interface TwoColumnLayoutProps {
   children?: ReactNode;
   isIndependantSection?: boolean;
   useAnimation?: boolean;
+  openInNewTab?: boolean;
 }
 
 const TwoColumnLayout = ({
@@ -33,6 +34,7 @@ const TwoColumnLayout = ({
   children,
   isIndependantSection = true,
   useAnimation = false,
+  openInNewTab = true,
 }: TwoColumnLayoutProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
@@ -75,7 +77,7 @@ const TwoColumnLayout = ({
           }`}
         >
           {href ? (
-            <a href={href} target="_blank">
+            <a href={href} target={openInNewTab ? "_blank" : "_self"}>
               {imageTag}
             </a>
           ) : (
