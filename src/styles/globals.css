@@ -81,18 +81,49 @@ a {
   margin: 10px auto auto;
 }
 
+.article-list {
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px auto auto;
+}
+
 .icon {
   padding-right: 7px;
 }
 
 .cky-button,
-.heading {
+.heading,
+.article-heading {
   font-family: "Work Sans", serif;
   text-transform: uppercase;
   font-weight: normal;
 }
 
 .heading {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--dark-background);
+  padding: 5px 5px 0;
+  display: inline-block;
+}
+
+.article-heading {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--dark-background);
+  padding: 5px 5px 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.subheading {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
