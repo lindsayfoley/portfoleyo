@@ -5,9 +5,44 @@ import { DOMAIN } from "@portfoleyo/constants/shared";
 import Banner from "@portfoleyo/components/banner/banner";
 import styles from "../../styles/projects.module.css";
 
+interface Project {
+  meta: {
+    title: string;
+    description: string;
+  };
+  twoColumn: {
+    title: string;
+    href: string;
+    image: {
+      src: string;
+      alt: string;
+    };
+  };
+  title: string;
+  intro: string;
+  h1: string;
+  subTitle: string;
+  page: string[];
+}
+
 export default function ProjectPage() {
   const router = useRouter();
-  const project = PROJECTS[router.query.slug];
+  let slugParam = undefined;
+
+  if (typeof router.query.slug === "string") {
+    slugParam = router.query.slug;
+  } else if (Array.isArray(router.query.slug)) {
+    slugParam = router.query.slug[0];
+  }
+
+  const project = slugParam
+    ? (PROJECTS[slugParam as keyof typeof PROJECTS] as Project)
+    : undefined;
+
+  if (!slugParam || !project) {
+    return null;
+  }
+
   const meta = project?.meta;
   const allContent = project?.page?.join("");
 
