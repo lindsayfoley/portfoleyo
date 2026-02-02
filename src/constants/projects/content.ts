@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const PROJECTS = {
   meta: {
     title: "Projects & Case Studies | The Portfoleyo Development & Solutions",
