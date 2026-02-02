@@ -18,19 +18,19 @@ import {
 const LINKS = {
   aboutLink: {
     cta: "About",
-    href: "about",
+    href: "/about",
   },
   servicesLink: {
     cta: "Services",
-    href: "services",
+    href: "/services",
   },
   portfolioLink: {
     cta: "Portfolio",
-    href: "portfolio",
+    href: "/portfolio",
   },
   contactLink: {
     cta: "Contact",
-    href: "about#contact",
+    href: "/about#contact",
   },
 };
 
