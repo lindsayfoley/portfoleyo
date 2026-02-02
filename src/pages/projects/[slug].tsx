@@ -9,7 +9,7 @@ export default function ProjectPage() {
   const router = useRouter();
   const project = PROJECTS[router.query.slug];
   const meta = project?.meta;
-  const allContent = project?.content?.join("");
+  const allContent = project?.page?.join("");
 
   return (
     <>
