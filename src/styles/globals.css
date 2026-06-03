@@ -135,8 +135,7 @@ a {
 
 .article-subheading {
   font-size: 17px;
-  text-decoration: underline;
-  padding: 5px 5px 0;
+  padding-top: 5px;
   display: inline-block;
 }
 

@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.article li {
+  padding-left: 0.75rem;
+}
+
 @media (min-width: 1000px) {
   .main {
     padding-bottom: 0;
