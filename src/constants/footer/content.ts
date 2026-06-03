@@ -8,9 +8,9 @@ export const FOOTER_CONTENT = {
   browse: {
     title: "Browse",
   },
-  projects: {
-    title: "Projects",
-    link: "/projects",
+  contact: {
+    title: "Contact",
+    link: "/about#contact",
   },
   copyright: "Portfoleyo Ltd 👩🏽‍💻",
   ffr: "Female Founders Rise directory member",

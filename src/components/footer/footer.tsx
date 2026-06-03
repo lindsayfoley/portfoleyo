@@ -28,8 +28,8 @@ const Footer = () => (
       </div>
       <div className={`${styles.pages} ${styles.mobileHidden}`}>
         <h5 className={styles.title}>
-          <a href={FOOTER_CONTENT.projects.link}>
-            {FOOTER_CONTENT.projects.title}
+          <a href={FOOTER_CONTENT.contact.link}>
+            {FOOTER_CONTENT.contact.title}
           </a>
         </h5>
         <ul className={styles.list}>

@@ -16,31 +16,30 @@ import {
 } from "../shared";
 
 const LINKS = {
-  aboutLink: {
+  about: {
     cta: "About",
     href: "/about",
   },
-  servicesLink: {
+  services: {
     cta: "Services",
     href: "/services",
   },
-  portfolioLink: {
+  portfolio: {
     cta: "Portfolio",
     href: "/portfolio",
   },
-  contactLink: {
+  contact: {
     cta: "Contact",
     href: "/about#contact",
+  },
+  projects: {
+    cta: "Projects",
+    href: "/projects",
   },
 };
 
 export const NAV_CONTENT = {
-  links: [
-    LINKS.aboutLink,
-    LINKS.servicesLink,
-    LINKS.portfolioLink,
-    LINKS.contactLink,
-  ],
+  links: [LINKS.about, LINKS.services, LINKS.portfolio, LINKS.projects],
   icons: [
     {
       title: "View my LinkedIn profile",
