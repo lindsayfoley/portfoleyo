@@ -26,7 +26,6 @@ export default function CountryBlocking() {
           subtitle={project?.subTitle}
           isH1Element
           image={project?.twoColumn?.image}
-          isIndependantSection={false}
         />
         <article className={styles.article}>
           <div dangerouslySetInnerHTML={{ __html: allContent }} />
