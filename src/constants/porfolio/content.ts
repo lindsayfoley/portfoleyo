@@ -20,6 +20,26 @@ export const PORTFOLIO_CONTENT = {
     isH1Element: true,
   },
   checkmarkSectionTitle: "Key Updates:",
+  magicMatcha: {
+    twoColumn: {
+      title: "Magic Matcha",
+      href: "https://wearemagicmatcha.com",
+      theme: colourTheme.highlight,
+      image: {
+        src: "/portfolio-magic-matcha.png",
+        alt: "The homepage of the Magic Matcha site",
+      },
+    },
+    description:
+      "Magic Matcha is a founder-led brand built on over a decade of experience with matcha. I supported the launch of their Shopify site by customising their chosen theme to better align with bespoke designs, extending content management capabilities, and delivering a polished customer experience ahead of launch.",
+    workCompletedList: [
+      "Content management: added custom metafields for richer product information",
+      "Customisation: extended Shopify theme functionality to match provided designs",
+      "Email marketing: integrated Klaviyo signup forms and customer capture flows",
+      "Branding: implemented custom typography and visual styling",
+      "Launch support: built a pre-launch holding page ahead of launch",
+    ],
+  },
   dcypher: {
     twoColumn: {
       title: "Dcypher",
@@ -31,7 +51,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I’m currently contracting for DCYPHER, a tech-led beauty brand that uses AI to match customers to their ideal foundation shade. I work on their headless Shopify site built with Hydrogen and React, focusing on bug fixes, improving tracking accuracy and SEO, and rolling out new features across the frontend.",
+      "DCYPHER is a tech-led beauty brand that uses AI to create personalised cosmetic products tailored to each customer. Since joining the team, I’ve been responsible for the development of their headless Shopify site, partnering closely with stakeholders to support launches, marketing campaigns and platform improvements.",
     workCompletedList: [
       "AI samples: introduced lighter + darker shade samples powered by the AI scan",
       "Cart flow: improved Add to Cart UX by creating a mini basket component",
@@ -72,13 +92,14 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I support The Fabled Thread, known for its vibrant needlepoint kits, by refining their Shopify Hydrogen site and Sanity CMS. Using React and TypeScript, I provide ongoing full-stack development to maintain a scalable and high-performing platform.",
+      "As the lead developer for The Fabled Thread, I oversee the ongoing development of their Shopify Hydrogen storefront and Sanity CMS. My work spans feature delivery, subscription platforms, content modelling, SEO enhancements and performance optimisation, ensuring the platform remains scalable as the business grows.",
     workCompletedList: [
-      "Engagement: Enabled blog comments to foster community and discussion",
+      "Memberships: launched tiered subscriptions along with gated member access",
       "Performance: optimised image loading by refining Sanity parameters & assets",
       "SEO: added hreflang tags to boost international visibility & rankings",
       "Analytics: added Meta Pixel to improve visitor tracking and measure conversions",
       "Pre-orders: enabled pre-order purchases through updated product logic and UI",
+      "Engagement: Enabled blog comments to foster community and discussion",
       "CMS: built Sanity models, enabling editors to update content without dev input",
     ],
   },
