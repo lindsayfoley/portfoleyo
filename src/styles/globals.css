@@ -133,6 +133,13 @@ a {
   display: inline-block;
 }
 
+.article-subheading {
+  font-size: 17px;
+  text-decoration: underline;
+  padding: 5px 5px 0;
+  display: inline-block;
+}
+
 @media (min-width: 1000px) {
   .list {
     margin-top: 5px;

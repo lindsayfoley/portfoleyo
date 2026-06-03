@@ -6,6 +6,11 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 20px 60px;
+  text-align: left;
+}
+
+.article h2 {
+  text-align: center;
 }
 
 @media (min-width: 1000px) {
