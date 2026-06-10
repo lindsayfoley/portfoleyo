@@ -23,12 +23,6 @@
     color: var(--highlight-text);
   }
 
-  .title {
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    margin: 10px 0 0 0;
-  }
-
   .title em {
     font-style: normal;
     color: var(--highlight-text);
@@ -37,6 +31,12 @@
   p {
     padding-top: 10px;
   }
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin: 10px 0 0 0;
 }
 
 .primary {
@@ -61,11 +61,19 @@
   .container {
     padding: 30px 0;
   }
+
+  .title {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 1000px) {
   .container {
     padding: 50px 0;
+  }
+
+  .title {
+    font-size: 40px;
   }
 
   .wrapper {
