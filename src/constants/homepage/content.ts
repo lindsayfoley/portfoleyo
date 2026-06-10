@@ -8,20 +8,19 @@ export const HOMEPAGE_CONTENT = {
   },
   highlightBanner: {
     image: {
-      src: "/hp-hero-imac-cfwl.jpg",
+      src: "/hero-laptop-sketch.jpg",
       alt: "A desk scene with a iMac open on the Come Fly With Lindsay travel blog site",
       useEagerLoading: true,
       mediaCondition: {
-        srcSet: "/hp-hero-imac-cfwl-wide.avif",
+        srcSet: "/hero-laptop-sketch.avif",
         media: "(min-width: 500px)",
       },
     },
-    intro: "Welcome to",
-    title: "The Portfoleyo",
-    description: [
-      "I provide bespoke web and app development services, helping brands build fast, scalable, and high-performing sites without the complexity of an agency. Whether you need a new site, improvements to an existing platform, or ongoing tech support, I’ll craft a solution tailored to your goals.",
-      "With over a decade of experience, I take a hands-on, collaborative approach, treating every project as if it were my own. Beyond writing code, I focus on optimising speed, accessibility, and UX to ensure long-term success. If you're looking for a reliable developer who genuinely cares about your business, let’s chat!",
-    ],
+    intro: "Senior Web Developer & Technical Partner",
+    title:
+      "Solutions that <em>scale.</em><br />Results you can  <em>measure.</em></span>",
+    description:
+      "I provide bespoke web development services for brands looking to improve performance, user experience and long-term maintainability. From Shopify and headless commerce through to SEO, accessibility and ongoing support, I work closely with clients to deliver practical solutions that support their goals.",
     cta: "My Story & Experience",
     link: "/about",
     isH1Element: true,

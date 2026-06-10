@@ -9,7 +9,7 @@ import styles from "./highlightBanner.module.css";
 interface HighlightBannerProps {
   image: ImageProps & Pick<LazyPictureProps, "mediaCondition">;
   intro?: string;
-  title: string;
+  title: React.ReactNode;
   description: string | string[];
   cta?: string;
   link?: string;
@@ -50,9 +50,15 @@ const HighlightBanner = ({
         >
           {intro && <span className={styles.subtitle}>{intro}</span>}
           {isH1Element ? (
-            <h1 className={styles.title}>{title}</h1>
+            <h1
+              className={styles.title}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
           ) : (
-            <h2 className={styles.title}>{title}</h2>
+            <h2
+              className={styles.title}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
           )}
           {Array.isArray(description) ? (
             description.map((sentence) => (

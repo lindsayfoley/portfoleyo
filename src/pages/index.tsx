@@ -13,7 +13,7 @@ import useCookieConsentStatus, {
 
 export default function Home() {
   const hasMarketingCookieConsent = useCookieConsentStatus(
-    cookieYesCategoryName.advertisement
+    cookieYesCategoryName.advertisement,
   );
 
   return (
@@ -28,7 +28,10 @@ export default function Home() {
         />
       </Head>
       <main>
-        <HighlightBanner {...HOMEPAGE_CONTENT.highlightBanner} />
+        <HighlightBanner
+          {...HOMEPAGE_CONTENT.highlightBanner}
+          shouldReverseColumns
+        />
         <ClientLogos />
         <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />

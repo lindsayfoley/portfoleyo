@@ -1,12 +1,13 @@
 :root {
   --default-background: #f8f7f3;
   --muted-background: #ffffff;
+  --highlight-text: #a6411c;
   --highlight-background: #faf1ec;
-  --highlight-dark-background: #e9dfdd;
+  --highlight-dark-background: #e5dedd;
   --dark-background: #000000;
-  --button-background: #a56740;
-  --button-background-pale: #c67f51;
-  --default-text: #171717;
+  --button-background: #a7421d;
+  --button-background-pale: #ba491f;
+  --default-text: #0d0d0c;
   --pale-grey: #f4f3f1;
   --light-grey: #afadad;
   --medium-grey: #d0c6c0;

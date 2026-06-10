@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 0 auto;    
+  margin: 0 auto;
 }
 
 .copy {
@@ -18,32 +18,33 @@
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
+    color: var(--highlight-text);
   }
 
   .title {
     font-family: "Playfair Display", serif;
     font-size: 40px;
-    margin: 0;
+    margin: 10px 0 0 0;
   }
 
-  .paragraph {
-    font-size: 16px;
-    line-height: 26px;
+  .title em {
+    font-style: normal;
+    color: var(--highlight-text);
   }
 
-  .paragraph:not(:last-of-type) {
-    margin-bottom: 20px;
+  p {
+    padding-top: 10px;
   }
 }
 
 .primary {
-    order: 1;
+  order: 1;
 }
 
 .secondary {
-    order: 2;
+  order: 2;
 }
 
 .image {
@@ -64,7 +65,7 @@
 
 @media (min-width: 1000px) {
   .container {
-    padding: 70px 0;
+    padding: 50px 0;
   }
 
   .wrapper {
@@ -76,7 +77,8 @@
     padding: 0;
   }
 
-  .primary,  .secondary {
+  .primary,
+  .secondary {
     width: 50%;
   }
 
