@@ -1,6 +1,7 @@
 import { countryBlockingContent } from "./countryBlockingContent";
 import { hydrogenMerchantCenterDomainSetup } from "./hydrogenMerchantCenter";
 import { inheritingClientCodebase } from "./inheritingClientCodebase";
+import { trackingGa4PurchasesHydrogen } from "./trackingGa4PurchasesHydrogen";
 
 export const PROJECTS = {
   meta: {
@@ -16,6 +17,7 @@ export const PROJECTS = {
   },
   all: [
     inheritingClientCodebase,
+    trackingGa4PurchasesHydrogen,
     hydrogenMerchantCenterDomainSetup,
     countryBlockingContent,
   ],
