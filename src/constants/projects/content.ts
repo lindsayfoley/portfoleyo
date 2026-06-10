@@ -12,7 +12,7 @@ export const PROJECTS = {
     title: "Projects Completed",
     subtitle: "A collection of recent case studies",
     description:
-      "Short, practical case studies from recent client work. If you’re looking for straightforward, high-quality support for your website, these examples will give you a feel for how I work and the results I focus on.",
+      "Short, practical case studies from recent client work. Covering everything from Shopify Hydrogen and Google Merchant Center through to Cloudflare security and inheriting existing codebases, these examples give a behind-the-scenes look at how I approach technical problems and client projects.",
   },
   all: [
     inheritingClientCodebase,
