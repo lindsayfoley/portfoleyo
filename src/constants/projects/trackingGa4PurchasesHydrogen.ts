@@ -14,7 +14,7 @@ export const trackingGa4PurchasesHydrogen = {
   },
   title: "Tracking GA4 Purchases",
   intro:
-    "Shopify's checkout doesn't load Google Tag Manager, which means purchase tracking works differently on headless storefronts. This case study walks through how I used Shopify Custom Pixels to send purchase events directly to GA4 and how I verified everything was tracking correctly ->",
+    "Shopify's checkout doesn't load Google Tag Manager, which means purchase tracking works differently on a headless setup. This case study walks through how I used Shopify Custom Pixels to send purchase events directly to GA4 and how I verified everything was tracking correctly ->",
   h1: "Tracking GA4 Purchases on a Shopify Hydrogen Storefront",
   subTitle:
     "Using Shopify Custom Pixels to capture checkout events and send data directly to GA.",
