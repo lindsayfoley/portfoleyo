@@ -73,6 +73,10 @@ a {
   background: var(--highlight-background);
 }
 
+nav.home {
+  background: var(--highlight-background);
+}
+
 .list {
   list-style-type: none;
   font-weight: 400;

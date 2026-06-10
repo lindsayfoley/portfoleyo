@@ -7,11 +7,12 @@ import styles from "./nav.module.css";
 
 interface NavProps {
   links: LinkProps[];
+  classnames?: string;
 }
 
-const Nav = ({ links }: NavProps) => {
+const Nav = ({ links, classnames }: NavProps) => {
   return (
-    <nav className={styles.container}>
+    <nav className={`${classnames} ${styles.container}`}>
       <div className={styles.contentWrapper}>
         <div className={`${styles.pages} ${styles.links}`}>
           <ul className={styles.linksList}>

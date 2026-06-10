@@ -15,8 +15,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   const hasAnalyticsCookieConsent = useCookieConsentStatus(
-    cookieYesCategoryName.analytics
+    cookieYesCategoryName.analytics,
   );
+
+  const isHomepage = router.pathname === "/";
 
   return (
     <>
@@ -49,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
           href={`https://theportfoleyo.com${router?.asPath?.split("?")[0]}`}
         />
       </Head>
-      <Nav links={NAV_CONTENT.links} />
+      <Nav classnames={isHomepage ? "home" : ""} links={NAV_CONTENT.links} />
       <Component {...pageProps} />
       <Footer />
     </>
