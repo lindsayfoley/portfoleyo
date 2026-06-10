@@ -1,4 +1,5 @@
 import { countryBlockingContent } from "./countryBlockingContent";
+import { inheritingClientCodebase } from "./inheritingClientCodebase";
 
 export const PROJECTS = {
   meta: {
@@ -12,5 +13,5 @@ export const PROJECTS = {
     description:
       "Short, practical case studies from recent client work. If you’re looking for straightforward, high-quality support for your website, these examples will give you a feel for how I work and the results I focus on.",
   },
-  ["country-blocking"]: countryBlockingContent,
+  all: [inheritingClientCodebase, countryBlockingContent],
 };

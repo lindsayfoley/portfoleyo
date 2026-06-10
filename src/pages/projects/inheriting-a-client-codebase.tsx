@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { DOMAIN } from "@portfoleyo/constants/shared";
 import Banner from "@portfoleyo/components/banner/banner";
-import { countryBlockingContent } from "@portfoleyo/constants/projects/countryBlockingContent";
+import { inheritingClientCodebase } from "@portfoleyo/constants/projects/inheritingClientCodebase";
 import styles from "../../styles/projects.module.css";
 
-export default function CountryBlocking() {
-  const project = countryBlockingContent;
-  const allContent = countryBlockingContent.page.join("");
+export default function InheritingClientCodebase() {
+  const project = inheritingClientCodebase;
+  const allContent = inheritingClientCodebase.page.join("");
 
   return (
     <>

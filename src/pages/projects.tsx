@@ -7,7 +7,7 @@ import { PROJECTS } from "@portfoleyo/constants/projects/content";
 import styles from "../styles/portfolio.module.css";
 
 export default function Projects() {
-  const projects = [PROJECTS["country-blocking"]];
+  const projects = PROJECTS.all;
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function Projects() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
-          content={`${DOMAIN}${PROJECTS["country-blocking"].twoColumn.image.src}`}
+          content={`${DOMAIN}${PROJECTS.all[0]}].twoColumn.image.src}`}
         />
       </Head>
       <main className={`${styles.main} highlightTheme`}>
