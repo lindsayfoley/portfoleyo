@@ -61,6 +61,7 @@ const TwoColumnLayout = ({
             titleHref={href}
             subtitle={subtitle}
             isH1Element={isH1Element}
+            shouldOpenInNewTab={openInNewTab}
           />
           <div className={styles.paragraphSection}>
             {paragraphs?.map((paragraph) => (
