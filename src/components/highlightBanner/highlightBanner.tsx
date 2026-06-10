@@ -9,7 +9,7 @@ import styles from "./highlightBanner.module.css";
 interface HighlightBannerProps {
   image: ImageProps & Pick<LazyPictureProps, "mediaCondition">;
   intro?: string;
-  title: React.ReactNode;
+  title: string;
   description: string | string[];
   cta?: string;
   link?: string;

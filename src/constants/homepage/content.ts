@@ -17,8 +17,7 @@ export const HOMEPAGE_CONTENT = {
       },
     },
     intro: "Senior Web Developer & Technical Partner",
-    title:
-      "Solutions that <em>scale.</em><br />Results you can  <em>measure.</em></span>",
+    title: `<span>Solutions that <em>scale.</em><br />Results you can  <em>measure.</em></span></span>`,
     description:
       "I provide bespoke web development services for brands looking to improve performance, user experience and long-term maintainability. From Shopify and headless commerce through to SEO, accessibility and ongoing support, I work closely with clients to deliver practical solutions that support their goals.",
     cta: "My Story & Experience",
