@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.theportfoleyo.com
+
+# Sitemaps
+Sitemap: https://www.theportfoleyo.com/sitemap.xml
