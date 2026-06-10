@@ -16,19 +16,18 @@ export const inheritingClientCodebase = {
   intro:
     "More often than not, starting with a new client means receiving a ZIP file from the previous agency and being told everything I need should be in there! Over the years I've inherited Shopify stores, headless commerce builds, React apps and WordPress sites in varying states of health. Whilst every project is different, the first couple of days usually follow a similar pattern.",
   h1: "The First 48 Hours After Inheriting a Client's Codebase",
-  subTitle:
-    "A practical look at how I approach new projects when there’s little documentation and no formal handover.",
+  subTitle: "My process for taking over existing projects.",
 
   page: [
     `<h2 class="article-heading">Overview</h2>`,
 
-    `<p>Taking over an existing website is very different to starting a greenfield project. The challenge isn't building something new, it's understanding what's already there, how it works and where the risks are before making changes. Here I'll walk through the process I typically follow during the first 48 hours after inheriting a new project.</p>`,
+    `<p>Taking over an existing site is very different to starting a greenfield project. The challenge isn't building something new, it's understanding what's already there, how it works and where the risks are before making any changes. Here I'll walk through the process I typically follow during the first 48 hours after inheriting a project from a new client.</p>`,
 
     `<hr class="divider" />`,
 
     `<h2 class="article-heading">The Starting Point</h2>`,
 
-    `<p>The handover process varies wildly between projects - sometimes I receive super detailed documentation, architecture diagrams and credentials. Whereas, other times it's simply a ZIP file and a message saying the previous agency is no longer involved, this actually happens more times than you would think.</p>`,
+    `<p>The handover process varies wildly between projects - sometimes I've received super detailed documentation, architecture diagrams and credentials. Whereas, other times it's literally a forwarded email containing a ZIP file and a message saying the previous agency is no longer involved, this actually happens more times than you would think.</p>`,
 
     `<p>Before touching the code, my goal is to build a high level understanding of the platform and identify any immediate risks.</p>`,
 
@@ -120,9 +119,7 @@ export const inheritingClientCodebase = {
 
     `<p>One of the most valuable things I can do early in a project is document what I've learned so far.</p>`,
 
-    `<p>This often includes:</p>`,
-
-    `<ul class="article-list">
+    `<ul class="article-list">This often includes:
   <li>&check; Environment setup instructions</li>
   <li>&check; Deployment processes</li>
   <li>&check; Architecture diagrams</li>

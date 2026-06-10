@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.article p:not(:last-of-type) {
+  padding: 15px 0;
+}
+
 .article li {
   padding-left: 0.75rem;
 }
