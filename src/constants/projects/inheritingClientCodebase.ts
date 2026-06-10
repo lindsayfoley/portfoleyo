@@ -14,7 +14,7 @@ export const inheritingClientCodebase = {
   },
   title: "Inheriting a Client Codebase",
   intro:
-    "More often than not, starting with a new client means receiving a ZIP file from the previous agency and being told everything I need should be in there! Over the years I've inherited Shopify stores, headless commerce builds, React apps and WordPress sites in varying states of health. Whilst every project is different, the first couple of days usually follow a similar pattern.",
+    "Sometimes inheriting a new project means receiving a ZIP file, a few credentials and a message saying the previous agency is no longer involved. This article walks through the process I follow to understand an unfamiliar codebase, identify risks and get up to speed quickly ->",
   h1: "The First 48 Hours After Inheriting a Client's Codebase",
   subTitle: "My process for taking over existing projects.",
 

@@ -15,8 +15,7 @@ export const countryBlockingContent = {
   },
   title: "Blocking Unwanted Traffic",
   intro:
-    "A Shopify client noticed unusual, spammy-looking traffic appearing in their analytics, largely from specific regions that weren’t relevant to their customer base. Their priority was simple: reduce noise, protect the site, and block unwanted requests at the edge (before they ever reached Shopify).",
-  h1: "Blocking Traffic From Specific Countries (Cloudflare Security Rules)",
+    "When a Shopify client's analytics started filling up with suspicious traffic from regions they didn't serve, I used Cloudflare to stop unwanted requests at the edge. Here's how the solution was implemented and validated ->",
   subTitle:
     "A quick security win to reduce spam traffic and protect site performance.",
   page: [
