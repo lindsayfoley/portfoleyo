@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://www.theportfoleyo.com",
+  siteUrl: "https://theportfoleyo.com",
   generateRobotsTxt: true,
   sitemapSize: 7000,
   outDir: "out",
