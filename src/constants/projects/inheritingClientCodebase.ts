@@ -8,7 +8,7 @@ export const inheritingClientCodebase = {
     title: "Inheriting a Codebase",
     href: "/projects/inheriting-a-client-codebase",
     image: {
-      src: "/projects/inheriting-a-codebase.jpg",
+      src: "/projects/case-study-inheriting-a-codebase.jpg",
       alt: "Case Study: The First 48 Hours After Inheriting a Client Codebase",
     },
   },

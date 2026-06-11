@@ -16,10 +16,10 @@ export const HOMEPAGE_CONTENT = {
         media: "(min-width: 500px)",
       },
     },
-    intro: "Senior Web Developer & Technical Partner",
+    intro: "Technical Partner for Growing Brands",
     title: `<span>Solutions that <em>scale.</em><br />Results you can  <em>measure.</em></span></span>`,
     description:
-      "I provide bespoke web development services for brands looking to improve performance, user experience and long-term maintainability. From Shopify and headless commerce through to SEO, accessibility and ongoing support, I work closely with clients to deliver practical solutions that support their goals.",
+      "I help ambitious brands improve and grow their digital experiences through thoughtful frontend development, technical problem solving and ongoing support. Whether it's refining an existing platform, launching something new or figuring out why something isn't working as it should, I work as a hands on partner focused on practical solutions that move the business forward.",
     cta: "My Story & Experience",
     link: "/about",
     isH1Element: true,

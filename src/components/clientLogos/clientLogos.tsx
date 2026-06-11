@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./clientLogos.module.css";
 
-const title = " Brands I've worked with:";
+const title = "Trusted by brands including:";
 
 const ClientLogos = () => {
   return (
