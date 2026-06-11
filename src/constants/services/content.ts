@@ -66,7 +66,7 @@ export const SERVICES_CONTENT = {
     title: "E-Commerce & Shopify Solutions",
     subtitle: "For efficiency and growth",
     image: {
-      src: "/services-ecom.jpg",
+      src: "/services-e-com.jpg",
       alt: "A desktop scene with a phone showing a Shopify theme template wireframe",
     },
     paragraphs: [
