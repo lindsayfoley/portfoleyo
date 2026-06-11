@@ -9,7 +9,7 @@ export const countryBlockingContent = {
     title: "Country Blocking",
     href: "/projects/country-blocking",
     image: {
-      src: "/projects/shopify-block-countries.jpg",
+      src: "/projects/case-study-shopify-block-countries.jpg",
       alt: "Case Study: Blocking Requests from Specific Countries",
     },
   },

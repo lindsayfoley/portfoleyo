@@ -8,7 +8,7 @@ export const hydrogenMerchantCenterDomainSetup = {
     title: "Merchant Center Domains",
     href: "/projects/hydrogen-merchant-center-domain-setup",
     image: {
-      src: "/projects/hydrogen-merchant-center-domains.jpg",
+      src: "/projects/case-study-hydrogen-merchant-center-domains.jpg",
       alt: "Case Study: Resolving Google Merchant Center URL Mismatches on Shopify Hydrogen",
     },
   },

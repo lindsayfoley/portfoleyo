@@ -5,6 +5,7 @@ import TwoColumnLayout from "@portfoleyo/components/twoColumnLayout/twoColumnLay
 import { DOMAIN } from "@portfoleyo/constants/shared";
 import { PROJECTS } from "@portfoleyo/constants/projects/content";
 import styles from "../styles/portfolio.module.css";
+import { colourTheme } from "@portfoleyo/shared/common";
 
 export default function Projects() {
   const projects = PROJECTS.all;
@@ -32,6 +33,7 @@ export default function Projects() {
               title={project.title}
               openInNewTab={false}
               shouldReverseColumns
+              theme={colourTheme.highlight}
             >
               <p>{project.intro}</p>
             </TwoColumnLayout>
