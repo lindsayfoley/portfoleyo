@@ -73,7 +73,7 @@ export const HOMEPAGE_CONTENT = {
   },
   featureTilesWork: {
     title: "Highlighted Projects",
-    subtitle: "A few of the projects where I've had the greatest impact",
+    subtitle: "My most impactful projects",
     cta: "Explore project >",
     services: [
       {
