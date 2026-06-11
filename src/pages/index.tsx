@@ -2,7 +2,6 @@ import Head from "next/head";
 import FeatureTiles from "@portfoleyo/components/featureTiles/featureTiles";
 import HighlightBanner from "@portfoleyo/components/highlightBanner/highlightBanner";
 import Banner from "@portfoleyo/components/banner/banner";
-import Showcase from "@portfoleyo/components/showcase/showcase";
 import ClientLogos from "@portfoleyo/components/clientLogos/clientLogos";
 import { HOMEPAGE_CONTENT } from "../constants/homepage/content";
 import { DOMAIN } from "@portfoleyo/constants/shared";
@@ -40,11 +39,11 @@ export default function Home() {
           {...HOMEPAGE_CONTENT.featureTilesSupportAreas}
         />
         <FeatureTiles
+          useCardTiles
           theme={colourTheme.muted}
-          {...HOMEPAGE_CONTENT.featureTiles}
+          {...HOMEPAGE_CONTENT.featureTilesWork}
         />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
-        <Showcase {...HOMEPAGE_CONTENT.showcase} />
         {hasMarketingCookieConsent && <FeaturedInstagramPosts />}
       </main>
     </>

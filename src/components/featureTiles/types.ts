@@ -20,4 +20,5 @@ export interface FeatureTilesProps {
   isIndependantSection?: boolean;
   iconWidth?: string;
   useMiniTiles?: boolean;
+  useCardTiles?: boolean;
 }

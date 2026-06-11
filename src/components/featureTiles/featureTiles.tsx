@@ -17,6 +17,7 @@ const FeatureTiles = ({
   hasTimeline = false,
   isIndependantSection = true,
   useMiniTiles = false,
+  useCardTiles = false,
   iconWidth = "100px",
 }: FeatureTilesProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
@@ -25,7 +26,7 @@ const FeatureTiles = ({
     ({ id, label, image, Icon, title, description, href }) => {
       return href ? (
         <article
-          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${styles.service}`}
+          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${useCardTiles ? `${styles.cardTiles}` : ""} ${styles.service}`}
           key={title}
         >
           <a href={id ? `${href}#${id}` : href}>
@@ -45,7 +46,7 @@ const FeatureTiles = ({
         </article>
       ) : (
         <article
-          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${styles.service}`}
+          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${useCardTiles ? `${styles.cardTiles}` : ""} ${styles.service}`}
           key={title}
         >
           {label && <span className={styles.label}>{label}</span>}

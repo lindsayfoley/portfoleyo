@@ -71,7 +71,50 @@ export const HOMEPAGE_CONTENT = {
       },
     ],
   },
-  featureTiles: {
+  featureTilesWork: {
+    title: "Highlighted Projects",
+    subtitle: "A few of the projects where I've had the greatest impact",
+    cta: "Explore project >",
+    services: [
+      {
+        image: {
+          src: "/hp-dcypher.jpg",
+          alt: "The homepage of DCYPHER",
+          useEagerLoading: true,
+        },
+        id: "dcypher",
+        href: "/portfolio",
+        title: "DCYPHER",
+        description:
+          "I work on this headless Shopify site, helping evolve a highly customised beauty platform built around personalisation and ongoing innovation.",
+      },
+      {
+        image: {
+          src: "/hp-the-fabled-thread.jpg",
+          alt: "The homepage of The Fabled Thread",
+          useEagerLoading: true,
+        },
+        id: "the-fabled-thread",
+        href: "/portfolio",
+        title: "THE FABLED THREAD",
+        description:
+          "I work closely with this independent retailer, improving performance, enhancing content flexibility and supporting long-term growth.",
+      },
+      {
+        image: {
+          src: "/hp-charlotte-tilbury.jpg",
+          alt: "The homepage of Charlotte Tilbury",
+          useEagerLoading: true,
+        },
+        id: "charlotte-tilbury",
+        href: "/portfolio",
+        title: "CHARLOTTE TILBURY",
+        description:
+          "I supported large-scale frontend initiatives across SEO, design systems and customer experience improvements within a global beauty brand.",
+      },
+    ],
+  },
+  featureTilesServices: {
     title: "Featured services",
     subtitle: "How I Can Help",
     cta: "Learn more >",
