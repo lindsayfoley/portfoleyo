@@ -12,7 +12,7 @@
 }
 
 .timeline:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 138px;
   left: 0;
@@ -31,8 +31,12 @@
   margin: 30px auto 10px auto;
   padding-right: 8%;
   display: flex;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.miniTilesWrapper {
+  padding-top: 30px;
 }
 
 .noTopPadding .serviceWrapper {
@@ -50,6 +54,18 @@
 
 .service:first-of-type {
   margin-left: 8%;
+}
+
+.miniTiles {
+  max-width: 165px;
+}
+
+.miniTiles:not(:last-of-type) {
+  border-right: 1px solid var(--highlight-dark-background);
+}
+
+.miniTiles svg {
+  fill: var(--highlight-background);
 }
 
 .label {
@@ -71,13 +87,21 @@
   min-width: 300px;
 }
 
+.miniTiles .copy {
+  min-width: 150px;
+}
+
 .title {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
+.miniTiles .title {
+  font-size: 15px;
+}
+
 .timeline .title:before {
-  content: '';
+  content: "";
   display: block;
   margin: -25px auto 10px auto;
   width: 1px;
@@ -85,14 +109,16 @@
   background: var(--medium-grey);
 }
 
-.title, .cta {
+.title,
+.cta {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
 }
 
-.title, .cta {
+.title,
+.cta {
   text-transform: uppercase;
 }
 
@@ -109,7 +135,6 @@
   margin-top: 10px;
 }
 
-
 @media (min-width: 550px) {
   .timeline:before {
     display: none;
@@ -122,7 +147,8 @@
     margin-bottom: 20px;
   }
 
-  .service, .service:first-of-type {
+  .service,
+  .service:first-of-type {
     margin: 0;
   }
 
@@ -137,8 +163,8 @@
   }
 
   .copy {
-   width: 90%;
-   margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 

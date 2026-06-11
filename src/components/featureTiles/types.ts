@@ -11,11 +11,13 @@ export interface FeatureTilesProps {
     image?: ImageProps;
     Icon?: ElementType;
     title: string;
-    description: string;
+    description?: string;
     href?: string;
   }[];
   cta?: string;
   theme?: Theme;
   hasTimeline?: boolean;
   isIndependantSection?: boolean;
+  iconWidth?: string;
+  useMiniTiles?: boolean;
 }

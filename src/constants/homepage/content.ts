@@ -1,4 +1,12 @@
 import { colourTheme } from "@portfoleyo/shared/common";
+import { Connection } from "@portfoleyo/assets/svgs/connection";
+import { Fluidity } from "@portfoleyo/assets/svgs/fluidity";
+import { Development } from "@portfoleyo/assets/svgs/development";
+import { Growth } from "@portfoleyo/assets/svgs/growth";
+import { Cog } from "@portfoleyo/assets/svgs/cog";
+import { Inspiration } from "@portfoleyo/assets/svgs/inspiration";
+import { Idea } from "@portfoleyo/assets/svgs/idea";
+import { Award } from "@portfoleyo/assets/svgs/award";
 
 export const HOMEPAGE_CONTENT = {
   meta: {
@@ -24,6 +32,44 @@ export const HOMEPAGE_CONTENT = {
     link: "/about",
     isH1Element: true,
     theme: colourTheme.highlight,
+  },
+  featureTilesSupportAreas: {
+    title: "How I Can Help",
+    subtitle: "Specialist support across the areas that matter most",
+    services: [
+      {
+        Icon: Development,
+        title: "Frontend Development",
+      },
+      {
+        Icon: Connection,
+        title: "Shopify & Ecommerce",
+      },
+      {
+        Icon: Growth,
+        title: "SEO & GEO Optimisation",
+      },
+      {
+        Icon: Cog,
+        title: "Performance & Web Vitals",
+      },
+      {
+        Icon: Fluidity,
+        title: "Accessibility & WCAG",
+      },
+      {
+        Icon: Inspiration,
+        title: "Analytics & Insights",
+      },
+      {
+        Icon: Idea,
+        title: "CMS & Content Management",
+      },
+      {
+        Icon: Award,
+        title: "Long-Term Partnership",
+      },
+    ],
   },
   featureTiles: {
     title: "Featured services",

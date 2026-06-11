@@ -10,6 +10,7 @@ import FeaturedInstagramPosts from "@portfoleyo/components/featuredInstagramPost
 import useCookieConsentStatus, {
   cookieYesCategoryName,
 } from "@portfoleyo/hooks/useCookieConsentStatus";
+import { colourTheme } from "@portfoleyo/shared/common";
 
 export default function Home() {
   const hasMarketingCookieConsent = useCookieConsentStatus(
@@ -33,7 +34,15 @@ export default function Home() {
           shouldReverseColumns
         />
         <ClientLogos />
-        <FeatureTiles {...HOMEPAGE_CONTENT.featureTiles} />
+        <FeatureTiles
+          iconWidth="70px"
+          useMiniTiles={true}
+          {...HOMEPAGE_CONTENT.featureTilesSupportAreas}
+        />
+        <FeatureTiles
+          theme={colourTheme.muted}
+          {...HOMEPAGE_CONTENT.featureTiles}
+        />
         <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
         <Showcase {...HOMEPAGE_CONTENT.showcase} />
         {hasMarketingCookieConsent && <FeaturedInstagramPosts />}

@@ -16,14 +16,18 @@ const FeatureTiles = ({
   theme = colourTheme.default,
   hasTimeline = false,
   isIndependantSection = true,
+  useMiniTiles = false,
+  iconWidth = "100px",
 }: FeatureTilesProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
-  const iconWidth = "100px";
 
   const tilesMarkup = services.map(
     ({ id, label, image, Icon, title, description, href }) => {
       return href ? (
-        <article className={styles.service} key={title}>
+        <article
+          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${styles.service}`}
+          key={title}
+        >
           <a href={id ? `${href}#${id}` : href}>
             {label && <span className={styles.label}>{label}</span>}
             {image && <LazyPicture classname={styles.image} image={image} />}
@@ -32,13 +36,18 @@ const FeatureTiles = ({
             )}
             <div className={styles.copy}>
               <h3 className={styles.title}>{title}</h3>
-              <p className={styles.description}>{description}</p>
+              {description && (
+                <p className={styles.description}>{description}</p>
+              )}
               {cta && <span className={styles.cta}>{cta}</span>}
             </div>
           </a>
         </article>
       ) : (
-        <article className={styles.service} key={title}>
+        <article
+          className={`${useMiniTiles ? `${styles.miniTiles}` : ""} ${styles.service}`}
+          key={title}
+        >
           {label && <span className={styles.label}>{label}</span>}
           {image && (
             <LazyPicture
@@ -56,7 +65,7 @@ const FeatureTiles = ({
           </div>
         </article>
       );
-    }
+    },
   );
 
   return (
@@ -70,7 +79,11 @@ const FeatureTiles = ({
         } ${hasTimeline ? styles.timeline : ""}`}
       >
         {title && <SectionTitle title={title} subtitle={subtitle} />}
-        <div className={styles.serviceWrapper}>{tilesMarkup}</div>
+        <div
+          className={`${useMiniTiles ? `${styles.miniTilesWrapper}` : ""} ${styles.serviceWrapper}`}
+        >
+          {tilesMarkup}
+        </div>
       </div>
     </section>
   );
