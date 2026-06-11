@@ -28,8 +28,8 @@ export const HOMEPAGE_CONTENT = {
     title: `<span>Solutions that <em>scale.</em><br />Results you can  <em>measure.</em></span></span>`,
     description:
       "I help ambitious brands improve and grow their digital experiences through thoughtful frontend development, technical problem solving and ongoing support. Whether it's refining an existing platform, launching something new or figuring out why something isn't working as it should, I work as a hands on partner focused on practical solutions that move the business forward.",
-    cta: "My Story & Experience",
-    link: "/about",
+    cta: "Explore My Portfolio",
+    link: "/portfolio",
     isH1Element: true,
     theme: colourTheme.highlight,
   },
