@@ -8,7 +8,7 @@ export const trackingGa4PurchasesHydrogen = {
     title: "GA4 Purchase Tracking",
     href: "/projects/tracking-ga4-purchases-hydrogen",
     image: {
-      src: "/projects/tracking-ga4-purchases-hydrogen.jpg",
+      src: "/projects/case-study-ga4-hydrogen-tracking-purchases.jpg",
       alt: "Case Study: Tracking GA4 Purchases on a Shopify Hydrogen Storefront",
     },
   },
