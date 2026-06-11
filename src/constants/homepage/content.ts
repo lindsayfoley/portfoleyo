@@ -78,15 +78,15 @@ export const HOMEPAGE_CONTENT = {
     services: [
       {
         image: {
-          src: "/hp-dcypher.jpg",
-          alt: "The homepage of DCYPHER",
+          src: "/hp-charlotte-tilbury.jpg",
+          alt: "The homepage of Charlotte Tilbury",
           useEagerLoading: true,
         },
-        id: "dcypher",
+        id: "charlotte-tilbury",
         href: "/portfolio",
-        title: "DCYPHER",
+        title: "CHARLOTTE TILBURY",
         description:
-          "I work on this headless Shopify site, helping evolve a highly customised beauty platform built around personalisation and ongoing innovation.",
+          "I supported large-scale frontend initiatives across SEO, design systems and customer experience improvements within a global beauty brand.",
       },
       {
         image: {
@@ -102,15 +102,15 @@ export const HOMEPAGE_CONTENT = {
       },
       {
         image: {
-          src: "/hp-charlotte-tilbury.jpg",
-          alt: "The homepage of Charlotte Tilbury",
+          src: "/hp-dcypher.jpg",
+          alt: "The homepage of DCYPHER",
           useEagerLoading: true,
         },
-        id: "charlotte-tilbury",
+        id: "dcypher",
         href: "/portfolio",
-        title: "CHARLOTTE TILBURY",
+        title: "DCYPHER",
         description:
-          "I supported large-scale frontend initiatives across SEO, design systems and customer experience improvements within a global beauty brand.",
+          "I work on this headless Shopify site, helping evolve a highly customised beauty platform built around personalisation and ongoing innovation.",
       },
     ],
   },
