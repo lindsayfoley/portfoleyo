@@ -43,7 +43,7 @@ export default function Home() {
           theme={colourTheme.muted}
           {...HOMEPAGE_CONTENT.featureTilesWork}
         />
-        <Banner {...HOMEPAGE_CONTENT.banner} hasBorder />
+        <Banner {...HOMEPAGE_CONTENT.banner} theme={colourTheme.default} />
         {hasMarketingCookieConsent && <FeaturedInstagramPosts />}
       </main>
     </>

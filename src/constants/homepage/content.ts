@@ -159,7 +159,9 @@ export const HOMEPAGE_CONTENT = {
   },
   banner: {
     title: "Let’s talk about your project",
-    subtitle: "Work With Me",
+    subtitle: "Ready to get started?",
+    description:
+      "Whether you're launching something new, improving an existing platform or simply need an extra pair of hands, I'd love to hear more.",
     isTitleFirst: false,
     href: "/about#contact",
     cta: "Contact me",
