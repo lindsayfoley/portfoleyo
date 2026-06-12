@@ -61,14 +61,14 @@ export const ABOUT_CONTENT = {
   contact: {
     banner: {
       image: {
-        src: "/contact-image-flat-lay.jpg",
+        src: "/contact-image.jpg",
         alt: "A phone, notepad and laptop on a desk",
       },
       title: "Get in Touch",
       subtitle: " Let’s build something great",
       description:
         "Whether you have a project in mind or just want to explore options, feel free to reach out:",
-      theme: colourTheme.muted,
+      theme: colourTheme.highlight,
     },
   },
 };

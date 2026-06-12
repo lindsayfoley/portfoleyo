@@ -35,7 +35,7 @@ export const HOMEPAGE_CONTENT = {
   },
   featureTilesSupportAreas: {
     title: "How I Can Help",
-    subtitle: "Specialist support across the areas that matter most",
+    subtitle: "Support across areas that matter the most",
     services: [
       {
         Icon: Development,

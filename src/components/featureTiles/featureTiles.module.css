@@ -82,6 +82,10 @@
   border-right: 1px solid var(--highlight-dark-background);
 }
 
+.service svg {
+  fill: var(--pale-pink);
+}
+
 .miniTiles svg {
   fill: var(--highlight-background);
 }
@@ -94,6 +98,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .image {
