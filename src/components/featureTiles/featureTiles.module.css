@@ -49,7 +49,7 @@
   display: none;
 }
 
-.service:not(.miniTiles):not(.timeline) {
+.service:not(.miniTiles):not(.timeline):not(.cardTiles) {
   margin-right: 8%;
 }
 
