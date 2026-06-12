@@ -39,7 +39,7 @@ const LINKS = {
 };
 
 export const NAV_CONTENT = {
-  links: [LINKS.about, LINKS.services, LINKS.portfolio, LINKS.projects],
+  links: [LINKS.services, LINKS.portfolio, LINKS.projects, LINKS.about],
   icons: [
     {
       title: "View my LinkedIn profile",
