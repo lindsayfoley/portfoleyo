@@ -49,7 +49,7 @@
   display: none;
 }
 
-.service:not(.miniTiles) {
+.service:not(.miniTiles):not(.timeline) {
   margin-right: 8%;
 }
 
