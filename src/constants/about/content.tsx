@@ -28,7 +28,7 @@ export const ABOUT_CONTENT = {
     },
     paragraphs: [
       "I’m Lindsay Foley, a developer, consultant, and founder of The Portfoleyo. My journey into development started in 2011 when I was unexpectedly tasked with coding my first HTML email! With no experience, I somehow managed to cobble it together - and in the process, discovered a love for problem-solving with code.",
-      "Before going freelance, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT - contributing to everything from development and UX, to large-scale platform upgrades and design system architecture.",
+      "Before going freelance, I worked in permanent roles for brands like Selfridges, Disney, Charlotte Tilbury, and BT, contributing to everything from development and UX, to large-scale platform upgrades and design system architecture.",
     ],
     theme: colourTheme.highlight,
   },
