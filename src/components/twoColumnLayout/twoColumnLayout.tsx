@@ -19,6 +19,7 @@ interface TwoColumnLayoutProps {
   isIndependantSection?: boolean;
   useAnimation?: boolean;
   openInNewTab?: boolean;
+  highlightSubtitle?: boolean;
 }
 
 const TwoColumnLayout = ({
@@ -35,6 +36,7 @@ const TwoColumnLayout = ({
   isIndependantSection = true,
   useAnimation = false,
   openInNewTab = true,
+  highlightSubtitle = false,
 }: TwoColumnLayoutProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
@@ -62,6 +64,7 @@ const TwoColumnLayout = ({
             subtitle={subtitle}
             isH1Element={isH1Element}
             shouldOpenInNewTab={openInNewTab}
+            highlightSubtitle={highlightSubtitle}
           />
           <div className={styles.paragraphSection}>
             {paragraphs?.map((paragraph) => (

@@ -63,6 +63,7 @@ const FeaturedInstagramPosts = () => {
           subtitle="@ThePortfoleyo"
           titleHref="https://www.instagram.com/theportfoleyo/"
           isTitleFirst={false}
+          highlightSubtitle={true}
         />
         <div className={styles.posts}>
           {featuredPosts.map((postId) => (

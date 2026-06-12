@@ -31,6 +31,7 @@ export default function About() {
         <TwoColumnLayout
           {...ABOUT_CONTENT.sectionTitle}
           {...ABOUT_CONTENT.twoColumn}
+          highlightSubtitle
         />
         <FeatureTiles
           {...ABOUT_CONTENT.featureTiles}
@@ -38,7 +39,7 @@ export default function About() {
           isIndependantSection={false}
         />
         <div id="contact">
-          <Banner {...ABOUT_CONTENT.contact.banner}>
+          <Banner {...ABOUT_CONTENT.contact.banner} highlightSubtitle>
             <ul className={styles.contactList}>
               <li className={styles.listItem}>
                 <a href={`mailto:${EMAIL_ADDRESS}`}>

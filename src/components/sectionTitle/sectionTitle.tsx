@@ -7,6 +7,7 @@ export interface SectionTitleProps {
   isH1Element?: boolean;
   titleHref?: string;
   shouldOpenInNewTab?: boolean;
+  highlightSubtitle?: boolean;
 }
 
 const SectionTitle = ({
@@ -16,6 +17,7 @@ const SectionTitle = ({
   isTitleFirst = true,
   isH1Element = false,
   shouldOpenInNewTab = true,
+  highlightSubtitle = false,
 }: SectionTitleProps) => {
   const HeadingElement = isH1Element ? "h1" : "h2";
   const titleContent = titleHref ? (
@@ -37,7 +39,7 @@ const SectionTitle = ({
       )}
       {subtitle && (
         <span
-          className={`${styles.subtitle} ${
+          className={`${styles.subtitle} ${highlightSubtitle ? styles.highlight : ""} ${
             isTitleFirst ? styles.subtitleSecond : ""
           }`}
         >

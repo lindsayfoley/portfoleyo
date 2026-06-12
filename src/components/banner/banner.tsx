@@ -17,6 +17,7 @@ interface BannerProps {
   hasBorder?: boolean;
   isIndependantSection?: boolean;
   useAnimation?: boolean;
+  highlightSubtitle?: boolean;
 }
 
 type AllBannerProps = BannerProps & SectionTitleProps & Partial<LinkProps>;
@@ -35,6 +36,7 @@ const Banner = ({
   hasBorder = false,
   isIndependantSection = true,
   useAnimation = false,
+  highlightSubtitle = false,
 }: AllBannerProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
@@ -57,6 +59,7 @@ const Banner = ({
           subtitle={subtitle}
           isTitleFirst={isTitleFirst}
           isH1Element={isH1Element}
+          highlightSubtitle={highlightSubtitle}
         />
         {description &&
           (Array.isArray(description) ? (

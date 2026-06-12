@@ -21,4 +21,5 @@ export interface FeatureTilesProps {
   iconWidth?: string;
   useMiniTiles?: boolean;
   useCardTiles?: boolean;
+  highlightSubtitle?: boolean;
 }

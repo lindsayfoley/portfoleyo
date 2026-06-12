@@ -19,6 +19,7 @@ const FeatureTiles = ({
   useMiniTiles = false,
   useCardTiles = false,
   iconWidth = "100px",
+  highlightSubtitle = false,
 }: FeatureTilesProps) => {
   const ref = useAnimationIntersectionObserver("fadeIn");
 
@@ -79,7 +80,13 @@ const FeatureTiles = ({
           !isIndependantSection ? styles.noTopPadding : ""
         } ${hasTimeline ? styles.timeline : ""}`}
       >
-        {title && <SectionTitle title={title} subtitle={subtitle} />}
+        {title && (
+          <SectionTitle
+            title={title}
+            subtitle={subtitle}
+            highlightSubtitle={highlightSubtitle}
+          />
+        )}
         <div
           className={`${useMiniTiles ? `${styles.miniTilesWrapper}` : ""} ${styles.serviceWrapper}`}
         >

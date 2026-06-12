@@ -40,6 +40,7 @@ export default function Services() {
               index !== Math.round((services.length - 1) / 2)
             }
             isIndependantSection={false}
+            highlightSubtitle
           >
             <ul className={listClassname}>
               {service.list.map((item) => (
@@ -52,7 +53,7 @@ export default function Services() {
           </TwoColumnLayout>
         ))}
         <FeatureTiles {...SERVICES_CONTENT.featureTiles} />
-        <Banner {...SERVICES_CONTENT.gettingStarted.banner}>
+        <Banner {...SERVICES_CONTENT.gettingStarted.banner} highlightSubtitle>
           <div className={styles.listContainer}>
             <ol className={`${listClassname} ${styles.orderedlist}`}>
               {SERVICES_CONTENT.gettingStarted.list.map(
@@ -64,7 +65,7 @@ export default function Services() {
                     </h5>
                     {text}
                   </li>
-                )
+                ),
               )}
             </ol>
           </div>

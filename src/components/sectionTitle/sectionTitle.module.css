@@ -20,6 +20,10 @@
   .subtitleSecond {
     margin-top: 10px;
   }
+
+  .highlight {
+    color: var(--button-background);
+  }
 }
 
 .titleBottom {
