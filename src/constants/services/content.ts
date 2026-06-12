@@ -14,7 +14,7 @@ export const SERVICES_CONTENT = {
   meta: {
     title: "Services Offered | The Portfoleyo Development & Solutions",
     description:
-      "Expert web and Shopify development tailored to your business. From custom builds to performance optimisation, SEO, and e-commerce solutions—get support now",
+      "Expert web and Shopify development tailored to your business. From custom builds to performance optimisation, SEO, and ecommerce solutions - get support now",
   },
   banner: {
     title: "Services Offered",
@@ -34,7 +34,7 @@ export const SERVICES_CONTENT = {
       useEagerLoading: true,
     },
     paragraphs: [
-      "Not every solution works straight out of the box. I build custom sites and apps—or refine what’s already there—so they fit your needs and work exactly how you want.",
+      "Not every solution works straight out of the box. I build custom sites and apps - or refine what’s already there - so they fit your needs and work exactly how you want.",
     ],
     list: [
       "Custom development: building sites and apps from scratch with modern tech",

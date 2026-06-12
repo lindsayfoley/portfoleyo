@@ -11,8 +11,8 @@ export default function InheritingClientCodebase() {
   return (
     <>
       <Head>
-        <title>{project.meta?.title}</title>
-        <meta name="description" content={project.meta?.description} />
+        <title>{project.meta.title}</title>
+        <meta name="description" content={project.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="og:image"
