@@ -13,7 +13,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/about.module.css";
-import { colourTheme } from "@portfoleyo/shared/common";
 
 export default function About() {
   return (
