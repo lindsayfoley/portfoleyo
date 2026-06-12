@@ -40,21 +40,21 @@ export const ABOUT_CONTENT = {
         Icon: Development,
         title: "First Steps into Development",
         description:
-          "Started my career in e-commerce, working with website content and HTML emails - my first glimpse into the world of web development",
+          "I started my career in ecommerce, creating site content and HTML emails - my first step into web development",
       },
       {
         label: "2021",
         Icon: Award,
         title: "Received BT Engineering Award",
         description:
-          "I was recognised for my contributions as Principal Developer, enhancing UX by leading squads to develop new platform functionality",
+          "Recognised for my impact as a Principal Developer, leading teams to deliver new functionality and improve UX",
       },
       {
         label: "2025",
         Icon: Growth,
         title: "Launched The Portfoleyo Site",
         description:
-          "After two years of contracting, I officially launched The Portfoleyo, an independent development studio providing expert-led solutions",
+          "After two years of contracting, I launched The Portfoleyo to help growing brands solve technical challenges",
       },
     ],
   },
