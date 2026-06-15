@@ -191,7 +191,7 @@
     display: none;
   }
 
-  .serviceWrapper {
+  .serviceWrapper:not(.miniTilesWrapper) {
     flex-wrap: wrap;
     padding-right: 0;
     justify-content: center;
@@ -203,7 +203,7 @@
     margin: 0;
   }
 
-  .service:not(:first-of-type) {
+  .service:not(.miniTiles):not(:first-of-type) {
     padding-top: 40px;
   }
 
