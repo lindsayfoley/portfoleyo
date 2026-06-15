@@ -32,6 +32,7 @@ export default function About() {
           {...ABOUT_CONTENT.sectionTitle}
           {...ABOUT_CONTENT.twoColumn}
           highlightSubtitle
+          isIndependantSection={false}
         />
         <FeatureTiles
           {...ABOUT_CONTENT.featureTiles}

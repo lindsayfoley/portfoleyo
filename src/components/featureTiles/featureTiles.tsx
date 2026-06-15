@@ -88,7 +88,7 @@ const FeatureTiles = ({
           />
         )}
         <div
-          className={`${useMiniTiles ? `${styles.miniTilesWrapper}` : ""} ${styles.serviceWrapper}`}
+          className={`${useMiniTiles ? `${styles.miniTilesWrapper}` : ""} ${useCardTiles ? `${styles.cardTilesWrapper}` : ""} ${styles.serviceWrapper}`}
         >
           {tilesMarkup}
         </div>

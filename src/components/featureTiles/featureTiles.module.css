@@ -33,10 +33,6 @@
   scrollbar-width: none;
 }
 
-.serviceWrapper:not(.serviceWrapper) {
-  padding-right: 8%;
-}
-
 .miniTilesWrapper {
   padding-top: 30px;
 }
@@ -49,16 +45,8 @@
   display: none;
 }
 
-.service:not(.miniTiles):not(.timeline):not(.cardTiles) {
-  margin-right: 8%;
-}
-
 .service {
   scroll-snap-align: center;
-}
-
-.service:not(.miniTiles):first-of-type {
-  margin-left: 8%;
 }
 
 .cardTiles {
@@ -186,12 +174,31 @@
   font-weight: 500;
 }
 
+@media (max-width: 459px) {
+  .service:not(.miniTiles):not(.timeline) {
+    margin-right: 8%;
+  }
+
+  .service:not(.miniTiles):first-of-type {
+    margin-left: 8%;
+  }
+}
+
 @media (min-width: 550px) {
+  .serviceWrapper:not(.miniTilesWrapper):not(.cardTilesWrapper)
+    .service:nth-child(2) {
+    padding: 50px 0;
+  }
+
+  .cardTilesWrapper {
+    padding: 0 20px;
+  }
+
   .timeline:before {
     display: none;
   }
 
-  .serviceWrapper:not(.miniTilesWrapper) {
+  .serviceWrapper:not(.miniTilesWrapper):not(.cardTilesWrapper) {
     flex-wrap: wrap;
     padding-right: 0;
     justify-content: center;
@@ -199,17 +206,8 @@
   }
 
   .service,
-  .service:first-of-type {
+  .service:not(.cardTiles):first-of-type {
     margin: 0;
-  }
-
-  .service:not(.miniTiles):not(:first-of-type) {
-    padding-top: 40px;
-  }
-
-  .cardTiles .copy {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .cardTiles .image,
@@ -219,8 +217,9 @@
 }
 
 @media (min-width: 800px) {
-  .service:not(:last-of-type) {
-    padding-top: 0;
+  .serviceWrapper:not(.miniTilesWrapper):not(.cardTilesWrapper)
+    .service:nth-child(2) {
+    padding: 0;
   }
 
   .copy {
@@ -243,7 +242,15 @@
   }
 
   .timeline {
-    padding-bottom: 10px;
+    padding-bottom: 60px;
+  }
+
+  .timeline:first-of-type {
+    margin: auto;
+  }
+
+  .timeline .serviceWrapper {
+    flex-wrap: nowrap;
   }
 
   .timeline:before {
@@ -257,5 +264,27 @@
 
   .service:last-of-type {
     padding-top: 0;
+  }
+
+  .cardTiles .copy {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .serviceWrapper {
+    overflow-x: hidden;
+  }
+
+  .cardTilesWrapper {
+    padding: 0;
+  }
+
+  .cardTiles:first-of-type {
+    margin-left: 0;
+  }
+
+  .cardTiles:last-of-type {
+    margin-right: 0;
   }
 }
