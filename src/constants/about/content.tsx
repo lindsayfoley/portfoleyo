@@ -67,7 +67,7 @@ export const ABOUT_CONTENT = {
       title: "Get in Touch",
       subtitle: " Let’s build something great",
       description:
-        "Whether you have a project in mind or just want to explore options, feel free to reach out:",
+        "Whether you have a project in mind or want to explore options, feel free to reach out:",
       theme: colourTheme.highlight,
     },
   },
