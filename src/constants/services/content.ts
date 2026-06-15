@@ -45,18 +45,18 @@ export const SERVICES_CONTENT = {
   },
   twoColumnSeo: {
     id: "optimisation",
-    title: "Performance & SEO Optimisation",
-    subtitle: "Better rankings and usability",
+    title: "Performance, SEO & GEO Optimisation",
+    subtitle: "Optimised for search, AI and users",
     image: {
       src: "/services-performance-seo-optimised.jpg",
       alt: "A laptop with images of graphs in front of a pin board with SEO notes",
     },
     paragraphs: [
-      "Site speed and visibility impact conversions - I focus on performance tuning and technical SEO, ensuring your site runs efficiently while reaching the right audience.",
+      "Site speed and visibility influence how customers find and experience your brand. I focus on performance, SEO and GEO to keep you discoverable across search and AI.",
     ],
     list: [
       "Site speed: improving performance, reducing load times, enabling lazy loading",
-      "SEO review: optimising metadata, adding structured data, improving markup",
+      "SEO & GEO: optimising metadata, structured data and AI discoverability",
       "Accessibility: ensuring WCAG compliance for an inclusive, user-friendly site",
       "Site audit: assessing issues affecting discoverability, usability & responsiveness",
     ],
@@ -88,19 +88,19 @@ export const SERVICES_CONTENT = {
         Icon: Progression,
         title: "Ad Hoc & Ongoing Support",
         description:
-          "Need quick fixes, feature updates, or ongoing development? I offer flexible support: ad hoc or long-term, to fit your business needs",
+          "Need urgent fixes, new features, or ongoing development? I offer flexible support: ad hoc or long-term, to fit your business needs",
       },
       {
         Icon: Fluidity,
         title: "Structured Workflow",
         description:
-          "Projects and tasks are organised on a shared board with upfront pricing, priorities, and real-time updates, keeping things transparent",
+          "Tasks are organised on a shared board with upfront pricing, priorities, and real-time updates, keeping things transparent",
       },
       {
         Icon: Connection,
         title: "Web, App & Email Services",
         description:
-          "I build modern, scalable sites and apps, plus customisable email templates for tools like Klaviyo, ensuring alignment with style guides",
+          "I build modern, scalable sites and apps, plus email templates for tools like Klaviyo, ensuring alignment with style guides",
       },
     ],
   },
