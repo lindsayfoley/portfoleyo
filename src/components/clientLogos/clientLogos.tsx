@@ -10,15 +10,6 @@ const ClientLogos = () => {
       <ul className={styles.list}>
         <li className={`${styles.title} ${styles.hideMobile}`}>{title}</li>
         <li>
-          <Link href="/portfolio/#charlotte-tilbury">
-            <img
-              className={styles.ct}
-              src="/charlotte-tilbury-logo-hi-res.png"
-              alt="Charlotte Tilbury logo"
-            />
-          </Link>
-        </li>
-        <li>
           <Link href="/portfolio/#dcypher">
             <img
               className={styles.dcypher}
@@ -33,6 +24,15 @@ const ClientLogos = () => {
               className={styles.tft}
               src="/the-fabled-thread-logo.avif"
               alt="The Fabled Thread logo"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="/portfolio/#charlotte-tilbury">
+            <img
+              className={styles.ct}
+              src="/charlotte-tilbury-logo-hi-res.png"
+              alt="Charlotte Tilbury logo"
             />
           </Link>
         </li>
