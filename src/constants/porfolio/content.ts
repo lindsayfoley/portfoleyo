@@ -114,7 +114,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I provide ongoing support to StringNix, a recently launched underwear startup focused on comfort and simplicity. My work includes performance improvements, UI fixes and supporting bundled purchases to encourage multi-item orders.",
+      "I provide ongoing support to StringNix, a recently launched lingerie startup focused on comfort and simplicity. My work includes performance improvements, UI fixes and supporting bundled purchases to encourage multi-item orders.",
     workCompletedList: [
       "Localisation: supported with currency and regional setup across global markets",
       "Bundles: integrated, setup and styled discount bundles across all PDPs",
@@ -189,9 +189,9 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I collaborated with Elyse, a brand focused on essential oil blends and holistic wellbeing, to enhance their Squarespace homepage with content-led features designed to build trust and boost engagement.",
+      "I collaborated with Elyse, a brand focused on essential oil blends and holistic wellbeing, to enhance their Squarespace site with content-led features designed to build trust and boost engagement.",
     workCompletedList: [
-      "Launches: deployed a new product release with supporting content and assets",
+      "Launches: deployed new product releases with supporting content and assets",
       "Press features: added a carousel of press logos to highlight media coverage",
       "Engagement: integrated Instagram feed to showcase social content",
       "Accessibility: audited site and identified improvements for inclusive design",
@@ -209,7 +209,7 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I work with JP’s Originals, a wellness-focused tea brand on Shopify, providing ongoing ad-hoc development support across areas like accessibility, SEO, UI enhancements, and technical scoping for growth opportunities.",
+      "I worked with JP’s Originals, a wellness-focused tea brand on Shopify, providing ad-hoc development support across areas like accessibility, SEO, UI enhancements, and technical scoping for growth opportunities.",
     workCompletedList: [
       "UI: improved navigation contrast and semantic HTML for better accessibility",
       "UX: highlighted key CTAs on PDPs and checkout pages to guide user journeys",
@@ -250,10 +250,10 @@ export const PORTFOLIO_CONTENT = {
       "I worked with Vinito, a rebranded evolution of Brixton Wine Club, to create a customised product page that provides a richer and more informative shopping experience than standard Shopify templates allow.",
     workCompletedList: [
       "PDP: designed a custom layout to maximise the presentation of product details",
-      "Content UX: added a toggle to improve readability for detailed descriptions",
       "Enhanced UI: built a reusable grid to showcase tasting notes and highlights",
       "Profile: integrated sliders powered by metafields to visualise key attributes",
       "Specs: developed a comprehensive specs table for detailed product information",
+      "Content UX: added a toggle to improve readability for detailed descriptions",
     ],
   },
   theMews: {
@@ -304,11 +304,11 @@ export const PORTFOLIO_CONTENT = {
       },
     },
     description:
-      "I had the pleasure of working with this renowned beauty brand, contributing across multiple squads to enhance SEO, optimise performance, and build a robust React-based Design System that ensures consistency across their digital platform.",
+      "I had the pleasure of working with this renowned beauty brand, contributing across multiple squads to enhance SEO, optimise performance and build a robust React-based Design System. Many of the technical SEO practices implemented continue to support discoverability across both traditional search and emerging AI experiences.",
     workCompletedList: [
       "Design system: developed reusable components for a brand new design system",
       "Live chat: reintegrated Zendesk, upgrading APIs to add live chat sitewide",
-      "SEO: implemented advanced schema for products, reviews, blog posts and more",
+      "GEO: implemented advanced schema for products, reviews, blog posts and more",
       "Performance: fixed Storybook issues and upgraded it to improve maintainability",
     ],
   },

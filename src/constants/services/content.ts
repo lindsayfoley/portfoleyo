@@ -34,7 +34,7 @@ export const SERVICES_CONTENT = {
       useEagerLoading: true,
     },
     paragraphs: [
-      "Not every solution works straight out of the box. I build custom sites and apps - or refine what’s already there - so they fit your needs and work exactly how you want.",
+      "Not every solution works straight out of the box. I build custom sites and apps, or refine what’s already there - so they fit your needs and work exactly how you want.",
     ],
     list: [
       "Custom development: building sites and apps from scratch with modern tech",
@@ -70,7 +70,7 @@ export const SERVICES_CONTENT = {
       alt: "A desktop scene with a phone showing a Shopify theme template wireframe",
     },
     paragraphs: [
-      "An online store should be fast, easy to navigate, and built for conversions. I optimise stores for better performance and usability on Shopify and Squarespace.",
+      "An online store should be fast, easy to navigate, and built for conversions. I optimise stores for better performance and UX covering Shopify, Squarespace and more.",
     ],
     list: [
       "Store customisation: editing themes and sections tailored to your brand",
