@@ -1,6 +1,7 @@
 import { countryBlockingContent } from "./countryBlockingContent";
 import { hydrogenMerchantCenterDomainSetup } from "./hydrogenMerchantCenter";
 import { inheritingClientCodebase } from "./inheritingClientCodebase";
+import { preparingForAiSearch } from "./preparingForAiSearch";
 import { trackingGa4PurchasesHydrogen } from "./trackingGa4PurchasesHydrogen";
 
 export const PROJECTS = {
@@ -10,12 +11,13 @@ export const PROJECTS = {
       "Technical articles and real-world projects covering React, Shopify Headless, Technical SEO, AI search, performance optimisation and frontend development.",
   },
   banner: {
-    title: "Projects Completed",
-    subtitle: "A collection of recent case studies",
+    title: "Projects & Insights",
+    subtitle: "Case studies, tech guides and practical write-ups",
     description:
-      "Short, practical case studies from recent client work. Covering everything from Shopify Hydrogen and Google Merchant Center through to Cloudflare security and inheriting existing codebases.",
+      "Write-ups covering recent client work, technical investigations and modern frontend engineering. From Shopify Hydrogen and AI search through to Google Merchant Center, performance, accessibility and technical SEO.",
   },
   all: [
+    preparingForAiSearch,
     inheritingClientCodebase,
     trackingGa4PurchasesHydrogen,
     hydrogenMerchantCenterDomainSetup,
