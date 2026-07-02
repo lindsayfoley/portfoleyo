@@ -1,6 +1,6 @@
 export const inheritingClientCodebase = {
   meta: {
-    title: "The First 48 Hours After Inheriting a Codebase | The Portfoleyo",
+    title: "What To Do After Inheriting a Codebase | The Portfoleyo",
     description:
       "A look at how I approach a new project when all I have is a ZIP file of code. Covering local setup, deployments, architecture reviews, tech debt & documentation",
   },

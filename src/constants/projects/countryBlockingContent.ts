@@ -1,7 +1,6 @@
 export const countryBlockingContent = {
   meta: {
-    title:
-      "Blocking Traffic by Country | The Portfoleyo Development & Solutions",
+    title: "Blocking Website Traffic by Country | The Portfoleyo",
     description:
       "How I used Cloudflare security rules to block unwanted traffic by country, reduce spam analytics noise, and validate results with events logs and testing.",
   },
