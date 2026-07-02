@@ -5,9 +5,9 @@ import { colourTheme } from "@portfoleyo/shared/common";
 
 export const ABOUT_CONTENT = {
   meta: {
-    title: "About & Contact | The Portfoleyo Development & Solutions",
+    title: "About | React Web Developer & Technical SEO | The Portfoleyo",
     description:
-      "About my expertise in web development and how I help brands build high-performing sites. Get in touch to discuss your project and see how we can work together",
+      "I’m Lindsay Foley, founder of The Portfoleyo. With 15+ years’ experience in web development, I specialise in React, Shopify Headless, Technical SEO & AI search.",
   },
   banner: {
     title: "About The Company",

@@ -2,9 +2,9 @@ import { colourTheme } from "@portfoleyo/shared/common";
 
 export const PORTFOLIO_CONTENT = {
   meta: {
-    title: "Work Portfolio | The Portfoleyo Development & Solutions",
+    title: "Portfolio | React, Shopify & Technical SEO | The Portfoleyo",
     description:
-      "See how I help brands build fast, accessible and scalable digital experiences. From custom development to performance optimisations, explore my completed work",
+      "Explore React, Shopify & Technical SEO projects, from headless commerce and performance optimisation to AI-ready websites and scalable frontend development.",
   },
   sectionTitle: {
     title: "Projects at The Portfoleyo",

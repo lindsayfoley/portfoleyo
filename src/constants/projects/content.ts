@@ -5,9 +5,9 @@ import { trackingGa4PurchasesHydrogen } from "./trackingGa4PurchasesHydrogen";
 
 export const PROJECTS = {
   meta: {
-    title: "Projects & Case Studies | The Portfoleyo Development & Solutions",
+    title: "Projects | Shopify Headless, React & SEO | The Portfoleyo",
     description:
-      "Short case studies from recent client work, covering practical website improvements like SEO, performance, UX fixes, and technical support for growing brands.",
+      "Technical articles and real-world projects covering React, Shopify Headless, Technical SEO, AI search, performance optimisation and frontend development.",
   },
   banner: {
     title: "Projects Completed",

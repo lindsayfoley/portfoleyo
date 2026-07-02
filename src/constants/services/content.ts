@@ -12,9 +12,9 @@ import {
 
 export const SERVICES_CONTENT = {
   meta: {
-    title: "Services Offered | The Portfoleyo Development & Solutions",
+    title: "Services | React, Shopify & Technical SEO | The Portfoleyo",
     description:
-      "Expert web and Shopify development tailored to your business. From custom builds to performance optimisation, SEO, and ecommerce solutions - get support now",
+      "React, Shopify & Technical SEO services tailored to your business. From custom development and headless commerce to performance, accessibility & AI optimisation",
   },
   banner: {
     title: "Services Offered",

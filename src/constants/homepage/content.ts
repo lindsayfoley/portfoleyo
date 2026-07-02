@@ -10,9 +10,9 @@ import { Award } from "@portfoleyo/assets/svgs/award";
 
 export const HOMEPAGE_CONTENT = {
   meta: {
-    title: "Expert Development | The Portfoleyo Development & Solutions",
+    title: "The Portfoleyo | React Web Developer & Shopify Headless",
     description:
-      "Bespoke web development for independent brands. Expert in React, TypeScript, and modern frameworks, building fast, high-performing websites that drive results",
+      "Custom web development for independent brands. Expert in React, TypeScript, Shopify & Technical SEO. Building high-performing websites optimised for search & AI",
   },
   highlightBanner: {
     image: {
