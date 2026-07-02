@@ -22,7 +22,7 @@ export const preparingForAiSearch = {
   page: [
     `<h2 class="article-heading">Overview</h2>`,
 
-    `<p>AI powered search is changing the way people discover products online. Instead of returning a list of links like a traditional search engine, tools such as ChatGPT, Perplexity and Gemini can summarise information, recommend products and send users directly to specific pages.</p>`,
+    `<p>AI powered search is changing the way people discover products online. Instead of returning a list of links like a traditional search engine, tools such as ChatGPT can summarise information, recommend products and send users directly to specific pages.</p>`,
 
     `<p>After researching what's being called "GEO", comparing the advice against real ecommerce sites and inspecting the HTML of several Shopify stores, my main takeaway is that SEO and AI search optimisation are very closely linked. GEO doesn't replace SEO, but there are some additional things brands implement to make their content easier for AI systems to understand, interpret and recommend.</p>`,
 
@@ -179,8 +179,6 @@ export const preparingForAiSearch = {
   <li>&check; Review whether the products appearing match your expectations</li>
 </ul>`,
 
-    `<p>This is useful because it makes AI commerce feel more tangible rather than only talking about future behaviour. Merchants can start monitoring whether AI driven or AI adjacent channels are already sending traffic and sales their way.</p>`,
-
     `<p>It's also worth noting that attribution can still be difficult to interpret. ChatGPT and Copilot are clearly AI driven experiences, whereas Shop is also included, and that may include a broader mix of standard Shop App discovery and Shopify's recommendation ecosystems. So I would avoid overclaiming the numbers but still monitor the trend over time.</p>`,
 
     `<hr class="divider" />`,
@@ -189,9 +187,7 @@ export const preparingForAiSearch = {
 
     `<p>Another topic that came up during the research was the need to create an llms.txt. The idea is to provide a simple file that gives AI systems a structured summary of your site, important pages and useful context.</p>`,
 
-    `<p>At the moment, adoption still seems fairly limited and there is not yet clear evidence that it has a measurable impact on visibility. However, for many sites it would be relatively straightforward to implement, so it may be worth adding and monitoring as the space evolves.</p>`,
-
-    `<p>I wouldn't prioritise llms.txt over strong SEO foundations, structured data or crawlable product content, but it is something worth keeping on the radar.</p>`,
+    `<p>Currently, adoption still seems fairly limited and there is not yet clear evidence that it has a measurable impact on visibility. However, for many sites it would be relatively straightforward to implement, so it may be worth adding and monitoring as the space evolves. I wouldn't prioritise llms.txt over strong SEO foundations, structured data or crawlable product content, but it is something worth keeping on the radar.</p>`,
 
     `<hr class="divider" />`,
 
@@ -214,18 +210,14 @@ export const preparingForAiSearch = {
   <li>&check; Has Shopify Agentic Storefront data been reviewed?</li>
 </ul>`,
 
-    `<p>The key point to illustrate is that most of these recommendations are not separate from SEO. They support things like SEO, accessibility, web performance and customer experience at the same time.</p>`,
+    `<p>The key point to illustrate is that most of these recommendations are not separate from SEO. They support things like SEO, accessibility, web performance and customer experience all at the same time.</p>`,
 
     `<hr class="divider" />`,
 
     `<h2 class="article-heading">Final Thoughts</h2>`,
 
-    `<p>Before researching GEO, I expected to find a completely new set of optimisation tactics. Instead, I found that most of the useful recommendations build on strong technical SEO, structured content and clear product information.</p>`,
+    `<p>Before researching GEO, I expected to discover an entirely new discipline... instead I found that most of the advice reinforced things good ecommerce teams should already be investing in: strong technical SEO, structured content and clear product information.`,
 
-    `<p>The biggest shift is that we are no longer optimising purely for traditional search engines. Increasingly, we are also helping AI systems retrieve, interpret and recommend content on our behalf.</p>`,
-
-    `<p>If your SEO foundations are already strong, you may be closer than you think. The next step is making sure your products, pages and brand signals are clear enough for AI systems to understand without guessing.</p>`,
-
-    `<p>The exciting part is that many of these improvements don't just benefit AI search - better structured content, clearer product information, improved accessibility and stronger SEO all improve the overall customer experience too. Rather than treating GEO as a completely separate discipline, I think the biggest opportunity is to build on solid SEO foundations and make content easier for both people and machines to understand.</p>`,
+    `<p>The biggest change here is the audience we're optimising for. We're no longer thinking only about search engines, but also about AI systems that retrieve, interpret and recommend content on our behalf. For me, that's what makes GEO interesting, it isn't about abandoning SEO or chasing the latest trend. It's about making sites easier for both people and machines to understand - and that's something worth investing in regardless of how search continues to evolve over time.</p>`,
   ],
 };
